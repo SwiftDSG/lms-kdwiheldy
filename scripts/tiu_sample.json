@@ -1,0 +1,360 @@
+{
+  "quiz": {
+    "title": "TIU Latihan 1 — Penalaran & Numerik",
+    "description": "20 soal latihan TIU mencakup deret angka, aljabar, pecahan, analogi kata, logika, persentase, dan geometri.",
+    "category": "TIU",
+    "time_limit": 25
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "2, 4, 8, 16, ...\n\nAngka selanjutnya dalam deret tersebut adalah:",
+      "position": 1,
+      "explanation": "Setiap angka dikalikan 2 (deret geometri, rasio = 2), sehingga $16 \\times 2 = 32$.",
+      "options": [
+        { "label": "A", "content": "24", "score": 0, "is_correct": false },
+        { "label": "B", "content": "28", "score": 0, "is_correct": false },
+        { "label": "C", "content": "32", "score": 5, "is_correct": true },
+        { "label": "D", "content": "36", "score": 0, "is_correct": false },
+        { "label": "E", "content": "64", "score": 0, "is_correct": false }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "Jika $3x + 5 = 20$, maka nilai $x$ adalah:",
+      "position": 2,
+      "explanation": "$3x = 20 - 5 = 15$, sehingga $x = \\frac{15}{3} = 5$.",
+      "options": [
+        { "label": "A", "content": "3", "score": 0, "is_correct": false },
+        { "label": "B", "content": "4", "score": 0, "is_correct": false },
+        { "label": "C", "content": "5", "score": 5, "is_correct": true },
+        { "label": "D", "content": "6", "score": 0, "is_correct": false },
+        { "label": "E", "content": "7", "score": 0, "is_correct": false }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{3}{4} + \\frac{1}{2}$ adalah:",
+      "position": 3,
+      "explanation": "$\\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4} = \\text{1}\\frac{1}{4}$",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{1}{2}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "$\\frac{3}{4}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "$\\text{1}\\frac{1}{4}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "$\\text{1}\\frac{1}{2}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "$\\frac{7}{4}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "PANAS : DINGIN = SIANG : ...\n\nTentukan padanan yang tepat.",
+      "position": 4,
+      "explanation": "Analogi berlawanan (antonim). Lawan kata dari SIANG adalah MALAM.",
+      "options": [
+        { "label": "A", "content": "Fajar", "score": 0, "is_correct": false },
+        { "label": "B", "content": "Gelap", "score": 0, "is_correct": false },
+        { "label": "C", "content": "Sore", "score": 0, "is_correct": false },
+        { "label": "D", "content": "Malam", "score": 5, "is_correct": true },
+        { "label": "E", "content": "Subuh", "score": 0, "is_correct": false }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah 25% dari 200?",
+      "position": 5,
+      "explanation": "$\\frac{25}{100} \\times 200 = 50$",
+      "options": [
+        { "label": "A", "content": "25", "score": 0, "is_correct": false },
+        { "label": "B", "content": "40", "score": 0, "is_correct": false },
+        { "label": "C", "content": "50", "score": 5, "is_correct": true },
+        { "label": "D", "content": "75", "score": 0, "is_correct": false },
+        { "label": "E", "content": "100", "score": 0, "is_correct": false }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "1, 3, 6, 10, 15, ...\n\nAngka selanjutnya dalam deret tersebut adalah:",
+      "position": 6,
+      "explanation": "Selisih antar suku bertambah 1: $+2, +3, +4, +5, +6$. Sehingga $15 + 6 = 21$.",
+      "options": [
+        { "label": "A", "content": "18", "score": 0, "is_correct": false },
+        { "label": "B", "content": "20", "score": 0, "is_correct": false },
+        { "label": "C", "content": "21", "score": 5, "is_correct": true },
+        { "label": "D", "content": "22", "score": 0, "is_correct": false },
+        { "label": "E", "content": "25", "score": 0, "is_correct": false }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "Jika $4x - 3 = 13$, maka nilai $x$ adalah:",
+      "position": 7,
+      "explanation": "$4x = 13 + 3 = 16$, sehingga $x = \\frac{16}{4} = 4$.",
+      "options": [
+        { "label": "A", "content": "2", "score": 0, "is_correct": false },
+        { "label": "B", "content": "3", "score": 0, "is_correct": false },
+        { "label": "C", "content": "4", "score": 5, "is_correct": true },
+        { "label": "D", "content": "5", "score": 0, "is_correct": false },
+        { "label": "E", "content": "6", "score": 0, "is_correct": false }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "DOKTER : RUMAH SAKIT = GURU : ...\n\nTentukan padanan yang tepat.",
+      "position": 8,
+      "explanation": "Dokter bekerja di rumah sakit; guru bekerja di sekolah. Ini adalah analogi tempat bekerja.",
+      "options": [
+        { "label": "A", "content": "Kantor", "score": 0, "is_correct": false },
+        {
+          "label": "B",
+          "content": "Perpustakaan",
+          "score": 0,
+          "is_correct": false
+        },
+        { "label": "C", "content": "Sekolah", "score": 5, "is_correct": true },
+        {
+          "label": "D",
+          "content": "Universitas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Laboratorium",
+          "score": 0,
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "$\\frac{2}{3}$ dari 90 adalah:",
+      "position": 9,
+      "explanation": "$\\frac{2}{3} \\times 90 = \\frac{180}{3} = 60$",
+      "options": [
+        { "label": "A", "content": "30", "score": 0, "is_correct": false },
+        { "label": "B", "content": "45", "score": 0, "is_correct": false },
+        { "label": "C", "content": "60", "score": 5, "is_correct": true },
+        { "label": "D", "content": "75", "score": 0, "is_correct": false },
+        { "label": "E", "content": "80", "score": 0, "is_correct": false }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah 30% dari 150?",
+      "position": 10,
+      "explanation": "$\\frac{30}{100} \\times 150 = 45$",
+      "options": [
+        { "label": "A", "content": "30", "score": 0, "is_correct": false },
+        { "label": "B", "content": "40", "score": 0, "is_correct": false },
+        { "label": "C", "content": "45", "score": 5, "is_correct": true },
+        { "label": "D", "content": "50", "score": 0, "is_correct": false },
+        { "label": "E", "content": "60", "score": 0, "is_correct": false }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "2, 5, 10, 17, 26, ...\n\nAngka selanjutnya dalam deret tersebut adalah:",
+      "position": 11,
+      "explanation": "Polanya adalah $n^2 + 1$ untuk $n = 1, 2, 3, 4, 5, ...$. Untuk $n = 6$: $6^2 + 1 = 37$.",
+      "options": [
+        { "label": "A", "content": "33", "score": 0, "is_correct": false },
+        { "label": "B", "content": "35", "score": 0, "is_correct": false },
+        { "label": "C", "content": "37", "score": 5, "is_correct": true },
+        { "label": "D", "content": "39", "score": 0, "is_correct": false },
+        { "label": "E", "content": "41", "score": 0, "is_correct": false }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "Semua siswa rajin belajar. Budi adalah seorang siswa.\n\nKesimpulan yang tepat adalah:",
+      "position": 12,
+      "explanation": "Dari premis umum \"semua siswa rajin belajar\" dan premis khusus \"Budi adalah siswa\", secara deduktif dapat disimpulkan Budi rajin belajar.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Budi tidak rajin belajar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Budi mungkin rajin belajar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Budi rajin belajar",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Semua orang rajin belajar adalah siswa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tidak dapat disimpulkan",
+          "score": 0,
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "$(36 \\div 4) + (5 \\times 3) - 7 = ?$",
+      "position": 13,
+      "explanation": "$36 \\div 4 = 9$ dan $5 \\times 3 = 15$, sehingga $9 + 15 - 7 = 17$.",
+      "options": [
+        { "label": "A", "content": "11", "score": 0, "is_correct": false },
+        { "label": "B", "content": "14", "score": 0, "is_correct": false },
+        { "label": "C", "content": "15", "score": 0, "is_correct": false },
+        { "label": "D", "content": "17", "score": 5, "is_correct": true },
+        { "label": "E", "content": "24", "score": 0, "is_correct": false }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "SIANG : MATAHARI = MALAM : ...\n\nTentukan padanan yang tepat.",
+      "position": 14,
+      "explanation": "Siang identik dengan cahaya matahari; malam identik dengan cahaya bulan. Analogi sumber cahaya pada waktunya.",
+      "options": [
+        { "label": "A", "content": "Gelap", "score": 0, "is_correct": false },
+        { "label": "B", "content": "Bintang", "score": 0, "is_correct": false },
+        { "label": "C", "content": "Bulan", "score": 5, "is_correct": true },
+        { "label": "D", "content": "Langit", "score": 0, "is_correct": false },
+        { "label": "E", "content": "Senja", "score": 0, "is_correct": false }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah mobil menempuh jarak 120 km dalam waktu 2 jam. Kecepatan rata-rata mobil tersebut adalah:",
+      "position": 15,
+      "explanation": "Kecepatan $= \\frac{120}{2} = 60$ km/jam.",
+      "options": [
+        {
+          "label": "A",
+          "content": "40 km/jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "50 km/jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "60 km/jam",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "80 km/jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "100 km/jam",
+          "score": 0,
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "Dua bilangan memiliki perbandingan $3 : 5$. Jika jumlah keduanya adalah 80, maka bilangan yang lebih besar adalah:",
+      "position": 16,
+      "explanation": "Total bagian $= 3 + 5 = 8$. Bilangan lebih besar $= \\frac{5}{8} \\times 80 = 50$.",
+      "options": [
+        { "label": "A", "content": "24", "score": 0, "is_correct": false },
+        { "label": "B", "content": "30", "score": 0, "is_correct": false },
+        { "label": "C", "content": "40", "score": 0, "is_correct": false },
+        { "label": "D", "content": "50", "score": 5, "is_correct": true },
+        { "label": "E", "content": "60", "score": 0, "is_correct": false }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah persegi panjang memiliki panjang 9 cm dan lebar 6 cm. Luas persegi panjang tersebut adalah:",
+      "position": 17,
+      "explanation": "$L = p \\times l = 9 \\times 6 = 54$ cm²",
+      "options": [
+        { "label": "A", "content": "30 cm²", "score": 0, "is_correct": false },
+        { "label": "B", "content": "45 cm²", "score": 0, "is_correct": false },
+        { "label": "C", "content": "54 cm²", "score": 5, "is_correct": true },
+        { "label": "D", "content": "60 cm²", "score": 0, "is_correct": false },
+        { "label": "E", "content": "72 cm²", "score": 0, "is_correct": false }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "Kata yang bermakna paling mirip dengan RAJIN adalah:",
+      "position": 18,
+      "explanation": "RAJIN dan TEKUN sama-sama berarti bersungguh-sungguh dan tidak malas dalam melakukan sesuatu.",
+      "options": [
+        { "label": "A", "content": "Cerdas", "score": 0, "is_correct": false },
+        { "label": "B", "content": "Tekun", "score": 5, "is_correct": true },
+        { "label": "C", "content": "Berani", "score": 0, "is_correct": false },
+        { "label": "D", "content": "Sabar", "score": 0, "is_correct": false },
+        { "label": "E", "content": "Tangkas", "score": 0, "is_correct": false }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "1, 1, 2, 3, 5, 8, ...\n\nAngka selanjutnya dalam deret Fibonacci tersebut adalah:",
+      "position": 19,
+      "explanation": "Setiap suku adalah jumlah dua suku sebelumnya: $5 + 8 = 13$.",
+      "options": [
+        { "label": "A", "content": "10", "score": 0, "is_correct": false },
+        { "label": "B", "content": "11", "score": 0, "is_correct": false },
+        { "label": "C", "content": "12", "score": 0, "is_correct": false },
+        { "label": "D", "content": "13", "score": 5, "is_correct": true },
+        { "label": "E", "content": "16", "score": 0, "is_correct": false }
+      ]
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah segitiga memiliki alas 10 cm dan tinggi 6 cm. Luas segitiga tersebut adalah:",
+      "position": 20,
+      "explanation": "$L = \\frac{1}{2} \\times 10 \\times 6 = 30$ cm²",
+      "options": [
+        { "label": "A", "content": "15 cm²", "score": 0, "is_correct": false },
+        { "label": "B", "content": "20 cm²", "score": 0, "is_correct": false },
+        { "label": "C", "content": "25 cm²", "score": 0, "is_correct": false },
+        { "label": "D", "content": "30 cm²", "score": 5, "is_correct": true },
+        { "label": "E", "content": "60 cm²", "score": 0, "is_correct": false }
+      ]
+    }
+  ]
+}
