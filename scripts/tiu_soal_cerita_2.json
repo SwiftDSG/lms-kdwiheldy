@@ -1,0 +1,1210 @@
+{
+  "quiz": {
+    "title": "TIU – Soal Cerita (Set 2)",
+    "description": "Selesaikan soal-soal cerita matematis berikut ini dengan tepat.",
+    "category": "TIU",
+    "time_limit": 30
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "Sebuah kereta berangkat dari kota A pukul 07.00 dan tiba di kota B pukul 10.30. Jarak antara kota A dan B adalah 280 km. Berapa kecepatan rata-rata kereta tersebut?",
+      "position": 1,
+      "explanation": "Waktu tempuh = 10.30 - 07.00 = 3,5 jam. Kecepatan = jarak ÷ waktu = 280 ÷ 3,5 = 80 km/jam.",
+      "tip": "Langkah 1: Waktu = 10.30-07.00 = 3,5 jam. Langkah 2: Kecepatan = Jarak÷Waktu = 280÷3,5. Cara hitung cepat: 280÷3,5 = 2800÷35 = 560÷7 = 80 km/jam. Atau: 3,5 jam = 7/2 jam, maka 280÷(7/2)=280×(2/7)=40×2=80.",
+      "options": [
+        {
+          "label": "A",
+          "content": "70 km/jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "75 km/jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "80 km/jam",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "85 km/jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "90 km/jam",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Andi dan Budi dapat menyelesaikan suatu pekerjaan dalam 12 hari jika bekerja bersama. Andi sendiri dapat menyelesaikan pekerjaan itu dalam 20 hari. Berapa hari yang dibutuhkan Budi jika bekerja sendiri?",
+      "position": 2,
+      "explanation": "Kecepatan kerja bersama = 1/12 per hari. Kecepatan Andi = 1/20 per hari. Kecepatan Budi = 1/12 - 1/20 = 5/60 - 3/60 = 2/60 = 1/30 per hari. Jadi Budi membutuhkan 30 hari.",
+      "tip": "Rumus: 1/t_Budi = 1/t_bersama - 1/t_Andi = 1/12 - 1/20. KPK(12,20)=60: 1/12=5/60, 1/20=3/60. Selisih=2/60=1/30. Jadi Budi=30 hari. Verifikasi: Budi (30 hari) lebih lambat dari bersama (12 hari) dan lebih lambat dari Andi (20 hari) ✓.",
+      "options": [
+        {
+          "label": "A",
+          "content": "25 hari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "28 hari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "30 hari",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "35 hari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "40 hari",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Seorang pedagang membeli barang seharga Rp800.000 dan menjualnya seharga Rp960.000. Berapa persen keuntungan pedagang tersebut?",
+      "position": 3,
+      "explanation": "Keuntungan = Rp960.000 - Rp800.000 = Rp160.000. Persentase keuntungan = (160.000 / 800.000) × 100% = 20%.",
+      "tip": "%Untung = (untung÷modal)×100. Untung = 960.000-800.000=160.000. %=160.000÷800.000×100=160÷800×100=1/5×100=20%. Cara cepat: 160÷800=16÷80=1/5. Ingat: persentase keuntungan selalu dihitung dari MODAL (harga beli), bukan dari harga jual.",
+      "options": [
+        {
+          "label": "A",
+          "content": "15%",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "18%",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "20%",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "22%",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "25%",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Umur Ayah sekarang adalah 4 kali umur anaknya. Lima tahun lagi, umur Ayah akan menjadi 3 kali umur anaknya. Berapa umur anak sekarang?",
+      "position": 4,
+      "explanation": "Misalkan umur anak = x, maka umur Ayah = 4x. Lima tahun lagi: 4x + 5 = 3(x + 5) → 4x + 5 = 3x + 15 → x = 10. Umur anak sekarang adalah 10 tahun.",
+      "tip": "Anak=x, Ayah=4x. Lima tahun lagi: KEDUANYA bertambah 5. 4x+5 = 3(x+5) → 4x+5=3x+15 → x=10. Verifikasi: sekarang anak=10, ayah=40. Lima tahun lagi: anak=15, ayah=45=3×15✓. Ingat: 'n tahun lagi' → tambahkan n ke kedua orang.",
+      "options": [
+        {
+          "label": "A",
+          "content": "8 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "9 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "10 tahun",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "11 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "12 tahun",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Seorang ibu mencampur 3 kg teh seharga Rp50.000/kg dengan 2 kg teh seharga Rp70.000/kg. Berapa harga campuran per kilogram?",
+      "position": 5,
+      "explanation": "Total biaya = (3 × 50.000) + (2 × 70.000) = 150.000 + 140.000 = 290.000. Total berat = 5 kg. Harga per kg = 290.000 ÷ 5 = Rp58.000.",
+      "tip": "Harga campuran = total biaya ÷ total berat = (3×50.000+2×70.000)÷5 = 290.000÷5=58.000. Sanity check cepat: hasil harus antara 50.000 dan 70.000, lebih dekat ke 50.000 (karena 3>2). 58.000 adalah 3/5 dari jalan antara 50.000 dan 70.000 ✓.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp54.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp56.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp58.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Rp60.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rp62.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pak Joko meminjam uang di bank sebesar Rp5.000.000 dengan bunga 12% per tahun (bunga tunggal). Berapa total uang yang harus dikembalikan setelah 2 tahun?",
+      "position": 6,
+      "explanation": "Bunga per tahun = 12% × 5.000.000 = 600.000. Bunga 2 tahun = 2 × 600.000 = 1.200.000. Total = 5.000.000 + 1.200.000 = Rp6.200.000.",
+      "tip": "Bunga TUNGGAL: selalu dihitung dari pokok awal. Bunga = P×r×t = 5.000.000×12%×2 = 5.000.000×0,24=1.200.000. Total = 6.200.000. BEDAKAN dengan bunga majemuk (seperti Q20): bunga majemuk menghasilkan 6.050.000 → lebih sedikit dari 6.200.000 untuk jangka pendek? Tidak, bunga majemuk 10% (Q20) vs bunga tunggal 12% memang berbeda tingkat.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp5.600.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp5.800.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp6.000.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Rp6.200.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Rp6.400.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Di sebuah kelas terdapat siswa putra dan putri dengan perbandingan 3:5. Jika jumlah siswa putri adalah 30 orang, berapa jumlah seluruh siswa?",
+      "position": 7,
+      "explanation": "Jumlah putri = 5 bagian = 30 orang, maka 1 bagian = 6 orang. Jumlah putra = 3 × 6 = 18 orang. Total = 18 + 30 = 48 orang.",
+      "tip": "Putri = 5 bagian = 30 → 1 bagian = 6. Total = (3+5) bagian = 8×6 = 48. Cara cepat: total = nilai_diketahui × (total_bagian ÷ bagian_diketahui) = 30×(8÷5) = 30×1,6 = 48. Tidak perlu menghitung putra terpisah.",
+      "options": [
+        {
+          "label": "A",
+          "content": "40",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "44",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "48",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "50",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "54",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Ibu berjalan dari rumah pukul 06.00 dengan kecepatan 4 km/jam. Anaknya berangkat dari rumah yang sama pukul 07.00 dengan bersepeda berkecepatan 16 km/jam. Pukul berapa anak menyusul ibunya?",
+      "position": 8,
+      "explanation": "Saat anak berangkat, jarak Ibu = 1 jam × 4 km/jam = 4 km. Selisih kecepatan = 16 - 4 = 12 km/jam. Waktu menyusul = 4 ÷ 12 = 1/3 jam = 20 menit setelah pukul 07.00 = pukul 07.20.",
+      "tip": "Saat anak berangkat (07.00): ibu sudah 1 jam jalan = 4 km di depan. Selisih kecepatan = 16-4=12 km/jam. Waktu menyusul = jarak unggul ÷ selisih kecepatan = 4÷12=1/3 jam=20 menit. Pukul 07.00+20 menit=07.20. Aturan menyusul: waktu = jarak_awal_unggul ÷ (v_cepat-v_lambat).",
+      "options": [
+        {
+          "label": "A",
+          "content": "07.10",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "07.15",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "07.20",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "07.30",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "07.40",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah barang dijual dengan harga Rp480.000 setelah mendapat diskon 20%. Berapa harga asli barang tersebut sebelum diskon?",
+      "position": 9,
+      "explanation": "Harga setelah diskon = (100% - 20%) × harga asli = 80% × harga asli. Harga asli = 480.000 ÷ 0,8 = Rp600.000.",
+      "tip": "Diskon 20% → harga akhir = 80% dari harga asli. Harga asli = 480.000÷0,8. Karena 0,8=4/5: harga asli = 480.000×(5/4)=120.000×5=600.000. JEBAKAN BERBAHAYA: jangan tambahkan 20%×480.000=96.000 → 576.000 (pilihan B). 20% harus dihitung dari harga ASLI, bukan harga diskon.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp560.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp576.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp580.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Rp600.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Rp620.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "3 orang pekerja dapat menyelesaikan suatu proyek dalam 24 hari. Jika ditambah 3 orang pekerja lagi dengan kemampuan sama, berapa hari proyek tersebut akan selesai?",
+      "position": 10,
+      "explanation": "Total kapasitas = 3 × 24 = 72 orang-hari. Dengan 6 orang: 72 ÷ 6 = 12 hari.",
+      "tip": "Cara cepat perbandingan terbalik: hari_baru = hari_lama × (pekerja_lama÷pekerja_baru) = 24×(3÷6)=24×½=12 hari. Atau: total=3×24=72 orang-hari÷6 orang=12 hari. Keduanya sama cepatnya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "10 hari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "12 hari",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "14 hari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "16 hari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "18 hari",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Seorang siswa mengerjakan 2/5 dari total soal dan melewatkan sisanya. Jika ada 15 soal yang dilewatkan, berapa total soal yang ada?",
+      "position": 11,
+      "explanation": "Soal yang dikerjakan = 2/5, maka soal yang dilewatkan = 3/5. Diketahui 3/5 dari total = 15, maka total = 15 ÷ (3/5) = 15 × (5/3) = 25 soal.",
+      "tip": "Dikerjakan 2/5 → dilewatkan 3/5. 3/5 dari total=15. Cara cepat: 3 bagian=15 → 1 bagian=5. Total (5 bagian)=25. Atau: total=15÷(3/5)=15×(5/3)=25. Ingat: yang diketahui (15 soal) = pecahan yang dilewatkan (3/5), bukan yang dikerjakan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "20",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "25",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "30",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "35",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "40",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Delapan tahun lalu, umur Bapak adalah 3 kali umur anaknya. Sekarang jumlah umur mereka adalah 64 tahun. Berapa umur anak sekarang?",
+      "position": 12,
+      "explanation": "8 tahun lalu: anak = a, Bapak = 3a. Sekarang: anak = a+8, Bapak = 3a+8. (a+8)+(3a+8)=64 → 4a+16=64 → 4a=48 → a=12. Umur anak sekarang = 12+8 = 20 tahun.",
+      "tip": "Tentukan variabel di titik waktu yang disebut ('8 tahun lalu'): anak=a, Bapak=3a. Sekarang: anak=a+8, Bapak=3a+8. Jumlah sekarang: (a+8)+(3a+8)=64 → 4a+16=64 → a=12. Anak sekarang=12+8=20. Ingat: jika soal menyebut 'n tahun lalu', definisikan variabel DI MASA LALU itu untuk persamaan yang lebih sederhana.",
+      "options": [
+        {
+          "label": "A",
+          "content": "16 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "18 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "20 tahun",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "22 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "24 tahun",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Seseorang berjalan dari titik A ke titik B dengan kecepatan 5 km/jam selama 3 jam. Kemudian ia kembali dari B ke A dengan kecepatan 3 km/jam. Berapa waktu yang dibutuhkan untuk perjalanan pulang?",
+      "position": 13,
+      "explanation": "Jarak A ke B = 5 × 3 = 15 km. Waktu perjalanan pulang = 15 ÷ 3 = 5 jam.",
+      "tip": "Langkah 1: Jarak = 5×3=15 km (jarak pergi=jarak pulang). Langkah 2: Waktu pulang=15÷3=5 jam. Soal sederhana dua langkah — selesaikan dalam 10 detik dan lanjutkan ke soal berikutnya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "4 jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "4,5 jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "5 jam",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "5,5 jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "6 jam",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Seorang pedagang membeli sepeda seharga Rp1.200.000 dan menjualnya dengan kerugian 15%. Berapa harga jual sepeda tersebut?",
+      "position": 14,
+      "explanation": "Kerugian = 15% × 1.200.000 = 180.000. Harga jual = 1.200.000 - 180.000 = Rp1.020.000.",
+      "tip": "Rugi 15% → harga jual = 85% × harga beli = 1.200.000×0,85. Cara cepat: 1.200.000-kerugian = 1.200.000-(15%×1.200.000). 15%×1.200.000=180.000. Harga jual=1.020.000. Alternatif: 1.200.000×85/100=12.000×85=12.000×(80+5)=960.000+60.000=1.020.000.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp960.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp990.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp1.000.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Rp1.020.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Rp1.050.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah rumah dapat dibangun oleh 8 pekerja dalam 30 hari. Jika ingin diselesaikan dalam 24 hari, berapa pekerja tambahan yang diperlukan?",
+      "position": 15,
+      "explanation": "Total kapasitas = 8 × 30 = 240 orang-hari. Pekerja yang dibutuhkan untuk 24 hari = 240 ÷ 24 = 10 orang. Tambahan = 10 - 8 = 2 pekerja.",
+      "tip": "Total=8×30=240 orang-hari. Pekerja dibutuhkan=240÷24=10. Tambahan=10-8=2. Cara cepat: pekerja_baru = pekerja_lama×(hari_lama÷hari_baru) = 8×(30÷24)=8×(5/4)=10. Tambahan=10-8=2. Ingat soal ini meminta TAMBAHAN, bukan total — jangan lupa langkah terakhir.",
+      "options": [
+        {
+          "label": "A",
+          "content": "1 pekerja",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "2 pekerja",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "3 pekerja",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "4 pekerja",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "5 pekerja",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Di sebuah sekolah, 60% siswa adalah perempuan. Jika jumlah siswa laki-laki adalah 120 orang, berapa jumlah seluruh siswa?",
+      "position": 16,
+      "explanation": "Siswa laki-laki = 100% - 60% = 40% dari total. 40% × total = 120, maka total = 120 ÷ 0,4 = 300 siswa.",
+      "tip": "60% perempuan → 40% laki-laki. 40% dari total=120. Total=120÷0,4. Cara cepat: 1%=120÷40=3 orang. Total (100%)=3×100=300. Atau: 40%=120 → 4%=12 → 100%=12×25=300. Metode 1% paling mudah diingat untuk soal tipe ini.",
+      "options": [
+        {
+          "label": "A",
+          "content": "250",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "280",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "300",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "320",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "350",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pipa A dapat mengisi kolam dalam 6 jam. Pipa B dapat mengisi kolam yang sama dalam 4 jam. Jika kedua pipa dibuka bersamaan, berapa lama kolam penuh?",
+      "position": 17,
+      "explanation": "Kapasitas per jam: Pipa A = 1/6, Pipa B = 1/4. Bersama = 1/6 + 1/4 = 2/12 + 3/12 = 5/12 per jam. Waktu = 12/5 jam = 2 jam 24 menit.",
+      "tip": "Rumus kilat dua pipa: waktu = (t_A×t_B)÷(t_A+t_B) = (6×4)÷(6+4) = 24÷10 = 2,4 jam. Konversi 0,4 jam ke menit: 0,4×60=24 menit → 2 jam 24 menit. Selalu verifikasi: waktu bersama harus lebih kecil dari pipa tercepat (4 jam) ✓.",
+      "options": [
+        {
+          "label": "A",
+          "content": "2 jam 12 menit",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "2 jam 24 menit",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "2 jam 30 menit",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "2 jam 40 menit",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "3 jam",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Uang sejumlah Rp2.100.000 dibagi kepada A, B, dan C dengan perbandingan 2:3:2. Berapa bagian yang diterima B?",
+      "position": 18,
+      "explanation": "Total bagian = 2+3+2 = 7. Bagian B = 3/7 × 2.100.000 = Rp900.000.",
+      "tip": "Total bagian=2+3+2=7. Nilai 1 bagian=2.100.000÷7=300.000. Bagian B=3×300.000=900.000. Cara cepat: selalu cari nilai 1 bagian terlebih dahulu, baru kalikan. Lebih mudah dari langsung ×3/7 (risiko salah hitung pecahan besar).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp600.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp750.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp900.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Rp1.050.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rp1.200.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah bus menempuh 120 km dalam 2 jam pertama, kemudian 150 km dalam 3 jam berikutnya. Berapa kecepatan rata-rata bus selama seluruh perjalanan?",
+      "position": 19,
+      "explanation": "Total jarak = 120 + 150 = 270 km. Total waktu = 2 + 3 = 5 jam. Kecepatan rata-rata = 270 ÷ 5 = 54 km/jam.",
+      "tip": "Kecepatan rata-rata = total jarak ÷ total waktu = (120+150)÷(2+3) = 270÷5 = 54 km/jam. JANGAN rata-ratakan kecepatan masing-masing: kecepatan jam 1-2=60, jam 3-5=50 → rata-rata=(60+50)÷2=55 km/jam (SALAH karena durasinya berbeda). Selalu total_S÷total_t.",
+      "options": [
+        {
+          "label": "A",
+          "content": "48 km/jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "50 km/jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "52 km/jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "54 km/jam",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "56 km/jam",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pak Andi menabung Rp3.000.000 dengan bunga majemuk 10% per tahun. Setelah 2 tahun, jumlah tabungannya menjadi berapa?",
+      "position": 20,
+      "explanation": "Bunga majemuk: Setelah tahun 1 = 3.000.000 × 1,1 = 3.300.000. Setelah tahun 2 = 3.300.000 × 1,1 = Rp3.630.000.",
+      "tip": "Bunga MAJEMUK: tiap tahun berbunga dari total tahun sebelumnya. Rumus: A=P×(1+r)ⁿ=3.000.000×(1,1)²=3.000.000×1,21=3.630.000. Cara hitung: tahun 1: 3jt×1,1=3,3jt; tahun 2: 3,3jt×1,1=3,63jt. JEBAKAN di pilihan C: bunga tunggal 10%×2=20%, jadi 3jt×1,2=3.600.000 (beda karena tidak berbunga dari bunga).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp3.400.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp3.500.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp3.600.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Rp3.630.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Rp3.700.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Seorang anak memiliki sejumlah uang. Ia menggunakan 1/3 untuk membeli buku dan 1/4 dari sisa uang untuk alat tulis. Sisa uangnya sekarang Rp180.000. Berapa uang mula-mula?",
+      "position": 21,
+      "explanation": "Setelah beli buku: sisa = 2/3 uang awal. Setelah beli alat tulis: sisa = 3/4 × 2/3 = 6/12 = 1/2 uang awal. 1/2 × uang awal = 180.000 → uang awal = Rp360.000.",
+      "tip": "Hitung berapa FRAKSI yang tersisa: (1) Pakai 1/3 untuk buku → sisa 2/3. (2) Dari sisa 2/3, pakai 1/4 → sisa 3/4 dari (2/3) = (3/4)×(2/3) = 1/2 dari total awal. (3) 1/2 uang awal=180.000 → awal=360.000. Kunci: hitung fraksi TERSISA di setiap langkah, bukan yang dipakai.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp270.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp300.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp330.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Rp360.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Rp400.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Seorang toko membeli barang seharga Rp400.000 dan menetapkan harga jual dengan keuntungan 25%. Berapa harga jual barang tersebut?",
+      "position": 22,
+      "explanation": "Harga jual = harga beli × (1 + 25%) = 400.000 × 1,25 = Rp500.000.",
+      "tip": "Untung 25% → harga jual = 125% dari modal = 400.000×1,25. Cara cepat: 25%×400.000=100.000. Jadi harga jual=400.000+100.000=500.000. Lebih cepat dari mengalikan 1,25 langsung.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp450.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp480.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp500.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Rp520.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rp550.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Seorang wiraniaga mendapat gaji pokok Rp2.000.000 ditambah komisi 5% dari total penjualan. Jika total penjualannya Rp8.000.000, berapa penghasilan wiraniaga tersebut bulan ini?",
+      "position": 23,
+      "explanation": "Komisi = 5% × 8.000.000 = 400.000. Total penghasilan = 2.000.000 + 400.000 = Rp2.400.000.",
+      "tip": "Komisi=5%×8jt: cari 10% dulu (=800.000) lalu bagi 2 (=400.000). Total=2.000.000+400.000=2.400.000. Soal langsung tanpa jebakan — kerjakan cepat, lanjutkan ke soal berikutnya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp2.200.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp2.300.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp2.400.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Rp2.500.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rp2.600.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Dalam survei terhadap 500 orang, 35% menyukai produk A, 40% menyukai produk B, dan sisanya tidak memiliki preferensi. Berapa orang yang tidak memiliki preferensi?",
+      "position": 24,
+      "explanation": "Persentase tanpa preferensi = 100% - 35% - 40% = 25%. Jumlah = 25% × 500 = 125 orang.",
+      "tip": "Sisanya = 100%-35%-40%=25%. 25%×500 = 1/4×500=125 orang. Cara cepat 25%: bagi dengan 4. 500÷4=125. Tidak perlu kalkulasi panjang.",
+      "options": [
+        {
+          "label": "A",
+          "content": "100",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "110",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "120",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "125",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "130",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah barang mendapat diskon pertama 20%, kemudian diskon kedua 10% dari harga setelah diskon pertama. Jika harga aslinya Rp500.000, berapa harga akhirnya?",
+      "position": 25,
+      "explanation": "Setelah diskon 1: 500.000 × 0,8 = 400.000. Setelah diskon 2: 400.000 × 0,9 = Rp360.000. Diskon bertingkat, bukan diskon total 30%.",
+      "tip": "Diskon bertingkat ≠ diskon total! 20%+10% ≠ 30% diskon. Cara cepat: harga akhir = harga awal × (1-d1) × (1-d2) = 500.000×0,8×0,9 = 500.000×0,72=360.000. Atau: 500.000×0,8=400.000; 400.000×0,9=360.000. JEBAKAN: 30% dari 500.000=150.000 → 350.000 (tidak ada di pilihan, tapi logika ini salah).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp340.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp350.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp360.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Rp375.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rp400.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "12 pekerja dapat menyelesaikan proyek dalam 10 hari. Setelah 4 hari bekerja, 3 pekerja mengundurkan diri. Berapa hari lagi proyek tersebut akan selesai?",
+      "position": 26,
+      "explanation": "Total kapasitas = 12 × 10 = 120 orang-hari. Pekerjaan 4 hari pertama = 12 × 4 = 48 orang-hari. Sisa = 72 orang-hari. Sisa pekerja = 9. Waktu = 72 ÷ 9 = 8 hari.",
+      "tip": "Soal multi-fase — jangan skip langkah: (1) Total=12×10=120. (2) Selesai 4 hari=12×4=48. (3) Sisa=120-48=72 orang-hari. (4) Pekerja tersisa=12-3=9. (5) Sisa hari=72÷9=8. Soal ini menanyakan 'berapa hari LAGI' (bukan total) → jawaban 8, bukan 8+4=12.",
+      "options": [
+        {
+          "label": "A",
+          "content": "6 hari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "7 hari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "8 hari",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "9 hari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "10 hari",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "4 mesin dapat memproduksi 400 buah dalam 5 jam. Berapa buah yang dapat diproduksi oleh 6 mesin dalam 3 jam?",
+      "position": 27,
+      "explanation": "Kapasitas per mesin per jam = 400 ÷ (4 × 5) = 20 buah. Produksi 6 mesin dalam 3 jam = 6 × 3 × 20 = 360 buah.",
+      "tip": "Cara cepat perbandingan berganda: produksi baru = produksi lama × (mesin_baru/mesin_lama) × (jam_baru/jam_lama) = 400×(6/4)×(3/5) = 400×(18/20) = 400×0,9 = 360. Tidak perlu menghitung laju per mesin per jam.",
+      "options": [
+        {
+          "label": "A",
+          "content": "300",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "320",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "340",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "360",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "380",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Harga suatu barang naik 20% menjadi Rp720.000. Berapa harga asli barang tersebut sebelum naik?",
+      "position": 28,
+      "explanation": "Harga setelah naik = 120% × harga asli = 720.000. Harga asli = 720.000 ÷ 1,2 = Rp600.000.",
+      "tip": "Naik 20% → harga sekarang = 120% dari asli. Harga asli = 720.000÷1,2. Karena 1,2=6/5: harga asli = 720.000×(5/6)=120.000×5=600.000. Pola umum 'harga setelah naik → cari harga asli': selalu ÷(1+p%). JANGAN kurangi 20% dari 720.000 → 144.000, itu menghasilkan 576.000 (salah).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp540.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp560.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp580.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Rp600.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Rp620.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Seorang petani mencampur beras kualitas A seharga Rp12.000/kg dengan beras B seharga Rp9.000/kg dengan perbandingan 2:3. Berapa harga campuran per kilogram?",
+      "position": 29,
+      "explanation": "Harga campuran = (2×12.000 + 3×9.000) ÷ (2+3) = (24.000 + 27.000) ÷ 5 = 51.000 ÷ 5 = Rp10.200.",
+      "tip": "Harga campuran = (w_A×h_A + w_B×h_B)÷(w_A+w_B) = (2×12.000+3×9.000)÷5 = 51.000÷5=10.200. Sanity check: hasil harus antara 9.000 dan 12.000, lebih dekat ke 9.000 (karena B lebih banyak, 3>2). 10.200 lebih dekat ke 9.000 ✓.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp9.500",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp10.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp10.200",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Rp10.500",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rp11.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Harga sebuah laptop sebelum PPN adalah Rp8.500.000. Jika PPN sebesar 11%, berapa harga yang harus dibayar konsumen?",
+      "position": 30,
+      "explanation": "PPN = 11% × 8.500.000 = 935.000. Harga total = 8.500.000 + 935.000 = Rp9.435.000.",
+      "tip": "Harga total = harga awal × (1+11%) = 8.500.000×1,11. Cara hitung PPN 11%: 10%=850.000, 1%=85.000 → 11%=935.000. Total=8.500.000+935.000=9.435.000. Verifikasi cepat: harus antara 9.400.000 dan 9.500.000 ✓.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp9.300.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp9.350.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp9.400.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Rp9.435.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Rp9.500.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    }
+  ]
+}

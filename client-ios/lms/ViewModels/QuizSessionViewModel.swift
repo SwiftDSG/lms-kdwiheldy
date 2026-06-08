@@ -13,6 +13,9 @@ final class QuizSessionViewModel {
     var notes: [UUID: LocalUserNote] = [:]      // questionId → note
     var isSubmitting: Bool = false
     var result: QuizResult? = nil
+    var aiExplanations: [UUID: AIExplanationResponse] = [:]
+    var aiExplanationLoading: Set<UUID> = []
+    var aiExplanationVisible: Set<UUID> = []
 
     private let context: ModelContext
     private let deviceId: String
@@ -155,22 +158,40 @@ final class QuizSessionViewModel {
 
     // ── Scoring ───────────────────────────────────────────────────────────────
 
-    /// MCQ/TF: 5 pts if the selected option is_correct, 0 otherwise.
-    /// TKP (no is_correct option): use the option's stored score (1–5).
+    /// Score is always the option's stored score value.
+    /// MCQ/TF: correct = 5, wrong = 0. TKP: 1–5 weighted.
     private func calculateScore() -> Int {
-        var total = 0
-        for question in questions {
+        questions.reduce(0) { total, question in
             guard let answer = answers[question.id],
                   let optionId = answer.selectedOptionId,
-                  let option = question.options.first(where: { $0.id == optionId }) else { continue }
-            let hasCorrectOption = question.options.contains { $0.isCorrect }
-            if hasCorrectOption {
-                total += option.isCorrect ? 5 : 0
-            } else {
-                total += option.score   // TKP weighted scoring
-            }
+                  let option = question.options.first(where: { $0.id == optionId })
+            else { return total }
+            return total + option.score
         }
-        return total
+    }
+
+    // ── AI Explanation ────────────────────────────────────────────────────────
+
+    func fetchAIExplanation(for question: LocalQuestion) async {
+        let id = question.id
+        if aiExplanations[id] != nil {
+            aiExplanationVisible.insert(id)
+            return
+        }
+        guard !aiExplanationLoading.contains(id) else { return }
+        aiExplanationLoading.insert(id)
+        do {
+            let result = try await APIClient.shared.fetchAIExplanation(questionId: id)
+            aiExplanations[id] = result
+            aiExplanationVisible.insert(id)
+        } catch {
+            // silently fail — user can tap button again to retry
+        }
+        aiExplanationLoading.remove(id)
+    }
+
+    func dismissAIExplanation(for questionId: UUID) {
+        aiExplanationVisible.remove(questionId)
     }
 
     // ── Reset (retry) ─────────────────────────────────────────────────────────

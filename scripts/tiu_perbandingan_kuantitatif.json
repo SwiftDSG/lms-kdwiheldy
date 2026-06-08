@@ -1,0 +1,810 @@
+{
+  "quiz": {
+    "title": "TIU – Perbandingan Kuantitatif",
+    "description": "Bandingkan nilai Kolom A dan Kolom B, lalu pilih hubungan yang paling tepat.",
+    "category": "TIU",
+    "time_limit": 25
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "Kolom A: $\\text{3}^{\\text{4}}$\nKolom B: $\\text{4}^{\\text{3}}$\n\nHubungan yang tepat adalah:",
+      "position": 1,
+      "explanation": "Kolom A: $\\text{3}^{\\text{4}} = \\text{81}$. Kolom B: $\\text{4}^{\\text{3}} = \\text{64}$. Maka Kolom A > Kolom B.",
+      "tip": "Hitung langsung: 3⁴=3×3×3×3=81. 4³=4×4×4=64. 81>64 → A>B. Catatan: a^b vs b^a untuk a≠b tidak selalu intuitif. Jangan asumsikan 'pangkat lebih besar = hasil lebih besar' tanpa menghitung.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kolom A + Kolom B = 125",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: $\\frac{\\text{5}}{\\text{8}}$\nKolom B: $\\frac{\\text{7}}{\\text{12}}$\n\nHubungan yang tepat adalah:",
+      "position": 2,
+      "explanation": "Samakan penyebut: KPK(8,12) = 24. Kolom A $= \\frac{\\text{15}}{\\text{24}}$, Kolom B $= \\frac{\\text{14}}{\\text{24}}$. Maka Kolom A > Kolom B.",
+      "tip": "Teknik cross-multiply (silang): 5/8 vs 7/12 → kalikan silang: 5×12=60 vs 7×8=56. 60>56 → A>B. Tidak perlu mencari KPK! Aturan: a/b vs c/d → bandingkan a×d dengan b×c (hasilnya setara dengan membandingkan dua pecahan).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kolom A > Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kolom A $\\times$ Kolom B $= \\text{1}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: $\\sqrt{\\text{50}}$\nKolom B: $\\text{7}$\n\nHubungan yang tepat adalah:",
+      "position": 3,
+      "explanation": "$\\sqrt{\\text{50}} \\approx \\text{7}{,}\\text{07}$. Maka Kolom A > Kolom B.",
+      "tip": "Ubah B menjadi akar: 7=√49. Sekarang bandingkan isi akar: √50 vs √49 → 50>49 → √50>√49=7. A>B. Teknik: untuk membandingkan akar dengan bilangan bulat, kuadratkan bilangan bulat lalu bandingkan isi akar.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kolom A = Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kolom A > Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kolom A $\\geq$ Kolom B",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: 30% dari 200\nKolom B: 20% dari 300\n\nHubungan yang tepat adalah:",
+      "position": 4,
+      "explanation": "Kolom A $= \\frac{\\text{30}}{\\text{100}} \\times \\text{200} = \\text{60}$. Kolom B $= \\frac{\\text{20}}{\\text{100}} \\times \\text{300} = \\text{60}$. Maka Kolom A = Kolom B.",
+      "tip": "Bandingkan p%×q vs r%×s sebagai produk murni: 30×200=6000 vs 20×300=6000 (sebelum ÷100). Sama → A=B. Teknik: untuk membandingkan persentase dari angka berbeda, langsung kalikan persentase×angka dan bandingkan hasilnya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kolom A $\\neq$ Kolom B",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: $(x+y)^{\\text{2}}$ dengan $x = \\text{3}, y = \\text{4}$\nKolom B: $x^{\\text{2}} + y^{\\text{2}}$ dengan $x = \\text{3}, y = \\text{4}$\n\nHubungan yang tepat adalah:",
+      "position": 5,
+      "explanation": "Kolom A $= (\\text{3}+\\text{4})^{\\text{2}} = \\text{49}$. Kolom B $= \\text{9} + \\text{16} = \\text{25}$. Maka Kolom A > Kolom B.",
+      "tip": "Kunci: (x+y)²=x²+2xy+y²≠x²+y². Selisih A-B=2xy=2×3×4=24. Jadi A=B+24 → A>B. Tidak perlu hitung 7²=49 dan 9+16=25 secara terpisah. Ingat ini soal ujian identitas aljabar: (x+y)²≠x²+y².",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A = Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kolom A > Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kolom A $\\leq$ Kolom B",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: Luas persegi dengan sisi 8 cm\nKolom B: Luas persegi panjang dengan panjang 10 cm dan lebar 6 cm\n\nHubungan yang tepat adalah:",
+      "position": 6,
+      "explanation": "Kolom A $= \\text{8} \\times \\text{8} = \\text{64}$ cm². Kolom B $= \\text{10} \\times \\text{6} = \\text{60}$ cm². Maka Kolom A > Kolom B.",
+      "tip": "A=8²=64. B=10×6=60. A>B. Prinsip geometri: di antara semua persegi panjang dengan keliling yang sama, persegi memiliki luas terbesar. Keliling keduanya 32 cm → persegi (64) lebih luas dari PP (60).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kolom A + Kolom B = 120",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: $\\frac{\\text{1}}{\\text{3}} + \\frac{\\text{1}}{\\text{4}}$\nKolom B: $\\frac{\\text{1}}{\\text{2}}$\n\nHubungan yang tepat adalah:",
+      "position": 7,
+      "explanation": "Kolom A $= \\frac{\\text{4}}{\\text{12}} + \\frac{\\text{3}}{\\text{12}} = \\frac{\\text{7}}{\\text{12}}$. Kolom B $= \\frac{\\text{6}}{\\text{12}}$. Maka Kolom A > Kolom B.",
+      "tip": "A=7/12. B=1/2=6/12. 7/12>6/12 → A>B. Intuisi cepat: 1/3>1/4 → 1/3+1/4 > 1/4+1/4=2/4=1/2 → A>B. Tidak perlu KPK untuk intuisi ini — cukup ganti 1/3 dengan estimasi lebih tinggi.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kolom A = Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kolom A > Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kolom A $\\times$ 12 = 7",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: Kecepatan mobil yang menempuh 300 km dalam 4 jam\nKolom B: Kecepatan sepeda motor yang menempuh 200 km dalam 2,5 jam\n\nHubungan yang tepat adalah:",
+      "position": 8,
+      "explanation": "Kolom A $= \\frac{\\text{300}}{\\text{4}} = \\text{75}$ km/jam. Kolom B $= \\frac{\\text{200}}{\\text{2}{,}\\text{5}} = \\text{80}$ km/jam. Maka Kolom A < Kolom B.",
+      "tip": "A=300÷4=75. B=200÷2,5: cara cepat ÷2,5 = ×2÷5. 200×2=400÷5=80. 75<80 → A<B. Alternatif: 200÷2,5=200×(2/5)=400/5=80.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Selisihnya 15 km/jam",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: $(-\\text{3})^{\\text{4}}$\nKolom B: $\\text{3}^{\\text{4}}$\n\nHubungan yang tepat adalah:",
+      "position": 9,
+      "explanation": "$(-\\text{3})^{\\text{4}} = (-\\text{3}) \\times (-\\text{3}) \\times (-\\text{3}) \\times (-\\text{3}) = \\text{81}$. $\\text{3}^{\\text{4}} = \\text{81}$. Maka Kolom A = Kolom B.",
+      "tip": "Aturan tanda: bilangan negatif pangkat GENAP = positif. (-3)⁴=(−1)⁴×3⁴=1×81=81=3⁴. A=B. Ingat: genap → positif, ganjil → negatif. Jebakan: jangan berpikir (-3)⁴=-(3⁴)=-81, itu salah — tanda negatif ada DI DALAM kurung.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kolom A + Kolom B = 0",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: Jumlah sudut dalam segitiga\nKolom B: Jumlah sudut dalam persegi\n\nHubungan yang tepat adalah:",
+      "position": 10,
+      "explanation": "Sudut dalam segitiga $= \\text{180}°$. Sudut dalam persegi $= \\text{360}°$. Maka Kolom A < Kolom B.",
+      "tip": "Hafal rumus: jumlah sudut dalam n-segi = (n-2)×180°. Segitiga (n=3): 1×180=180°. Persegi (n=4): 2×180=360°. A=180°<B=360° → A<B. Atau hafal langsung: segitiga=180°, segiempat=360°, segilima=540°.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Selisihnya 90°",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: $\\frac{\\text{2}}{\\text{5}}$ dari 150\nKolom B: $\\frac{\\text{3}}{\\text{7}}$ dari 140\n\nHubungan yang tepat adalah:",
+      "position": 11,
+      "explanation": "Kolom A $= \\frac{\\text{2}}{\\text{5}} \\times \\text{150} = \\text{60}$. Kolom B $= \\frac{\\text{3}}{\\text{7}} \\times \\text{140} = \\text{60}$. Maka Kolom A = Kolom B.",
+      "tip": "A: 150÷5=30, lalu ×2=60. B: 140÷7=20, lalu ×3=60. A=B=60. Teknik: untuk a/b × c, pertama cek apakah c habis dibagi b — jika ya, bagi dulu baru kalikan. Jauh lebih mudah dari langsung ×2/5.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kolom A - Kolom B = 5",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: $\\text{0}{,}\\text{7}^{\\text{2}}$\nKolom B: $\\text{0}{,}\\text{7}$\n\nHubungan yang tepat adalah:",
+      "position": 12,
+      "explanation": "Kolom A $= \\text{0}{,}\\text{7}^{\\text{2}} = \\text{0}{,}\\text{49}$. Kolom B $= \\text{0}{,}\\text{7}$. Karena $\\text{0}{,}\\text{49} < \\text{0}{,}\\text{7}$, maka Kolom A < Kolom B.",
+      "tip": "Aturan kunci perbandingan kuantitatif: untuk 0<x<1 → x²<x (mengkuadratkan pecahan murni membuatnya LEBIH KECIL). Sebaliknya x>1 → x²>x. 0,7²=0,49<0,7 → A<B. Jebakan klasik — banyak orang berasumsi 'pangkat lebih besar = hasil lebih besar', yang SALAH untuk 0<x<1.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kolom A + Kolom B = 1",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: Volume kubus dengan rusuk 4 cm\nKolom B: Volume balok berukuran 8 cm × 4 cm × 2 cm\n\nHubungan yang tepat adalah:",
+      "position": 13,
+      "explanation": "Kolom A $= \\text{4}^{\\text{3}} = \\text{64}$ cm³. Kolom B $= \\text{8} \\times \\text{4} \\times \\text{2} = \\text{64}$ cm³. Maka Kolom A = Kolom B.",
+      "tip": "A=4³=64. B=8×4×2: kerjakan dari kiri: 8×4=32, 32×2=64. A=B=64. Perhatikan: B adalah kubus yang 'diratakan' — dimensinya dua kali lebih panjang, setengah lebih tinggi (8=2×4, 2=4÷2) sehingga volumenya tetap.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kolom A $\\times$ 2 = Kolom B",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: $\\text{20}! \\div \\text{19}!$\nKolom B: $\\text{10}! \\div \\text{8}!$\n\nHubungan yang tepat adalah:",
+      "position": 14,
+      "explanation": "Kolom A $= \\text{20}$. Kolom B $= \\text{10} \\times \\text{9} = \\text{90}$. Maka Kolom A < Kolom B.",
+      "tip": "Aturan faktorial: n!÷(n-1)!=n. Jadi 20!÷19!=20. n!÷(n-k)!=n×(n-1)×...×(n-k+1) (k faktor teratas). Jadi 10!÷8!=10×9=90. A=20<90=B. Jangan hitung nilai aktual faktorial — itu angka raksasa yang tidak perlu.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kolom A + Kolom B = 110",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: Harga setelah diskon 30% dari Rp 500.000\nKolom B: Harga setelah kenaikan 30% dari Rp 250.000\n\nHubungan yang tepat adalah:",
+      "position": 15,
+      "explanation": "Kolom A $= \\text{500}.\\text{000} \\times \\text{0}{,}\\text{7} = \\text{350}.\\text{000}$. Kolom B $= \\text{250}.\\text{000} \\times \\text{1}{,}\\text{3} = \\text{325}.\\text{000}$. Maka Kolom A > Kolom B.",
+      "tip": "A=500rb×70%=350rb. B=250rb×130%=250rb+75rb=325rb. A=350rb>325rb=B. Perhatikan: meski A adalah harga yang didiskon dan B adalah harga yang naik, A tetap lebih besar karena base-nya dua kali lipat dari B.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Selisihnya Rp 100.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: $\\frac{\\text{4}}{\\text{9}}$\nKolom B: $\\text{0}{,}\\text{44}$\n\nHubungan yang tepat adalah:",
+      "position": 16,
+      "explanation": "$\\frac{\\text{4}}{\\text{9}} \\approx \\text{0}{,}\\text{4444}...$. Kolom B $= \\text{0}{,}\\text{44}$. Maka Kolom A > Kolom B.",
+      "tip": "4/9=0,4444... (desimal berulang 4). B=0,44=0,4400. Bandingkan digit per digit: 0,44|44... vs 0,44|00. Digit ke-3 dst: A=4, B=0. A>B. Hafal konversi: 1/9=0,111..., 2/9=0,222..., 4/9=0,444..., seterusnya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kolom A $\\times$ 9 = Kolom B $\\times$ 10",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: Rata-rata dari 4, 8, 12, 16, 20\nKolom B: Median dari 4, 8, 12, 16, 20\n\nHubungan yang tepat adalah:",
+      "position": 17,
+      "explanation": "Rata-rata $= \\frac{\\text{4}+\\text{8}+\\text{12}+\\text{16}+\\text{20}}{\\text{5}} = \\frac{\\text{60}}{\\text{5}} = \\text{12}$. Median (nilai tengah dari 5 data berurutan) $= \\text{12}$. Maka Kolom A = Kolom B.",
+      "tip": "Untuk deret aritmatika (selisih konstan), rata-rata = median = suku tengah. Data 4,8,12,16,20 adalah deret aritmatika (selisih +4). Suku tengah (ke-3 dari 5) = 12. Jadi rata-rata=median=12. A=B. Ingat: hanya berlaku jika data berurutan dengan selisih konstan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kolom A + Kolom B = 24",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: $\\text{2}^{\\text{10}}$\nKolom B: $\\text{10}^{\\text{3}}$\n\nHubungan yang tepat adalah:",
+      "position": 18,
+      "explanation": "$\\text{2}^{\\text{10}} = \\text{1024}$. $\\text{10}^{\\text{3}} = \\text{1000}$. Maka Kolom A > Kolom B.",
+      "tip": "Hafal: 2^10=1024. 10^3=1000. 1024>1000 → A>B. Jika tidak hafal 2^10: 2^10=(2^5)²=32²=1024. Atau: 2^10=2^7×2^3=128×8=1024. Hafalan 2^10=1024 sangat berguna di banyak soal CPNS dan komputer.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Selisihnya 14",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Diketahui $p > \\text{0}$ dan $q > \\text{0}$.\nKolom A: $p + q$\nKolom B: $p \\times q$\n\nHubungan yang tepat adalah:",
+      "position": 19,
+      "explanation": "Tidak dapat ditentukan tanpa nilai spesifik. Misal $p = \\text{0}{,}\\text{5}, q = \\text{0}{,}\\text{5}$: Kolom A = 1, Kolom B = 0,25 → A > B. Misal $p = \\text{3}, q = \\text{3}$: Kolom A = 6, Kolom B = 9 → A < B. Sehingga hubungannya bergantung pada nilai.",
+      "tip": "Strategi soal variabel: uji dua kasus berbeda. Kasus 1 (pecahan): p=0,5, q=0,5 → A=1, B=0,25 → A>B. Kasus 2 (bilangan besar): p=3, q=3 → A=6, B=9 → A<B. Hasilnya berbeda → D. Kapan sama? p+q=pq → misal p=2, q=2: 4=4. Selalu cari dua kasus yang menghasilkan kesimpulan berlawanan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Kolom A $\\geq$ Kolom B",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kolom A: Keliling lingkaran dengan diameter 14 cm (gunakan $\\pi = \\frac{\\text{22}}{\\text{7}}$)\nKolom B: Keliling persegi dengan sisi 11 cm\n\nHubungan yang tepat adalah:",
+      "position": 20,
+      "explanation": "Kolom A $= \\pi \\times d = \\frac{\\text{22}}{\\text{7}} \\times \\text{14} = \\text{44}$ cm. Kolom B $= \\text{4} \\times \\text{11} = \\text{44}$ cm. Maka Kolom A = Kolom B.",
+      "tip": "A=π×d=22/7×14. Cara cepat: 14÷7=2, lalu ×22=44. B=4×11=44. A=B=44. Tips: soal lingkaran dengan π=22/7 hampir SELALU menggunakan bilangan kelipatan 7 agar perhitungan bersih. Jika diameter=7: keliling=22. Jika diameter=14: keliling=44. Hafal pasangan ini.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kolom A > Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kolom A < Kolom B",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kolom A = Kolom B",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Hubungan tidak dapat ditentukan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Selisihnya 2 cm",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PERBANDINGAN_KUANTITATIF"
+    }
+  ]
+}

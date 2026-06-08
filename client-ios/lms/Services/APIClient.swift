@@ -26,18 +26,13 @@ struct APIOption: Decodable {
     let label: String
     let content: String
     let score: Int
-    let isCorrect: Bool
-
-    enum CodingKeys: String, CodingKey {
-        case id, label, content, score
-        case isCorrect = "is_correct"
-    }
 }
 
 struct APIQuestion: Decodable {
     let id: UUID
     let quizId: UUID
     let type: String
+    let subtype: QuestionSubtype
     let content: String
     let imageUrl: String?
     let explanation: String?
@@ -46,7 +41,7 @@ struct APIQuestion: Decodable {
     let options: [APIOption]
 
     enum CodingKeys: String, CodingKey {
-        case id, type, content, explanation, position, options
+        case id, type, subtype, content, explanation, position, options
         case quizId = "quiz_id"
         case imageUrl = "image_url"
         case createdAt = "created_at"
@@ -68,6 +63,16 @@ struct APISessionResult: Decodable {
     }
 }
 
+struct AIExplanationResponse: Decodable {
+    let aiExplanation: String
+    let aiTip: String
+
+    enum CodingKeys: String, CodingKey {
+        case aiExplanation = "ai_explanation"
+        case aiTip         = "ai_tip"
+    }
+}
+
 // MARK: - API Client
 
 actor APIClient {
@@ -80,14 +85,14 @@ actor APIClient {
     private init() {
         // Read from Info.plist or use defaults for development
         let base = Bundle.main.object(forInfoDictionaryKey: "API_BASE_URL") as? String
-            ?? "http://172.20.10.2:3000"
+            ?? "http://10.67.49.195:3000"
         let key = Bundle.main.object(forInfoDictionaryKey: "DEVICE_API_KEY") as? String
             ?? "dev_api_key_for_ipad"
         self.baseURL = URL(string: base)!
         self.deviceKey = key
 
         let config = URLSessionConfiguration.default
-        config.timeoutIntervalForRequest = 30
+        config.timeoutIntervalForRequest = 60
         self.session = URLSession(configuration: config)
     }
 
@@ -118,7 +123,8 @@ actor APIClient {
         var req = URLRequest(url: baseURL.appendingPathComponent(path))
         req.setValue(deviceKey, forHTTPHeaderField: "X-Device-Key")
         let (data, resp) = try await session.data(for: req)
-        print(resp)
+        print("[APIClient] GET \(path) →", (resp as? HTTPURLResponse)?.statusCode ?? -1)
+        print("[APIClient] Body:", String(data: data, encoding: .utf8) ?? "<binary>")
         try validate(resp)
         return try decoder.decode(T.self, from: data)
     }
@@ -157,6 +163,12 @@ actor APIClient {
 
     func submitSession(_ payload: SubmitSessionPayload) async throws -> APISessionResult {
         try await post("/api/v1/sessions", body: payload)
+    }
+
+    func fetchAIExplanation(questionId: UUID) async throws -> AIExplanationResponse {
+        try await get(
+            "/api/v1/questions/\(questionId.uuidString.lowercased())/explain"
+        )
     }
 }
 

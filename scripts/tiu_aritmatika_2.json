@@ -1,0 +1,1210 @@
+{
+  "quiz": {
+    "title": "TIU – Aritmatika (Set 2)",
+    "description": "Selesaikan soal-soal operasi hitung, pecahan, persentase, dan bilangan berikut ini.",
+    "category": "TIU",
+    "time_limit": 25
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{\\text{7}}{\\text{8}} + \\frac{\\text{3}}{\\text{4}}$ adalah:",
+      "position": 1,
+      "explanation": "KPK dari 8 dan 4 adalah 8. $\\frac{\\text{7}}{\\text{8}} + \\frac{\\text{6}}{\\text{8}} = \\frac{\\text{13}}{\\text{8}} = \\text{1}\\frac{\\text{5}}{\\text{8}}$.",
+      "tip": "Jika salah satu penyebut adalah kelipatan dari yang lain, cukup konversi pecahan yang penyebutnya lebih kecil saja. Di sini 4 adalah faktor dari 8, jadi konversi 3/4 menjadi 6/8. Langsung: 7/8 + 6/8 = 13/8 = 1 5/8. Tidak perlu mencari KPK dari awal karena penyebut yang lebih besar sudah menjadi KPK-nya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{10}}{\\text{12}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "$\\text{1}\\frac{\\text{5}}{\\text{8}}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "$\\frac{\\text{11}}{\\text{8}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "$\\text{1}\\frac{\\text{3}}{\\text{8}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "$\\text{1}\\frac{\\text{1}}{\\text{2}}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah 45% dari 360?",
+      "position": 2,
+      "explanation": "$\\frac{\\text{45}}{\\text{100}} \\times \\text{360} = \\frac{\\text{45} \\times \\text{360}}{\\text{100}} = \\frac{\\text{16200}}{\\text{100}} = \\text{162}$.",
+      "tip": "Gunakan trik 50% dikurangi 5%. 50% dari 360 = 180. 5% dari 360 = 18. Maka 45% = 180 - 18 = 162. Cara ini lebih cepat dari memecah dari 10% karena 45% sangat dekat dengan 50%. Secara umum: jika persentase mendekati 50%, gunakan 50% ± selisihnya. Jika mendekati 100%, gunakan 100% - sisa.",
+      "options": [
+        {
+          "label": "A",
+          "content": "148",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "152",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "162",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "172",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "180",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{\\text{2}}{\\text{3}} \\times \\frac{\\text{9}}{\\text{4}}$ adalah:",
+      "position": 3,
+      "explanation": "$\\frac{\\text{2}}{\\text{3}} \\times \\frac{\\text{9}}{\\text{4}} = \\frac{\\text{18}}{\\text{12}} = \\frac{\\text{3}}{\\text{2}} = \\text{1}\\frac{\\text{1}}{\\text{2}}$.",
+      "tip": "Lakukan cross-cancel (penyederhanaan silang) sebelum mengalikan untuk menghindari angka besar. 2 dan 4 → bagi keduanya dengan 2: jadi 1 dan 2. 3 dan 9 → bagi keduanya dengan 3: jadi 1 dan 3. Hasil: 1/1 × 3/2 = 3/2 = 1½. Cross-cancel bisa dilakukan antara pembilang pecahan pertama dengan penyebut pecahan kedua, dan sebaliknya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{2}}{\\text{3}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "$\\text{1}\\frac{\\text{1}}{\\text{2}}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "$\\frac{\\text{6}}{\\text{7}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "$\\text{2}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "$\\text{1}\\frac{\\text{1}}{\\text{3}}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{\\text{5}}{\\text{6}} - \\frac{\\text{1}}{\\text{4}}$ adalah:",
+      "position": 4,
+      "explanation": "KPK dari 6 dan 4 adalah 12. $\\frac{\\text{10}}{\\text{12}} - \\frac{\\text{3}}{\\text{12}} = \\frac{\\text{7}}{\\text{12}}$.",
+      "tip": "Untuk pengurangan dua pecahan a/b - c/d, gunakan rumus langsung: (ad - bc) / bd, lalu sederhanakan. Untuk 5/6 - 1/4: (5×4 - 1×6) / (6×4) = (20-6)/24 = 14/24 = 7/12. Cara ini menghilangkan langkah mencari KPK. Ingat: hasilnya mungkin perlu disederhanakan, periksa apakah pembilang dan penyebut memiliki faktor persekutuan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{4}}{\\text{2}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "$\\frac{\\text{1}}{\\text{6}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "$\\frac{\\text{7}}{\\text{12}}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "$\\frac{\\text{5}}{\\text{12}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "$\\frac{\\text{2}}{\\text{3}}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah 60% dari 250?",
+      "position": 5,
+      "explanation": "$\\frac{\\text{60}}{\\text{100}} \\times \\text{250} = \\text{0,6} \\times \\text{250} = \\text{150}$.",
+      "tip": "60% = 3/5. Maka 3/5 × 250 = 3 × 50 = 150. Mengubah persentase menjadi pecahan sederhana sering kali lebih mudah: 20%=1/5, 25%=1/4, 40%=2/5, 60%=3/5, 75%=3/4. Alternatif: 50% dari 250 = 125, tambah 10% dari 250 = 25. Jadi 60% = 125+25 = 150.",
+      "options": [
+        {
+          "label": "A",
+          "content": "120",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "130",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "140",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "150",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "160",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{\\text{3}}{\\text{5}} \\div \\frac{\\text{6}}{\\text{7}}$ adalah:",
+      "position": 6,
+      "explanation": "$\\frac{\\text{3}}{\\text{5}} \\div \\frac{\\text{6}}{\\text{7}} = \\frac{\\text{3}}{\\text{5}} \\times \\frac{\\text{7}}{\\text{6}} = \\frac{\\text{21}}{\\text{30}} = \\frac{\\text{7}}{\\text{10}}$.",
+      "tip": "Pembagian pecahan = balik pembagi lalu kalikan. 3/5 ÷ 6/7 = 3/5 × 7/6. Lalu cross-cancel: 3 dan 6 → jadi 1 dan 2. Hasil: 1/5 × 7/2 = 7/10. Jebakan umum: langsung mengalikan tanpa membalik pembagi, menghasilkan 3×6/5×7 = 18/35 (opsi A yang salah). Selalu balik pecahan kedua saat membagi.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{18}}{\\text{35}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "$\\frac{\\text{7}}{\\text{10}}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "$\\frac{\\text{9}}{\\text{14}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "$\\frac{\\text{6}}{\\text{10}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "$\\frac{\\text{14}}{\\text{15}}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{\\text{4}}{\\text{5}} - \\frac{\\text{2}}{\\text{3}}$ adalah:",
+      "position": 7,
+      "explanation": "KPK dari 5 dan 3 adalah 15. $\\frac{\\text{12}}{\\text{15}} - \\frac{\\text{10}}{\\text{15}} = \\frac{\\text{2}}{\\text{15}}$.",
+      "tip": "Rumus langsung a/b - c/d = (ad-bc)/bd. Untuk 4/5 - 2/3: (4×3 - 2×5)/(5×3) = (12-10)/15 = 2/15. Perhatikan bahwa 2 dan 15 tidak memiliki faktor persekutuan, jadi pecahan sudah dalam bentuk paling sederhana. Jika penyebut dua bilangan prima (seperti 5 dan 3), hasil bagi langsung adalah KPK-nya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{2}}{\\text{15}}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content": "$\\frac{\\text{2}}{\\text{2}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "$\\frac{\\text{1}}{\\text{5}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "$\\frac{\\text{6}}{\\text{15}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "$\\frac{\\text{2}}{\\text{8}}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah nilai dari $\\text{2}^{\\text{3}} \\times \\text{3}^{\\text{2}}$?",
+      "position": 8,
+      "explanation": "$\\text{2}^{\\text{3}} = \\text{8}$ dan $\\text{3}^{\\text{2}} = \\text{9}$. Maka $\\text{8} \\times \\text{9} = \\text{72}$.",
+      "tip": "Hafal pangkat kecil yang sering muncul: 2²=4, 2³=8, 2⁴=16, 2⁵=32, 3²=9, 3³=27, 4²=16, 5²=25. Dengan hafal tabel ini, soal pangkat diselesaikan dalam hitungan detik tanpa perhitungan. 2³×3² = 8×9 = 72. Tips mengalikan 8×9: (8×10)-8 = 80-8 = 72.",
+      "options": [
+        {
+          "label": "A",
+          "content": "36",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "48",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "60",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "72",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "90",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah nilai dari $\\sqrt{\\text{144}}$?",
+      "position": 9,
+      "explanation": "$\\sqrt{\\text{144}} = \\text{12}$, karena $\\text{12} \\times \\text{12} = \\text{144}$.",
+      "tip": "Hafal bilangan kuadrat sempurna: 1,4,9,16,25,36,49,64,81,100,121,144,169,196,225. Dengan menghafal daftar ini, soal √144 langsung dijawab 12 tanpa kalkulasi. Trik verifikasi cepat: jika kamu ragu apakah jawabannya 12 atau 13, cek 12²=144 vs 13²=169. 144 ada di daftar, jadi √144=12.",
+      "options": [
+        {
+          "label": "A",
+          "content": "11",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "12",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "13",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "14",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "16",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah 15% dari 600?",
+      "position": 10,
+      "explanation": "$\\frac{\\text{15}}{\\text{100}} \\times \\text{600} = \\text{0,15} \\times \\text{600} = \\text{90}$.",
+      "tip": "Pecah dari 10%: 10% dari 600 = 60. 5% = 30. Maka 15% = 60+30 = 90. Atau gunakan cara langsung: 600 × 15% = 600/100 × 15 = 6 × 15 = 90. Saat angka pokoknya kelipatan 100, cukup hapus dua nol lalu kalikan persentasenya: 600 → 6, lalu 6 × 15 = 90.",
+      "options": [
+        {
+          "label": "A",
+          "content": "60",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "75",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "90",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "105",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "120",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{\\text{1}}{\\text{3}} \\times \\frac{\\text{3}}{\\text{5}} \\times \\frac{\\text{5}}{\\text{7}}$ adalah:",
+      "position": 11,
+      "explanation": "$\\frac{\\text{1}}{\\text{3}} \\times \\frac{\\text{3}}{\\text{5}} \\times \\frac{\\text{5}}{\\text{7}} = \\frac{\\text{1} \\times \\text{3} \\times \\text{5}}{\\text{3} \\times \\text{5} \\times \\text{7}} = \\frac{\\text{15}}{\\text{105}} = \\frac{\\text{1}}{\\text{7}}$. Angka 3 dan 5 saling menghapus (cancel).",
+      "tip": "Ini adalah pola perkalian berantai (telescoping). Perhatikan: penyebut setiap pecahan sama dengan pembilang pecahan berikutnya (3, lalu 3; 5, lalu 5). Semua angka tengah saling cancel, tersisa hanya pembilang pertama (1) dan penyebut terakhir (7). Hasilnya langsung 1/7. Kenali pola ini saat melihat rantai pecahan a/b × b/c × c/d = a/d.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{1}}{\\text{7}}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content": "$\\frac{\\text{3}}{\\text{35}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "$\\frac{\\text{1}}{\\text{5}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "$\\frac{\\text{15}}{\\text{21}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "$\\frac{\\text{9}}{\\text{105}}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah 80% dari 75?",
+      "position": 12,
+      "explanation": "$\\frac{\\text{80}}{\\text{100}} \\times \\text{75} = \\text{0,8} \\times \\text{75} = \\text{60}$.",
+      "tip": "80% = 4/5. Maka 4/5 × 75 = 4 × 15 = 60. Kunci: bagi 75 dengan 5 dulu (=15), baru kalikan 4. Ini jauh lebih mudah dari 0,8 × 75. Alternatif: 80% = 100% - 20%. 20% dari 75 = 75/5 = 15. Maka 80% = 75-15 = 60. Metode komplemen (100%-p%) sangat berguna untuk persentase besar seperti 80%, 90%, 75%.",
+      "options": [
+        {
+          "label": "A",
+          "content": "55",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "60",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "65",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "70",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "72",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{\\text{3}}{\\text{4}} + \\frac{\\text{5}}{\\text{8}} - \\frac{\\text{1}}{\\text{2}}$ adalah:",
+      "position": 13,
+      "explanation": "KPK dari 4, 8, dan 2 adalah 8. $\\frac{\\text{6}}{\\text{8}} + \\frac{\\text{5}}{\\text{8}} - \\frac{\\text{4}}{\\text{8}} = \\frac{\\text{7}}{\\text{8}}$.",
+      "tip": "Saat ada lebih dari dua pecahan, cari KPK dari semua penyebut sekaligus. Penyebutnya 4, 8, 2 — semuanya faktor dari 8, jadi KPK = 8. Konversi semua: 3/4=6/8, 5/8=5/8, 1/2=4/8. Operasi: (6+5-4)/8 = 7/8. Tips: cari penyebut terbesar, periksa apakah penyebut lain adalah faktornya. Jika ya, penyebut terbesar adalah KPK-nya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{3}}{\\text{8}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "$\\frac{\\text{5}}{\\text{8}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "$\\frac{\\text{7}}{\\text{8}}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "$\\frac{\\text{9}}{\\text{8}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "$\\frac{\\text{11}}{\\text{8}}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah 40% dari 325?",
+      "position": 14,
+      "explanation": "$\\frac{\\text{40}}{\\text{100}} \\times \\text{325} = \\text{0,4} \\times \\text{325} = \\text{130}$.",
+      "tip": "40% = 2/5. Maka 2/5 × 325 = 2 × 65 = 130. Kunci: bagi 325 dengan 5 dulu (=65), baru kalikan 2. Ini menghindari desimal. Verifikasi cepat: 10% dari 325 = 32,5; maka 40% = 4 × 32,5 = 130. Pilih metode yang menghasilkan angka bulat lebih awal untuk mengurangi risiko salah hitung.",
+      "options": [
+        {
+          "label": "A",
+          "content": "110",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "120",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "125",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "130",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "140",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah nilai dari $\\sqrt{\\text{25} \\times \\text{16}}$?",
+      "position": 15,
+      "explanation": "$\\sqrt{\\text{25} \\times \\text{16}} = \\sqrt{\\text{400}} = \\text{20}$. Atau bisa juga: $\\sqrt{\\text{25}} \\times \\sqrt{\\text{16}} = \\text{5} \\times \\text{4} = \\text{20}$.",
+      "tip": "Gunakan sifat: √(a × b) = √a × √b. Jadi √(25×16) = √25 × √16 = 5 × 4 = 20. Lebih cepat dari menghitung 25×16=400 dulu. Sifat ini berlaku untuk perkalian, BUKAN penjumlahan: √(a+b) ≠ √a + √b. Contoh jebakan soal lain: √(36+64) ≠ 6+8. Harus tambahkan dulu baru akar.",
+      "options": [
+        {
+          "label": "A",
+          "content": "10",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "15",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "20",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "25",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "40",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{\\text{5}}{\\text{6}} \\times \\frac{\\text{12}}{\\text{25}}$ adalah:",
+      "position": 16,
+      "explanation": "$\\frac{\\text{5}}{\\text{6}} \\times \\frac{\\text{12}}{\\text{25}} = \\frac{\\text{5} \\times \\text{12}}{\\text{6} \\times \\text{25}} = \\frac{\\text{60}}{\\text{150}} = \\frac{\\text{2}}{\\text{5}}$.",
+      "tip": "Cross-cancel sebelum mengalikan. 5 (pembilang pertama) dan 25 (penyebut kedua) → bagi dengan 5: jadi 1 dan 5. 6 (penyebut pertama) dan 12 (pembilang kedua) → bagi dengan 6: jadi 1 dan 2. Sisa: 1/1 × 2/5 = 2/5. Tanpa cross-cancel hasilnya 60/150 yang masih harus disederhanakan, lebih rawan salah.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{60}}{\\text{150}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "$\\frac{\\text{2}}{\\text{5}}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "$\\frac{\\text{5}}{\\text{12}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "$\\frac{\\text{1}}{\\text{2}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "$\\frac{\\text{12}}{\\text{25}}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah 75% dari 96?",
+      "position": 17,
+      "explanation": "$\\frac{\\text{75}}{\\text{100}} \\times \\text{96} = \\frac{\\text{3}}{\\text{4}} \\times \\text{96} = \\text{3} \\times \\text{24} = \\text{72}$.",
+      "tip": "75% = 3/4. Untuk 3/4 × 96: bagi 96 dengan 4 dulu (=24), baru kalikan 3 (=72). Selalu konversi 75% ke 3/4 karena pembagian dengan 4 lebih mudah dari perkalian desimal 0,75. Trik serupa: 25%=1/4 (bagi 4), 50%=1/2 (bagi 2), 33,3%=1/3 (bagi 3). Hafal konversi persen-pecahan ini untuk mempercepat hitungan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "64",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "68",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "70",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "72",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "80",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{\\text{7}}{\\text{9}} - \\frac{\\text{2}}{\\text{3}}$ adalah:",
+      "position": 18,
+      "explanation": "KPK dari 9 dan 3 adalah 9. $\\frac{\\text{7}}{\\text{9}} - \\frac{\\text{6}}{\\text{9}} = \\frac{\\text{1}}{\\text{9}}$.",
+      "tip": "Karena 3 adalah faktor dari 9, KPK-nya langsung 9. Cukup konversi 2/3 menjadi 6/9. Maka 7/9 - 6/9 = 1/9. Jebakan soal ini: opsi E (2/9) muncul jika kamu mengurangi pembilang saja tanpa menyamakan penyebut (7-2=5... bukan, atau 7/9-2/9=5/9, juga salah). Penyebut HARUS disamakan sebelum mengurangi pembilang.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{5}}{\\text{6}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "$\\frac{\\text{1}}{\\text{9}}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "$\\frac{\\text{5}}{\\text{9}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "$\\frac{\\text{1}}{\\text{3}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "$\\frac{\\text{2}}{\\text{9}}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{\\text{3}}{\\text{8}} + \\frac{\\text{7}}{\\text{12}}$ adalah:",
+      "position": 19,
+      "explanation": "KPK dari 8 dan 12 adalah 24. $\\frac{\\text{9}}{\\text{24}} + \\frac{\\text{14}}{\\text{24}} = \\frac{\\text{23}}{\\text{24}}$.",
+      "tip": "Gunakan rumus langsung (ad+bc)/bd lalu sederhanakan. (3×12 + 7×8)/(8×12) = (36+56)/96 = 92/96. Sederhanakan: FPB(92,96)=4, jadi 92/96 = 23/24. Atau cari KPK(8,12): faktorisasi 8=2³, 12=2²×3, KPK=2³×3=24. Untuk penyebut yang tidak saling merupakan kelipatan, cari KPK via faktorisasi prima.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{10}}{\\text{20}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "$\\frac{\\text{11}}{\\text{24}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "$\\frac{\\text{17}}{\\text{24}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "$\\frac{\\text{23}}{\\text{24}}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "$\\frac{\\text{25}}{\\text{24}}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah 125% dari 80?",
+      "position": 20,
+      "explanation": "$\\frac{\\text{125}}{\\text{100}} \\times \\text{80} = \\text{1,25} \\times \\text{80} = \\text{100}$.",
+      "tip": "125% = 1 + 25% = 1 + 1/4. Jadi hasilnya = 80 + 80/4 = 80 + 20 = 100. Atau: 125% = 5/4, sehingga 5/4 × 80 = 5 × 20 = 100. Persen di atas 100% berarti hasilnya lebih besar dari angka asal. Jebakan: banyak siswa panik dengan persentase > 100. Ingat: 150%=1,5, 200%=2, 125%=1,25 — perlakukan seperti biasa.",
+      "options": [
+        {
+          "label": "A",
+          "content": "85",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "90",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "95",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "100",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "110",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah nilai dari $\\left(\\frac{\\text{3}}{\\text{4}}\\right)^{\\text{2}}$?",
+      "position": 21,
+      "explanation": "$\\left(\\frac{\\text{3}}{\\text{4}}\\right)^{\\text{2}} = \\frac{\\text{3}^{\\text{2}}}{\\text{4}^{\\text{2}}} = \\frac{\\text{9}}{\\text{16}}$.",
+      "tip": "Pangkat pada pecahan berlaku pada pembilang DAN penyebut secara terpisah: (a/b)ⁿ = aⁿ/bⁿ. Jadi (3/4)² = 3²/4² = 9/16. Jebakan umum: mengalikan penyebut saja atau hanya pembilang saja. Ingat: pangkat harus diterapkan ke seluruh pecahan, bukan hanya satu bagian.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{3}}{\\text{8}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "$\\frac{\\text{6}}{\\text{8}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "$\\frac{\\text{9}}{\\text{16}}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "$\\frac{\\text{3}}{\\text{4}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "$\\frac{\\text{9}}{\\text{8}}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{\\text{4}}{\\text{5}} + \\frac{\\text{3}}{\\text{10}} - \\frac{\\text{7}}{\\text{20}}$ adalah:",
+      "position": 22,
+      "explanation": "KPK dari 5, 10, dan 20 adalah 20. $\\frac{\\text{16}}{\\text{20}} + \\frac{\\text{6}}{\\text{20}} - \\frac{\\text{7}}{\\text{20}} = \\frac{\\text{15}}{\\text{20}} = \\frac{\\text{3}}{\\text{4}}$.",
+      "tip": "Periksa penyebut terbesar (20) dan cek apakah yang lain adalah faktornya: 5 masuk ke 20? Ya. 10 masuk ke 20? Ya. Jadi KPK = 20 langsung. Konversi: 4/5=16/20, 3/10=6/20, 7/20=7/20. Operasi: (16+6-7)/20 = 15/20 = 3/4. Sederhanakan 15/20 dengan FPB=5: 15÷5=3, 20÷5=4.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{1}}{\\text{2}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "$\\frac{\\text{3}}{\\text{5}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "$\\frac{\\text{3}}{\\text{4}}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "$\\frac{\\text{4}}{\\text{5}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "$\\frac{\\text{9}}{\\text{10}}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah hasil dari 48 × 25%?",
+      "position": 23,
+      "explanation": "$\\text{48} \\times \\frac{\\text{25}}{\\text{100}} = \\text{48} \\times \\frac{\\text{1}}{\\text{4}} = \\text{12}$.",
+      "tip": "25% = 1/4, jadi mengalikan dengan 25% sama dengan membagi 4. 48 ÷ 4 = 12. Ini jauh lebih cepat dari 48 × 0,25. Hafal konversi persen ke pecahan sederhana: 10%=1/10, 20%=1/5, 25%=1/4, 33,3%=1/3, 50%=1/2, 75%=3/4. Saat melihat angka-angka ini dalam soal, langsung konversi ke pecahan sebelum menghitung.",
+      "options": [
+        {
+          "label": "A",
+          "content": "8",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "10",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "12",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "14",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "16",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah nilai dari $\\sqrt{\\text{36} + \\text{64}}$?",
+      "position": 24,
+      "explanation": "$\\sqrt{\\text{36} + \\text{64}} = \\sqrt{\\text{100}} = \\text{10}$. Perhatikan bahwa $\\sqrt{\\text{36}} + \\sqrt{\\text{64}} = \\text{6} + \\text{8} = \\text{14} \\neq \\text{10}$. Akar harus dihitung setelah penjumlahan.",
+      "tip": "Akar tidak bisa didistribusikan ke penjumlahan: √(a+b) ≠ √a + √b. Harus selesaikan dulu di dalam tanda akar: 36+64=100, baru √100=10. Opsi D (14) adalah jebakan bagi yang mengerjakan √36+√64=6+8=14. Bedakan dengan perkalian: √(a×b) = √a × √b (ini boleh). Ingat: akar hanya bisa dipisah untuk perkalian, bukan penjumlahan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "8",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "10",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "12",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "14",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "15",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{\\text{2}}{\\text{3}} \\div \\frac{\\text{4}}{\\text{9}}$ adalah:",
+      "position": 25,
+      "explanation": "$\\frac{\\text{2}}{\\text{3}} \\div \\frac{\\text{4}}{\\text{9}} = \\frac{\\text{2}}{\\text{3}} \\times \\frac{\\text{9}}{\\text{4}} = \\frac{\\text{18}}{\\text{12}} = \\frac{\\text{3}}{\\text{2}} = \\text{1}\\frac{\\text{1}}{\\text{2}}$.",
+      "tip": "Balik pembagi lalu kalikan, kemudian cross-cancel. 2/3 ÷ 4/9 = 2/3 × 9/4. Cross-cancel: 3 dan 9 → 1 dan 3; 2 dan 4 → 1 dan 2. Hasil: 1×3/(1×2) = 3/2 = 1½. Opsi A (8/27) adalah hasil jika tidak membalik pembagi dan langsung mengalikan: 2×4/3×9 = 8/27 — kesalahan klasik. Selalu balik pecahan kedua saat operasi pembagian.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{8}}{\\text{27}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "$\\text{1}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "$\\text{1}\\frac{\\text{1}}{\\text{2}}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "$\\text{2}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "$\\text{2}\\frac{\\text{2}}{\\text{3}}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah 150% dari 60?",
+      "position": 26,
+      "explanation": "$\\frac{\\text{150}}{\\text{100}} \\times \\text{60} = \\text{1,5} \\times \\text{60} = \\text{90}$.",
+      "tip": "150% = 1 + 50% = 1 + 1/2. Jadi hasilnya = 60 + 60/2 = 60+30 = 90. Atau: 150% = 3/2, sehingga 3/2 × 60 = 3 × 30 = 90. Persen di atas 100% berarti kamu mengambil angka asli ditambah sebagian lagi. 150% dari X = X + 50% dari X. 200% dari X = 2X. 300% dari X = 3X.",
+      "options": [
+        {
+          "label": "A",
+          "content": "70",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "80",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "90",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "100",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "120",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah nilai dari $\\text{3}^{\\text{3}} - \\text{2}^{\\text{4}}$?",
+      "position": 27,
+      "explanation": "$\\text{3}^{\\text{3}} = \\text{27}$ dan $\\text{2}^{\\text{4}} = \\text{16}$. Maka $\\text{27} - \\text{16} = \\text{11}$.",
+      "tip": "Hafal pangkat dasar kecil: 2⁴=16, 2⁵=32, 3³=27, 3⁴=81, 4³=64, 5³=125. Dengan hafal ini, 3³-2⁴ = 27-16 = 11 diselesaikan dalam hitungan detik. Jebakan: opsi E (17) muncul jika salah menghitung 3³=30 (salah) atau 2⁴=10 (salah). Jangan hitung pangkat dengan penambahan berulang — hafal nilainya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "7",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "9",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "11",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "13",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "17",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Jika 30% dari suatu bilangan adalah 90, maka bilangan tersebut adalah:",
+      "position": 28,
+      "explanation": "Misalkan bilangan tersebut adalah x. Maka $\\frac{\\text{30}}{\\text{100}} \\times \\text{x} = \\text{90}$, sehingga $\\text{x} = \\frac{\\text{90} \\times \\text{100}}{\\text{30}} = \\frac{\\text{9000}}{\\text{30}} = \\text{300}$.",
+      "tip": "Rumus: jika p% dari x = nilai, maka x = nilai × (100/p). Disini: x = 90 × (100/30) = 90 × 10/3 = 300. Cara cepat lain: jika 30% = 90, maka 10% = 30, dan 100% = 300. Teknik ini (cari 1% atau 10% dulu, lalu kalikan) sangat andal untuk soal tipe ini. Jebakan: jangan menjawab 90+30%=117 — itu bukan yang ditanyakan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "270",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "280",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "290",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "300",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "310",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{\\text{7}}{\\text{8}} \\times \\frac{\\text{16}}{\\text{21}}$ adalah:",
+      "position": 29,
+      "explanation": "$\\frac{\\text{7}}{\\text{8}} \\times \\frac{\\text{16}}{\\text{21}} = \\frac{\\text{7} \\times \\text{16}}{\\text{8} \\times \\text{21}} = \\frac{\\text{112}}{\\text{168}} = \\frac{\\text{2}}{\\text{3}}$. (Bagi pembilang dan penyebut dengan 56.)",
+      "tip": "Cross-cancel sebelum mengalikan. 7 (pembilang) dan 21 (penyebut) → bagi 7: jadi 1 dan 3. 8 (penyebut) dan 16 (pembilang) → bagi 8: jadi 1 dan 2. Sisa: 1×2/(1×3) = 2/3. Tanpa cross-cancel hasilnya 112/168 yang butuh FPB=56 untuk disederhanakan — rumit dan rawan salah. Cross-cancel selalu lebih efisien.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{1}}{\\text{2}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "$\\frac{\\text{7}}{\\text{21}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "$\\frac{\\text{2}}{\\text{3}}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "$\\frac{\\text{7}}{\\text{12}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "$\\frac{\\text{4}}{\\text{6}}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah 55% dari 200?",
+      "position": 30,
+      "explanation": "$\\frac{\\text{55}}{\\text{100}} \\times \\text{200} = \\text{0,55} \\times \\text{200} = \\text{110}$.",
+      "tip": "Gunakan 50% sebagai jangkar. 50% dari 200 = 100. 5% dari 200 = 10. Maka 55% = 100+10 = 110. Strategi jangkar 50%: jika persentase mendekati 50%, hitung 50% dulu lalu tambah/kurangi sisanya. Ini berlaku umum: 45%=50%-5%, 55%=50%+5%, 60%=50%+10%, 40%=50%-10%. Jauh lebih cepat dari perkalian langsung.",
+      "options": [
+        {
+          "label": "A",
+          "content": "100",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "105",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "110",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "115",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "120",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    }
+  ]
+}

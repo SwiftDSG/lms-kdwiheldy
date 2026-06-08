@@ -1,36 +1,36 @@
 "use client";
 
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { deleteQuizSet, getQuizSets, togglePublish } from "@/lib/api";
+import { deleteQuiz, getQuizzes, togglePublish } from "@/lib/api";
 import Link from "next/link";
 import { Plus, Pencil, Trash2, Eye, EyeOff } from "lucide-react";
 import toast from "react-hot-toast";
-import type { QuizSet } from "@/types";
+import type { Quiz } from "@/types";
 
 export default function QuizSetsPage() {
   const qc = useQueryClient();
   const { data: quizSets = [], isLoading } = useQuery({
-    queryKey: ["quiz-sets"],
-    queryFn: getQuizSets,
+    queryKey: ["quizzes"],
+    queryFn: getQuizzes,
   });
 
   const toggleMut = useMutation({
     mutationFn: (id: string) => togglePublish(id),
     onSuccess: () => {
-      qc.invalidateQueries({ queryKey: ["quiz-sets"] });
+      qc.invalidateQueries({ queryKey: ["quizzes"] });
       toast.success("Status updated");
     },
   });
 
   const deleteMut = useMutation({
-    mutationFn: (id: string) => deleteQuizSet(id),
+    mutationFn: (id: string) => deleteQuiz(id),
     onSuccess: () => {
-      qc.invalidateQueries({ queryKey: ["quiz-sets"] });
+      qc.invalidateQueries({ queryKey: ["quizzes"] });
       toast.success("Deleted");
     },
   });
 
-  const handleDelete = (qs: QuizSet) => {
+  const handleDelete = (qs: Quiz) => {
     if (!confirm(`Delete "${qs.title}"? This cannot be undone.`)) return;
     deleteMut.mutate(qs.id);
   };
@@ -41,7 +41,7 @@ export default function QuizSetsPage() {
         <h1 className="text-2xl font-bold">Quiz Sets</h1>
         <Link
           href="/quiz-sets/new"
-          className="flex items-center gap-2 bg-brand-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-brand-700 transition-colors"
+          className="flex items-center gap-2 bg-brand-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-brand-700 transition-colors"
         >
           <Plus className="w-4 h-4" />
           New Quiz Set
@@ -51,12 +51,12 @@ export default function QuizSetsPage() {
       {isLoading ? (
         <p className="text-gray-400">Loading...</p>
       ) : quizSets.length === 0 ? (
-        <div className="bg-white rounded-xl border border-gray-200 p-12 text-center text-gray-400">
+        <div className="bg-white rounded-xl border-3 border-brand-600 p-12 text-center text-gray-400">
           <p className="text-lg mb-2">No quiz sets yet</p>
           <p className="text-sm">Create your first quiz set to get started.</p>
         </div>
       ) : (
-        <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+        <div className="bg-white rounded-xl border-3 border-brand-600 overflow-hidden">
           <table className="w-full text-sm">
             <thead className="bg-gray-50 text-gray-500 text-left">
               <tr>
@@ -72,7 +72,7 @@ export default function QuizSetsPage() {
                 <tr key={qs.id} className="hover:bg-gray-50">
                   <td className="px-4 py-3 font-medium">{qs.title}</td>
                   <td className="px-4 py-3">
-                    <span className="px-2 py-0.5 rounded bg-blue-50 text-blue-700 text-xs font-medium">
+                    <span className="px-2 py-0.5 rounded bg-brand-50 text-brand-600 text-xs font-semibold">
                       {qs.category}
                     </span>
                   </td>
@@ -94,14 +94,14 @@ export default function QuizSetsPage() {
                     <div className="flex items-center gap-2">
                       <Link
                         href={`/quiz-sets/${qs.id}`}
-                        className="p-1.5 rounded hover:bg-gray-100 text-gray-500"
+                        className="p-1.5 border-3 border-brand-600 rounded-md text-brand-600 hover:bg-brand-50"
                         title="Edit"
                       >
                         <Pencil className="w-4 h-4" />
                       </Link>
                       <button
                         onClick={() => toggleMut.mutate(qs.id)}
-                        className="p-1.5 rounded hover:bg-gray-100 text-gray-500"
+                        className="p-1.5 border-3 border-brand-600 rounded-md text-brand-600 hover:bg-brand-50"
                         title={qs.is_published ? "Unpublish" : "Publish"}
                       >
                         {qs.is_published ? (
@@ -112,7 +112,7 @@ export default function QuizSetsPage() {
                       </button>
                       <button
                         onClick={() => handleDelete(qs)}
-                        className="p-1.5 rounded hover:bg-red-50 text-gray-500 hover:text-red-600"
+                        className="p-1.5 border-3 border-danger rounded-md text-danger hover:bg-red-50"
                         title="Delete"
                       >
                         <Trash2 className="w-4 h-4" />

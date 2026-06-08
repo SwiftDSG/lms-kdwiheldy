@@ -39,7 +39,6 @@ fn make_options(body_opts: Option<&[crate::models::quiz::CreateOption]>) -> Vec<
             label: o.label.clone(),
             content: o.content.clone(),
             score: o.score,
-            is_correct: o.is_correct,
         })
         .collect()
 }
@@ -68,6 +67,7 @@ pub async fn admin_list(
                     "id": question.id,
                     "quiz_id": quiz_id,
                     "type": question.r#type,
+                    "subtype": question.subtype,
                     "content": question.content,
                     "image_url": question.image_url,
                     "explanation": question.explanation,
@@ -100,12 +100,12 @@ pub async fn admin_get(
         "label": o.label,
         "content": o.content,
         "score": o.score,
-        "is_correct": o.is_correct,
     })).collect();
     Ok(Json(serde_json::json!({
         "id": q.id,
         "quiz_id": quiz_id,
         "type": q.r#type,
+        "subtype": q.subtype,
         "content": q.content,
         "image_url": q.image_url,
         "explanation": q.explanation,
@@ -130,6 +130,7 @@ pub async fn admin_create(
     let question = Question {
         id: Uuid::new_v4().to_string(),
         r#type: body.r#type.clone(),
+        subtype: body.subtype.clone(),
         content: body.content.clone(),
         image_url: body.image_url.clone(),
         explanation: body.explanation.clone(),
@@ -169,6 +170,7 @@ pub async fn admin_update(
         .ok_or_else(|| AppError::NotFound("Question not found".into()))?;
 
     if let Some(t) = body.r#type      { q.r#type = t; }
+    if let Some(s) = body.subtype     { q.subtype = s; }
     if let Some(c) = body.content     { q.content = c; }
     if let Some(u) = body.image_url   { q.image_url = if u.is_empty() { None } else { Some(u) }; }
     if let Some(e) = body.explanation { q.explanation = if e.is_empty() { None } else { Some(e) }; }
@@ -218,6 +220,7 @@ pub async fn admin_bulk_import(
         quiz.questions.push(Question {
             id: Uuid::new_v4().to_string(),
             r#type: bq.r#type.clone(),
+            subtype: bq.subtype.clone(),
             content: bq.content.clone(),
             image_url: bq.image_url.clone(),
             explanation: bq.explanation.clone(),
@@ -235,6 +238,124 @@ pub async fn admin_bulk_import(
         "quiz_id": quiz_id,
         "questions_imported": count,
     })))
+}
+
+/// GET /api/v1/questions/:id/explain — generate an in-depth AI explanation via RAG + Ollama.
+pub async fn explain(
+    State(state): State<AppState>,
+    Path(question_id): Path<String>,
+) -> Result<Json<serde_json::Value>> {
+    let quiz = quiz_containing(&state, &question_id).await?;
+    let q = quiz
+        .questions
+        .iter()
+        .find(|q| q.id == question_id)
+        .ok_or_else(|| AppError::NotFound("Question not found".into()))?;
+
+    // Short-circuit for subtypes where the LLM cannot add value (e.g. image questions
+    // where the LLM cannot see the image). Return the pre-written explanation directly.
+    if !q.subtype.config().needs_ml_explain {
+        return Ok(Json(serde_json::json!({
+            "ai_explanation": q.explanation.as_deref().unwrap_or(""),
+            "ai_tip": "",
+        })));
+    }
+
+    let correct_label = q.options
+        .iter()
+        .max_by_key(|o| o.score)
+        .map(|o| o.label.clone())
+        .unwrap_or_default();
+
+    let subtype_str = serde_json::to_value(&q.subtype)
+        .ok()
+        .and_then(|v| v.as_str().map(|s| s.to_string()))
+        .unwrap_or_default();
+
+    let req = crate::ml_client::ExplainRequest {
+        question: q.content.clone(),
+        options: q.options.iter().map(|o| crate::ml_client::QuestionOption {
+            label: o.label.clone(),
+            content: o.content.clone(),
+        }).collect(),
+        correct_label,
+        subtype: subtype_str,
+    };
+
+    tracing::info!(
+        question = %req.question,
+        subtype  = %req.subtype,
+        options  = ?req.options.iter().map(|o| format!("{}. {}", o.label, o.content)).collect::<Vec<_>>(),
+        correct  = %req.correct_label,
+        "── [explain] input from iPad ──────────────────────────────────────────"
+    );
+
+    let resp = state.ml.explain(&req, 3).await?;
+
+    tracing::info!(
+        explanation = %resp.explanation,
+        tip         = %resp.tip,
+        "── [explain] LLM response ─────────────────────────────────────────────"
+    );
+
+    Ok(Json(serde_json::json!({
+        "ai_explanation": resp.explanation,
+        "ai_tip": resp.tip,
+    })))
+}
+
+/// POST /api/v1/admin/questions/generate — generate one question similar to a source question.
+pub async fn admin_generate(
+    State(state): State<AppState>,
+    Json(body): Json<AdminGenerateBody>,
+) -> Result<Json<serde_json::Value>> {
+    let quiz = quiz_containing(&state, &body.source_question_id).await?;
+
+    let source = quiz
+        .questions
+        .iter()
+        .find(|q| q.id == body.source_question_id)
+        .ok_or_else(|| AppError::NotFound("Source question not found".into()))?;
+
+    let correct_label = source
+        .options
+        .iter()
+        .max_by_key(|o| o.score)
+        .map(|o| o.label.clone())
+        .unwrap_or_default();
+
+    let subtype_str = serde_json::to_value(&source.subtype)
+        .ok()
+        .and_then(|v| v.as_str().map(|s| s.to_string()))
+        .unwrap_or_default();
+
+    let req = crate::ml_client::GenerateRequest {
+        source_question:      source.content.clone(),
+        source_options:       source.options.iter().map(|o| crate::ml_client::GenerateOption {
+            label:  o.label.clone(),
+            content: o.content.clone(),
+            score:  o.score,
+        }).collect(),
+        source_correct_label: correct_label,
+        category:             quiz.category.clone(),
+        subtype:              subtype_str,
+    };
+
+    let generated = state.ml.generate(&req).await?;
+    Ok(Json(serde_json::json!({ "question": generated })))
+}
+
+/// POST /api/v1/admin/questions/generate/analogi — generate one analogi gambar question via ML pipeline.
+pub async fn admin_generate_analogi(
+    State(state): State<AppState>,
+) -> Result<Json<serde_json::Value>> {
+    let generated = state.ml.generate_analogi().await?;
+    Ok(Json(serde_json::json!({ "question": generated })))
+}
+
+#[derive(serde::Deserialize)]
+pub struct AdminGenerateBody {
+    pub source_question_id: String,
 }
 
 // ── Validation ────────────────────────────────────────────────────────────────
@@ -256,3 +377,5 @@ fn validate_category(cat: &str) -> Result<()> {
         )),
     }
 }
+
+// Subtype validation is handled at deserialization time by serde via QuestionSubtype enum.

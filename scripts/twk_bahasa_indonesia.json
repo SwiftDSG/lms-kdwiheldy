@@ -1,0 +1,790 @@
+{
+  "quiz": {
+    "title": "TWK - Bahasa Indonesia",
+    "description": "Latihan soal Tes Wawasan Kebangsaan tentang bahasa Indonesia, kedudukan dan fungsi bahasa negara, ejaan, kalimat efektif, dan kemampuan berbahasa Indonesia yang baik dan benar.",
+    "category": "TWK",
+    "time_limit": 20
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "Bahasa Indonesia berasal dari bahasa...",
+      "position": 1,
+      "explanation": "Bahasa Indonesia berasal dari bahasa Melayu, khususnya bahasa Melayu Riau yang digunakan sebagai lingua franca di Nusantara sejak berabad-abad lalu. Bahasa Melayu dipilih karena sudah tersebar luas dan tidak dimiliki secara eksklusif oleh satu suku.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Bahasa Jawa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Bahasa Sansekerta",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Bahasa Melayu",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Bahasa Belanda",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Bahasa Arab",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Peristiwa Sumpah Pemuda 28 Oktober 1928 menetapkan bahasa Indonesia sebagai...",
+      "position": 2,
+      "explanation": "Dalam Sumpah Pemuda, para pemuda berikrar 'menjunjung bahasa persatuan, bahasa Indonesia.' Ini menegaskan bahasa Indonesia sebagai bahasa persatuan (bahasa nasional), bukan hanya bahasa satu suku.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Bahasa resmi pemerintahan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Bahasa persatuan (bahasa nasional)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Satu-satunya bahasa yang boleh digunakan di Indonesia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Bahasa wajib di semua sekolah Nusantara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Bahasa resmi ASEAN",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berdasarkan UUD 1945 Pasal 36, bahasa negara adalah...",
+      "position": 3,
+      "explanation": "Pasal 36 UUD 1945 menyatakan: 'Bahasa negara ialah Bahasa Indonesia.' Bahasa Indonesia berkedudukan sebagai bahasa negara (official language) yang digunakan dalam urusan resmi pemerintahan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Bahasa Jawa karena paling banyak penuturnya",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Bahasa Indonesia",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Bahasa Melayu dan Bahasa Indonesia secara bersama",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Semua bahasa daerah secara setara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Bahasa Inggris sebagai bahasa internasional",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Ejaan Bahasa Indonesia yang berlaku saat ini adalah...",
+      "position": 4,
+      "explanation": "Ejaan yang berlaku saat ini adalah PUEBI (Pedoman Umum Ejaan Bahasa Indonesia), yang ditetapkan melalui Permendikbud No. 50 Tahun 2015 menggantikan EYD (Ejaan Yang Disempurnakan) yang berlaku sejak 1972.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Ejaan Republik (1947)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Ejaan Soewandi (1947)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "EYD (Ejaan Yang Disempurnakan, 1972)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "PUEBI (Pedoman Umum Ejaan Bahasa Indonesia, 2015)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Ejaan Van Ophuijsen (1901)",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kalimat yang efektif memiliki ciri-ciri antara lain...",
+      "position": 5,
+      "explanation": "Kalimat efektif memiliki ciri: (1) mengandung unsur-unsur penting minimal S-P, (2) hemat kata (tidak menggunakan kata yang berlebihan), (3) logis dan tidak ambigu, (4) ejaan dan tanda baca benar, (5) pilihan kata tepat (diksi).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Menggunakan kata-kata yang panjang dan baku agar terlihat formal",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mengandung S-P minimal, hemat kata, logis, tidak ambigu, dan pilihan kata tepat",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Selalu menggunakan kalimat pasif untuk menghindari menyebut pelaku",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Menggunakan kata sambung sebanyak mungkin agar hubungan jelas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Selalu terdiri dari lebih dari 20 kata untuk kelengkapan informasi",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kata 'apotek' merupakan kata baku dalam bahasa Indonesia. Bentuk yang TIDAK baku dari kata tersebut adalah...",
+      "position": 6,
+      "explanation": "Bentuk baku adalah 'apotek', bukan 'apotik'. Ini adalah salah satu kata yang sering salah ditulis. Demikian pula 'teknik' (bukan 'tehnik'), 'atlet' (bukan 'atlit'), 'izin' (bukan 'ijin').",
+      "options": [
+        {
+          "label": "A",
+          "content": "Apotek",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Apotik",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Apotekar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Apoteker",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Apotek 24 jam",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Dalam penulisan surat resmi, bagian surat yang berisi tujuan dibuatnya surat disebut...",
+      "position": 7,
+      "explanation": "Dalam surat resmi, bagian yang menjelaskan tujuan atau maksud penulisan surat disebut 'isi surat' atau 'tubuh surat', khususnya bagian 'perihal/hal' yang merangkum pokok surat, dan isi yang menjelaskan secara rinci.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kepala surat (kop surat)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Lampiran",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Isi surat (tubuh surat)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Salam pembuka",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tembusan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kata 'andal' bersinonim dengan kata...",
+      "position": 8,
+      "explanation": "Kata 'andal' berarti dapat dipercaya, kuat, teguh, atau kompeten. Sinonimnya adalah 'handal' (yang sebenarnya tidak baku), 'tangguh', 'terpercaya', 'reliabel'. Dalam KBBI, 'andal' adalah bentuk baku.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Lemah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tangguh dan terpercaya",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Biasa saja",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Ragu-ragu",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Sombong",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Penulisan yang benar untuk angka dalam kalimat 'Pertemuan ini dihadiri ___ orang peserta' (jika jumlahnya 25) adalah...",
+      "position": 9,
+      "explanation": "Berdasarkan PUEBI, bilangan yang dapat dinyatakan dengan dua kata ditulis dengan huruf (misal: dua puluh lima). Bilangan yang lebih dari dua kata dapat ditulis dengan angka. Namun, angka yang mengawali kalimat harus ditulis dengan huruf.",
+      "options": [
+        {
+          "label": "A",
+          "content": "25 (angka Arab)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "dua puluh lima (huruf)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "XXV (angka Romawi)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "dua-puluh-lima (dengan tanda hubung)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "25 atau dua puluh lima sama saja benar",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kata serapan yang benar dari bahasa Inggris 'technique' dalam bahasa Indonesia adalah...",
+      "position": 10,
+      "explanation": "Kata 'technique' diserap menjadi 'teknik' dalam bahasa Indonesia (bukan 'tehnik'). Ini mengikuti kaidah penyerapan bahasa Inggris ke Indonesia. Contoh lain: 'system' → 'sistem', 'quality' → 'kualitas'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "tehnik",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "teknik",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "tekhnique",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "tekhnik",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "téknik",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Peribahasa 'Air beriak tanda tak dalam' memiliki makna...",
+      "position": 11,
+      "explanation": "Peribahasa 'Air beriak tanda tak dalam' bermakna orang yang banyak bicara/sombong biasanya kurang berilmu atau kurang berpengetahuan. Air yang dalam tidak beriak, sedangkan yang dangkal mudah beriak.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Orang yang rajin bekerja akan mendapat hasil yang baik",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Orang yang banyak bicara/sombong biasanya kurang berpengetahuan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Orang yang pendiam biasanya punya banyak musuh",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Sesuatu yang mudah goyah tidak bisa diandalkan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Perbedaan kemampuan antara yang tua dan yang muda",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kalimat 'Para hadirin sekalian dimohon untuk duduk' mengandung kesalahan karena...",
+      "position": 12,
+      "explanation": "Kalimat tersebut mengandung pleonasme (kata berlebihan). 'Para' dan 'sekalian' keduanya menunjukkan jamak, sehingga penggunaannya bersama adalah pemborosan kata. Cukup gunakan 'Para hadirin' atau 'Hadirin sekalian'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kata 'dimohon' seharusnya 'diminta'",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mengandung pleonasme: 'para' dan 'sekalian' keduanya menunjukkan jamak",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kata 'hadirin' sudah tepat dan tidak perlu diperbaiki",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kalimat tersebut sudah benar dan tidak ada kesalahan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kata 'untuk' seharusnya dihilangkan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Penggunaan huruf kapital yang benar terdapat pada kalimat...",
+      "position": 13,
+      "explanation": "Berdasarkan PUEBI, nama jabatan yang diikuti nama orang ditulis dengan huruf kapital. 'Presiden Joko Widodo' benar karena 'Presiden' diikuti nama orang. Namun 'presiden meresmikan...' (tanpa nama) ditulis huruf kecil.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Dia adalah seorang Dokter yang berprestasi.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pertemuan itu dipimpin oleh Presiden Joko Widodo.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kami pergi ke Arah Barat mengikuti Matahari.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Dia bekerja di perusahaan sebagai Manajer Keuangan.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Buku Itu sangat Menarik untuk dibaca.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Antonim dari kata 'transparan' adalah...",
+      "position": 14,
+      "explanation": "Antonim (lawan kata) dari 'transparan' adalah 'tertutup' atau 'tidak tembus pandang' dalam arti harfiah, dan dalam konteks pemerintahan berarti 'tersembunyi', 'tidak terbuka', atau 'buram'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Bening",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Jernih",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Tertutup/buram",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Terbuka",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Jelas",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Penulisan tanda baca yang benar terdapat pada kalimat...",
+      "position": 15,
+      "explanation": "Tanda koma digunakan sebelum kata penghubung 'tetapi', 'melainkan', 'sedangkan' dalam kalimat majemuk setara yang menyatakan pertentangan. Contoh: 'Dia rajin belajar, tetapi nilainya tidak memuaskan.'",
+      "options": [
+        {
+          "label": "A",
+          "content": "Dia rajin belajar tetapi, nilainya tidak memuaskan.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Dia rajin belajar, tetapi nilainya tidak memuaskan.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Dia rajin belajar, tetapi, nilainya tidak memuaskan.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Dia rajin belajar tetapi nilainya; tidak memuaskan.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Dia rajin belajar: tetapi nilainya tidak memuaskan.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Majas personifikasi adalah majas yang...",
+      "position": 16,
+      "explanation": "Majas personifikasi adalah majas yang memberikan sifat-sifat manusia (benda mati atau abstrak seolah-olah berperilaku seperti manusia). Contoh: 'Angin berbisik lembut menyampaikan pesannya.'",
+      "options": [
+        {
+          "label": "A",
+          "content": "Membandingkan sesuatu dengan hal lain menggunakan kata 'seperti' atau 'bagai'",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Memberikan sifat atau perilaku manusia kepada benda mati atau konsep abstrak",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Melebih-lebihkan sesuatu untuk penekanan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Menyatakan sesuatu yang berlawanan dengan maksud sebenarnya",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Menggunakan kiasan berdasarkan hubungan sebab-akibat",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kedudukan bahasa Indonesia sebagai bahasa negara memiliki fungsi antara lain sebagai...",
+      "position": 17,
+      "explanation": "Sebagai bahasa negara, bahasa Indonesia berfungsi: (1) bahasa resmi kenegaraan, (2) bahasa pengantar pendidikan, (3) alat penghubung tingkat nasional, (4) alat pengembangan ilmu pengetahuan dan teknologi.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Bahasa resmi di semua lembaga internasional",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Bahasa resmi kenegaraan, pengantar pendidikan, dan pengembangan IPTEK",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pengganti semua bahasa daerah di Indonesia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Bahasa wajib yang harus digunakan di rumah tangga",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Bahasa gaul generasi muda Indonesia",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Paragraf yang baik memiliki karakteristik...",
+      "position": 18,
+      "explanation": "Paragraf yang baik harus memiliki: (1) satu ide pokok (kohesi tematik), (2) kalimat topik yang jelas, (3) kalimat-kalimat penjelas yang koheren (berhubungan logis), (4) kepaduan (koherensi) antar kalimat.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Minimal terdiri dari 10 kalimat untuk kelengkapan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Satu ide pokok, kalimat topik jelas, dan kalimat-kalimat penjelas yang koheren",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Selalu dimulai dengan kalimat tanya untuk menarik perhatian",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Menggunakan kata penghubung di setiap awal kalimat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Membahas lebih dari satu topik agar informatif",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Penulisan gelar akademik yang benar dalam kalimat adalah...",
+      "position": 19,
+      "explanation": "Berdasarkan PUEBI, gelar akademik yang mengikuti nama ditulis dengan huruf kapital diawali dan diakhiri tanda koma. Contoh: 'Ahmad Fauzi, S.H., M.H.' Tanda titik dipakai setelah setiap singkatan gelar.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Dr Ahmad Fauzi SH MH",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "dr. Ahmad Fauzi sh., m.h.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Ahmad Fauzi, S.H., M.H.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Ahmad Fauzi (SH, MH)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Ahmad Fauzi S.H M.H.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Dalam menyusun surat dinas resmi, urutan struktur surat yang benar adalah...",
+      "position": 20,
+      "explanation": "Struktur surat dinas resmi yang benar: (1) Kop surat, (2) Tanggal surat, (3) Nomor surat, (4) Lampiran, (5) Perihal/Hal, (6) Alamat tujuan, (7) Salam pembuka, (8) Isi surat (pembuka, isi, penutup), (9) Salam penutup, (10) Tanda tangan dan nama terang, (11) Tembusan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Isi surat → Kop surat → Alamat → Salam pembuka → Tanda tangan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kop surat → Tanggal → Nomor → Lampiran → Perihal → Alamat → Salam pembuka → Isi → Salam penutup → Tanda tangan → Tembusan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Salam pembuka → Kop surat → Isi → Nomor surat → Tanda tangan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Tanda tangan → Isi → Kop surat → Alamat → Salam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Nomor surat → Isi → Kop surat → Perihal → Tembusan → Tanda tangan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BAHASA_INDONESIA"
+    }
+  ]
+}

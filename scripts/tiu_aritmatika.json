@@ -1,0 +1,810 @@
+{
+  "quiz": {
+    "title": "TIU – Aritmatika",
+    "description": "Selesaikan soal-soal operasi hitung, pecahan, persentase, dan perbandingan berikut ini.",
+    "category": "TIU",
+    "time_limit": 25
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{\\text{3}}{\\text{4}} + \\frac{\\text{5}}{\\text{6}}$ adalah:",
+      "position": 1,
+      "explanation": "KPK dari 4 dan 6 adalah 12. $\\frac{\\text{3}}{\\text{4}} = \\frac{\\text{9}}{\\text{12}}$ dan $\\frac{\\text{5}}{\\text{6}} = \\frac{\\text{10}}{\\text{12}}$. Maka $\\frac{\\text{9}}{\\text{12}} + \\frac{\\text{10}}{\\text{12}} = \\frac{\\text{19}}{\\text{12}} = \\text{1}\\frac{\\text{7}}{\\text{12}}$.",
+      "tip": "Untuk penjumlahan dua pecahan a/b + c/d, gunakan rumus langsung: (ad + bc) / bd, lalu sederhanakan. Untuk 3/4 + 5/6: (3×6 + 5×4) / (4×6) = (18+20)/24 = 38/24 = 19/12 = 1 7/12. Cara ini menghindari langkah mencari KPK secara terpisah dan lebih cepat saat ujian.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{8}}{\\text{10}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "$\\text{1}\\frac{\\text{7}}{\\text{12}}$",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "$\\frac{\\text{4}}{\\text{5}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "$\\text{1}\\frac{\\text{5}}{\\text{12}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "$\\frac{\\text{15}}{\\text{24}}$",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berapakah 35% dari 240?",
+      "position": 2,
+      "explanation": "$\\frac{\\text{35}}{\\text{100}} \\times \\text{240} = \\frac{\\text{35} \\times \\text{240}}{\\text{100}} = \\frac{\\text{8400}}{\\text{100}} = \\text{84}$.",
+      "tip": "Pecah persentase dari 10% untuk menghindari perkalian panjang. 10% dari 240 = 24. Maka: 30% = 3 × 24 = 72, dan 5% = 24 ÷ 2 = 12. Total 35% = 72 + 12 = 84. Tips umum: persentase kelipatan 5 selalu bisa dipecah dari 10%, sehingga kamu hanya perlu satu kali bagi dan beberapa kali tambah.",
+      "options": [
+        {
+          "label": "A",
+          "content": "74",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "80",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "84",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "88",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "96",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Nilai dari $\\text{2}^{\\text{5}} \\times \\text{2}^{\\text{3}} \\div \\text{2}^{\\text{4}}$ adalah:",
+      "position": 3,
+      "explanation": "$\\text{2}^{\\text{5}} \\times \\text{2}^{\\text{3}} \\div \\text{2}^{\\text{4}} = \\text{2}^{\\text{5}+\\text{3}-\\text{4}} = \\text{2}^{\\text{4}} = \\text{16}$.",
+      "tip": "Aturan pangkat dengan basis sama: kali → jumlahkan pangkat, bagi → kurangkan pangkat. Jadi cukup hitung pangkatnya saja: 5 + 3 - 4 = 4, hasilnya 2⁴ = 16. Tidak perlu menghitung 2⁵=32 dan 2³=8 secara terpisah lalu dikalikan. Aturan ini berlaku untuk basis apapun: aᵐ × aⁿ ÷ aᵖ = aᵐ⁺ⁿ⁻ᵖ.",
+      "options": [
+        {
+          "label": "A",
+          "content": "8",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "16",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "32",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "64",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "4",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Jika $\\frac{x}{\\text{5}} = \\text{8}$, maka nilai $x + \\text{10}$ adalah:",
+      "position": 4,
+      "explanation": "$\\frac{x}{\\text{5}} = \\text{8} \\Rightarrow x = \\text{40}$. Maka $x + \\text{10} = \\text{40} + \\text{10} = \\text{50}$.",
+      "tip": "Untuk x/n = k, langsung x = k × n tanpa langkah tambahan. Di sini x = 8 × 5 = 40, lalu x + 10 = 50. Waspadai jebakan: opsi A (40) adalah nilai x itu sendiri, bukan x + 10 yang ditanyakan. Di CPNS, soal sering menanyakan turunan dari x bukan x langsung — baca pertanyaan sampai akhir sebelum memilih jawaban.",
+      "options": [
+        {
+          "label": "A",
+          "content": "40",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "45",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "50",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "55",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "60",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Harga sebuah barang naik 20% menjadi Rp 360.000. Berapakah harga awal barang tersebut?",
+      "position": 5,
+      "explanation": "Jika harga awal = $x$, maka $x \\times \\text{1}{,}\\text{2} = \\text{360}.\\text{000}$. Maka $x = \\frac{\\text{360}.\\text{000}}{\\text{1}{,}\\text{2}} = \\text{300}.\\text{000}$.",
+      "tip": "Soal ini adalah persentase terbalik (reverse percentage). Harga akhir = harga awal × (1 + p%). Maka harga awal = harga akhir ÷ (1 + p%). Di sini: 360.000 ÷ 1,2 = 300.000. Cara kilat membagi dengan 1,2: kalikan pembilang dengan 10 lalu bagi 12. Jangan tergoda menjawab 360.000 - 20% = 288.000 — itu salah karena 20% dihitung dari harga awal, bukan harga akhir.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp 280.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp 290.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp 300.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Rp 310.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rp 320.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\sqrt{\\text{144}} + \\sqrt{\\text{81}}$ adalah:",
+      "position": 6,
+      "explanation": "$\\sqrt{\\text{144}} = \\text{12}$ dan $\\sqrt{\\text{81}} = \\text{9}$. Maka $\\text{12} + \\text{9} = \\text{21}$.",
+      "tip": "Hafal daftar bilangan kuadrat sempurna yang sering muncul di CPNS: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225. Dengan hafal daftar ini, soal akar kuadrat bisa dijawab dalam 2 detik tanpa perhitungan. √144 = 12 karena 12² = 144, √81 = 9 karena 9² = 81.",
+      "options": [
+        {
+          "label": "A",
+          "content": "18",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "19",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "20",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "21",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "23",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Perbandingan uang Andi dan Budi adalah $\\text{3} : \\text{5}$. Jika jumlah uang mereka Rp 400.000, berapakah uang Budi?",
+      "position": 7,
+      "explanation": "Total bagian = $\\text{3} + \\text{5} = \\text{8}$ bagian. Uang Budi $= \\frac{\\text{5}}{\\text{8}} \\times \\text{400}.\\text{000} = \\text{250}.\\text{000}$.",
+      "tip": "Rumus perbandingan: bagian seseorang = (bagiannya ÷ total bagian) × total nilai. Untuk perbandingan a:b dengan total T: bagian pertama = a/(a+b) × T, bagian kedua = b/(a+b) × T. Di sini Budi mendapat bagian 5 dari total 8 bagian: 5/8 × 400.000 = 250.000. Tips: jumlahkan dulu angka perbandingan (3+5=8) sebagai penyebut, baru kalikan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp 150.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp 200.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp 240.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Rp 250.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Rp 260.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah persegi panjang memiliki panjang 12 cm dan lebar 8 cm. Berapa kelilingnya?",
+      "position": 8,
+      "explanation": "Keliling persegi panjang $= \\text{2} \\times (p + l) = \\text{2} \\times (\\text{12} + \\text{8}) = \\text{2} \\times \\text{20} = \\text{40}$ cm.",
+      "tip": "Keliling = 2 × (panjang + lebar). Ingat perbedaan keliling vs luas: keliling = mengelilingi = jumlah semua sisi, luas = isi = panjang × lebar. Jebakan di soal ini: opsi E (96 cm) adalah hasil p × l = 12 × 8 = 96, yaitu luas bukan keliling. Pastikan kamu tahu apa yang ditanyakan sebelum menghitung.",
+      "options": [
+        {
+          "label": "A",
+          "content": "32 cm",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "36 cm",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "40 cm",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "48 cm",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "96 cm",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Nilai dari $(\\text{15} + \\text{3}) \\times \\text{4} - \\text{12} \\div \\text{2}$ adalah:",
+      "position": 9,
+      "explanation": "Ikuti urutan operasi (kali/bagi dulu): $(\\text{15} + \\text{3}) = \\text{18}$; $\\text{18} \\times \\text{4} = \\text{72}$; $\\text{12} \\div \\text{2} = \\text{6}$; $\\text{72} - \\text{6} = \\text{66}$.",
+      "tip": "Ingat urutan operasi: (1) Kurung, (2) Pangkat, (3) Kali dan Bagi (dari kiri ke kanan), (4) Tambah dan Kurang (dari kiri ke kanan). Jebakan di soal ini: opsi E (72) adalah hasil jika kamu lupa mengurangkan 12÷2=6 di akhir. Selalu tuntaskan semua operasi kali/bagi terlebih dahulu, baru lakukan tambah/kurang.",
+      "options": [
+        {
+          "label": "A",
+          "content": "60",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "62",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "64",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "66",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "72",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Jika $\\text{3}x - \\text{7} = \\text{14}$, maka nilai $\\text{2}x$ adalah:",
+      "position": 10,
+      "explanation": "$\\text{3}x - \\text{7} = \\text{14} \\Rightarrow \\text{3}x = \\text{21} \\Rightarrow x = \\text{7}$. Maka $\\text{2}x = \\text{14}$.",
+      "tip": "Jika soal menanya 2x bukan x, kamu bisa langsung dari 3x = 21 tanpa perlu cari x dulu: kalikan kedua ruas dengan 2/3, sehingga 2x = 21 × (2/3) = 14. Atau lebih mudah: dari 3x = 21, langsung bagi 3 dapat x = 7, lalu 2x = 14. Soal tipe ini sering menjebak dengan menyediakan opsi nilai x (7) sebagai distractor — baca pertanyaan dengan cermat.",
+      "options": [
+        {
+          "label": "A",
+          "content": "10",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "12",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "14",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "16",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "18",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah toko memberikan diskon 15% untuk barang seharga Rp 200.000. Berapa harga yang harus dibayar?",
+      "position": 11,
+      "explanation": "Diskon $= \\frac{\\text{15}}{\\text{100}} \\times \\text{200}.\\text{000} = \\text{30}.\\text{000}$. Harga bayar $= \\text{200}.\\text{000} - \\text{30}.\\text{000} = \\text{170}.\\text{000}$.",
+      "tip": "Harga bayar setelah diskon p% = harga awal × (1 - p/100). Langsung: 200.000 × 0,85 = 170.000. Cara kilat hitung 15% dari 200.000: 10% = 20.000, lalu 5% = 10.000, total diskon = 30.000. Harga bayar = 200.000 - 30.000 = 170.000. Metode pecah dari 10% ini lebih cepat dari perkalian langsung 0,15 × 200.000.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp 160.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp 165.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp 170.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Rp 175.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rp 180.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "FPB (Faktor Persekutuan Terbesar) dari 48 dan 72 adalah:",
+      "position": 12,
+      "explanation": "Faktor 48: 1,2,3,4,6,8,12,16,24,48. Faktor 72: 1,2,3,4,6,8,9,12,18,24,36,72. FPB = 24.",
+      "tip": "Gunakan faktorisasi prima, jauh lebih cepat dari menuliskan semua faktor. 48 = 2⁴ × 3, 72 = 2³ × 3². FPB = ambil pangkat terkecil dari setiap faktor prima yang sama = 2³ × 3 = 8 × 3 = 24. Ingat perbedaan: FPB (ambil pangkat terkecil = irisan), KPK (ambil pangkat terbesar = gabungan). Metode alternatif: FPB(48,72) = FPB(48, 72-48) = FPB(48,24) = FPB(24,0) = 24 (algoritma Euclidean).",
+      "options": [
+        {
+          "label": "A",
+          "content": "12",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "16",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "18",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "24",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "36",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\frac{\\text{2}}{\\text{3}} \\times \\frac{\\text{9}}{\\text{4}} \\div \\frac{\\text{3}}{\\text{2}}$ adalah:",
+      "position": 13,
+      "explanation": "$\\frac{\\text{2}}{\\text{3}} \\times \\frac{\\text{9}}{\\text{4}} = \\frac{\\text{18}}{\\text{12}} = \\frac{\\text{3}}{\\text{2}}$. Kemudian $\\frac{\\text{3}}{\\text{2}} \\div \\frac{\\text{3}}{\\text{2}} = \\text{1}$.",
+      "tip": "Untuk perkalian pecahan, lakukan cross-cancel (sederhanakan silang) sebelum mengalikan agar angkanya kecil. 2/3 × 9/4: coret 3 dan 9 menjadi 1 dan 3, coret 2 dan 4 menjadi 1 dan 2 → hasilnya 3/2. Untuk pembagian pecahan, balik lalu kalikan: ÷ 3/2 = × 2/3. Maka 3/2 × 2/3 = 1. Cross-cancel mencegah perkalian angka besar dan mengurangi risiko salah hitung.",
+      "options": [
+        {
+          "label": "A",
+          "content": "$\\frac{\\text{1}}{\\text{2}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "$\\frac{\\text{3}}{\\text{4}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "1",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "$\\text{1}\\frac{\\text{1}}{\\text{2}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "2",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Suhu di kota A adalah $-\\text{5}°C$ dan di kota B adalah $\\text{12}°C$. Berapa selisih suhu kedua kota tersebut?",
+      "position": 14,
+      "explanation": "Selisih $= \\text{12} - (-\\text{5}) = \\text{12} + \\text{5} = \\text{17}°C$.",
+      "tip": "Selisih dua bilangan = nilai besar − nilai kecil, dengan memperhatikan tanda negatif. Bayangkan garis bilangan: dari -5 ke +12, jaraknya = 5 (dari -5 ke 0) + 12 (dari 0 ke +12) = 17. Atau gunakan rumus: selisih = suhu tinggi − suhu rendah = 12 − (−5) = 12 + 5 = 17. Jebakan umum: menjawab 12 − 5 = 7, yaitu mengabaikan tanda negatif pada -5°C.",
+      "options": [
+        {
+          "label": "A",
+          "content": "7°C",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "12°C",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "17°C",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "5°C",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "10°C",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Jika $a = \\text{4}$ dan $b = -\\text{3}$, maka nilai $a^{\\text{2}} - \\text{2}ab + b^{\\text{2}}$ adalah:",
+      "position": 15,
+      "explanation": "$a^{\\text{2}} - \\text{2}ab + b^{\\text{2}} = (a - b)^{\\text{2}} = (\\text{4} - (-\\text{3}))^{\\text{2}} = (\\text{7})^{\\text{2}} = \\text{49}$.",
+      "tip": "Kenali pola identitas aljabar sebelum menghitung satu per satu. a² − 2ab + b² = (a−b)². Langsung substitusi: (4−(−3))² = (7)² = 49. Jauh lebih cepat dari menghitung 4²=16, 2×4×(−3)=−24, (−3)²=9 lalu 16+24+9=49. Identitas yang wajib hafal untuk CPNS: (a+b)² = a²+2ab+b², (a−b)² = a²−2ab+b², (a+b)(a−b) = a²−b².",
+      "options": [
+        {
+          "label": "A",
+          "content": "25",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "36",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "49",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "64",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "1",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "KPK dari 12, 15, dan 20 adalah:",
+      "position": 16,
+      "explanation": "$\\text{12} = \\text{2}^{\\text{2}} \\times \\text{3}$; $\\text{15} = \\text{3} \\times \\text{5}$; $\\text{20} = \\text{2}^{\\text{2}} \\times \\text{5}$. KPK $= \\text{2}^{\\text{2}} \\times \\text{3} \\times \\text{5} = \\text{60}$.",
+      "tip": "Untuk KPK, faktorisasi prima lalu ambil pangkat tertinggi dari setiap faktor. 12=2²×3, 15=3×5, 20=2²×5. Faktor prima yang muncul: 2, 3, 5. KPK = 2² × 3¹ × 5¹ = 4×3×5 = 60. Perbedaan kunci: KPK ambil pangkat tertinggi (gabungan semua faktor), FPB ambil pangkat terendah (irisan faktor yang ada di semua bilangan).",
+      "options": [
+        {
+          "label": "A",
+          "content": "30",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "45",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "60",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "120",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "180",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\text{156} \\times \\text{25}$ adalah:",
+      "position": 17,
+      "explanation": "$\\text{156} \\times \\text{25} = \\text{156} \\times \\frac{\\text{100}}{\\text{4}} = \\frac{\\text{15600}}{\\text{4}} = \\text{3900}$.",
+      "tip": "Trik mengalikan dengan 25: gunakan fakta bahwa 25 = 100 ÷ 4. Jadi n × 25 = n × 100 ÷ 4 = (n × 100) ÷ 4. Untuk 156 × 25: 156 × 100 = 15.600, lalu 15.600 ÷ 4 = 3.900. Trik serupa: × 5 = × 10 ÷ 2, × 50 = × 100 ÷ 2, × 75 = × 300 ÷ 4, × 125 = × 1000 ÷ 8. Ini mengubah perkalian rumit menjadi perkalian 10 yang sederhana.",
+      "options": [
+        {
+          "label": "A",
+          "content": "3.600",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "3.750",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "3.900",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "4.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "4.100",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah lingkaran memiliki jari-jari 7 cm. Berapa luas lingkaran tersebut? (gunakan $\\pi = \\frac{\\text{22}}{\\text{7}}$)",
+      "position": 18,
+      "explanation": "Luas $= \\pi r^{\\text{2}} = \\frac{\\text{22}}{\\text{7}} \\times \\text{7}^{\\text{2}} = \\frac{\\text{22}}{\\text{7}} \\times \\text{49} = \\text{22} \\times \\text{7} = \\text{154}$ cm².",
+      "tip": "Jika π = 22/7 dan jari-jari adalah kelipatan 7, maka penyebut 7 akan langsung habis dibagi dengan r². r=7: L = 22/7 × 49 = 22 × 7 = 154. r=14: L = 22/7 × 196 = 22 × 28 = 616. Ingat dua rumus lingkaran: Luas = πr² (pakai jari-jari), Keliling = 2πr atau πd (bisa pakai diameter). Jebakan: menggunakan diameter (14) sebagai r akan menghasilkan jawaban salah 4× lipat.",
+      "options": [
+        {
+          "label": "A",
+          "content": "44 cm²",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "77 cm²",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "132 cm²",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "154 cm²",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "196 cm²",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hasil dari $\\text{5}! \\div \\text{3}!$ adalah: (catatan: $n! = n \\times (n-\\text{1}) \\times ... \\times \\text{1}$)",
+      "position": 19,
+      "explanation": "$\\text{5}! = \\text{120}$ dan $\\text{3}! = \\text{6}$. Maka $\\frac{\\text{5}!}{\\text{3}!} = \\frac{\\text{120}}{\\text{6}} = \\text{20}$. Atau lebih cepat: $\\text{5}! \\div \\text{3}! = \\text{5} \\times \\text{4} = \\text{20}$.",
+      "tip": "n! ÷ m! = n × (n−1) × ... × (m+1), yaitu hanya suku-suku yang tidak saling cancel. 5! ÷ 3! = 5 × 4 = 20 (hanya 2 suku teratas yang tersisa). Tidak perlu menghitung 5!=120 dan 3!=6 secara penuh. Rumus umum: n!/m! = perkalian dari m+1 sampai n. Ini sangat berguna untuk soal kombinasi dan permutasi yang juga muncul di CPNS.",
+      "options": [
+        {
+          "label": "A",
+          "content": "10",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "15",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "20",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "24",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "60",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Jika $x + y = \\text{10}$ dan $x - y = \\text{4}$, maka nilai $x \\times y$ adalah:",
+      "position": 20,
+      "explanation": "Dari kedua persamaan: $\\text{2}x = \\text{14} \\Rightarrow x = \\text{7}$; $y = \\text{10} - \\text{7} = \\text{3}$. Maka $x \\times y = \\text{7} \\times \\text{3} = \\text{21}$.",
+      "tip": "Untuk sistem dua persamaan linear, metode eliminasi paling cepat: jumlahkan kedua persamaan langsung. (x+y) + (x−y) = 10+4 → 2x = 14 → x = 7. Substitusi balik: y = 10−7 = 3. Maka xy = 21. Metode substitusi (isolate x dari persamaan 1, substitusi ke 2) lebih panjang. Gunakan eliminasi ketika koefisien salah satu variabel sudah berlawanan tanda seperti +y dan −y di sini.",
+      "options": [
+        {
+          "label": "A",
+          "content": "18",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "20",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "21",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "24",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "28",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ARITMATIKA"
+    }
+  ]
+}

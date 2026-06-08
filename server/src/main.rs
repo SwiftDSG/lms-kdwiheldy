@@ -9,15 +9,19 @@ use tracing_subscriber::{layer::SubscriberExt, util::SubscriberInitExt};
 
 mod config;
 mod error;
+mod ml_client;
 mod models;
 mod routes;
+mod service_manager;
 
 use config::Config;
+use ml_client::MlClient;
 
 #[derive(Clone)]
 pub struct AppState {
     pub db: mongodb::Database,
     pub config: Arc<Config>,
+    pub ml: Arc<MlClient>,
 }
 
 #[tokio::main]
@@ -41,7 +45,17 @@ async fn main() -> anyhow::Result<()> {
     let db = client.database(&config.mongodb_db_name);
     tracing::info!("Connected to MongoDB: db={}", config.mongodb_db_name);
 
-    let state = AppState { db, config: config.clone() };
+    // Auto-start Ollama + ML service (unless managed externally via systemd).
+    if config.manage_services {
+        Arc::new(service_manager::ServiceManager::new(&config))
+            .start_and_watch()
+            .await;
+    }
+
+    let ml = Arc::new(MlClient::new(&config.ml_socket_path));
+    ml_client::probe_ml_service(&config.ml_socket_path).await;
+
+    let state = AppState { db, config: config.clone(), ml };
 
     let app = Router::new()
         // Public
@@ -59,7 +73,11 @@ async fn main() -> anyhow::Result<()> {
         .route("/api/v1/admin/questions", get(routes::questions::admin_list))
         .route("/api/v1/admin/questions", post(routes::questions::admin_create))
         .route("/api/v1/admin/questions/bulk", post(routes::questions::admin_bulk_import))
+        .route("/api/v1/admin/questions/generate", post(routes::questions::admin_generate))
+        .route("/api/v1/admin/questions/generate/analogi", post(routes::questions::admin_generate_analogi))
         .route("/api/v1/admin/questions/{id}", get(routes::questions::admin_get).put(routes::questions::admin_update).delete(routes::questions::admin_delete))
+        // Public — AI explanation
+        .route("/api/v1/questions/{id}/explain", get(routes::questions::explain))
         // Admin — upload & sessions
         .route("/api/v1/admin/upload/image", post(routes::upload::upload_image))
         .route("/api/v1/admin/sessions", get(routes::sessions::admin_list))

@@ -1,6 +1,40 @@
 import Foundation
 import SwiftData
 
+// MARK: - Enums
+
+enum QuestionSubtype: String, Codable, CaseIterable {
+    // TWK
+    case pancasila          = "PANCASILA"
+    case uud1945            = "UUD_1945"
+    case bhinneka           = "BHINNEKA"
+    case nkri               = "NKRI"
+    case sejarahNasional    = "SEJARAH_NASIONAL"
+    case sistemPemerintahan = "SISTEM_PEMERINTAHAN"
+    case belaNegara         = "BELA_NEGARA"
+    case bahasaIndonesia    = "BAHASA_INDONESIA"
+    // TIU
+    case analogiVerbal           = "ANALOGI_VERBAL"
+    case analogiGambar           = "ANALOGI_GAMBAR"
+    case silogisme               = "SILOGISME"
+    case antonim                 = "ANTONIM"
+    case sinonim                 = "SINONIM"
+    case aritmatika              = "ARITMATIKA"
+    case deretAngka              = "DERET_ANGKA"
+    case soalCerita              = "SOAL_CERITA"
+    case perbandinganKuantitatif = "PERBANDINGAN_KUANTITATIF"
+    // TKP
+    case pelayananPublik    = "PELAYANAN_PUBLIK"
+    case profesionalisme    = "PROFESIONALISME"
+    case jejaringKerja      = "JEJARING_KERJA"
+    case sosialBudaya       = "SOSIAL_BUDAYA"
+    case teknologiInformasi = "TEKNOLOGI_INFORMASI"
+    case orientasiBelajar   = "ORIENTASI_BELAJAR"
+    case mengendalikanDiri  = "MENGENDALIKAN_DIRI"
+    case beradaptasi        = "BERADAPTASI"
+    case kreativitasInovasi = "KREATIVITAS_INOVASI"
+}
+
 // MARK: - SwiftData Models (local storage, offline-first)
 
 @Model
@@ -12,6 +46,11 @@ final class LocalQuiz {
     var timeLimit: Int?         // minutes
     var isPublished: Bool
     var lastSyncedAt: Date?
+    /// The server's updated_at timestamp — refreshed on every list fetch.
+    /// Compare with lastSyncedAt to detect available updates.
+    var serverUpdatedAt: Date?
+    /// True once questions have been fully downloaded for this quiz.
+    var isDownloaded: Bool
 
     @Relationship(deleteRule: .cascade, inverse: \LocalQuestion.quiz)
     var questions: [LocalQuestion] = []
@@ -23,7 +62,9 @@ final class LocalQuiz {
         category: String,
         timeLimit: Int? = nil,
         isPublished: Bool = true,
-        lastSyncedAt: Date? = nil
+        lastSyncedAt: Date? = nil,
+        serverUpdatedAt: Date? = nil,
+        isDownloaded: Bool = false
     ) {
         self.id = id
         self.title = title
@@ -32,6 +73,8 @@ final class LocalQuiz {
         self.timeLimit = timeLimit
         self.isPublished = isPublished
         self.lastSyncedAt = lastSyncedAt
+        self.serverUpdatedAt = serverUpdatedAt
+        self.isDownloaded = isDownloaded
     }
 }
 
@@ -40,6 +83,7 @@ final class LocalQuestion {
     @Attribute(.unique) var id: UUID
     var quizId: UUID
     var type: String            // MCQ | TRUE_FALSE | ESSAY | IMAGE
+    var subtype: QuestionSubtype
     var content: String
     var imageURL: String?
     var explanation: String?
@@ -57,6 +101,7 @@ final class LocalQuestion {
         id: UUID,
         quizId: UUID,
         type: String,
+        subtype: QuestionSubtype,
         content: String,
         imageURL: String? = nil,
         explanation: String? = nil,
@@ -65,6 +110,7 @@ final class LocalQuestion {
         self.id = id
         self.quizId = quizId
         self.type = type
+        self.subtype = subtype
         self.content = content
         self.imageURL = imageURL
         self.explanation = explanation
@@ -77,17 +123,19 @@ final class LocalOption {
     @Attribute(.unique) var id: UUID
     var label: String           // A, B, C, D, E | True, False
     var content: String
-    var score: Int              // 0/5 for MCQ/TF; 1-5 for TKP
-    var isCorrect: Bool
+    /// MCQ/TF: 0 = wrong, 5 = correct. TKP: 1–5 weighted (best = 5).
+    var score: Int
 
     var question: LocalQuestion?
 
-    init(id: UUID, label: String, content: String, score: Int, isCorrect: Bool) {
+    /// True when this option is the best/correct answer (score == 5).
+    var isCorrect: Bool { score == 5 }
+
+    init(id: UUID, label: String, content: String, score: Int) {
         self.id = id
         self.label = label
         self.content = content
         self.score = score
-        self.isCorrect = isCorrect
     }
 }
 

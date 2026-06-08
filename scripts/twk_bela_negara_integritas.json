@@ -1,0 +1,790 @@
+{
+  "quiz": {
+    "title": "TWK - Bela Negara dan Integritas",
+    "description": "Latihan soal Tes Wawasan Kebangsaan tentang bela negara, integritas, antikorupsi, dan nilai-nilai dasar ASN dalam melaksanakan tugas pemerintahan.",
+    "category": "TWK",
+    "time_limit": 20
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "Dasar hukum kewajiban bela negara bagi setiap warga negara Indonesia tercantum dalam UUD 1945 pasal...",
+      "position": 1,
+      "explanation": "Pasal 27 ayat (3) UUD 1945 menyatakan: 'Setiap warga negara berhak dan wajib ikut serta dalam upaya pembelaan negara.' Pasal 30 ayat (1) menyatakan: 'Tiap-tiap warga negara berhak dan wajib ikut serta dalam usaha pertahanan dan keamanan negara.'",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pasal 25A dan Pasal 26",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pasal 27 ayat (3) dan Pasal 30 ayat (1)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pasal 28 dan Pasal 29",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Pasal 31 dan Pasal 32",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pasal 33 dan Pasal 34",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Lima nilai dasar bela negara yang ditetapkan pemerintah Indonesia adalah...",
+      "position": 2,
+      "explanation": "Lima nilai dasar bela negara: (1) Cinta Tanah Air, (2) Kesadaran Berbangsa dan Bernegara, (3) Yakin akan Pancasila sebagai ideologi negara, (4) Rela berkorban untuk bangsa dan negara, (5) Memiliki kemampuan awal bela negara.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Patriotisme, Nasionalisme, Militarisme, Heroisme, dan Dedikasi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Cinta Tanah Air, Kesadaran Berbangsa dan Bernegara, Yakin akan Pancasila, Rela Berkorban, dan Kemampuan Awal Bela Negara",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Religiositas, Nasionalisme, Kemandirian, Gotong Royong, dan Integritas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Jiwa Korsa, Disiplin, Loyalitas, Ketabahan, dan Keberanian",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Semangat Juang, Kepemimpinan, Kesatuan, Keberanian, dan Pengorbanan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Komponen utama dalam sistem pertahanan negara Indonesia adalah...",
+      "position": 3,
+      "explanation": "Berdasarkan UU No. 3 Tahun 2002 tentang Pertahanan Negara, komponen pertahanan terdiri dari: Komponen Utama (TNI), Komponen Cadangan (warga negara, SDA, SDB yang disiapkan), dan Komponen Pendukung.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kepolisian Republik Indonesia (Polri)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tentara Nasional Indonesia (TNI)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Satpol PP dan Satlinmas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Badan Intelijen Negara (BIN)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kementerian Pertahanan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Korupsi berdasarkan UU No. 31 Tahun 1999 tentang Pemberantasan Tindak Pidana Korupsi dapat diartikan sebagai...",
+      "position": 4,
+      "explanation": "Korupsi adalah perbuatan secara melawan hukum melakukan perbuatan memperkaya diri sendiri atau orang lain atau suatu korporasi yang dapat merugikan keuangan negara atau perekonomian negara.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Setiap kesalahan yang dilakukan pegawai pemerintah dalam bertugas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Perbuatan melawan hukum yang memperkaya diri/orang lain/korporasi dan merugikan keuangan negara",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Penyalahgunaan jabatan untuk keuntungan keluarga saja",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Setiap bentuk penghindaran pajak oleh wajib pajak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pelanggaran administratif yang menimbulkan kerugian negara kecil",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Komisi Pemberantasan Korupsi (KPK) didirikan berdasarkan...",
+      "position": 5,
+      "explanation": "KPK didirikan berdasarkan UU No. 30 Tahun 2002 tentang Komisi Pemberantasan Tindak Pidana Korupsi. KPK adalah lembaga negara yang dalam melaksanakan tugas dan wewenangnya bersifat independen.",
+      "options": [
+        {
+          "label": "A",
+          "content": "UU No. 28 Tahun 1999 tentang Penyelenggara Negara yang Bersih",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "UU No. 30 Tahun 2002 tentang KPK",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "UU No. 31 Tahun 1999 tentang Pemberantasan Tipikor",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Perpres No. 95 Tahun 2018 tentang e-Government",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "UU No. 20 Tahun 2001 tentang Perubahan UU Tipikor",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Gratifikasi dalam konteks tindak pidana korupsi adalah...",
+      "position": 6,
+      "explanation": "Gratifikasi adalah pemberian dalam arti luas, meliputi uang, barang, rabat (diskon), komisi, pinjaman tanpa bunga, tiket perjalanan, fasilitas penginapan, perjalanan wisata, pengobatan cuma-cuma, dan fasilitas lainnya yang diterima di dalam maupun di luar negeri, yang dilakukan dengan menggunakan sarana elektronik atau tanpa sarana elektronik.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pemberian hadiah wajar kepada rekan kerja saat lebaran",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pemberian dalam arti luas kepada pegawai negeri atau penyelenggara negara yang berhubungan dengan jabatannya",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Bonus kinerja yang diberikan oleh pemerintah kepada PNS berprestasi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Gaji tambahan yang diberikan negara kepada pejabat tinggi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tunjangan kinerja ASN yang diatur dalam peraturan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "LHKPN (Laporan Harta Kekayaan Penyelenggara Negara) wajib dilaporkan kepada...",
+      "position": 7,
+      "explanation": "LHKPN wajib dilaporkan kepada KPK (Komisi Pemberantasan Korupsi) berdasarkan UU No. 28 Tahun 1999 tentang Penyelenggara Negara yang Bersih dan UU No. 30 Tahun 2002 tentang KPK.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kementerian Keuangan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "BPK (Badan Pemeriksa Keuangan)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "KPK (Komisi Pemberantasan Korupsi)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Inspektorat Jenderal Kementerian terkait",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Presiden melalui Sekretariat Negara",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pelapor tindak pidana korupsi (whistleblower) mendapat perlindungan hukum berdasarkan...",
+      "position": 8,
+      "explanation": "Perlindungan bagi whistleblower diatur dalam UU No. 13 Tahun 2006 tentang Perlindungan Saksi dan Korban, serta diperkuat dengan SEMA Mahkamah Agung No. 4 Tahun 2011 yang memberikan perlakuan khusus bagi whistleblower kasus korupsi.",
+      "options": [
+        {
+          "label": "A",
+          "content": "UU No. 31 Tahun 1999 tentang Tipikor",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "UU No. 13 Tahun 2006 tentang Perlindungan Saksi dan Korban",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "UU No. 8 Tahun 1981 tentang KUHAP",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Perpres No. 55 Tahun 2012 tentang Strategi Nasional Pencegahan Korupsi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "UU No. 2 Tahun 2002 tentang Polri",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Nilai-nilai dasar ASN (Aparatur Sipil Negara) berdasarkan UU No. 5 Tahun 2014 adalah...",
+      "position": 9,
+      "explanation": "Berdasarkan UU No. 5 Tahun 2014 tentang ASN, nilai-nilai dasar ASN meliputi: memegang teguh dan mengamalkan Pancasila, UUD 1945, NKRI, pemerintahan yang sah, melaksanakan kebijakan perundangan, profesional, netral, bebas dari intervensi politik, bersih dari KKN, serta memberikan pelayanan publik yang baik.",
+      "options": [
+        {
+          "label": "A",
+          "content": "SMART (Spesifik, Measurable, Achievable, Relevant, Time-bound)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "BerAKHLAK (Berorientasi Pelayanan, Akuntabel, Kompeten, Harmonis, Loyal, Adaptif, Kolaboratif)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "BLUD (Bersih, Loyal, Unggul, Disiplin)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "PRIMA (Profesional, Responsif, Integritas, Mandiri, Akuntabel)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "PANCAS (Pancasila, Akuntabilitas, Nasionalisme, Commit, Achievement, Service)",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Netralitas ASN dalam pemilihan umum berarti ASN...",
+      "position": 10,
+      "explanation": "Netralitas ASN dalam pemilu berarti ASN tidak boleh berpihak kepada salah satu calon/partai tertentu, tidak terlibat kampanye, tidak menggunakan fasilitas negara untuk kepentingan pemilu, dan tidak memengaruhi pilihan bawahan. ASN tetap berhak menggunakan hak pilihnya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Tidak boleh menggunakan hak pilihnya dalam pemilu",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tidak boleh berpihak kepada calon/partai tertentu dan tidak terlibat kampanye",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Boleh mendukung calon yang disukai secara pribadi asal tidak resmi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Wajib mendukung calon dari partai yang berkuasa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tidak perlu mengikuti pemilu karena ASN adalah abdi negara",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Konflik kepentingan (conflict of interest) dalam pemerintahan terjadi ketika...",
+      "position": 11,
+      "explanation": "Konflik kepentingan terjadi ketika seorang pejabat publik memiliki kepentingan pribadi (keuangan, keluarga, bisnis, dll.) yang dapat mempengaruhi objektivitas dalam pengambilan keputusan atau pelaksanaan tugasnya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Ada perbedaan pendapat antara dua pejabat dalam rapat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kepentingan pribadi seorang pejabat berpotensi mempengaruhi objektivitas keputusan jabatannya",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Dua kementerian berbeda memiliki program yang tumpang tindih",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Pejabat publik mendapat tawaran kerja dari sektor swasta",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "ASN tidak setuju dengan kebijakan atasannya",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pakta integritas adalah...",
+      "position": 12,
+      "explanation": "Pakta integritas adalah dokumen yang berisi pernyataan atau janji kepada diri sendiri tentang komitmen melaksanakan tugas dan fungsi sesuai dengan peraturan perundang-undangan, etika, serta bebas dari korupsi, kolusi, dan nepotisme.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Perjanjian antara pemerintah dan perusahaan swasta tentang proyek infrastruktur",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pernyataan/janji komitmen melaksanakan tugas sesuai aturan dan bebas dari KKN",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kontrak kerja antara ASN dan pemerintah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Perjanjian kerjasama internasional dalam bidang antikorupsi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Surat keterangan tidak pernah melakukan tindak pidana",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Disiplin ASN diatur dalam Peraturan Pemerintah Nomor...",
+      "position": 13,
+      "explanation": "Disiplin ASN diatur dalam PP No. 94 Tahun 2021 tentang Disiplin Pegawai Negeri Sipil (menggantikan PP No. 53 Tahun 2010). PP ini mengatur kewajiban, larangan, dan hukuman disiplin bagi PNS.",
+      "options": [
+        {
+          "label": "A",
+          "content": "PP No. 53 Tahun 2010",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "PP No. 94 Tahun 2021 tentang Disiplin PNS",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "PP No. 11 Tahun 2017 tentang Manajemen PNS",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "PP No. 49 Tahun 2018 tentang PPPK",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "PP No. 30 Tahun 2019 tentang Penilaian Kinerja PNS",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Prinsip 'akuntabilitas' bagi ASN dalam menjalankan tugasnya berarti...",
+      "position": 14,
+      "explanation": "Akuntabilitas berarti ASN bertanggung jawab atas tindakan, keputusan, dan kinerja yang dilakukannya kepada atasan, masyarakat, dan negara. Termasuk di dalamnya transparansi dan dapat dipertanggungjawabkan penggunaan sumber daya publik.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Hanya melaporkan hasil kerja kepada atasan langsung",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Bertanggung jawab atas tindakan, keputusan, dan kinerja kepada atasan, masyarakat, dan negara",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Mengikuti semua perintah atasan tanpa perlu mempertanyakannya",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Memastikan semua belanja dinas menggunakan sistem e-procurement",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Membuat laporan keuangan setiap akhir tahun anggaran",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "ASN yang terbukti melakukan korupsi dapat dikenakan hukuman disiplin berupa...",
+      "position": 15,
+      "explanation": "ASN yang terbukti melakukan korupsi dan dijatuhi pidana penjara berdasarkan putusan pengadilan yang telah berkekuatan hukum tetap karena melakukan tindak pidana dengan hukuman minimal 2 tahun, dapat diberhentikan tidak dengan hormat.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Hanya penurunan pangkat sementara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pemberhentian tidak dengan hormat",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Penundaan kenaikan gaji berkala selama 1 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Peringatan lisan dan tertulis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Mutasi ke jabatan yang lebih rendah",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Prinsip pelayanan publik yang baik menurut UU No. 25 Tahun 2009 tentang Pelayanan Publik mencakup asas-asas antara lain...",
+      "position": 16,
+      "explanation": "Asas pelayanan publik berdasarkan UU No. 25 Tahun 2009 meliputi: kepentingan umum, kepastian hukum, kesamaan hak, keseimbangan hak dan kewajiban, keprofesionalan, partisipatif, persamaan perlakuan/tidak diskriminatif, keterbukaan, akuntabilitas, fasilitas dan perlakuan khusus bagi kelompok rentan, ketepatan waktu, serta kecepatan, kemudahan, dan keterjangkauan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Efisiensi biaya, kecepatan, dan kerahasiaan data pengguna layanan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kepentingan umum, kepastian hukum, kesamaan hak, tidak diskriminatif, dan akuntabilitas",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Mengutamakan warga negara kaya agar antrean lebih singkat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Privasi, keeksklusifan, dan kemewahan layanan premium pemerintah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Digitalisasi total tanpa layanan tatap muka",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pengertian 'integritas' dalam konteks aparatur negara adalah...",
+      "position": 17,
+      "explanation": "Integritas berarti konsistensi dan keteguhan dalam menjunjung tinggi nilai-nilai kejujuran, kebenaran, dan etika, serta menghindari segala bentuk penyimpangan meskipun ada tekanan atau godaan. Seorang ASN berintegritas berperilaku sesuai antara kata dan perbuatan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kemampuan teknis yang tinggi dalam bidang keahlian masing-masing",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Konsistensi menjunjung nilai kejujuran dan etika antara perkataan dan perbuatan tanpa terpengaruh tekanan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kepatuhan total kepada atasan dalam segala hal",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kemampuan menjaga rahasia negara dari pihak luar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Memiliki sertifikasi kompetensi dari lembaga internasional",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Strategi pencegahan korupsi yang paling efektif di lingkungan instansi pemerintah adalah...",
+      "position": 18,
+      "explanation": "Pencegahan korupsi yang paling efektif dilakukan melalui pendekatan sistemik: pembangunan zona integritas, digitalisasi layanan publik (mengurangi pertemuan tatap muka), transparansi anggaran, pengawasan internal yang kuat, dan pembentukan budaya anti-korupsi sejak dini.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Memberikan hukuman mati kepada semua koruptor tanpa pengecualian",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pembangunan zona integritas, digitalisasi layanan, transparansi, dan pengawasan kuat",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Meningkatkan gaji PNS sebesar lima kali lipat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mengurangi jumlah pegawai pemerintah secara drastis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Melarang semua interaksi antara pegawai pemerintah dan warga",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pembela negara (bela negara) bagi rakyat sipil ASN dapat diwujudkan melalui...",
+      "position": 19,
+      "explanation": "Bela negara bagi ASN dan warga sipil tidak harus dengan cara militer, tetapi dapat diwujudkan melalui: melaksanakan tugas dengan profesional dan jujur, membayar pajak, menjaga persatuan, menghormati simbol negara, berpartisipasi dalam pembangunan, dan mencintai produk dalam negeri.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Wajib mengikuti latihan militer setiap tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Melaksanakan tugas secara profesional dan jujur, membayar pajak, menjaga persatuan, dan berpartisipasi dalam pembangunan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Hanya bertugas di daerah perbatasan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mengikuti pendidikan militer selama 3 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Bergabung dengan organisasi pertahanan negara secara formal",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kode etik dan kode perilaku ASN berdasarkan UU No. 5 Tahun 2014 bertujuan untuk...",
+      "position": 20,
+      "explanation": "Kode etik dan kode perilaku ASN bertujuan untuk menjaga martabat dan kehormatan ASN, membentuk ASN yang memiliki karakter dan integritas tinggi, serta menciptakan ASN yang profesional dalam melayani masyarakat.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Membatasi kebebasan berpendapat ASN di media sosial",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Menjaga martabat, kehormatan, dan integritas ASN dalam melayani masyarakat",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Mengatur jadwal kerja dan hari libur ASN",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Menentukan besaran tunjangan kinerja ASN",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Mewajibkan ASN mengikuti pelatihan teknis setiap tahun",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BELA_NEGARA"
+    }
+  ]
+}

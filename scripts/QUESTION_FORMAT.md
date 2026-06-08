@@ -54,16 +54,26 @@ Good:  $\frac{3}{4}$
 Bad:   $\dfrac{3}{4}$
 ```
 
-### 3. Mixed numbers — wrap the integer with `\text{}`
+### 3. Every digit in math mode — wrap with `\text{}`
 
-A digit immediately before `\frac` triggers a black-block rendering artifact.
-Wrap the integer part in `\text{}` to fix it.
+LaTeXSwiftUI renders bare digits in math mode with rendering artifacts.
+**Every digit sequence anywhere inside `$...$` must be wrapped in `\text{}`.**
+This includes digits in bases, exponents, fractions, square roots, and results.
 
 ```
-Good:  $\text{1}\frac{1}{4}$       ← use in JSON as $\\text{1}\\frac{1}{4}$
-Bad:   $1\frac{1}{4}$              ← black block bug
-Also OK (auto-fixed by app): $1 \frac{1}{4}$
+Good:  $\text{1}\frac{\text{1}}{\text{4}}$   ← JSON: $\\text{1}\\frac{\\text{1}}{\\text{4}}$
+Bad:   $1\frac{1}{4}$                         ← rendering artifact
+
+Good:  $\text{2}^{\text{5}}$                  ← JSON: $\\text{2}^{\\text{5}}$
+Bad:   $2^5$                                   ← broken rendering
+
+Good:  $\text{2}^{\text{5}+\text{3}-\text{4}}$   ← digits inside ^{...} also wrapped
+Bad:   $\text{2}^{5+3-4}$                          ← digits inside exponent still break
+
+Good:  $\frac{\text{22}}{\text{7}} \times \text{7}^{\text{2}} = \text{154}$
 ```
+
+**Rule:** if it's a digit and it's inside `$...$`, it needs `\text{}`. No exceptions.
 
 ### 4. Percentages — write as plain text, not inside `$...$`
 
@@ -121,7 +131,7 @@ Bad:   "$L = 9 \\times 6 = 54 \\text{ cm}^2$"
 ## Quick Checklist Before Submitting
 
 - [ ] No `\dfrac` anywhere — replaced with `\frac`
-- [ ] Mixed numbers use `\text{}` wrapper: `$\text{1}\frac{3}{4}$` → JSON: `$\\text{1}\\frac{3}{4}$`
+- [ ] Every digit inside `$...$` is wrapped in `\text{}`: bases, exponents, fractions, results — e.g. `$\text{2}^{\text{5}}$`, `$\frac{\text{3}}{\text{4}}$`, `$= \text{16}$` → JSON doubles backslashes
 - [ ] Percentages are plain text, not inside `$...$`
 - [ ] All LaTeX backslashes are doubled in JSON (`\frac` → `\\frac`)
 - [ ] Each question has exactly one option with `"is_correct": true` and `"score": 5`

@@ -50,15 +50,17 @@ struct DrawingCanvasView: View {
 
             Rectangle().fill(Color.borderColor).frame(height: 3)
 
-            CanvasView(
-                questionId: questionId,
-                note: note,
-                tool: tool,
-                clearTrigger: clearTrigger,
-                onDrawingChanged: onDrawingChanged
-            )
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.backgroundOne)
+            GeometryReader { geo in
+                CanvasView(
+                    questionId: questionId,
+                    note: note,
+                    tool: tool,
+                    clearTrigger: clearTrigger,
+                    availableSize: geo.size,
+                    onDrawingChanged: onDrawingChanged
+                )
+            }
+            .ignoresSafeArea(.container, edges: .bottom)
         }
     }
 }
@@ -166,44 +168,56 @@ private struct CanvasView: UIViewRepresentable {
     var note: LocalUserNote
     var tool: DrawingTool
     var clearTrigger: Bool
+    var availableSize: CGSize
     var onDrawingChanged: (PKDrawing) -> Void
 
-    private static let canvasSize = CGSize(width: 2048, height: 2048)
+    // Canvas is 2× the available view in each dimension (same aspect ratio),
+    // giving the user 4× the writing area before needing to scroll.
+    private var canvasSize: CGSize {
+        guard availableSize.width > 0, availableSize.height > 0 else {
+            return CGSize(width: 2048, height: 2048)
+        }
+        return CGSize(width: availableSize.width * 2, height: availableSize.height * 2)
+    }
 
     func makeUIView(context: Context) -> UIScrollView {
+        let size = canvasSize
+        context.coordinator.storedCanvasSize = size
+
         let canvas = PKCanvasView()
-        canvas.frame = CGRect(origin: .zero, size: Self.canvasSize)
+        canvas.frame = CGRect(origin: .zero, size: size)
         canvas.drawingPolicy = .anyInput
-        canvas.backgroundColor = .white
+        canvas.backgroundColor = UIColor(Color.backgroundOne)
         canvas.isScrollEnabled = false
         canvas.delegate = context.coordinator
 
         if let drawing = try? PKDrawing(data: note.drawingData) {
             canvas.drawing = drawing
         }
-        canvas.tool = makePKTool()
+        canvas.tool = makePKTool(zoomScale: 1)
         context.coordinator.canvasView = canvas
 
         let scrollView = UIScrollView()
         scrollView.addSubview(canvas)
-        scrollView.contentSize = Self.canvasSize
-        scrollView.minimumZoomScale = 0.05
+        scrollView.contentSize = size
+        scrollView.minimumZoomScale = 0.01  // updated after layout
         scrollView.maximumZoomScale = 5.0
         scrollView.delegate = context.coordinator
-        scrollView.backgroundColor = UIColor(Color.backgroundOne)
+        context.coordinator.scrollView = scrollView
+        scrollView.backgroundColor = UIColor(Color.backgroundTwo)
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.showsVerticalScrollIndicator = false
         scrollView.bouncesZoom = true
 
-        // Fit to view once layout is known
+        // Set minimum zoom = fit-to-view (full canvas visible), start at 1×
         DispatchQueue.main.async {
-            let scale = min(
-                scrollView.bounds.width / Self.canvasSize.width,
-                scrollView.bounds.height / Self.canvasSize.height
+            let minScale = min(
+                scrollView.bounds.width / size.width,
+                scrollView.bounds.height / size.height
             )
-            if scale > 0 {
-                scrollView.setZoomScale(max(scale, scrollView.minimumZoomScale), animated: false)
-            }
+            if minScale > 0 { scrollView.minimumZoomScale = minScale }
+            scrollView.setZoomScale(1.0, animated: false)
+            scrollView.contentOffset = .zero
         }
 
         return scrollView
@@ -212,17 +226,21 @@ private struct CanvasView: UIViewRepresentable {
     func updateUIView(_ scrollView: UIScrollView, context: Context) {
         guard let canvas = context.coordinator.canvasView else { return }
 
+        // Keep minimum zoom = fit-to-view using the stored canvas size
+        let storedSize = context.coordinator.storedCanvasSize
+        if storedSize.width > 0 {
+            let minScale = min(
+                scrollView.bounds.width / storedSize.width,
+                scrollView.bounds.height / storedSize.height
+            )
+            if minScale > 0 { scrollView.minimumZoomScale = minScale }
+        }
+
         if context.coordinator.currentQuestionId != questionId {
-            // Question switched — reload drawing and reset zoom
+            // Question switched — reload drawing and reset zoom to 1×
             context.coordinator.currentQuestionId = questionId
             canvas.drawing = (try? PKDrawing(data: note.drawingData)) ?? PKDrawing()
-            let scale = min(
-                scrollView.bounds.width / Self.canvasSize.width,
-                scrollView.bounds.height / Self.canvasSize.height
-            )
-            if scale > 0 {
-                scrollView.setZoomScale(max(scale, scrollView.minimumZoomScale), animated: false)
-            }
+            scrollView.setZoomScale(max(1.0, scrollView.minimumZoomScale), animated: false)
             scrollView.contentOffset = .zero
         } else if context.coordinator.lastClearTrigger != clearTrigger {
             // Clear triggered
@@ -231,19 +249,21 @@ private struct CanvasView: UIViewRepresentable {
             onDrawingChanged(PKDrawing())
         }
 
-        canvas.tool = makePKTool()
+        context.coordinator.currentTool = tool
+        canvas.tool = makePKTool(zoomScale: scrollView.zoomScale)
     }
 
     func makeCoordinator() -> Coordinator {
         Coordinator(questionId: questionId, onChanged: onDrawingChanged)
     }
 
-    private func makePKTool() -> PKTool {
+    private func makePKTool(zoomScale: CGFloat) -> PKTool {
+        let scale = max(zoomScale, 0.01)
         switch tool.mode {
         case .eraser:
-            return PKEraserTool(.bitmap, width: 20)
+            return PKEraserTool(.bitmap, width: 20 / scale)
         case .pen:
-            return PKInkingTool(.pen, color: tool.color.ui, width: tool.thickness)
+            return PKInkingTool(.pen, color: tool.color.ui, width: tool.thickness / scale)
         }
     }
 
@@ -252,6 +272,9 @@ private struct CanvasView: UIViewRepresentable {
         var lastClearTrigger: Bool = false
         let onChanged: (PKDrawing) -> Void
         weak var canvasView: PKCanvasView?
+        weak var scrollView: UIScrollView?
+        var currentTool: DrawingTool = DrawingTool()
+        var storedCanvasSize: CGSize = .zero
 
         init(questionId: UUID, onChanged: @escaping (PKDrawing) -> Void) {
             self.currentQuestionId = questionId
@@ -267,10 +290,15 @@ private struct CanvasView: UIViewRepresentable {
         }
 
         func scrollViewDidZoom(_ scrollView: UIScrollView) {
-            // Keep canvas centered while zooming
-            let x = max((scrollView.bounds.width - scrollView.contentSize.width) / 2, 0)
-            let y = max((scrollView.bounds.height - scrollView.contentSize.height) / 2, 0)
-            scrollView.contentInset = UIEdgeInsets(top: y, left: x, bottom: y, right: x)
+            scrollView.contentInset = .zero
+            guard let canvas = canvasView else { return }
+            let scale = max(scrollView.zoomScale, 0.01)
+            switch currentTool.mode {
+            case .eraser:
+                canvas.tool = PKEraserTool(.bitmap, width: 20 / scale)
+            case .pen:
+                canvas.tool = PKInkingTool(.pen, color: currentTool.color.ui, width: currentTool.thickness / scale)
+            }
         }
     }
 }

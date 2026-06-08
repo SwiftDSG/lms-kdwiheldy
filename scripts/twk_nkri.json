@@ -1,0 +1,790 @@
+{
+  "quiz": {
+    "title": "TWK - NKRI",
+    "description": "Latihan soal Tes Wawasan Kebangsaan tentang Negara Kesatuan Republik Indonesia, wawasan nusantara, otonomi daerah, dan keutuhan wilayah NKRI.",
+    "category": "TWK",
+    "time_limit": 20
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "Proklamasi Kemerdekaan Republik Indonesia dibacakan oleh Soekarno-Hatta pada tanggal...",
+      "position": 1,
+      "explanation": "Proklamasi Kemerdekaan Indonesia dibacakan oleh Ir. Soekarno didampingi Drs. Mohammad Hatta pada tanggal 17 Agustus 1945 pukul 10.00 WIB di Jalan Pegangsaan Timur No. 56, Jakarta.",
+      "options": [
+        {
+          "label": "A",
+          "content": "15 Agustus 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "16 Agustus 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "17 Agustus 1945",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "18 Agustus 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "19 Agustus 1945",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berdasarkan UUD 1945 Pasal 1 ayat (1), bentuk negara Indonesia adalah...",
+      "position": 2,
+      "explanation": "Pasal 1 ayat (1) UUD 1945 menyatakan: 'Negara Indonesia ialah Negara Kesatuan, yang berbentuk Republik.' Ini menegaskan bahwa Indonesia bukan negara federal.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Negara Federasi berbentuk Republik",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Negara Kesatuan berbentuk Republik",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Negara Konfederasi berbentuk Monarki",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Negara Kesatuan berbentuk Monarki Konstitusional",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Negara Federasi berbentuk Monarki",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pasal UUD 1945 yang menyatakan bahwa bentuk NKRI tidak dapat diubah adalah...",
+      "position": 3,
+      "explanation": "Pasal 37 ayat (5) UUD 1945 menyatakan: 'Khusus mengenai bentuk Negara Kesatuan Republik Indonesia tidak dapat dilakukan perubahan.' Ini merupakan ketentuan yang tidak dapat diubah (unamendable clause).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pasal 1 ayat (1)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pasal 3 ayat (2)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Pasal 25A",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Pasal 37 ayat (5)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Pasal 36",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Indonesia bergabung menjadi anggota Perserikatan Bangsa-Bangsa (PBB) pada tahun...",
+      "position": 4,
+      "explanation": "Indonesia resmi menjadi anggota PBB pada tanggal 28 September 1950 sebagai anggota ke-60. Pernah keluar dari PBB pada Januari 1965 dan kembali bergabung pada September 1966.",
+      "options": [
+        {
+          "label": "A",
+          "content": "1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "1947",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "1950",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "1955",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "1966",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Integrasi Timor Timur (Timor-Leste) ke dalam wilayah NKRI terjadi pada tahun...",
+      "position": 5,
+      "explanation": "Timor Timur berintegrasi dengan Indonesia pada 17 Juli 1976 melalui UU No. 7 Tahun 1976 dan menjadi provinsi ke-27 Indonesia. Timor Timur kemudian merdeka melalui referendum pada 30 Agustus 1999.",
+      "options": [
+        {
+          "label": "A",
+          "content": "1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "1963",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "1969",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "1976",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "1985",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Wawasan Nusantara sebagai wawasan nasional Indonesia bertujuan untuk...",
+      "position": 6,
+      "explanation": "Wawasan Nusantara adalah cara pandang bangsa Indonesia tentang diri dan lingkungannya berdasarkan Pancasila dan UUD 1945, yang bertujuan untuk mewujudkan persatuan dan kesatuan dalam segala aspek kehidupan nasional.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Memperluas wilayah Indonesia ke negara tetangga",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mewujudkan persatuan dan kesatuan nasional dalam segala aspek kehidupan bangsa",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Membentuk blok pertahanan bersama negara-negara ASEAN",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mengeksploitasi sumber daya alam seluruh kepulauan Indonesia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Memisahkan pulau-pulau besar dari pemerintah pusat",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pemberontakan yang paling mengancam keutuhan NKRI pada masa awal kemerdekaan dan bertujuan mendirikan negara Islam adalah...",
+      "position": 7,
+      "explanation": "DI/TII (Darul Islam/Tentara Islam Indonesia) yang dipimpin S.M. Kartosuwiryo di Jawa Barat (1948) merupakan pemberontakan bersenjata yang bertujuan mendirikan Negara Islam Indonesia, dan menjadi ancaman serius bagi keutuhan NKRI.",
+      "options": [
+        {
+          "label": "A",
+          "content": "PRRI/Permesta (1958)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "PKI Madiun (1948)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "DI/TII pimpinan S.M. Kartosuwiryo",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "RMS (Republik Maluku Selatan)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "APRA (Angkatan Perang Ratu Adil)",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Otonomi daerah di Indonesia diatur dalam Undang-Undang Nomor...",
+      "position": 8,
+      "explanation": "Otonomi daerah diatur dalam UU No. 23 Tahun 2014 tentang Pemerintahan Daerah (menggantikan UU No. 32 Tahun 2004). UU ini mengatur hubungan antara pemerintah pusat dan daerah dalam kerangka NKRI.",
+      "options": [
+        {
+          "label": "A",
+          "content": "UU No. 5 Tahun 1974",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "UU No. 22 Tahun 1999",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "UU No. 32 Tahun 2004",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "UU No. 23 Tahun 2014",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "UU No. 9 Tahun 2015",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berdasarkan UNCLOS (United Nations Convention on the Law of the Sea) 1982, Indonesia diakui sebagai...",
+      "position": 9,
+      "explanation": "UNCLOS 1982 mengakui konsep negara kepulauan (Archipelagic State) yang diperjuangkan Indonesia melalui Deklarasi Djuanda 1957. Ini berarti perairan antar pulau merupakan wilayah kedaulatan Indonesia.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Negara daratan (landlocked state)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Negara pantai biasa dengan 12 mil laut territorial",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Negara kepulauan (Archipelagic State) dengan hak atas perairan antar pulau",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Negara yang tidak memiliki ZEE (Zona Ekonomi Eksklusif)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Negara semi-terkurung dengan batas laut terbatas",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Deklarasi Djuanda pada 13 Desember 1957 mempunyai arti penting bagi NKRI karena...",
+      "position": 10,
+      "explanation": "Deklarasi Djuanda menyatakan bahwa laut di antara pulau-pulau Indonesia merupakan bagian dari wilayah Indonesia (bukan laut bebas). Ini memperluas wilayah NKRI dan menjadi dasar konsep negara kepulauan (wawasan nusantara).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Menetapkan batas darat Indonesia dengan negara tetangga",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Menyatakan perairan antar pulau sebagai bagian wilayah kedaulatan Indonesia",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Mengumumkan kemerdekaan Indonesia kepada dunia internasional",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Membatalkan perjanjian KMB tentang batas wilayah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Menyerahkan kedaulatan Irian Barat kepada Indonesia",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Prinsip desentralisasi dalam sistem pemerintahan NKRI artinya...",
+      "position": 11,
+      "explanation": "Desentralisasi berarti pelimpahan wewenang pemerintahan dari pemerintah pusat kepada daerah otonom. Ini berbeda dengan federalisme karena dalam NKRI, kedaulatan tetap berada di tangan pemerintah pusat.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pemerintah daerah berdaulat penuh tanpa campur tangan pusat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pelimpahan sebagian wewenang pusat kepada daerah otonom dalam kerangka NKRI",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pembentukan negara-negara bagian yang otonom",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Penghapusan pemerintah daerah dan sentralisasi total",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Penyerahan semua wewenang kepada pemerintah desa",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Wilayah NKRI berdasarkan Pasal 25A UUD 1945 adalah...",
+      "position": 12,
+      "explanation": "Pasal 25A UUD 1945 menyatakan: 'Negara Kesatuan Republik Indonesia adalah sebuah negara kepulauan yang berciri Nusantara dengan wilayah yang batas-batas dan hak-haknya ditetapkan dengan undang-undang.'",
+      "options": [
+        {
+          "label": "A",
+          "content": "Hanya pulau-pulau besar: Jawa, Sumatera, Kalimantan, Sulawesi, Papua",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Negara kepulauan yang berciri Nusantara dengan batas yang ditetapkan undang-undang",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Seluruh wilayah di Asia Tenggara yang dikuasai Indonesia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Wilayah yang sebelumnya dikuasai Kerajaan Majapahit",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pulau-pulau dalam radius 200 mil dari Jawa",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Operasi Trikora (1961-1963) dilakukan untuk...",
+      "position": 13,
+      "explanation": "Operasi Trikora (Tri Komando Rakyat) diserukan Soekarno pada 19 Desember 1961 untuk merebut kembali Irian Barat (Papua) dari tangan Belanda. Irian Barat kemudian diserahkan kepada Indonesia pada 1 Mei 1963.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Membebaskan Timor Timur dari Portugal",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Merebut kembali Irian Barat dari Belanda",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Menghadapi konfrontasi dengan Malaysia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Memadamkan pemberontakan DI/TII",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Membebaskan Sabah dan Sarawak",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Ancaman terhadap NKRI yang bersifat non-militer di era globalisasi antara lain adalah...",
+      "position": 14,
+      "explanation": "Di era globalisasi, ancaman non-militer seperti separatisme, terorisme, radikalisme, narkoba, dan disintegrasi akibat konflik SARA merupakan ancaman nyata bagi keutuhan NKRI yang tidak kalah bahayanya dengan ancaman militer.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Invasi militer dari negara asing",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Perang nuklir antarnegara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Separatisme, terorisme, radikalisme, dan disintegrasi akibat konflik SARA",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Serangan siber dari negara adidaya",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Sengketa batas laut dengan Australia",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Penetapan Ibu Kota Nusantara (IKN) sebagai ibu kota negara yang baru diatur dalam...",
+      "position": 15,
+      "explanation": "Pemindahan ibu kota negara dari Jakarta ke Ibu Kota Nusantara (IKN) di Kalimantan Timur diatur dalam UU No. 3 Tahun 2022 tentang Ibu Kota Negara yang disahkan oleh DPR pada Januari 2022.",
+      "options": [
+        {
+          "label": "A",
+          "content": "UU No. 1 Tahun 2022",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "UU No. 3 Tahun 2022 tentang Ibu Kota Negara",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Perpres No. 65 Tahun 2022",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "UU No. 5 Tahun 2021",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "TAP MPR No. III/MPR/2000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Referendum masyarakat Timor Timur yang menyebabkan wilayah itu lepas dari NKRI dilaksanakan pada tahun...",
+      "position": 16,
+      "explanation": "Referendum Timor Timur dilaksanakan pada 30 Agustus 1999 atas inisiasi PBB. Hasilnya, 78,5% rakyat Timor Timur memilih merdeka dari Indonesia. Timor Leste resmi merdeka pada 20 Mei 2002.",
+      "options": [
+        {
+          "label": "A",
+          "content": "1995",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "1997",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "1999",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "2001",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "2002",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Ketahanan nasional Indonesia bertumpu pada konsep Astagatra yang terdiri dari...",
+      "position": 17,
+      "explanation": "Astagatra (delapan gatra) terdiri dari Trigatra (aspek alamiah: geografi, demografi, sumber daya alam) dan Pancagatra (aspek sosial: ideologi, politik, ekonomi, sosial budaya, pertahanan keamanan).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Trigatra dan Pancagatra",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content": "Trigatra dan Tridharma",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Pancagatra dan Dasagatra",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Trigatra dan Saptamarga",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Panca Dharma dan Trigatra",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Konfrontasi Indonesia-Malaysia (KONFRONTASI) pada tahun 1963-1966 dipicu oleh...",
+      "position": 18,
+      "explanation": "Konfrontasi Indonesia-Malaysia (1963-1966) dipicu oleh pembentukan Federasi Malaysia yang memasukkan Singapura, Sabah, dan Sarawak. Soekarno menentang keras pembentukan ini dan menyebutnya sebagai neo-kolonialisme Inggris.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Sengketa wilayah Pulau Sipadan dan Ligitan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pembentukan Federasi Malaysia yang dipandang sebagai proyek neo-kolonialisme",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pelanggaran batas wilayah laut Indonesia oleh kapal Malaysia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Persaingan ekonomi antara Indonesia dan Malaysia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Klaim Malaysia atas Pulau Kalimantan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "Dalam konteks pertahanan negara, yang dimaksud dengan 'sistem pertahanan semesta' (sishankamrata) adalah...",
+      "position": 19,
+      "explanation": "Sistem pertahanan semesta (Sishankamrata) adalah sistem pertahanan yang melibatkan seluruh warga negara, wilayah, dan sumber daya nasional. TNI sebagai komponen utama didukung oleh komponen cadangan dan komponen pendukung dari masyarakat.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pertahanan yang hanya mengandalkan kekuatan militer TNI",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Sistem pertahanan yang melibatkan seluruh warga negara, wilayah, dan sumber daya nasional dengan TNI sebagai komponen utama",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pertahanan berbasis teknologi persenjataan canggih",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kerjasama pertahanan dengan negara-negara ASEAN",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pembentukan milisi bersenjata di setiap desa",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    },
+    {
+      "type": "MCQ",
+      "content": "ASEAN (Association of Southeast Asian Nations) didirikan oleh Indonesia bersama 4 negara pendiri lainnya melalui Deklarasi Bangkok pada tanggal...",
+      "position": 20,
+      "explanation": "ASEAN didirikan pada 8 Agustus 1967 melalui Deklarasi Bangkok oleh 5 negara pendiri: Indonesia, Malaysia, Filipina, Singapura, dan Thailand. Indonesia diwakili oleh Menlu Adam Malik.",
+      "options": [
+        {
+          "label": "A",
+          "content": "8 Agustus 1965",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "8 Agustus 1967",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "8 Agustus 1970",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "8 Agustus 1975",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "8 Agustus 1980",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "NKRI"
+    }
+  ]
+}

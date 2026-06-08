@@ -1,0 +1,790 @@
+{
+  "quiz": {
+    "title": "TWK - Sistem Pemerintahan",
+    "description": "Latihan soal Tes Wawasan Kebangsaan tentang sistem pemerintahan Indonesia, lembaga-lembaga negara, otonomi daerah, dan proses demokrasi.",
+    "category": "TWK",
+    "time_limit": 20
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "Indonesia menganut sistem pemerintahan...",
+      "position": 1,
+      "explanation": "Indonesia menganut sistem pemerintahan presidensial, di mana Presiden berkedudukan sebagai kepala negara sekaligus kepala pemerintahan. Presiden tidak bertanggung jawab kepada parlemen (DPR).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Parlementer, di mana PM bertanggung jawab kepada parlemen",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Presidensial, di mana Presiden adalah kepala negara dan kepala pemerintahan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Semi-presidensial, di mana ada Presiden dan PM sekaligus",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Monarki konstitusional dengan raja sebagai simbol negara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Sistem Soviet dengan dewan perwakilan sebagai pemegang kekuasaan tertinggi",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Lembaga negara yang termasuk dalam kekuasaan eksekutif di Indonesia adalah...",
+      "position": 2,
+      "explanation": "Lembaga eksekutif Indonesia terdiri dari Presiden, Wakil Presiden, dan Kabinet (Kementerian). Presiden memegang kekuasaan pemerintahan berdasarkan Pasal 4 ayat (1) UUD 1945.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Mahkamah Konstitusi dan Mahkamah Agung",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "DPR dan DPD",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Presiden, Wakil Presiden, dan Kabinet Kementerian",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "BPK dan KY",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "MPR dan DPR",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kewenangan Mahkamah Konstitusi (MK) berdasarkan Pasal 24C UUD 1945 antara lain adalah...",
+      "position": 3,
+      "explanation": "Kewenangan MK: (1) menguji UU terhadap UUD, (2) memutus sengketa kewenangan lembaga negara, (3) memutus pembubaran parpol, (4) memutus perselisihan hasil pemilu, dan (5) memberikan putusan atas pendapat DPR mengenai dugaan pelanggaran Presiden/Wapres.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Mengadili perkara pidana tingkat kasasi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Menguji undang-undang terhadap UUD 1945 dan memutus sengketa hasil pemilu",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Memeriksa keuangan negara dan menyerahkan laporan kepada DPR",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Memilih dan memberhentikan hakim agung",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Membuat peraturan pemerintah sebagai pengganti undang-undang",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berdasarkan UUD 1945, MPR terdiri dari anggota...",
+      "position": 4,
+      "explanation": "Pasal 2 ayat (1) UUD 1945 menyatakan: 'Majelis Permusyawaratan Rakyat terdiri atas anggota Dewan Perwakilan Rakyat dan anggota Dewan Perwakilan Daerah yang dipilih melalui pemilihan umum...'",
+      "options": [
+        {
+          "label": "A",
+          "content": "DPR, DPD, dan DPRD seluruh provinsi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "DPR dan DPD",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "DPR, utusan golongan, dan utusan daerah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "DPR, DPD, dan Presiden",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "DPR saja",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Komisi Yudisial (KY) memiliki kewenangan untuk...",
+      "position": 5,
+      "explanation": "Komisi Yudisial berdasarkan Pasal 24B UUD 1945 berwenang mengusulkan pengangkatan hakim agung dan mempunyai wewenang lain dalam rangka menjaga dan menegakkan kehormatan, keluhuran martabat, serta perilaku hakim.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Mengadili perkara korupsi hakim",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mengusulkan pengangkatan hakim agung dan mengawasi perilaku hakim",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Membuat kode etik advokat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mengesahkan putusan pengadilan tinggi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Memilih anggota Mahkamah Konstitusi",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Dalam sistem pemilihan umum Indonesia, pemilu serentak pertama kali diselenggarakan pada tahun...",
+      "position": 6,
+      "explanation": "Pemilu serentak nasional pertama kali diselenggarakan pada 17 April 2019, dimana Presiden/Wapres, DPR, DPD, DPRD Provinsi, dan DPRD Kabupaten/Kota dipilih dalam satu hari yang sama.",
+      "options": [
+        {
+          "label": "A",
+          "content": "2004",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "2009",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "2014",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "2019",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "2024",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Asas-asas pemilihan umum di Indonesia berdasarkan UUD 1945 dan UU Pemilu adalah...",
+      "position": 7,
+      "explanation": "Pasal 22E UUD 1945 menyatakan pemilu diselenggarakan secara langsung, umum, bebas, rahasia, jujur, dan adil (LUBER JURDIL). Ini merupakan prinsip dasar pemilu demokratis di Indonesia.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Langsung, Terbuka, Bebas, Rahasia (LTBR)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Langsung, Umum, Bebas, Rahasia, Jujur, dan Adil (LUBER JURDIL)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Langsung, Universal, Bersih, Efisien, Representatif (LUBER)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Bebas, Adil, Setara, dan Akuntabel (BASA)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Terbuka, Proporsional, Jujur, dan Adil (TPJA)",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Gubernur, Bupati, dan Walikota dipilih melalui mekanisme...",
+      "position": 8,
+      "explanation": "Gubernur, Bupati, dan Walikota dipilih melalui Pemilihan Kepala Daerah (Pilkada) secara langsung oleh rakyat. Sebelum reformasi, mereka dipilih oleh DPRD.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Ditunjuk langsung oleh Presiden",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Dipilih oleh DPRD setempat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Pemilihan Kepala Daerah (Pilkada) langsung oleh rakyat",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Ditunjuk oleh Menteri Dalam Negeri",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Dipilih oleh MPR daerah",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berdasarkan UU Pemerintahan Daerah, urusan pemerintahan yang sepenuhnya menjadi kewenangan pemerintah pusat adalah...",
+      "position": 9,
+      "explanation": "Urusan absolut pemerintah pusat yang tidak dapat diserahkan ke daerah meliputi: politik luar negeri, pertahanan, keamanan, yustisi, moneter dan fiskal nasional, serta agama.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pendidikan, kesehatan, dan pertanian",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Politik luar negeri, pertahanan, keamanan, yustisi, moneter, dan agama",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pariwisata, perdagangan, dan industri",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Tata ruang, perumahan, dan lingkungan hidup",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Transportasi, komunikasi, dan energi",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Mahkamah Agung (MA) merupakan lembaga peradilan tertinggi yang berwenang...",
+      "position": 10,
+      "explanation": "Mahkamah Agung berwenang mengadili perkara pada tingkat kasasi, menguji peraturan perundang-undangan di bawah undang-undang terhadap undang-undang, dan kewenangan lain sesuai UU.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Menguji undang-undang terhadap UUD 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mengadili perkara tingkat kasasi dan menguji peraturan perundangan di bawah UU",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Membubarkan partai politik yang melanggar konstitusi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Memeriksa dan memutus sengketa pemilu presiden",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Membuat peraturan MA yang setara dengan undang-undang",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Lembaga penyelenggara pemilu yang bersifat nasional, tetap, dan mandiri di Indonesia adalah...",
+      "position": 11,
+      "explanation": "KPU (Komisi Pemilihan Umum) adalah lembaga penyelenggara pemilu yang bersifat nasional, tetap, dan mandiri. Bawaslu (Badan Pengawas Pemilu) bertugas mengawasi penyelenggaraan pemilu.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kementerian Dalam Negeri",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "KPU (Komisi Pemilihan Umum)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Bawaslu (Badan Pengawas Pemilu)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mahkamah Konstitusi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "DKPP (Dewan Kehormatan Penyelenggara Pemilu)",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Presiden memegang kekuasaan membentuk undang-undang bersama DPR. Presiden juga dapat mengeluarkan Peraturan Pemerintah Pengganti Undang-Undang (Perppu) dalam kondisi...",
+      "position": 12,
+      "explanation": "Berdasarkan Pasal 22 UUD 1945, Presiden dapat mengeluarkan Perppu dalam hal ihwal kegentingan yang memaksa (keadaan darurat). Perppu harus mendapat persetujuan DPR dalam persidangan berikutnya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "DPR sedang dalam masa reses",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Hal ihwal kegentingan yang memaksa (keadaan darurat)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Presiden ingin membuat aturan lebih cepat dari prosedur biasa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "DPR menolak RUU yang diajukan Presiden",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Anggaran negara tidak mencukupi untuk program pemerintah",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sistem pemerintahan daerah di Indonesia terdiri dari tiga tingkatan, yaitu...",
+      "position": 13,
+      "explanation": "Berdasarkan UU No. 23 Tahun 2014, pemerintahan daerah terdiri dari tiga tingkatan: Provinsi (dipimpin Gubernur), Kabupaten (dipimpin Bupati), dan Kota (dipimpin Walikota). Ketiganya bersifat otonom dalam NKRI.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Provinsi, Kabupaten/Kota, dan Desa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Provinsi, Kabupaten, dan Kota",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pusat, Daerah, dan Desa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Wilayah, Daerah, dan Kecamatan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Provinsi, Kabupaten/Kota, dan Kecamatan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Mekanisme impeachment (pemakzulan) Presiden/Wapres berdasarkan UUD 1945 dimulai dari...",
+      "position": 14,
+      "explanation": "Berdasarkan Pasal 7A-7B UUD 1945, proses pemakzulan dimulai dari DPR yang mengajukan pendapat bahwa Presiden melanggar hukum. Kemudian MK memeriksa, menyidangkan, dan memutus pendapat DPR. Jika terbukti, MPR memutuskan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Mahkamah Agung yang mengeluarkan vonis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "DPR mengajukan pendapat → MK memeriksa → MPR memutuskan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Referendum rakyat secara langsung",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Militer yang menyatakan Presiden tidak layak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "MPR langsung memutuskan tanpa proses pengadilan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Dalam sistem pemerintahan Indonesia, kekuasaan kehakiman yang merdeka bertujuan untuk...",
+      "position": 15,
+      "explanation": "Kekuasaan kehakiman yang merdeka (Pasal 24 UUD 1945) bertujuan agar pengadilan dapat menyelenggarakan peradilan yang bebas dari pengaruh kekuasaan eksekutif dan legislatif, guna menegakkan hukum dan keadilan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Memberikan kekuasaan mutlak kepada hakim tanpa pengawasan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Menyelenggarakan peradilan bebas dari pengaruh kekuasaan lain demi penegakan hukum dan keadilan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Memisahkan pengadilan dari pemerintah daerah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Memperbolehkan hakim memutus perkara berdasarkan kepentingan politik",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Mengizinkan pengadilan membuat undang-undang baru",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "DPRD (Dewan Perwakilan Rakyat Daerah) Provinsi bersama Gubernur bertugas untuk...",
+      "position": 16,
+      "explanation": "DPRD Provinsi bersama Gubernur bertugas membentuk Peraturan Daerah (Perda) Provinsi dan membahas serta menyetujui APBD Provinsi, serta melaksanakan fungsi pengawasan terhadap jalannya pemerintahan daerah.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Membuat undang-undang nasional yang berlaku di provinsi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Membentuk Peraturan Daerah dan menetapkan APBD Provinsi",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Memilih anggota DPR pusat dari daerah pemilihan provinsi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mengangkat dan memberhentikan bupati/walikota",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Menetapkan kebijakan luar negeri daerah",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Masa jabatan anggota DPR, DPD, dan DPRD adalah...",
+      "position": 17,
+      "explanation": "Berdasarkan UU Pemilu, masa jabatan anggota DPR, DPD, dan DPRD adalah 5 tahun. Mereka dapat dipilih kembali pada pemilu berikutnya tanpa batas periode.",
+      "options": [
+        {
+          "label": "A",
+          "content": "3 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "4 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "5 tahun",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "6 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "7 tahun",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Dewan Perwakilan Daerah (DPD) dalam sistem ketatanegaraan Indonesia mewakili...",
+      "position": 18,
+      "explanation": "DPD merupakan lembaga perwakilan yang mewakili daerah-daerah (provinsi). Setiap provinsi diwakili oleh 4 orang anggota DPD yang dipilih langsung oleh rakyat di provinsi tersebut.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Partai-partai politik di daerah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Daerah-daerah (provinsi) di Indonesia, dengan 4 perwakilan per provinsi",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kelompok-kelompok masyarakat adat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Pemerintah daerah tingkat kabupaten/kota",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Gubernur-gubernur dari seluruh provinsi",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Tugas utama BPK (Badan Pemeriksa Keuangan) dalam sistem pemerintahan Indonesia adalah...",
+      "position": 19,
+      "explanation": "BPK berdasarkan Pasal 23E UUD 1945 bertugas memeriksa pengelolaan dan tanggung jawab keuangan negara. BPK bersifat bebas dan mandiri, dan hasil pemeriksaannya diserahkan kepada DPR, DPD, dan DPRD.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Membuat anggaran pendapatan dan belanja negara (APBN)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Memeriksa pengelolaan dan tanggung jawab keuangan negara secara bebas dan mandiri",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Menagih pajak dari wajib pajak badan dan perorangan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mengaudit laporan keuangan perusahaan swasta",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Menetapkan tarif pajak dan bea cukai",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    },
+    {
+      "type": "MCQ",
+      "content": "Asas dekonsentrasi dalam pemerintahan daerah berarti...",
+      "position": 20,
+      "explanation": "Dekonsentrasi adalah pelimpahan wewenang dari Pemerintah Pusat kepada Gubernur sebagai wakil pemerintah pusat di daerah. Berbeda dengan desentralisasi yang melimpahkan kewenangan kepada daerah otonom.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pemberian kewenangan otonom kepada pemerintah daerah untuk mengurus daerahnya sendiri",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pelimpahan wewenang dari pemerintah pusat kepada Gubernur sebagai wakil pemerintah pusat",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Penyerahan tugas tertentu dari pemerintah kepada pemerintah desa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Pembentukan daerah-daerah otonom baru yang mandiri",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Penghapusan hierarki pemerintahan antara pusat dan daerah",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SISTEM_PEMERINTAHAN"
+    }
+  ]
+}

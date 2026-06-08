@@ -1,0 +1,810 @@
+{
+  "quiz": {
+    "title": "TIU – Deret Angka",
+    "description": "Temukan pola pada deret angka berikut, lalu tentukan angka atau bilangan yang tepat untuk mengisi bagian yang kosong.",
+    "category": "TIU",
+    "time_limit": 25
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "2, 4, 8, 16, 32, ...\n\nAngka selanjutnya adalah:",
+      "position": 1,
+      "explanation": "Setiap angka dikalikan 2 (deret geometri dengan rasio 2). $\\text{32} \\times \\text{2} = \\text{64}$.",
+      "tip": "Langkah 1: hitung rasio antar suku awal. 4÷2=2, 8÷4=2 — rasio konstan → deret geometri. Langkah 2: kalikan suku terakhir dengan rasio: 32×2=64. Tips identifikasi cepat: jika setiap suku ≈ dua kali suku sebelumnya, langsung cek rasio. Deret geometri r=2 sangat umum di CPNS.",
+      "options": [
+        {
+          "label": "A",
+          "content": "48",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "60",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "64",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "68",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "72",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "3, 7, 11, 15, 19, ...\n\nAngka selanjutnya adalah:",
+      "position": 2,
+      "explanation": "Setiap angka bertambah 4 (deret aritmatika dengan beda 4). $\\text{19} + \\text{4} = \\text{23}$.",
+      "tip": "Langkah 1: hitung selisih antar suku. 7-3=4, 11-7=4 — selisih konstan → deret aritmatika. Langkah 2: tambahkan beda ke suku terakhir: 19+4=23. Kerangka diagnosa deret: (1) hitung selisih, (2) jika konstan = aritmatika, (3) jika tidak konstan, hitung rasio, (4) jika rasio konstan = geometri, (5) jika tidak keduanya, lanjut ke langkah analisis lebih dalam.",
+      "options": [
+        {
+          "label": "A",
+          "content": "21",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "22",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "23",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "24",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "25",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "1, 4, 9, 16, 25, ...\n\nAngka selanjutnya adalah:",
+      "position": 3,
+      "explanation": "Ini adalah deret kuadrat: $\\text{1}^{\\text{2}}, \\text{2}^{\\text{2}}, \\text{3}^{\\text{2}}, \\text{4}^{\\text{2}}, \\text{5}^{\\text{2}}$. Angka berikutnya adalah $\\text{6}^{\\text{2}} = \\text{36}$.",
+      "tip": "Kenali deret kuadrat sempurna: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100. Hafal daftar ini — jika deretnya terlihat seperti ini, langsung identifikasi sebagai n². Cara verifikasi cepat: cek selisih antar suku (3, 5, 7, 9, ...) — selisihnya adalah bilangan ganjil berurutan, tanda khas deret kuadrat. Suku berikutnya = 6²=36.",
+      "options": [
+        {
+          "label": "A",
+          "content": "30",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "34",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "36",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "38",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "40",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "100, 50, 25, 12,5, ...\n\nAngka selanjutnya adalah:",
+      "position": 4,
+      "explanation": "Setiap angka dibagi 2 (deret geometri dengan rasio $\\frac{\\text{1}}{\\text{2}}$). $\\text{12}{,}\\text{5} \\div \\text{2} = \\text{6}{,}\\text{25}$.",
+      "tip": "Hitung rasio: 50÷100=0,5, 25÷50=0,5 — rasio konstan 1/2 → deret geometri menurun. Suku terakhir 12,5 ÷ 2 = 6,25. Tips: deret geometri tidak harus bilangan bulat. Jika angka terus terpotong setengah dan muncul desimal, jangan ragu — jawab desimal. Jebakan: opsi A (5) atau B (6) terlihat 'bersih', tapi hasilnya memang 6,25.",
+      "options": [
+        {
+          "label": "A",
+          "content": "5",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "6",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "6,25",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "6,5",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "7",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "2, 3, 5, 8, 13, 21, ...\n\nAngka selanjutnya adalah:",
+      "position": 5,
+      "explanation": "Ini adalah deret Fibonacci: setiap angka merupakan jumlah dua angka sebelumnya. $\\text{13} + \\text{21} = \\text{34}$.",
+      "tip": "Kenali tanda deret Fibonacci: selisih antar suku (1,2,3,5,8,...) sama dengan deret itu sendiri — dan bukan konstan, bukan rasio konstan. Cara cepat: jika cek selisih tidak menghasilkan pola sederhana, coba penjumlahan dua suku sebelumnya. Verifikasi: 2+3=5✓, 3+5=8✓, 5+8=13✓, 8+13=21✓. Maka selanjutnya 13+21=34.",
+      "options": [
+        {
+          "label": "A",
+          "content": "29",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "32",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "34",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "36",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "40",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "5, 10, 20, 40, ...\n\nAngka selanjutnya adalah:",
+      "position": 6,
+      "explanation": "Setiap angka dikalikan 2. $\\text{40} \\times \\text{2} = \\text{80}$.",
+      "tip": "Hitung rasio: 10÷5=2, 20÷10=2 — deret geometri r=2. Suku terakhir 40×2=80. Bedakan deret geometri dari aritmatika: di sini selisihnya (5,10,20) tidak konstan, tapi rasionya (2,2,2) konstan. Deret geometri r=2 berarti setiap suku dua kali lipat suku sebelumnya — pertumbuhannya eksponensial.",
+      "options": [
+        {
+          "label": "A",
+          "content": "60",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "70",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "75",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "80",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "90",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "1, 2, 4, 7, 11, 16, ...\n\nAngka selanjutnya adalah:",
+      "position": 7,
+      "explanation": "Beda antar suku: $+\\text{1}, +\\text{2}, +\\text{3}, +\\text{4}, +\\text{5}, ...$. Maka berikutnya $+\\text{6}$: $\\text{16} + \\text{6} = \\text{22}$.",
+      "tip": "Selisih tidak konstan (1,2,3,4,5,...) → bukan deret aritmatika biasa. Tapi selisihnya sendiri membentuk pola: 1,2,3,4,5 — deret aritmatika dengan beda 1. Ini disebut selisih bertingkat (second-order difference). Langkah: tulis selisih antar suku → cek pola selisih tersebut → tentukan selisih berikutnya (6) → tambahkan: 16+6=22. Teknik selisih bertingkat adalah kunci untuk deret yang tampak 'tidak biasa'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "20",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "21",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "22",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "23",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "24",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "81, 27, 9, 3, ...\n\nAngka selanjutnya adalah:",
+      "position": 8,
+      "explanation": "Setiap angka dibagi 3 (deret geometri dengan rasio $\\frac{\\text{1}}{\\text{3}}$). $\\text{3} \\div \\text{3} = \\text{1}$.",
+      "tip": "Kenali sebagai pangkat 3 menurun: 81=3⁴, 27=3³, 9=3², 3=3¹. Suku berikutnya = 3⁰=1. Alternatif: hitung rasio 27÷81=1/3, konfirmasi 9÷27=1/3 → deret geometri r=1/3. Suku terakhir 3÷3=1. Jebakan: opsi D (1/3) menggoda karena rasionya 1/3, tapi rasio itu diterapkan ke suku sebelumnya (3), bukan hasilnya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "0",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "1",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "2",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "$\\frac{\\text{1}}{\\text{3}}$",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "3",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "2, 6, 12, 20, 30, ...\n\nAngka selanjutnya adalah:",
+      "position": 9,
+      "explanation": "Pola: $\\text{1} \\times \\text{2},\\; \\text{2} \\times \\text{3},\\; \\text{3} \\times \\text{4},\\; \\text{4} \\times \\text{5},\\; \\text{5} \\times \\text{6} = \\text{30}$. Berikutnya $\\text{6} \\times \\text{7} = \\text{42}$.",
+      "tip": "Hitung selisih: 4, 6, 8, 10 — bertambah 2 setiap kali (selisih bertingkat konstan +2). Selanjutnya selisih=12, maka 30+12=42. Atau kenali pola n×(n+1): 1×2=2, 2×3=6, 3×4=12, 4×5=20, 5×6=30, 6×7=42. Pola n(n+1) sering muncul di CPNS karena angkanya rapi. Selisih dari deret n(n+1) selalu bilangan genap berurutan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "38",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "40",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "42",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "44",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "48",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "3, 9, 27, 81, ...\n\nAngka selanjutnya adalah:",
+      "position": 10,
+      "explanation": "Setiap angka dikalikan 3 (deret geometri dengan rasio 3). $\\text{81} \\times \\text{3} = \\text{243}$.",
+      "tip": "Kenali sebagai pangkat 3: 3=3¹, 9=3², 27=3³, 81=3⁴. Suku ke-5 = 3⁵=243. Atau hitung rasio: 9÷3=3, 27÷9=3 → deret geometri r=3. 81×3=243. Hafal pangkat 3 yang umum: 3¹=3, 3²=9, 3³=27, 3⁴=81, 3⁵=243, 3⁶=729. Ini sering muncul dalam berbagai bentuk soal.",
+      "options": [
+        {
+          "label": "A",
+          "content": "162",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "210",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "243",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "270",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "324",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "50, 45, 41, 38, 36, ...\n\nAngka selanjutnya adalah:",
+      "position": 11,
+      "explanation": "Beda antar suku: $-\\text{5}, -\\text{4}, -\\text{3}, -\\text{2}, ...$. Berikutnya $-\\text{1}$: $\\text{36} - \\text{1} = \\text{35}$.",
+      "tip": "Hitung selisih: -5, -4, -3, -2 — selisih tidak konstan, tapi polanya jelas: pengurangan berkurang 1 setiap langkah. Ini selisih bertingkat menurun. Selanjutnya selisih = -1, maka 36-1=35. Tips: saat deret menurun dengan 'perlambatan', tuliskan selisihnya, cari pola selisihnya. Jika selisih menuju 0, deret akan berhenti berubah sebentar lagi.",
+      "options": [
+        {
+          "label": "A",
+          "content": "33",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "34",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "35",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "36",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "37",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "2, 5, 11, 23, 47, ...\n\nAngka selanjutnya adalah:",
+      "position": 12,
+      "explanation": "Pola: setiap suku dikalikan 2 lalu ditambah 1. $\\text{2} \\times \\text{2} + \\text{1} = \\text{5}$; $\\text{5} \\times \\text{2} + \\text{1} = \\text{11}$; ...; $\\text{47} \\times \\text{2} + \\text{1} = \\text{95}$.",
+      "tip": "Selisih: 3, 6, 12, 24 — rasio selisih = 2 (selisihnya membentuk deret geometri). Ini tanda pola ×k±c. Coba rumus: suku(n+1) = 2×suku(n)+1. Verifikasi: 2×2+1=5✓, 2×5+1=11✓, 2×11+1=23✓, 2×23+1=47✓. Maka: 2×47+1=95. Saat selisih berkembang secara geometri, coba operasi ×k lalu ±c.",
+      "options": [
+        {
+          "label": "A",
+          "content": "90",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "93",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "95",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "97",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "100",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "1, 1, 2, 3, 5, 8, 13, ...\n\nAngka selanjutnya adalah:",
+      "position": 13,
+      "explanation": "Deret Fibonacci: setiap suku adalah jumlah dua suku sebelumnya. $\\text{8} + \\text{13} = \\text{21}$.",
+      "tip": "Deret Fibonacci dimulai dari 1, 1 (atau 0, 1). Kenali cirinya: dua suku awal sama, selisihnya tidak konstan, rasionya tidak konstan. Segera coba: apakah setiap suku = jumlah dua suku sebelumnya? 1+1=2✓, 1+2=3✓, 2+3=5✓, 3+5=8✓, 5+8=13✓. Jawab: 8+13=21. Di CPNS, deret Fibonacci selalu muncul — hafal 10 suku pertamanya: 1,1,2,3,5,8,13,21,34,55.",
+      "options": [
+        {
+          "label": "A",
+          "content": "18",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "19",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "20",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "21",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "24",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "10, 20, 15, 30, 25, 50, ...\n\nAngka selanjutnya adalah:",
+      "position": 14,
+      "explanation": "Ada dua deret bergantian: $\\text{10}, \\text{15}, \\text{25}, ...$ (bertambah 5, lalu 10) dan $\\text{20}, \\text{30}, \\text{50}, ...$. Deret pertama: $\\text{10}, \\text{15}, \\text{25}, \\text{45}$ (+5, +10, +20). Suku ke-7 dari deret pertama: $\\text{45}$.",
+      "tip": "Saat deret terlihat 'naik-turun' atau tidak beraturan, pisahkan suku ganjil dan genap. Suku ganjil (posisi 1,3,5,...): 10, 15, 25 → selisih +5, +10 (berlipat dua). Berikutnya +20: 25+20=45. Suku genap (posisi 2,4,6,...): 20, 30, 50 → selisih +10, +20. Suku ke-7 ada di posisi ganjil → jawabannya 45. Teknik pisah dua deret ini wajib dikuasai.",
+      "options": [
+        {
+          "label": "A",
+          "content": "40",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "42",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "44",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "45",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "48",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "7, 14, 21, 28, 35, ...\n\nAngka selanjutnya adalah:",
+      "position": 15,
+      "explanation": "Ini adalah deret kelipatan 7. $\\text{35} + \\text{7} = \\text{42}$.",
+      "tip": "Kenali sebagai deret kelipatan: 7×1, 7×2, 7×3, 7×4, 7×5. Suku ke-6 = 7×6=42. Cara tercepat: identifikasi FPB dari suku-suku awal. FPB(7,14,21)=7 → deret kelipatan 7. Deret kelipatan adalah deret aritmatika dengan beda = nilai konstannya. Suku ke-n = 7n.",
+      "options": [
+        {
+          "label": "A",
+          "content": "40",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "41",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "42",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "43",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "45",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "1, 8, 27, 64, 125, ...\n\nAngka selanjutnya adalah:",
+      "position": 16,
+      "explanation": "Ini adalah deret kubik: $\\text{1}^{\\text{3}}, \\text{2}^{\\text{3}}, \\text{3}^{\\text{3}}, \\text{4}^{\\text{3}}, \\text{5}^{\\text{3}}$. Angka berikutnya adalah $\\text{6}^{\\text{3}} = \\text{216}$.",
+      "tip": "Hafal bilangan kubik yang umum: 1³=1, 2³=8, 3³=27, 4³=64, 5³=125, 6³=216, 7³=343. Deret ini langsung dikenali dari daftar tersebut. Cara verifikasi: cek selisih bertingkat dua. Selisih pertama: 7,19,37,61. Selisih kedua: 12,18,24. Selisih ketiga: 6,6 — konstan! Selisih ketiga konstan adalah tanda khas deret kubik n³.",
+      "options": [
+        {
+          "label": "A",
+          "content": "180",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "196",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "200",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "216",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "225",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "4, 7, 6, 9, 8, 11, 10, ...\n\nAngka selanjutnya adalah:",
+      "position": 17,
+      "explanation": "Ada dua deret bergantian: $\\text{4}, \\text{6}, \\text{8}, \\text{10}, ...$ (+2 setiap dua langkah) dan $\\text{7}, \\text{9}, \\text{11}, \\text{13}, ...$ (+2). Suku ke-8 berasal dari deret pertama: $\\text{13}$.",
+      "tip": "Pisahkan suku ganjil dan genap. Suku ganjil (posisi 1,3,5,7): 4,6,8,10 → deret aritmatika beda +2. Suku genap (posisi 2,4,6): 7,9,11 → deret aritmatika beda +2. Suku ke-8 ada di posisi genap — urutan ke-4 dalam deret genap: 7,9,11,13. Jawaban: 13. Ciri deret dua selang: jika deret terlihat 'aneh', selalu coba pisah posisi ganjil dan genap dulu.",
+      "options": [
+        {
+          "label": "A",
+          "content": "11",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "12",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "13",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "14",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "15",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "256, 128, 64, 32, ...\n\nAngka selanjutnya adalah:",
+      "position": 18,
+      "explanation": "Setiap angka dibagi 2. $\\text{32} \\div \\text{2} = \\text{16}$.",
+      "tip": "Kenali sebagai pangkat 2 menurun: 256=2⁸, 128=2⁷, 64=2⁶, 32=2⁵. Suku berikutnya = 2⁴=16. Hafal pangkat 2: 2¹=2, 2²=4, 2³=8, 2⁴=16, 2⁵=32, 2⁶=64, 2⁷=128, 2⁸=256. Deret ini juga bisa dilihat sebagai geometri r=1/2. 32÷2=16. Mengenali pangkat 2 secara langsung adalah cara tercepat.",
+      "options": [
+        {
+          "label": "A",
+          "content": "8",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "12",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "14",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "16",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "20",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "5, 6, 8, 11, 15, 20, ...\n\nAngka selanjutnya adalah:",
+      "position": 19,
+      "explanation": "Beda antar suku: $+\\text{1}, +\\text{2}, +\\text{3}, +\\text{4}, +\\text{5}, ...$. Berikutnya $+\\text{6}$: $\\text{20} + \\text{6} = \\text{26}$.",
+      "tip": "Hitung selisih: 1, 2, 3, 4, 5 — selisihnya adalah bilangan asli berurutan. Ini selisih bertingkat dengan beda=1. Selisih ke-6 = 6, maka suku berikutnya = 20+6=26. Pola ini sama dengan Q7. Ciri khas: angka tumbuh semakin cepat tapi tidak secepat geometri. Jika selisih membentuk 1,2,3,4,... — langsung gunakan teknik selisih bertingkat.",
+      "options": [
+        {
+          "label": "A",
+          "content": "24",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "25",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "26",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "27",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "28",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "1, 3, 7, 13, 21, 31, ...\n\nAngka selanjutnya adalah:",
+      "position": 20,
+      "explanation": "Beda antar suku: $+\\text{2}, +\\text{4}, +\\text{6}, +\\text{8}, +\\text{10}, ...$. Berikutnya $+\\text{12}$: $\\text{31} + \\text{12} = \\text{43}$.",
+      "tip": "Hitung selisih: 2, 4, 6, 8, 10 — bilangan genap berurutan, beda konstan +2. Selisih ke-6 = 12. Suku berikutnya = 31+12=43. Ini adalah selisih bertingkat dengan beda +2 (bukan +1 seperti Q7). Ciri khas deret ini: selisih dari selisihnya (second-order difference) = 2, konstan. Selisih konstan di tingkat kedua menandakan deret polinomial derajat 2 (kuadratik).",
+      "options": [
+        {
+          "label": "A",
+          "content": "40",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "41",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "42",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "43",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "45",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    }
+  ]
+}

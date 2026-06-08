@@ -3,6 +3,7 @@ import type {
   CreateOptionForm,
   CreateQuestionForm,
   CreateQuizForm,
+  GeneratedQuestion,
   Question,
   Quiz,
   QuizSession,
@@ -98,6 +99,20 @@ export async function bulkImport(payload: unknown): Promise<{
   questions_imported: number;
 }> {
   const { data } = await client.post("/admin/questions/bulk", payload);
+  return data;
+}
+
+export async function generateQuestion(
+  sourceQuestionId: string
+): Promise<{ question: GeneratedQuestion }> {
+  const { data } = await client.post("/admin/questions/generate", {
+    source_question_id: sourceQuestionId,
+  });
+  return data;
+}
+
+export async function generateAnalogiQuestion(): Promise<{ question: GeneratedQuestion }> {
+  const { data } = await client.post("/admin/questions/generate/analogi");
   return data;
 }
 

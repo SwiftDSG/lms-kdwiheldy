@@ -1,7 +1,7 @@
 "use client";
 
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { createQuestion, getQuizSets } from "@/lib/api";
+import { createQuestion, getQuizzes } from "@/lib/api";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
@@ -14,8 +14,8 @@ export default function NewQuestionPage() {
   const qc = useQueryClient();
 
   const { data: quizSets = [] } = useQuery({
-    queryKey: ["quiz-sets"],
-    queryFn: getQuizSets,
+    queryKey: ["quizzes"],
+    queryFn: getQuizzes,
   });
   const quizSet = quizSets.find((q) => q.id === id);
 
@@ -32,15 +32,15 @@ export default function NewQuestionPage() {
   return (
     <div className="max-w-2xl">
       <div className="flex items-center gap-3 mb-6">
-        <Link href={`/quiz-sets/${id}`} className="p-1.5 rounded hover:bg-gray-100">
+        <Link href={`/quiz-sets/${id}`} className="p-1.5 border-3 border-brand-600 rounded-md text-brand-600 hover:bg-brand-50">
           <ArrowLeft className="w-5 h-5" />
         </Link>
         <h1 className="text-2xl font-bold">New Question</h1>
       </div>
 
-      <div className="bg-white rounded-xl border border-gray-200 p-6">
+      <div className="bg-white rounded-xl border-3 border-brand-600 p-6">
         <QuestionEditor
-          quizSetId={id}
+          quizId={id}
           category={quizSet?.category}
           onSubmit={mutateAsync}
           isLoading={isPending}

@@ -2,6 +2,91 @@ use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
 use uuid::Uuid;
 
+// ── SubtypeConfig ──────────────────────────────────────────────────────────────
+
+pub struct SubtypeConfig {
+    /// Whether the /explain endpoint should call the ML service.
+    /// False for ANALOGI_GAMBAR — the LLM cannot see images, so we return
+    /// the pre-written explanation stored on the question instead.
+    pub needs_ml_explain: bool,
+    /// Whether the ML service should apply math post-processing (LaTeX conversion,
+    /// arithmetic verification). True only for numerically-evaluated subtypes.
+    pub needs_math: bool,
+}
+
+// ── Enums ─────────────────────────────────────────────────────────────────────
+
+#[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
+#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+pub enum QuestionSubtype {
+    // TWK
+    Pancasila,
+    #[serde(rename = "UUD_1945")]
+    Uud1945,
+    Bhinneka,
+    Nkri,
+    SejarahNasional,
+    SistemPemerintahan,
+    BelaNegara,
+    BahasaIndonesia,
+    // TIU
+    AnalogiVerbal,
+    AnalogiGambar,
+    Silogisme,
+    Antonim,
+    Sinonim,
+    Aritmatika,
+    DeretAngka,
+    SoalCerita,
+    PerbandinganKuantitatif,
+    // TKP
+    PelayananPublik,
+    Profesionalisme,
+    JejaringKerja,
+    SosialBudaya,
+    TeknologiInformasi,
+    OrientasiBelajar,
+    MengendalikanDiri,
+    Beradaptasi,
+    KreativitasInovasi,
+}
+
+impl QuestionSubtype {
+    pub fn config(&self) -> SubtypeConfig {
+        use QuestionSubtype::*;
+        match self {
+            // Image analogy — LLM cannot see images; return stored explanation
+            AnalogiGambar => SubtypeConfig {
+                needs_ml_explain: false,
+                needs_math: false,
+            },
+            // Simple word-relationship lookups — stored explanation is sufficient
+            Antonim | Sinonim | AnalogiVerbal => SubtypeConfig {
+                needs_ml_explain: false,
+                needs_math: false,
+            },
+            // TKP — behavioral/situational; options have weighted scores (1-5), not
+            // a single correct answer, so an LLM explanation adds no value
+            PelayananPublik | Profesionalisme | JejaringKerja | SosialBudaya
+            | TeknologiInformasi | OrientasiBelajar | MengendalikanDiri
+            | Beradaptasi | KreativitasInovasi => SubtypeConfig {
+                needs_ml_explain: false,
+                needs_math: false,
+            },
+            // Numeric subtypes — enable math post-processing
+            Aritmatika | DeretAngka | PerbandinganKuantitatif | SoalCerita => SubtypeConfig {
+                needs_ml_explain: true,
+                needs_math: true,
+            },
+            // Everything else (TWK factual, Silogisme) — LLM explain
+            _ => SubtypeConfig {
+                needs_ml_explain: true,
+                needs_math: false,
+            },
+        }
+    }
+}
+
 // ── Embedded sub-documents ────────────────────────────────────────────────────
 
 /// Embedded inside a Question document.
@@ -10,9 +95,8 @@ pub struct QuestionOption {
     pub id: String,
     pub label: String,      // "A"–"E" | "True" | "False"
     pub content: String,
-    /// 0/5 for MCQ/TF (binary); 1–5 for TKP (weighted)
+    /// MCQ/TF: 0 = wrong, 5 = correct. TKP: 1–5 weighted (best = 5).
     pub score: i32,
-    pub is_correct: bool,
 }
 
 /// Embedded inside a Quiz document.
@@ -20,6 +104,7 @@ pub struct QuestionOption {
 pub struct Question {
     pub id: String,
     pub r#type: String,     // "MCQ" | "TRUE_FALSE" | "ESSAY" | "IMAGE"
+    pub subtype: QuestionSubtype,
     pub content: String,
     pub image_url: Option<String>,
     pub explanation: Option<String>,
@@ -91,13 +176,13 @@ pub struct CreateOption {
     pub label: String,
     pub content: String,
     pub score: i32,
-    pub is_correct: bool,
 }
 
 #[derive(Debug, Deserialize)]
 pub struct CreateQuestion {
     pub quiz_id: String,
     pub r#type: String,
+    pub subtype: QuestionSubtype,
     pub content: String,
     pub image_url: Option<String>,
     pub explanation: Option<String>,
@@ -108,6 +193,7 @@ pub struct CreateQuestion {
 #[derive(Debug, Deserialize)]
 pub struct UpdateQuestion {
     pub r#type: Option<String>,
+    pub subtype: Option<QuestionSubtype>,
     pub content: Option<String>,
     pub image_url: Option<String>,
     pub explanation: Option<String>,
@@ -133,6 +219,7 @@ pub struct BulkQuizMeta {
 #[derive(Debug, Deserialize)]
 pub struct BulkQuestion {
     pub r#type: String,
+    pub subtype: QuestionSubtype,
     pub content: String,
     pub image_url: Option<String>,
     pub explanation: Option<String>,

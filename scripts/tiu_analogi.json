@@ -1,0 +1,790 @@
+{
+  "quiz": {
+    "title": "TIU – Analogi",
+    "description": "Tentukan pasangan kata yang memiliki hubungan yang sama dengan pasangan kata yang diberikan.",
+    "category": "TIU",
+    "time_limit": 25
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "DOKTER : PASIEN = GURU : ...",
+      "position": 1,
+      "explanation": "Dokter melayani pasien. Dengan hubungan yang sama, guru melayani murid.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Sekolah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Murid",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Ilmu",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Buku",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kelas",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "PENA : MENULIS = PISAU : ...",
+      "position": 2,
+      "explanation": "Pena digunakan untuk menulis. Dengan hubungan yang sama, pisau digunakan untuk memotong.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Tajam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Besi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Memotong",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Melukai",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Dapur",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "API : PANAS = ES : ...",
+      "position": 3,
+      "explanation": "Api menghasilkan panas. Dengan hubungan yang sama, es menghasilkan dingin.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Air",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Beku",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Dingin",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Putih",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Padat",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "BURUNG : TERBANG = IKAN : ...",
+      "position": 4,
+      "explanation": "Burung bergerak dengan cara terbang. Dengan hubungan yang sama, ikan bergerak dengan cara berenang.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Air",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Berenang",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Laut",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Sirip",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Menyelam",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "BUKU : PERPUSTAKAAN = LUKISAN : ...",
+      "position": 5,
+      "explanation": "Buku disimpan dan dipamerkan di perpustakaan. Dengan hubungan yang sama, lukisan disimpan dan dipamerkan di galeri.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kanvas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Museum",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Galeri",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Seniman",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Cat",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "LAPAR : MAKAN = HAUS : ...",
+      "position": 6,
+      "explanation": "Lapar diatasi dengan makan. Dengan hubungan yang sama, haus diatasi dengan minum.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Air",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Minum",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Dahaga",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Segar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tenggorokan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "PETANI : SAWAH = NELAYAN : ...",
+      "position": 7,
+      "explanation": "Petani bekerja di sawah. Dengan hubungan yang sama, nelayan bekerja di laut.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Ikan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Jaring",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Laut",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Perahu",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pantai",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "KULIT : MANUSIA = KULIT KAYU : ...",
+      "position": 8,
+      "explanation": "Kulit adalah lapisan terluar manusia. Dengan hubungan yang sama, kulit kayu adalah lapisan terluar pohon.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Hutan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Daun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Pohon",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Akar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kayu",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "KOMPUTER : PROGRAM = MANUSIA : ...",
+      "position": 9,
+      "explanation": "Komputer dikendalikan oleh program. Dengan hubungan yang sama, manusia dikendalikan oleh pikiran.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Tubuh",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Emosi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Pikiran",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Otak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Jiwa",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "PADI : BERAS = TEBU : ...",
+      "position": 10,
+      "explanation": "Padi diolah menghasilkan beras. Dengan hubungan yang sama, tebu diolah menghasilkan gula.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Manis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Gula",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Sari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Sirup",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Batang",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "ARSITEK : GEDUNG = PENULIS : ...",
+      "position": 11,
+      "explanation": "Arsitek merancang dan menciptakan gedung. Dengan hubungan yang sama, penulis merancang dan menciptakan novel/buku.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kertas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Novel",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Penerbit",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Tinta",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kalimat",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "TELINGA : MENDENGAR = HIDUNG : ...",
+      "position": 12,
+      "explanation": "Telinga berfungsi untuk mendengar. Dengan hubungan yang sama, hidung berfungsi untuk mencium.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Bernapas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mencium",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Wajah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Bau",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Lendir",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "HAKIM : PENGADILAN = KAPTEN : ...",
+      "position": 13,
+      "explanation": "Hakim memimpin dan bekerja di pengadilan. Dengan hubungan yang sama, kapten memimpin dan bekerja di kapal.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Tentara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Laut",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kapal",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Pelabuhan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Seragam",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "MAWAR : BUNGA = MERPATI : ...",
+      "position": 14,
+      "explanation": "Mawar adalah salah satu jenis bunga. Dengan hubungan yang sama, merpati adalah salah satu jenis burung.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Terbang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Putih",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Burung",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Damai",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Sayap",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "DINGIN : MANTEL = HUJAN : ...",
+      "position": 15,
+      "explanation": "Mantel dipakai sebagai pelindung dari dingin. Dengan hubungan yang sama, payung dipakai sebagai pelindung dari hujan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Basah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Payung",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Awan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Banjir",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Jas hujan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "SAKIT : OBAT = KELAPARAN : ...",
+      "position": 16,
+      "explanation": "Obat adalah solusi untuk sakit. Dengan hubungan yang sama, solusi untuk kelaparan adalah pangan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Miskin",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pangan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Uang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Bantuan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Makanan mewah",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "TANGAN : SARUNG TANGAN = KEPALA : ...",
+      "position": 17,
+      "explanation": "Sarung tangan adalah pelindung/penutup tangan. Dengan hubungan yang sama, topi adalah pelindung/penutup kepala.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rambut",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Topi",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Wajah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Otak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Helm",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "FOTOGRAFI : KAMERA = MELUKIS : ...",
+      "position": 18,
+      "explanation": "Fotografi dilakukan menggunakan kamera sebagai alat utama. Dengan hubungan yang sama, melukis dilakukan menggunakan kuas.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kanvas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Cat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kuas",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Seniman",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pameran",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "MATAHARI : SIANG = BULAN : ...",
+      "position": 19,
+      "explanation": "Matahari menerangi siang hari. Dengan hubungan yang sama, bulan menerangi malam hari.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Bintang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Langit",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Malam",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Gelap",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Sunyi",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "MOBIL : BENSIN = MANUSIA : ...",
+      "position": 20,
+      "explanation": "Mobil membutuhkan bensin sebagai bahan bakar untuk bergerak. Dengan hubungan yang sama, manusia membutuhkan makanan sebagai bahan bakar untuk hidup.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Oksigen",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Makanan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Air",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Energi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tidur",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANALOGI_VERBAL"
+    }
+  ]
+}

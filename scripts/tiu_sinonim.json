@@ -1,0 +1,790 @@
+{
+  "quiz": {
+    "title": "TIU – Sinonim",
+    "description": "Pilih kata yang memiliki makna paling dekat (sinonim) dengan kata yang dicetak kapital.",
+    "category": "TIU",
+    "time_limit": 25
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "AMBIGU",
+      "position": 1,
+      "explanation": "Ambigu berarti memiliki makna lebih dari satu atau tidak jelas/bermakna ganda. Sinonimnya adalah 'taksa' atau 'mendua'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Jelas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mendua",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pasti",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Tunggal",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tetap",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "ABSURD",
+      "position": 2,
+      "explanation": "Absurd berarti tidak masuk akal, mustahil, atau konyol. Sinonimnya adalah 'mustahil' atau 'nirlogis'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Wajar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Logis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Mustahil",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Nyata",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Masuk akal",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "KONOTASI",
+      "position": 3,
+      "explanation": "Konotasi adalah makna tambahan atau kiasan dari sebuah kata di luar makna harfiahnya. Sinonimnya adalah 'kiasan' atau 'tafsiran'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Denotasi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kiasan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Harfiah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Lafal",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Ejaan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "REKONSILIASI",
+      "position": 4,
+      "explanation": "Rekonsiliasi berarti pemulihan hubungan yang sempat renggang atau perdamaian kembali. Sinonimnya adalah 'perdamaian'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pertikaian",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pemisahan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Perdamaian",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Perseteruan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Konfrontasi",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "PROGRESIF",
+      "position": 5,
+      "explanation": "Progresif berarti maju, ke arah yang lebih baik, atau bersifat kemajuan. Sinonimnya adalah 'maju'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Statis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mundur",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Maju",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Pasif",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Konservatif",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "EMPIRIS",
+      "position": 6,
+      "explanation": "Empiris berarti berdasarkan pengalaman atau percobaan nyata. Sinonimnya adalah 'faktual' atau 'nyata'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Teoritis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Abstrak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Faktual",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Imajinatif",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Spekulatif",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "EUFORIA",
+      "position": 7,
+      "explanation": "Euforia berarti perasaan gembira atau bahagia yang meluap-luap. Sinonimnya adalah 'kegembiraan' atau 'kegirangan'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kesedihan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kegirangan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Ketenangan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kekecewaan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Ketakutan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "INISIATIF",
+      "position": 8,
+      "explanation": "Inisiatif berarti prakarsa atau langkah pertama dalam memulai sesuatu. Sinonimnya adalah 'prakarsa'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Keengganan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Prakarsa",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Penolakan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kepatuhan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Hambatan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "KONSISTEN",
+      "position": 9,
+      "explanation": "Konsisten berarti tetap pada pendirian atau tidak berubah-ubah. Sinonimnya adalah 'teguh' atau 'ajeg'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Goyah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Berubah-ubah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Teguh",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Lentur",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Ragu",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "LEGITIMASI",
+      "position": 10,
+      "explanation": "Legitimasi berarti keabsahan atau pengakuan yang sah secara hukum. Sinonimnya adalah 'keabsahan'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Penyangkalan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Keabsahan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Penolakan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kecurangan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Keraguan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "SATURASI",
+      "position": 11,
+      "explanation": "Saturasi berarti kejenuhan atau kondisi sudah penuh hingga tidak dapat menampung lagi. Sinonimnya adalah 'kejenuhan'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kekosongan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kejenuhan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kekurangan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kelangkaan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Ketiadaan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "PROTEKSI",
+      "position": 12,
+      "explanation": "Proteksi berarti perlindungan terhadap sesuatu dari bahaya atau ancaman. Sinonimnya adalah 'perlindungan'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Ancaman",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Serangan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Perlindungan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Pengabaian",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pembiaran",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "ELABORASI",
+      "position": 13,
+      "explanation": "Elaborasi berarti pengembangan atau penjelasan yang lebih rinci dan mendalam. Sinonimnya adalah 'pengembangan'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Penyederhanaan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pengurangan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Pengembangan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Pembatasan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pemotongan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "KAPABEL",
+      "position": 14,
+      "explanation": "Kapabel berarti mampu atau cakap dalam melakukan sesuatu. Sinonimnya adalah 'cakap' atau 'kompeten'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Lemah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Cakap",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Gagap",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Bingung",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tidak mampu",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "MANDIRI",
+      "position": 15,
+      "explanation": "Mandiri berarti berdiri sendiri atau tidak bergantung pada orang lain. Sinonimnya adalah 'otonom'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Bergantung",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Otonom",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Tunduk",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Pasrah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Patuh",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "KALEIDOSKOP",
+      "position": 16,
+      "explanation": "Kaleidoskop berarti kumpulan aneka peristiwa yang beragam dan disajikan secara singkat. Sinonimnya adalah 'ringkasan' atau 'panorama'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Detail",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Panorama",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Khusus",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Tunggal",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Mendalam",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "PARADIGMA",
+      "position": 17,
+      "explanation": "Paradigma berarti kerangka berpikir atau model acuan yang digunakan dalam suatu ilmu. Sinonimnya adalah 'kerangka berpikir'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kesimpulan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kerangka berpikir",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kesalahan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Pertentangan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kegagalan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "INOVASI",
+      "position": 18,
+      "explanation": "Inovasi berarti pembaruan atau pengenalan sesuatu yang baru. Sinonimnya adalah 'pembaruan'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kemunduran",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pembaruan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pengulangan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Ketertinggalan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Stagnasi",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "SATURASI",
+      "position": 19,
+      "explanation": "Stagnasi berarti keadaan terhenti atau tidak berkembang. Sinonimnya adalah 'kemandegan'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kemajuan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kemandegan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Percepatan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Perkembangan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pertumbuhan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "APATIS",
+      "position": 20,
+      "explanation": "Apatis berarti tidak peduli, acuh tak acuh, atau tidak menunjukkan minat terhadap sesuatu. Sinonimnya adalah 'acuh tak acuh'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Antusias",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Semangat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Acuh tak acuh",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Peduli",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Aktif",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    }
+  ]
+}

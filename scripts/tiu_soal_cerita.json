@@ -1,0 +1,810 @@
+{
+  "quiz": {
+    "title": "TIU – Soal Cerita",
+    "description": "Baca soal cerita berikut dengan teliti, lalu tentukan jawaban yang paling tepat.",
+    "category": "TIU",
+    "time_limit": 25
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "Sebuah kereta berangkat dari kota A pukul 07.00 dengan kecepatan 80 km/jam. Kota B berjarak 320 km dari kota A. Pukul berapa kereta tiba di kota B?",
+      "position": 1,
+      "explanation": "Waktu tempuh $= \\frac{\\text{320}}{\\text{80}} = \\text{4}$ jam. Berangkat pukul 07.00 + 4 jam = pukul 11.00.",
+      "tip": "Hafal segitiga ajaib: S = K × W (Jarak = Kecepatan × Waktu). Untuk mencari waktu: W = S÷K = 320÷80 = 4 jam. Cara hitung cepat: 80×4=320✓. Tambahkan ke jam berangkat: 07.00+4=11.00. Soal kecepatan-waktu-jarak selalu gunakan segitiga ini sebagai langkah pertama.",
+      "options": [
+        {
+          "label": "A",
+          "content": "10.00",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "11.00",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "12.00",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "13.00",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "14.00",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pak Budi memiliki sebidang tanah berbentuk persegi panjang. Panjangnya 25 m dan lebarnya 16 m. Ia ingin memasang pagar di sekeliling tanah tersebut. Jika harga pagar per meter adalah Rp 50.000, berapa total biaya yang diperlukan?",
+      "position": 2,
+      "explanation": "Keliling $= \\text{2} \\times (\\text{25} + \\text{16}) = \\text{2} \\times \\text{41} = \\text{82}$ m. Biaya $= \\text{82} \\times \\text{50}.\\text{000} = \\text{4}.\\text{100}.\\text{000}$.",
+      "tip": "Kata kunci 'pagar sekeliling' → gunakan KELILING, bukan luas. Keliling = 2(p+l) = 2(25+16) = 2×41 = 82 m. Biaya = 82×50.000. Cara hitung cepat: 82×5=410, lalu ×10.000 = Rp 4.100.000. Jebakan umum: menggunakan luas (25×16=400) → pilihan A (Rp 20.000.000 tidak masuk akal) atau salah hitung.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp 3.200.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp 4.000.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp 4.100.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Rp 4.200.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rp 5.000.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah kolam renang dapat diisi oleh pompa A dalam 4 jam dan pompa B dalam 6 jam. Jika keduanya bekerja bersama, berapa jam yang dibutuhkan untuk mengisi kolam?",
+      "position": 3,
+      "explanation": "Kapasitas per jam: A $= \\frac{\\text{1}}{\\text{4}}$, B $= \\frac{\\text{1}}{\\text{6}}$. Bersama: $\\frac{\\text{1}}{\\text{4}} + \\frac{\\text{1}}{\\text{6}} = \\frac{\\text{3}}{\\text{12}} + \\frac{\\text{2}}{\\text{12}} = \\frac{\\text{5}}{\\text{12}}$. Waktu $= \\frac{\\text{12}}{\\text{5}} = \\text{2}{,}\\text{4}$ jam.",
+      "tip": "Rumus kilat dua pompa/pekerja: Waktu bersama = (t_A × t_B) ÷ (t_A + t_B) = (4×6)÷(4+6) = 24÷10 = 2,4 jam. Rumus ini lebih cepat daripada menjumlahkan pecahan. HANYA berlaku untuk dua objek. Verifikasi: 2,4 jam < 4 jam (waktu pompa A) — masuk akal.",
+      "options": [
+        {
+          "label": "A",
+          "content": "2 jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "2,4 jam",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "3 jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "3,5 jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "5 jam",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Umur Rina 3 kali umur adiknya. Jika jumlah umur mereka 32 tahun, berapa umur Rina?",
+      "position": 4,
+      "explanation": "Misal umur adik $= x$, maka umur Rina $= \\text{3}x$. $\\text{3}x + x = \\text{32} \\Rightarrow \\text{4}x = \\text{32} \\Rightarrow x = \\text{8}$. Umur Rina $= \\text{3} \\times \\text{8} = \\text{24}$ tahun.",
+      "tip": "Perbandingan Rina:adik = 3:1 → total bagian = 4. Jumlah umur = 32. Satu bagian = 32÷4 = 8. Umur Rina = 3×8 = 24 tahun. Teknik perbandingan+jumlah: langsung bagi jumlah dengan total bagian → tidak perlu buat persamaan. Kecepatan vs aljabar: 3 detik vs 15 detik.",
+      "options": [
+        {
+          "label": "A",
+          "content": "20 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "22 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "24 tahun",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "26 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "28 tahun",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah toko menjual 120 buku dengan harga Rp 15.000 per buku. Jika modal pembelian 120 buku tersebut adalah Rp 1.200.000, berapa keuntungan toko tersebut?",
+      "position": 5,
+      "explanation": "Pendapatan $= \\text{120} \\times \\text{15}.\\text{000} = \\text{1}.\\text{800}.\\text{000}$. Keuntungan $= \\text{1}.\\text{800}.\\text{000} - \\text{1}.\\text{200}.\\text{000} = \\text{600}.\\text{000}$.",
+      "tip": "Cara cepat: hitung keuntungan per unit dulu. Modal per buku = 1.200.000÷120 = 10.000/buku. Untung per buku = 15.000-10.000 = 5.000. Total untung = 120×5.000 = 600.000. Lebih cepat dari menghitung total pendapatan (120×15.000=1.800.000) baru dikurangi modal.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp 400.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp 500.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp 600.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Rp 700.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rp 800.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Dua mobil berangkat dari kota yang sama menuju arah berlawanan. Mobil A berkecepatan 60 km/jam dan mobil B berkecepatan 80 km/jam. Setelah 3 jam, berapa jarak antara kedua mobil?",
+      "position": 6,
+      "explanation": "Dalam 3 jam, mobil A menempuh $\\text{60} \\times \\text{3} = \\text{180}$ km dan mobil B menempuh $\\text{80} \\times \\text{3} = \\text{240}$ km. Jarak total $= \\text{180} + \\text{240} = \\text{420}$ km.",
+      "tip": "Arah BERLAWANAN → jumlahkan kecepatan (kecepatan menjauh = 60+80=140 km/jam). Jarak = 140×3=420 km. Ini 3× lebih cepat dari menghitung jarak masing-masing. Aturan arah: berlawanan=jumlahkan, searah=kurangkan. Jangan sampai tertukar — jawaban 360 km (60×3+80×3 dihitung salah) ada di pilihan A.",
+      "options": [
+        {
+          "label": "A",
+          "content": "360 km",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "390 km",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "420 km",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "450 km",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "480 km",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Rata-rata nilai ulangan 5 siswa adalah 78. Jika seorang siswa baru dengan nilai 88 bergabung, berapakah rata-rata nilai kelas yang baru?",
+      "position": 7,
+      "explanation": "Total nilai 5 siswa $= \\text{5} \\times \\text{78} = \\text{390}$. Total nilai 6 siswa $= \\text{390} + \\text{88} = \\text{478}$. Rata-rata baru $= \\frac{\\text{478}}{\\text{6}} \\approx \\text{79}{,}\\text{67}$.",
+      "tip": "Cara cepat tanpa perkalian besar: nilai baru (88) lebih tinggi dari rata-rata lama (78) sebesar +10. Kontribusi ke rata-rata = +10÷6 ≈ +1,67. Rata-rata baru = 78+1,67 = 79,67. Atau: (78×5+88)/6 = (390+88)/6 = 478/6 = 79,67. Pilihan 80 adalah jebakan umum (orang membulatkan keliru).",
+      "options": [
+        {
+          "label": "A",
+          "content": "79",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "79,67",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "80",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "80,5",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "81",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah pipa bocor dapat mengosongkan penampung air penuh dalam 8 jam. Jika pompa mengisi penampung dalam 3 jam, berapa lama waktu yang dibutuhkan untuk mengisi penampung yang kosong dengan pipa bocor tetap berjalan?",
+      "position": 8,
+      "explanation": "Isi per jam: pompa $= \\frac{\\text{1}}{\\text{3}}$, bocor $= -\\frac{\\text{1}}{\\text{8}}$. Net per jam $= \\frac{\\text{1}}{\\text{3}} - \\frac{\\text{1}}{\\text{8}} = \\frac{\\text{8}-\\text{3}}{\\text{24}} = \\frac{\\text{5}}{\\text{24}}$. Waktu $= \\frac{\\text{24}}{\\text{5}} = \\text{4}{,}\\text{8}$ jam.",
+      "tip": "PIPA BOCOR = laju NEGATIF. Laju bersih = laju pompa − laju bocor = 1/3 − 1/8. KPK(3,8)=24: 1/3=8/24, 1/8=3/24. Net = 5/24 per jam. Waktu = 24/5 = 4,8 jam. Rumus kilat: (t_pompa × t_bocor) ÷ (t_bocor − t_pompa) = (3×8)÷(8−3) = 24÷5 = 4,8. Jangan menggunakan rumus pompa gabungan (salah arah!).",
+      "options": [
+        {
+          "label": "A",
+          "content": "4 jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "4,8 jam",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "5 jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "5,5 jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "6 jam",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Harga sebuah laptop turun 25% menjadi Rp 9.000.000. Berapakah harga laptop sebelum turun?",
+      "position": 9,
+      "explanation": "Jika harga awal $= x$, maka $x \\times (\\text{1} - \\text{0}{,}\\text{25}) = \\text{9}.\\text{000}.\\text{000} \\Rightarrow \\text{0}{,}\\text{75}x = \\text{9}.\\text{000}.\\text{000} \\Rightarrow x = \\text{12}.\\text{000}.\\text{000}$.",
+      "tip": "Turun 25% → harga akhir = 75% dari harga awal. Harga awal = harga akhir ÷ 75%. Karena 75% = 3/4: harga awal = 9.000.000 ÷ (3/4) = 9.000.000 × (4/3) = 3.000.000 × 4 = 12.000.000. JEBAKAN: Jangan tambahkan 25% dari 9.000.000 (= 2.250.000) → itu salah! 25% yang benar dihitung dari harga AWAL, bukan harga akhir.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp 10.000.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp 11.000.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp 12.000.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Rp 13.000.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rp 14.000.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah tangki berisi 480 liter air. Setiap jam, 40 liter air dikeluarkan. Berapa jam hingga tangki kosong?",
+      "position": 10,
+      "explanation": "Waktu $= \\frac{\\text{480}}{\\text{40}} = \\text{12}$ jam.",
+      "tip": "Soal langsung: Waktu = Volume ÷ Laju = 480÷40 = 12 jam. Verifikasi mental: 40×10=400, 40×12=480✓. Soal ini sengaja dibuat mudah sebagai 'soal hadiah' di CPNS — kerjakan dalam 5 detik dan lanjutkan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "10 jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "11 jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "12 jam",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "13 jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "14 jam",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Seorang pedagang membeli 50 kg beras dengan harga Rp 12.000/kg, lalu menjualnya Rp 14.000/kg. Berapa keuntungan totalnya?",
+      "position": 11,
+      "explanation": "Keuntungan per kg $= \\text{14}.\\text{000} - \\text{12}.\\text{000} = \\text{2}.\\text{000}$. Total keuntungan $= \\text{50} \\times \\text{2}.\\text{000} = \\text{100}.\\text{000}$.",
+      "tip": "Rumus ringkas: Untung total = (harga jual − harga beli) × jumlah. = (14.000−12.000) × 50 = 2.000×50 = 100.000. Lebih cepat dari menghitung total jual (700.000) dan total beli (600.000) secara terpisah. Perhatikan: tidak perlu hitung modal total sama sekali.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp 80.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp 90.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp 100.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Rp 110.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rp 120.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Dalam sebuah kelompok, perbandingan laki-laki dan perempuan adalah 2:3. Jika ada 24 laki-laki, berapa jumlah seluruh anggota kelompok?",
+      "position": 12,
+      "explanation": "Jika 2 bagian = 24, maka 1 bagian = 12. Perempuan = $\\text{3} \\times \\text{12} = \\text{36}$. Total $= \\text{24} + \\text{36} = \\text{60}$.",
+      "tip": "Cara cepat: Total = nilai_diketahui × (total_bagian ÷ bagian_diketahui) = 24 × (5÷2) = 24 × 2,5 = 60. Atau: 2 bagian = 24 → 1 bagian = 12 → total (2+3)=5 bagian = 5×12=60. Tidak perlu menghitung perempuan terpisah.",
+      "options": [
+        {
+          "label": "A",
+          "content": "48",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "54",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "60",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "66",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "72",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Jika 6 pekerja dapat menyelesaikan suatu pekerjaan dalam 12 hari, berapa lama waktu yang dibutuhkan 9 pekerja untuk menyelesaikan pekerjaan yang sama?",
+      "position": 13,
+      "explanation": "Total hari-kerja $= \\text{6} \\times \\text{12} = \\text{72}$. Dengan 9 pekerja: $\\frac{\\text{72}}{\\text{9}} = \\text{8}$ hari.",
+      "tip": "Pekerja dan waktu berbanding TERBALIK. Cara cepat perbandingan terbalik: hari baru = hari lama × (pekerja lama ÷ pekerja baru) = 12 × (6÷9) = 12 × 2/3 = 8 hari. Atau: total hari-kerja = 6×12=72 (konstanta) → 72÷9=8. Verifikasi: lebih banyak pekerja → lebih sedikit hari ✓.",
+      "options": [
+        {
+          "label": "A",
+          "content": "6 hari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "7 hari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "8 hari",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "9 hari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "10 hari",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Ibu membeli 3 kg apel seharga Rp 45.000 dan 2 kg jeruk seharga Rp 30.000. Berapa rata-rata harga buah per kg?",
+      "position": 14,
+      "explanation": "Total berat $= \\text{3} + \\text{2} = \\text{5}$ kg. Total harga $= \\text{45}.\\text{000} + \\text{30}.\\text{000} = \\text{75}.\\text{000}$. Rata-rata $= \\frac{\\text{75}.\\text{000}}{\\text{5}} = \\text{15}.\\text{000}$/kg.",
+      "tip": "Rata-rata harga tertimbang = total harga ÷ total kuantitas = 75.000÷5 = 15.000/kg. JANGAN rata-ratakan harga per kg secara langsung: (15.000+15.000)÷2 kebetulan sama, tapi jika harganya berbeda rata-rata sederhana akan salah. Selalu gunakan total harga ÷ total kuantitas.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp 13.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp 14.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp 15.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Rp 16.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rp 17.500",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah mobil menempuh jarak 240 km dalam 3 jam. Dengan kecepatan yang sama, berapa jarak yang ditempuh dalam 5 jam?",
+      "position": 15,
+      "explanation": "Kecepatan $= \\frac{\\text{240}}{\\text{3}} = \\text{80}$ km/jam. Jarak dalam 5 jam $= \\text{80} \\times \\text{5} = \\text{400}$ km.",
+      "tip": "Kecepatan tetap → jarak proporsional dengan waktu. Cara cepat: jarak baru = jarak lama × (waktu baru÷waktu lama) = 240 × (5÷3) = 240÷3 × 5 = 80×5 = 400 km. Tidak perlu menyebut 'kecepatan' sama sekali — gunakan rasio waktu langsung.",
+      "options": [
+        {
+          "label": "A",
+          "content": "350 km",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "380 km",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "400 km",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "420 km",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "450 km",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Dua tahun lalu, umur ayah 4 kali umur anaknya. Sekarang jumlah umur mereka adalah 52 tahun. Berapa umur anak sekarang?",
+      "position": 16,
+      "explanation": "Misal umur anak sekarang $= x$, umur ayah sekarang $= \\text{52} - x$. Dua tahun lalu: anak $= x-\\text{2}$, ayah $= \\text{52}-x-\\text{2} = \\text{50}-x$. Persamaan: $\\text{50}-x = \\text{4}(x-\\text{2}) \\Rightarrow \\text{50}-x = \\text{4}x-\\text{8} \\Rightarrow \\text{58} = \\text{5}x \\Rightarrow x = \\text{11}{,}\\text{6} \\approx \\text{12}$ tahun.",
+      "tip": "Langkah sistematis soal umur dua waktu: (1) Misal anak sekarang = x, ayah = 52-x. (2) Dua tahun lalu: anak = x-2, ayah = 50-x (KEDUANYA dikurangi 2). (3) Kondisi: 50-x = 4(x-2) → 50-x = 4x-8 → 58=5x → x≈12. Jebakan: hanya mengurangi 2 dari salah satu orang → hasilnya berbeda. Ingat: kedua orang sama-sama bertambah tua.",
+      "options": [
+        {
+          "label": "A",
+          "content": "10 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "11 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "12 tahun",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "13 tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "14 tahun",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah kapal berlayar dari pelabuhan A menuju B yang berjarak 180 km. Perjalanan pergi membutuhkan 3 jam, sedangkan perjalanan pulang membutuhkan 4,5 jam karena melawan arus. Berapa kecepatan rata-rata untuk perjalanan pergi dan pulang?",
+      "position": 17,
+      "explanation": "Total jarak $= \\text{180} + \\text{180} = \\text{360}$ km. Total waktu $= \\text{3} + \\text{4}{,}\\text{5} = \\text{7}{,}\\text{5}$ jam. Kecepatan rata-rata $= \\frac{\\text{360}}{\\text{7}{,}\\text{5}} = \\text{48}$ km/jam.",
+      "tip": "PERINGATAN KRITIS: kecepatan rata-rata ≠ rata-rata dua kecepatan. Kecepatan pergi = 180÷3=60, kecepatan pulang = 180÷4,5=40. Rata-rata SALAH = (60+40)÷2=50 (jawaban jebakan pilihan D!). Jawaban BENAR = total jarak ÷ total waktu = 360÷7,5=48. Selalu gunakan definisi: v_rata = total S ÷ total t.",
+      "options": [
+        {
+          "label": "A",
+          "content": "40 km/jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "44 km/jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "48 km/jam",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "50 km/jam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "55 km/jam",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah ruangan berbentuk persegi panjang berukuran 8 m × 6 m akan dipasang keramik berukuran 40 cm × 40 cm. Berapa banyak keramik yang dibutuhkan?",
+      "position": 18,
+      "explanation": "Luas ruangan $= \\text{8} \\times \\text{6} = \\text{48}$ m² $= \\text{48} \\times \\text{10}.\\text{000} = \\text{480}.\\text{000}$ cm². Luas keramik $= \\text{40} \\times \\text{40} = \\text{1}.\\text{600}$ cm². Jumlah $= \\frac{\\text{480}.\\text{000}}{\\text{1}.\\text{600}} = \\text{300}$ keramik.",
+      "tip": "Cara paling aman: ubah semua ke cm di awal. 8m=800cm, 6m=600cm. Keramik per baris panjang = 800÷40=20. Keramik per baris lebar = 600÷40=15. Total = 20×15=300. Hindari konversi m²→cm² (rawan lupa faktor 10.000). Metode baris×kolom selalu lebih mudah dan bebas kesalahan konversi.",
+      "options": [
+        {
+          "label": "A",
+          "content": "250",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "280",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "300",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "320",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "350",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Seorang pegawai menerima gaji pokok Rp 4.000.000. Ia mendapat tunjangan 25% dari gaji pokok dan dipotong pajak 10% dari total pendapatan. Berapa gaji bersih yang diterima?",
+      "position": 19,
+      "explanation": "Tunjangan $= \\text{25}\\% \\times \\text{4}.\\text{000}.\\text{000} = \\text{1}.\\text{000}.\\text{000}$. Total pendapatan $= \\text{4}.\\text{000}.\\text{000} + \\text{1}.\\text{000}.\\text{000} = \\text{5}.\\text{000}.\\text{000}$. Pajak $= \\text{10}\\% \\times \\text{5}.\\text{000}.\\text{000} = \\text{500}.\\text{000}$. Gaji bersih $= \\text{5}.\\text{000}.\\text{000} - \\text{500}.\\text{000} = \\text{4}.\\text{500}.\\text{000}$.",
+      "tip": "Urutan wajib — jangan terbalik: (1) Tunjangan = 25%×4jt = 1jt. (2) Total kotor = 4jt+1jt = 5jt. (3) Pajak = 10%×5jt = 500rb. (4) Bersih = 5jt-500rb = 4,5jt. JEBAKAN: pajak dihitung dari gaji pokok saja (10%×4jt=400rb → bersih=4,6jt). Soal menyatakan 'dari total pendapatan' → 5jt yang jadi dasar pajak.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rp 4.000.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rp 4.250.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rp 4.500.000",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Rp 4.750.000",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rp 5.000.000",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sebuah bak mandi berisi air 3/4 penuh. Kemudian diisi lagi 30 liter sehingga menjadi penuh. Berapa kapasitas total bak mandi tersebut?",
+      "position": 20,
+      "explanation": "$\\frac{\\text{1}}{\\text{4}}$ bak = 30 liter. Kapasitas total $= \\text{30} \\times \\text{4} = \\text{120}$ liter.",
+      "tip": "Bak 3/4 penuh + 30 liter = penuh → 30 liter mengisi 1/4 bak yang kosong. Total = 30 ÷ (1/4) = 30×4 = 120 liter. Rumus umum: jika 'sisa p/q bagian = x liter', maka total = x ÷ (p/q) = x × q/p. Di sini p=1, q=4: total = 30×4=120.",
+      "options": [
+        {
+          "label": "A",
+          "content": "90 liter",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "100 liter",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "110 liter",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "120 liter",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "150 liter",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SOAL_CERITA"
+    }
+  ]
+}

@@ -1,0 +1,1180 @@
+{
+  "quiz": {
+    "title": "TIU – Antonim (Set 2)",
+    "description": "Pilih kata yang memiliki makna paling berlawanan (antonim) dengan kata yang dicetak kapital.",
+    "category": "TIU",
+    "time_limit": 25
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "DERMAWAN",
+      "position": 1,
+      "explanation": "Dermawan berarti suka memberi dan murah hati. Antonimnya adalah 'kikir', yaitu orang yang tidak mau memberi dan sangat pelit dalam menggunakan harta.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kaya",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pemurah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kikir",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Baik hati",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rakus",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "OPTIMIS",
+      "position": 2,
+      "explanation": "Optimis berarti memiliki pandangan positif dan keyakinan bahwa segalanya akan berjalan baik. Antonimnya adalah 'pesimis', yaitu selalu memandang segala sesuatu dari sisi negatif.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Realistis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pesimis",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Antusias",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Percaya diri",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Apatis",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "PRODUKTIF",
+      "position": 3,
+      "explanation": "Produktif berarti menghasilkan banyak hasil atau karya. Antonimnya adalah 'mandul', yang berarti tidak menghasilkan apa-apa atau tidak produktif.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Aktif",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rajin",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Subur",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mandul",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Lambat",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "KONKRET",
+      "position": 4,
+      "explanation": "Konkret berarti nyata, berwujud, dan dapat diamati secara langsung. Antonimnya adalah 'abstrak', yang berarti tidak berwujud dan hanya ada dalam pikiran atau konsep.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Nyata",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Abstrak",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Jelas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Maya",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Semu",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "AKTIF",
+      "position": 5,
+      "explanation": "Aktif berarti giat bekerja atau bergerak. Antonimnya adalah 'pasif', yaitu tidak aktif, tidak mau bergerak, dan hanya diam saja.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Lamban",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Diam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Pasif",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Malas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tidak bergerak",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "MAJU",
+      "position": 6,
+      "explanation": "Maju berarti bergerak ke depan atau mengalami kemajuan. Antonimnya adalah 'mundur', yang berarti bergerak ke belakang atau mengalami kemunduran.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Berhenti",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Lambat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Diam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mundur",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Belakang",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "HEMAT",
+      "position": 7,
+      "explanation": "Hemat berarti cermat dalam menggunakan uang atau barang, tidak berlebihan. Antonimnya adalah 'boros', yaitu suka menghabiskan uang atau barang secara berlebihan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kikir",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Boros",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Miskin",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Rakus",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pelit",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "BERANI",
+      "position": 8,
+      "explanation": "Berani berarti tidak takut menghadapi bahaya atau kesulitan. Antonimnya adalah 'pengecut', yaitu orang yang selalu menghindari bahaya dan tidak berani.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Takut",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pengecut",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Lemah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Ragu",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Gentar",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "KASAR",
+      "position": 9,
+      "explanation": "Kasar berarti tidak halus permukaannya atau tidak sopan sikapnya. Antonimnya adalah 'halus', yang berarti lembut permukaannya dan sopan sikapnya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Lembut",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Halus",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Rata",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Lunak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Licin",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "MODERN",
+      "position": 10,
+      "explanation": "Modern berarti mutakhir, sesuai dengan zaman sekarang, dan menggunakan teknologi terbaru. Antonimnya adalah 'kuno', yang berarti sudah lama dan tidak mengikuti perkembangan zaman.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Tua",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Usang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Lama",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Tradisional",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kuno",
+          "score": 5,
+          "is_correct": true
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "CERAH",
+      "position": 11,
+      "explanation": "Cerah berarti bercahaya, terang, atau tidak berawan (untuk cuaca). Antonimnya adalah 'mendung', yang berarti langit tertutup awan gelap dan sinar matahari tidak tampak.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Hujan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mendung",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Gelap",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Malam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Suram",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "JUJUR",
+      "position": 12,
+      "explanation": "Jujur berarti berkata dan berbuat sesuai dengan kebenaran. Antonimnya adalah 'curang', yang berarti tidak jujur dan suka melakukan cara yang tidak benar untuk mendapat keuntungan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Bohong",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Dusta",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Curang",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Munafik",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tidak jujur",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "TERATUR",
+      "position": 13,
+      "explanation": "Teratur berarti rapi, tersusun dengan baik, dan memiliki pola yang jelas. Antonimnya adalah 'kacau', yang berarti tidak teratur, berantakan, dan tidak ada aturan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kacau",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content": "Bebas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rumit",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Acak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tidak rapi",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "DAMAI",
+      "position": 14,
+      "explanation": "Damai berarti tidak ada perselisihan atau konflik, hidup dalam ketenangan. Antonimnya adalah 'perang', yaitu konflik bersenjata antara dua pihak atau lebih.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rusuh",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Perang",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kekerasan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Konflik",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Huru-hara",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "GEMUK",
+      "position": 15,
+      "explanation": "Gemuk berarti tubuh berisi atau berat badan berlebih. Antonimnya adalah 'kurus', yang berarti tubuh sangat ramping dan berat badan di bawah normal.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Langsing",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kurus",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Tipis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Ramping",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kecil",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "TERANG",
+      "position": 16,
+      "explanation": "Terang berarti bercahaya atau mudah dilihat. Antonimnya adalah 'gelap', yang berarti tidak ada cahaya sehingga sulit melihat.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Redup",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Suram",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Gelap",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Malam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kabur",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "MAHAL",
+      "position": 17,
+      "explanation": "Mahal berarti harganya tinggi dan membutuhkan banyak uang untuk membelinya. Antonimnya adalah 'murah', yang berarti harganya rendah dan terjangkau.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Terjangkau",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Murah",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Ekonomis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Diskon",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Hemat",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "RAJIN",
+      "position": 18,
+      "explanation": "Rajin berarti suka bekerja atau belajar dengan sungguh-sungguh. Antonimnya adalah 'malas', yaitu tidak mau bekerja atau belajar dan suka berdiam diri.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Lamban",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Lemah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Malas",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Santai",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Bosan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "JELAS",
+      "position": 19,
+      "explanation": "Jelas berarti mudah dipahami, tidak meragukan. Antonimnya adalah 'kabur', yang berarti tidak jelas, samar-samar, dan sulit dipahami.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Tidak jelas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Buram",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kabur",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Tersembunyi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Gelap",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "KUAT",
+      "position": 20,
+      "explanation": "Kuat berarti memiliki tenaga yang besar atau tidak mudah rusak. Antonimnya adalah 'lemah', yang berarti tidak berdaya dan mudah dikalahkan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rapuh",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Lemah",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Lemas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Loyo",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tidak berdaya",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "CEPAT",
+      "position": 21,
+      "explanation": "Cepat berarti dalam waktu singkat atau gerakannya tidak memerlukan waktu lama. Antonimnya adalah 'lambat', yang berarti memerlukan waktu lama untuk bergerak atau menyelesaikan sesuatu.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pelan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Lambat",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Lelet",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Santai",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Diam",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "BERSATU",
+      "position": 22,
+      "explanation": "Bersatu berarti bergabung menjadi satu dan bekerja sama. Antonimnya adalah 'bercerai', yang berarti berpisah atau tidak lagi bersama.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Terpisah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Bercerai",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Terpecah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Memisah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Sendiri",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "BANGKIT",
+      "position": 23,
+      "explanation": "Bangkit berarti berdiri kembali atau pulih dari keterpurukan. Antonimnya adalah 'terpuruk', yang berarti berada dalam kondisi sangat buruk dan tidak berdaya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Turun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Jatuh",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Merosot",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Terpuruk",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Gagal",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "TERBUKA",
+      "position": 24,
+      "explanation": "Terbuka berarti tidak tertutup, bebas diakses, atau bersikap transparan. Antonimnya adalah 'tertutup', yang berarti tidak bisa diakses, tersembunyi, atau tidak mau berterus terang.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Bebas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tertutup",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Tersembunyi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Lebar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Rahasia",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "KERAS",
+      "position": 25,
+      "explanation": "Keras berarti padat dan tidak mudah berubah bentuk saat ditekan. Antonimnya adalah 'lunak', yang berarti mudah berubah bentuk dan tidak keras.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Lembut",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Lunak",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Halus",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Lentur",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Cair",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "HARMONIS",
+      "position": 26,
+      "explanation": "Harmonis berarti serasi, rukun, dan tidak ada pertentangan. Antonimnya adalah 'disharmonis' atau dalam konteks umum 'kacau', yang berarti tidak serasi dan penuh pertentangan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Serasi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rukun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Damai",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Disharmonis",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Teratur",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "SABAR",
+      "position": 27,
+      "explanation": "Sabar berarti tahan menghadapi cobaan dan tidak mudah marah. Antonimnya adalah 'emosional', yang berarti mudah terbawa perasaan dan tidak dapat menahan diri.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Tenang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Santai",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Emosional",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Terburu-buru",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kasar",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "LAHIR",
+      "position": 28,
+      "explanation": "Lahir dalam konteks ini berarti bersifat fisik atau tampak dari luar (jasmani). Antonimnya adalah 'batin', yang berarti bersifat kejiwaan dan tidak tampak dari luar.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Jasmani",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Batin",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Rohani",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Jiwa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Raga",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "PAGI",
+      "position": 29,
+      "explanation": "Pagi adalah waktu setelah matahari terbit hingga siang hari. Antonimnya adalah 'malam', yaitu waktu setelah matahari terbenam hingga fajar.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Sore",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Siang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Petang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Malam",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Tengah malam",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "LEMBUT",
+      "position": 30,
+      "explanation": "Lembut berarti halus perasaannya, santun, atau tidak keras. Antonimnya adalah 'kasar', yang berarti tidak halus dan tidak santun dalam bersikap.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kasar",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content": "Keras",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Padat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kaku",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Berat",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    }
+  ]
+}

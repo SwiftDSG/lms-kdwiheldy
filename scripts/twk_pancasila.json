@@ -1,0 +1,790 @@
+{
+  "quiz": {
+    "title": "TWK - Pancasila",
+    "description": "Latihan soal Tes Wawasan Kebangsaan tentang Pancasila sebagai dasar negara, ideologi, dan pandangan hidup bangsa Indonesia.",
+    "category": "TWK",
+    "time_limit": 20
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "Pancasila ditetapkan secara resmi sebagai dasar negara Republik Indonesia pada tanggal...",
+      "position": 1,
+      "explanation": "Pancasila ditetapkan sebagai dasar negara pada tanggal 18 Agustus 1945 oleh PPKI (Panitia Persiapan Kemerdekaan Indonesia) bersamaan dengan pengesahan UUD 1945.",
+      "options": [
+        {
+          "label": "A",
+          "content": "1 Juni 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "17 Agustus 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "18 Agustus 1945",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "22 Juni 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "29 Mei 1945",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Siapakah yang pertama kali mengusulkan nama 'Pancasila' sebagai dasar negara Indonesia?",
+      "position": 2,
+      "explanation": "Ir. Soekarno pertama kali menyebutkan nama 'Pancasila' dalam pidatonya pada tanggal 1 Juni 1945 di sidang BPUPKI, sehingga tanggal tersebut diperingati sebagai Hari Lahir Pancasila.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Mohammad Hatta",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mohammad Yamin",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Soepomo",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Ir. Soekarno",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Ki Hajar Dewantara",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Rumusan Pancasila yang sah dan resmi dijadikan dasar negara tercantum dalam...",
+      "position": 3,
+      "explanation": "Rumusan Pancasila yang sah dan resmi terdapat dalam Pembukaan UUD 1945 alinea keempat. Rumusan inilah yang menjadi acuan resmi, bukan rumusan dari Piagam Jakarta maupun pidato 1 Juni 1945.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Piagam Jakarta tanggal 22 Juni 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pidato Soekarno tanggal 1 Juni 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Pembukaan UUD 1945 alinea keempat",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Batang tubuh UUD 1945 pasal 1",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Dekrit Presiden 5 Juli 1959",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Lambang sila keempat Pancasila 'Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan' adalah...",
+      "position": 4,
+      "explanation": "Sila keempat dilambangkan dengan Kepala Banteng, melambangkan sifat sosial dan kekuatan rakyat dalam musyawarah.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rantai emas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pohon beringin",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Padi dan kapas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kepala banteng",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Bintang emas",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pancasila berfungsi sebagai 'dasar negara', artinya Pancasila berkedudukan sebagai...",
+      "position": 5,
+      "explanation": "Sebagai dasar negara, Pancasila menjadi landasan filosofis dan yuridis bagi penyelenggaraan negara, pembentukan hukum, dan seluruh kegiatan pemerintahan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Sumber inspirasi perjuangan rakyat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Landasan penyelenggaraan negara dan sumber dari segala sumber hukum",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Tujuan akhir yang harus dicapai bangsa Indonesia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Pedoman kehidupan pribadi warga negara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kumpulan nilai moral universal yang berlaku di seluruh dunia",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sidang pertama BPUPKI (Badan Penyelidik Usaha-usaha Persiapan Kemerdekaan Indonesia) berlangsung pada tanggal...",
+      "position": 6,
+      "explanation": "Sidang pertama BPUPKI berlangsung dari tanggal 29 Mei hingga 1 Juni 1945, membahas dasar negara. Dalam sidang inilah Soekarno pada 1 Juni 1945 menyampaikan pidato 'Lahirnya Pancasila'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "1 Maret 1945 – 16 April 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "29 Mei 1945 – 1 Juni 1945",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "10 Juli 1945 – 17 Juli 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "7 Agustus 1945 – 15 Agustus 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "18 Agustus 1945 – 22 Agustus 1945",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Lambang sila ketiga Pancasila 'Persatuan Indonesia' adalah...",
+      "position": 7,
+      "explanation": "Sila ketiga dilambangkan dengan Pohon Beringin, melambangkan persatuan dan kesatuan bangsa Indonesia yang beraneka ragam budaya dan suku bangsa bernaung dalam satu atap.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kepala banteng",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rantai emas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Pohon beringin",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Bintang emas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Padi dan kapas",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pancasila sebagai 'pandangan hidup bangsa' mengandung arti bahwa Pancasila merupakan...",
+      "position": 8,
+      "explanation": "Pancasila sebagai pandangan hidup (way of life) bangsa berarti Pancasila menjadi pedoman dan petunjuk dalam kehidupan sehari-hari masyarakat Indonesia dalam berbangsa dan bernegara.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Aturan hukum tertinggi yang mengikat seluruh warga negara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kristalisasi nilai-nilai luhur bangsa yang menjadi pedoman hidup bermasyarakat dan bernegara",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Ideologi yang diadopsi dari pemikiran filsuf Barat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Program kerja pemerintah yang harus dicapai",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Syarat mutlak keanggotaan partai politik di Indonesia",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sila kelima Pancasila berbunyi...",
+      "position": 9,
+      "explanation": "Sila kelima Pancasila berbunyi 'Keadilan Sosial bagi Seluruh Rakyat Indonesia', dilambangkan dengan Padi dan Kapas yang melambangkan kemakmuran dan kesejahteraan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Persatuan Indonesia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kemanusiaan yang Adil dan Beradab",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Ketuhanan Yang Maha Esa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Keadilan Sosial bagi Seluruh Rakyat Indonesia",
+          "score": 5,
+          "is_correct": true
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Dalam hierarki tata urutan peraturan perundang-undangan, Pancasila berkedudukan sebagai...",
+      "position": 10,
+      "explanation": "Pancasila berkedudukan sebagai norma dasar (grundnorm) atau sumber dari segala sumber hukum negara. Pancasila berada di atas UUD 1945 dalam hierarki norma hukum Indonesia.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Peraturan pemerintah pengganti undang-undang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Setara dengan UUD 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Norma dasar (grundnorm) yang berada di atas UUD 1945",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Di bawah UUD 1945 tetapi di atas undang-undang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Bagian dari batang tubuh UUD 1945",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Panitia Sembilan yang merumuskan Piagam Jakarta dibentuk pada tanggal 22 Juni 1945. Siapa ketua Panitia Sembilan tersebut?",
+      "position": 11,
+      "explanation": "Panitia Sembilan diketuai oleh Ir. Soekarno. Panitia ini berhasil merumuskan Piagam Jakarta (Jakarta Charter) yang kemudian diubah menjadi Pembukaan UUD 1945 dengan menghapus tujuh kata pada sila pertama.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Mohammad Hatta",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Ir. Soekarno",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Soepomo",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Wahid Hasjim",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Mohammad Yamin",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pancasila sebagai 'ideologi terbuka' mengandung makna bahwa...",
+      "position": 12,
+      "explanation": "Pancasila sebagai ideologi terbuka berarti nilai-nilai dasarnya bersifat tetap, namun penjabarannya dapat berkembang secara dinamis sesuai dengan perkembangan zaman dan kebutuhan masyarakat, tanpa mengubah nilai intinya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pancasila dapat digantikan oleh ideologi lain yang lebih modern",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Nilai-nilai Pancasila seluruhnya dapat berubah sesuai kebutuhan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Nilai dasar tetap, namun penjabaran dan penerapannya berkembang dinamis sesuai zaman",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Pancasila bersifat otoriter dan tidak dapat dikritik",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Nilai Pancasila hanya berlaku bagi warga negara tertentu",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Lambang sila kedua Pancasila 'Kemanusiaan yang Adil dan Beradab' adalah...",
+      "position": 13,
+      "explanation": "Sila kedua dilambangkan dengan Rantai emas yang terdiri dari mata rantai berbentuk persegi dan lingkaran, melambangkan hubungan antar manusia (laki-laki dan perempuan) yang saling berkaitan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pohon beringin",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rantai emas",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Bintang emas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kepala banteng",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Padi dan kapas",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hubungan antara Pembukaan UUD 1945 dengan Pancasila adalah...",
+      "position": 14,
+      "explanation": "Pembukaan UUD 1945 merupakan staatsfundamentalnorm (norma fundamental negara) yang memuat Pancasila. Pancasila adalah jiwa dan isi dari Pembukaan UUD 1945, sehingga keduanya tidak dapat dipisahkan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pancasila dan Pembukaan UUD 1945 adalah dokumen yang terpisah dan tidak berkaitan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pembukaan UUD 1945 memuat Pancasila sehingga keduanya merupakan satu kesatuan yang tidak dapat dipisahkan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pembukaan UUD 1945 lebih tinggi kedudukannya daripada Pancasila",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Pancasila lebih dulu ada namun kemudian dimasukkan ke dalam UUD 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pancasila tidak terdapat dalam Pembukaan UUD 1945",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Nilai-nilai Pancasila yang bersifat universal tercermin dari sila pertama yang mengakui adanya...",
+      "position": 15,
+      "explanation": "Sila pertama 'Ketuhanan Yang Maha Esa' mencerminkan nilai universal bahwa setiap manusia memiliki kepercayaan atau agama. Indonesia mengakui 6 agama resmi namun tidak membatasi kepercayaan warganya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Hanya satu agama sah di Indonesia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kepercayaan terhadap Tuhan Yang Maha Esa, menghormati keberagaman agama",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Ateisme sebagai bagian dari kebebasan beragama",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Negara berhak menentukan agama warganya",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Agama adalah urusan pribadi yang tidak terkait dengan negara",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Butir-butir pengamalan Pancasila yang berlaku saat ini ditetapkan melalui...",
+      "position": 16,
+      "explanation": "Butir-butir pengamalan Pancasila ditetapkan melalui TAP MPR No. I/MPR/2003 tentang Peninjauan terhadap Materi dan Status Hukum Ketetapan MPRS dan Ketetapan MPR RI, yang memperbaharui TAP MPR No. II/MPR/1978.",
+      "options": [
+        {
+          "label": "A",
+          "content": "TAP MPR No. II/MPR/1978 tentang P4",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Perpres No. 87 Tahun 2017 tentang Penguatan Pendidikan Karakter",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "TAP MPR No. I/MPR/2003",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "UU No. 20 Tahun 2003 tentang Sistem Pendidikan Nasional",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Inpres No. 12 Tahun 1982",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pada tanggal berapa pidato 'Lahirnya Pancasila' oleh Soekarno disampaikan dan kini ditetapkan sebagai Hari Lahir Pancasila?",
+      "position": 17,
+      "explanation": "Pidato Lahirnya Pancasila disampaikan Soekarno pada 1 Juni 1945 dalam sidang BPUPKI. Tanggal ini ditetapkan sebagai Hari Lahir Pancasila melalui Perpres No. 24 Tahun 2016 dan merupakan hari libur nasional.",
+      "options": [
+        {
+          "label": "A",
+          "content": "29 Mei 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "1 Juni 1945",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "22 Juni 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "17 Agustus 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "18 Agustus 1945",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Perubahan tujuh kata dalam sila pertama Piagam Jakarta ('...dengan kewajiban menjalankan syariat Islam bagi pemeluk-pemeluknya') menjadi 'Ketuhanan Yang Maha Esa' dilakukan oleh...",
+      "position": 18,
+      "explanation": "Perubahan tujuh kata dalam Piagam Jakarta dilakukan atas usulan tokoh-tokoh yang mewakili Indonesia Timur (non-Muslim) sebelum sidang PPKI pada 18 Agustus 1945. Mohammad Hatta berperan penting dalam mengusulkan perubahan tersebut demi menjaga persatuan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Soekarno secara sepihak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mohammad Hatta atas masukan tokoh-tokoh dari Indonesia Timur sebelum sidang PPKI",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Tentara pendudukan Jepang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Keputusan sidang BPUPKI kedua",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Panitia Sembilan dalam rapat lanjutan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pancasila sebagai 'sumber dari segala sumber hukum' berarti...",
+      "position": 19,
+      "explanation": "Pancasila sebagai sumber dari segala sumber hukum berarti semua peraturan perundang-undangan di Indonesia harus bersumber, berpedoman, dan tidak boleh bertentangan dengan nilai-nilai Pancasila.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pancasila adalah satu-satunya sumber hukum yang berlaku di Indonesia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Semua peraturan perundang-undangan harus berpedoman dan tidak bertentangan dengan Pancasila",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Hakim hanya menggunakan Pancasila dalam memutuskan perkara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Pancasila menggantikan UUD 1945 sebagai konstitusi negara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Hukum internasional harus mengacu pada nilai-nilai Pancasila",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    },
+    {
+      "type": "MCQ",
+      "content": "BPUPKI (Badan Penyelidik Usaha-usaha Persiapan Kemerdekaan Indonesia) didirikan oleh pemerintah Jepang pada tanggal...",
+      "position": 20,
+      "explanation": "BPUPKI didirikan oleh Jepang pada tanggal 1 Maret 1945 dan diresmikan/dilantik pada 28 April 1945. Badan ini bertugas menyelidiki dan menyiapkan segala sesuatu yang berkaitan dengan kemerdekaan Indonesia.",
+      "options": [
+        {
+          "label": "A",
+          "content": "7 September 1944",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "1 Maret 1945",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "29 April 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "7 Agustus 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "14 Agustus 1945",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "PANCASILA"
+    }
+  ]
+}

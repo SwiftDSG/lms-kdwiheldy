@@ -1,0 +1,790 @@
+{
+  "quiz": {
+    "title": "TWK - Bhinneka Tunggal Ika",
+    "description": "Latihan soal Tes Wawasan Kebangsaan tentang semboyan Bhinneka Tunggal Ika, persatuan dalam keberagaman, dan toleransi antar umat bangsa Indonesia.",
+    "category": "TWK",
+    "time_limit": 20
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "Semboyan 'Bhinneka Tunggal Ika' diambil dari kitab...",
+      "position": 1,
+      "explanation": "Semboyan Bhinneka Tunggal Ika diambil dari Kakawin Sutasoma, karya sastra Jawa Kuno (Kawi) karangan Mpu Tantular pada abad ke-14, zaman Kerajaan Majapahit.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kakawin Ramayana",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kakawin Mahabharata",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kakawin Sutasoma",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Negarakertagama",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kakawin Arjunawiwaha",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pengarang Kakawin Sutasoma yang memuat semboyan Bhinneka Tunggal Ika adalah...",
+      "position": 2,
+      "explanation": "Kakawin Sutasoma ditulis oleh Mpu Tantular pada masa pemerintahan Raja Hayam Wuruk di Kerajaan Majapahit sekitar abad ke-14 Masehi.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Mpu Prapanca",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mpu Sedah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Mpu Kanwa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mpu Tantular",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Mpu Dharmaja",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Arti semboyan 'Bhinneka Tunggal Ika' adalah...",
+      "position": 3,
+      "explanation": "'Bhinneka Tunggal Ika' berasal dari bahasa Kawi/Jawa Kuno. 'Bhinneka' berarti berbeda-beda/beraneka ragam, 'Tunggal' berarti satu, dan 'Ika' berarti itu. Jadi artinya: 'Berbeda-beda tetapi tetap satu jua.'",
+      "options": [
+        {
+          "label": "A",
+          "content": "Satu bangsa, satu bahasa, satu tanah air",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Bersatu kita teguh, bercerai kita runtuh",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Berbeda-beda tetapi tetap satu jua",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Dari keberagaman lahir kekuatan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kerukunan membawa kedamaian",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Bhinneka Tunggal Ika ditetapkan secara resmi sebagai semboyan negara Republik Indonesia melalui...",
+      "position": 4,
+      "explanation": "Bhinneka Tunggal Ika ditetapkan sebagai semboyan negara melalui Peraturan Pemerintah No. 66 Tahun 1951 tentang Lambang Negara. Semboyan ini tertulis dalam pita yang dicengkeram Garuda Pancasila.",
+      "options": [
+        {
+          "label": "A",
+          "content": "UUD 1945 pasal 36A",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "TAP MPR No. I/MPR/2003",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Peraturan Pemerintah No. 66 Tahun 1951 tentang Lambang Negara",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Dekrit Presiden 5 Juli 1959",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "UU No. 24 Tahun 2009 tentang Bendera, Bahasa, dan Lambang Negara",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Dalam lambang negara Garuda Pancasila, tulisan Bhinneka Tunggal Ika terdapat pada...",
+      "position": 5,
+      "explanation": "Tulisan Bhinneka Tunggal Ika terdapat pada pita putih yang dicengkeram oleh kedua kaki Garuda. Pita ini melambangkan semboyan persatuan bangsa Indonesia.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Dada Garuda",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Sayap kanan Garuda",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Pita yang dicengkeram kedua kaki Garuda",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Bagian bawah lambang di luar perisai",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kepala Garuda",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Konteks asli penulisan kalimat Bhinneka Tunggal Ika dalam Kakawin Sutasoma mengacu pada...",
+      "position": 6,
+      "explanation": "Dalam konteks aslinya di Kakawin Sutasoma, Bhinneka Tunggal Ika mengacu pada perbedaan antara agama Hindu (Siwa) dan agama Buddha yang meskipun berbeda ajaran, namun hakikat tujuannya adalah sama (kebenaran).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Perbedaan suku dan ras di Nusantara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kerukunan antar agama Hindu-Siwa dan Buddha yang berbeda namun bertujuan sama",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Persatuan kerajaan-kerajaan di Jawa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Keselarasan antara manusia dan alam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Persatuan militer Majapahit dalam menghadapi musuh",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Bhinneka Tunggal Ika pertama kali diusulkan sebagai semboyan negara oleh...",
+      "position": 7,
+      "explanation": "Mohammad Yamin-lah yang pertama kali mengusulkan Bhinneka Tunggal Ika sebagai semboyan negara. Usulan ini kemudian diterima dan ditetapkan dalam lambang negara.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Ir. Soekarno",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mohammad Hatta",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Mohammad Yamin",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Sultan Hamengkubuwono IX",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Ki Hajar Dewantara",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kakawin Sutasoma yang memuat semboyan Bhinneka Tunggal Ika ditulis pada zaman kerajaan...",
+      "position": 8,
+      "explanation": "Kakawin Sutasoma ditulis pada zaman Kerajaan Majapahit, sekitar abad ke-14, pada masa pemerintahan Raja Hayam Wuruk (1350-1389).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Sriwijaya",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Singasari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Majapahit",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Mataram Kuno",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kediri",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Nilai utama yang terkandung dalam semboyan Bhinneka Tunggal Ika dalam kehidupan berbangsa adalah...",
+      "position": 9,
+      "explanation": "Nilai utama dalam Bhinneka Tunggal Ika adalah persatuan dalam keberagaman — mengakui dan menghargai perbedaan suku, agama, budaya, dan bahasa, namun tetap bersatu dalam satu identitas bangsa Indonesia.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Keseragaman budaya dan bahasa di seluruh Indonesia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Persatuan dalam keberagaman dengan saling menghormati perbedaan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Dominasi mayoritas atas minoritas dalam kehidupan bermasyarakat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Penyatuan semua agama menjadi satu kepercayaan nasional",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Menghapus perbedaan daerah untuk kepentingan pembangunan nasional",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Ancaman nyata terhadap semboyan Bhinneka Tunggal Ika dalam kehidupan berbangsa dan bernegara adalah...",
+      "position": 10,
+      "explanation": "Paham radikalisme, ekstremisme, dan intoleransi merupakan ancaman serius terhadap Bhinneka Tunggal Ika karena menolak perbedaan dan memaksakan satu pandangan, sehingga dapat merusak persatuan bangsa.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Berkembangnya seni dan budaya daerah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Meningkatnya pertumbuhan ekonomi daerah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Radikalisme, ekstremisme, dan intoleransi terhadap perbedaan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Masuknya budaya asing yang positif",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Peningkatan pariwisata budaya lokal",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Indonesia memiliki lebih dari 300 kelompok etnik/suku bangsa. Suku bangsa terbesar di Indonesia adalah...",
+      "position": 11,
+      "explanation": "Suku Jawa merupakan suku bangsa terbesar di Indonesia, dengan persentase sekitar 40% dari total penduduk. Suku Sunda menempati urutan kedua, diikuti Suku Batak, Madura, dan lainnya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Suku Sunda",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Suku Jawa",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Suku Batak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Suku Madura",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Suku Bugis",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Toleransi dalam konteks Bhinneka Tunggal Ika mengandung makna...",
+      "position": 12,
+      "explanation": "Toleransi dalam konteks Bhinneka Tunggal Ika berarti sikap menghargai dan menghormati perbedaan suku, agama, ras, dan budaya orang lain tanpa merasa lebih superior atau merendahkan kelompok lain.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Menyetujui semua keyakinan dan pandangan orang lain tanpa kecuali",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Menghargai dan menghormati perbedaan tanpa memaksakan kehendak kepada orang lain",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Mengabaikan perbedaan dan bersikap acuh tak acuh",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mencampuradukkan ajaran agama yang berbeda",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Menerima semua budaya asing tanpa seleksi",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kebijakan pemerintah yang mencerminkan semangat Bhinneka Tunggal Ika dalam bidang agama adalah...",
+      "position": 13,
+      "explanation": "Forum Kerukunan Umat Beragama (FKUB) adalah lembaga yang dibentuk pemerintah untuk memfasilitasi dialog antar umat beragama dan menjaga kerukunan, mencerminkan nilai Bhinneka Tunggal Ika dalam kehidupan beragama.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Menetapkan satu agama resmi negara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Membentuk Forum Kerukunan Umat Beragama (FKUB) untuk dialog antar agama",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Melarang pendirian rumah ibadah baru",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mewajibkan semua warga negara beragama Islam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Menghapus pendidikan agama dari sekolah",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Peristiwa Sumpah Pemuda 1928 berkaitan erat dengan semangat Bhinneka Tunggal Ika karena...",
+      "position": 14,
+      "explanation": "Sumpah Pemuda 1928 merupakan manifestasi nyata dari Bhinneka Tunggal Ika, di mana para pemuda dari berbagai suku dan daerah bersatu menyatakan satu bangsa, satu tanah air, dan satu bahasa meskipun berasal dari latar belakang yang berbeda-beda.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Para pemuda hanya dari satu suku yang bersatu melawan Belanda",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Para pemuda dari berbagai suku dan daerah bersatu menyatakan identitas nasional yang sama",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Para pemuda menghapus identitas kedaerahan mereka",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Sumpah Pemuda hanya dihadiri oleh pemuda Jawa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Para pemuda sepakat mengganti bahasa daerah dengan bahasa Indonesia",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Peran Generasi Muda dalam menjaga semangat Bhinneka Tunggal Ika di era digital adalah...",
+      "position": 15,
+      "explanation": "Di era digital, generasi muda perlu menjaga semangat Bhinneka Tunggal Ika dengan bijak bermedia sosial: tidak menyebarkan hoaks dan ujaran kebencian berbasis SARA, serta aktif mempromosikan konten yang mempererat persatuan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Menghindari semua interaksi dengan kelompok berbeda di media sosial",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tidak menyebarkan hoaks dan ujaran kebencian SARA serta aktif mempromosikan persatuan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Hanya berteman dengan orang yang seagama dan sesuku",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Menyebarkan konten yang menonjolkan keunggulan suku sendiri",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Menutup diri dari pengaruh budaya daerah lain",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kaitan Bhinneka Tunggal Ika dengan UUD 1945 adalah...",
+      "position": 16,
+      "explanation": "Bhinneka Tunggal Ika terkait erat dengan UUD 1945. Secara eksplisit tercantum dalam Pasal 36A yang menyatakan lambang negara ialah Garuda Pancasila dengan semboyan Bhinneka Tunggal Ika.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Bhinneka Tunggal Ika disebutkan dalam Pembukaan UUD 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Bhinneka Tunggal Ika tercantum dalam Pasal 36A UUD 1945 sebagai semboyan pada lambang negara",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Bhinneka Tunggal Ika tidak disebutkan secara eksplisit dalam UUD 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Bhinneka Tunggal Ika hanya diatur dalam undang-undang biasa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Bhinneka Tunggal Ika disebutkan dalam Pasal 1 UUD 1945",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Primordialisme yang berlebihan dianggap mengancam persatuan bangsa karena...",
+      "position": 17,
+      "explanation": "Primordialisme yang berlebihan (terlalu fanatik terhadap kelompok asal/suku/agama sendiri) dapat mengancam persatuan karena menimbulkan sikap eksklusif, merendahkan kelompok lain, dan berpotensi menimbulkan konflik horisontal.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Mendorong masyarakat melestarikan budaya daerah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Menumbuhkan rasa cinta terhadap tanah kelahiran",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Menimbulkan sikap eksklusif, merendahkan kelompok lain, dan berpotensi konflik horisontal",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Memperkuat identitas nasional Indonesia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Mendorong persaingan sehat antar daerah",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Indonesia dikenal sebagai negara dengan jumlah bahasa daerah terbanyak kedua di dunia. Provinsi dengan jumlah bahasa daerah terbanyak adalah...",
+      "position": 18,
+      "explanation": "Papua (termasuk Papua Barat dan Papua Pegunungan) memiliki jumlah bahasa daerah terbanyak di Indonesia, dengan ratusan bahasa daerah yang unik. Secara keseluruhan Indonesia memiliki lebih dari 700 bahasa daerah.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kalimantan Tengah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Sulawesi Selatan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Papua",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Nusa Tenggara Timur",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Maluku",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Dalam kehidupan bermasyarakat, penerapan nyata nilai Bhinneka Tunggal Ika tercermin dalam sikap...",
+      "position": 19,
+      "explanation": "Gotong royong mencerminkan nilai Bhinneka Tunggal Ika karena dalam gotong royong, masyarakat dari berbagai latar belakang bekerja sama untuk kepentingan bersama, tanpa memandang perbedaan suku, agama, atau status sosial.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Berkumpul hanya dengan kelompok suku yang sama",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Gotong royong tanpa memandang perbedaan suku, agama, dan budaya",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Menggunakan bahasa daerah sendiri dalam semua komunikasi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Memprioritaskan kepentingan daerah di atas kepentingan nasional",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Menolak budaya daerah lain masuk ke daerah sendiri",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "Perbedaan antara Bhinneka Tunggal Ika sebagai semboyan negara dengan Pancasila sebagai dasar negara adalah...",
+      "position": 20,
+      "explanation": "Pancasila adalah dasar negara dan ideologi nasional yang menjadi landasan filosofis, yuridis, dan ideologis bangsa Indonesia. Bhinneka Tunggal Ika adalah semboyan negara yang menekankan semangat persatuan dalam keberagaman sebagai identitas bangsa.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Keduanya memiliki fungsi dan kedudukan yang sama persis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pancasila adalah dasar/ideologi negara, Bhinneka Tunggal Ika adalah semboyan yang menekankan persatuan dalam keberagaman",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Bhinneka Tunggal Ika lebih tinggi kedudukannya daripada Pancasila",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Pancasila hanya untuk pemerintah, Bhinneka Tunggal Ika untuk masyarakat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Bhinneka Tunggal Ika tidak berkaitan dengan Pancasila",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "BHINNEKA"
+    }
+  ]
+}

@@ -153,7 +153,7 @@ struct QuestionDetailView: View {
                 .foregroundStyle(Color.fontPrimary)
 
             switch question.type {
-            case "MCQ", "TRUE_FALSE":
+            case "MCQ", "TRUE_FALSE", "IMAGE":
                 OptionsView(question: question, vm: vm)
             case "ESSAY":
                 EssayInputView(questionId: question.id, vm: vm)
@@ -199,10 +199,21 @@ struct OptionsView: View {
                                 }
                             }
 
-                        MathTextView(text: opt.content)
-                            .font(.knp(.body))
-                            .foregroundStyle(Color.fontPrimary)
+                        if let url = URL(string: opt.content),
+                           opt.content.hasPrefix("http") {
+                            AsyncImage(url: url) { img in
+                                img.resizable().scaledToFit()
+                            } placeholder: {
+                                ProgressView().tint(Color.fontPrimary)
+                            }
+                            .frame(height: 80)
                             .frame(maxWidth: .infinity, alignment: .leading)
+                        } else {
+                            MathTextView(text: opt.content)
+                                .font(.knp(.body))
+                                .foregroundStyle(Color.fontPrimary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
                     }
                     .padding(12)
                     .frame(maxWidth: .infinity)

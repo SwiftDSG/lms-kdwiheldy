@@ -148,7 +148,8 @@ struct QuizResultView: View {
                     ReviewQuestionDetailView(
                         question: question,
                         selectedOptionId: vm.answers[question.id]?.selectedOptionId,
-                        essayText: vm.answers[question.id]?.essayText
+                        essayText: vm.answers[question.id]?.essayText,
+                        vm: vm
                     )
                     .padding(16)
                 }
@@ -205,6 +206,26 @@ struct QuizResultView: View {
             .frame(width: width)
             .background(Color.backgroundOne)
             .id(question.id)
+            .overlay {
+                if vm.aiExplanationLoading.contains(question.id) {
+                    VStack(spacing: 12) {
+                        ProgressView().tint(Color.fontPrimary).scaleEffect(1.5)
+                        Text("Generating AI Explanation...")
+                            .font(.knp(.body))
+                            .foregroundStyle(Color.fontPrimary.opacity(0.6))
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color.backgroundOne)
+                } else if vm.aiExplanationVisible.contains(question.id),
+                          let result = vm.aiExplanations[question.id] {
+                    AIExplanationOverlay(
+                        explanation: result.aiExplanation,
+                        tip: result.aiTip
+                    ) {
+                        vm.dismissAIExplanation(for: question.id)
+                    }
+                }
+            }
         }
     }
 
@@ -275,6 +296,7 @@ private struct ReviewQuestionDetailView: View {
     let question: LocalQuestion
     let selectedOptionId: UUID?
     let essayText: String?
+    @Bindable var vm: QuizSessionViewModel
 
     private var hasCorrectOptions: Bool {
         question.options.contains { $0.isCorrect }
@@ -306,7 +328,7 @@ private struct ReviewQuestionDetailView: View {
                 .foregroundStyle(Color.fontPrimary)
 
             switch question.type {
-            case "MCQ", "TRUE_FALSE":
+            case "MCQ", "TRUE_FALSE", "IMAGE":
                 ReviewOptionsView(
                     options: question.options,
                     selectedId: selectedOptionId,
@@ -377,7 +399,127 @@ private struct ReviewQuestionDetailView: View {
                         .strokeBorder(Color.borderColor.opacity(0.3), lineWidth: 3)
                 )
             }
+
+            aiExplanationTrigger
         }
+    }
+
+    @ViewBuilder
+    private var aiExplanationTrigger: some View {
+        if vm.aiExplanationLoading.contains(question.id) {
+            HStack(spacing: 8) {
+                ProgressView().tint(Color.fontPrimary)
+                Text("Generating...")
+                    .font(.knp(.body))
+                    .foregroundStyle(Color.fontPrimary.opacity(0.5))
+            }
+        } else {
+            Button {
+                Task { await vm.fetchAIExplanation(for: question) }
+            } label: {
+                HStack(spacing: 6) {
+                    Image(systemName: "brain")
+                        .font(.system(size: 12, weight: .black))
+                    Text(vm.aiExplanations[question.id] != nil ? "Show AI Explanation" : "Get AI Explanation")
+                        .font(.knp(.h6))
+                }
+                .foregroundStyle(KnPButtonType.ghost.foreground)
+                .padding(.horizontal, 10)
+                .frame(minHeight: 36)
+            }
+            .buttonStyle(KnPButtonStyle(type: .ghost, borderWidth: 3))
+        }
+    }
+}
+
+// MARK: - AI Explanation overlay (right panel)
+
+private struct AIExplanationOverlay: View {
+    let explanation: String
+    let tip: String
+    let onDismiss: () -> Void
+
+    var body: some View {
+        VStack(spacing: 0) {
+            HStack {
+                HStack(spacing: 6) {
+                    Image(systemName: "brain")
+                        .font(.system(size: 12, weight: .black))
+                    Text("AI Explanation")
+                        .font(.knp(.h6))
+                }
+                .foregroundStyle(KnPButtonType.filled.foreground)
+                .padding(.horizontal, 10)
+                .frame(height: 28)
+                .background {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 6).fill(KnPButtonType.filled.fill)
+                        RoundedRectangle(cornerRadius: 6).strokeBorder(Color.borderColor, lineWidth: 3)
+                    }
+                }
+
+                Spacer()
+
+                Button(action: onDismiss) {
+                    Image(systemName: "xmark")
+                        .font(.system(size: 12, weight: .black))
+                        .foregroundStyle(KnPButtonType.secondary.foreground)
+                        .frame(width: 28, height: 28)
+                }
+                .buttonStyle(KnPButtonStyle(type: .secondary, borderWidth: 3))
+            }
+            .padding(16)
+            .background(Color.backgroundTwo)
+
+            Rectangle().fill(Color.borderColor).frame(height: 3)
+
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    MathTextView(text: explanation)
+                        .font(.knp(.body))
+                        .foregroundStyle(Color.fontPrimary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+
+                    if !tip.isEmpty {
+                        VStack(alignment: .leading, spacing: 8) {
+                            HStack(spacing: 6) {
+                                Image(systemName: "lightbulb.fill")
+                                    .font(.system(size: 12, weight: .black))
+                                    .foregroundStyle(.fontPrimary)
+                                Text("Study Tip")
+                                    .font(.knp(.h6))
+                                    .foregroundStyle(.fontPrimary)
+                            }
+                            .foregroundStyle(KnPButtonType.warning.foreground)
+                            .padding(.horizontal, 10)
+                            .frame(height: 28)
+                            .background {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 6).fill(KnPButtonType.warning.fill)
+                                    RoundedRectangle(cornerRadius: 6).strokeBorder(Color.borderColor, lineWidth: 3)
+                                }
+                            }
+
+                            MathTextView(text: tip)
+                                .font(.knp(.body))
+                                .foregroundStyle(Color.fontPrimary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                        }
+                        .padding(12)
+                        .background(Color.warningColor.opacity(0.1))
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 8)
+                                .strokeBorder(Color.borderColor.opacity(0.3), lineWidth: 3)
+                        )
+                    }
+                }
+                .padding(16)
+            }
+            .background(Color.backgroundOne)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .background(Color.backgroundOne)
     }
 }
 
@@ -424,10 +566,20 @@ private struct ReviewOptionsView: View {
                     }
                     .frame(width: 32, height: 32)
 
-                    MathTextView(text: opt.content)
-                        .font(.knp(.body))
-                        .foregroundStyle(Color.fontPrimary)
+                    if let url = URL(string: opt.content), opt.content.hasPrefix("http") {
+                        AsyncImage(url: url) { img in
+                            img.resizable().scaledToFit()
+                        } placeholder: {
+                            ProgressView().tint(Color.fontPrimary)
+                        }
+                        .frame(height: 80)
                         .frame(maxWidth: .infinity, alignment: .leading)
+                    } else {
+                        MathTextView(text: opt.content)
+                            .font(.knp(.body))
+                            .foregroundStyle(Color.fontPrimary)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
 
                     if hasCorrectOptions {
                         if isCorrect {

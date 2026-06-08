@@ -1,0 +1,790 @@
+{
+  "quiz": {
+    "title": "TWK - Sejarah Nasional",
+    "description": "Latihan soal Tes Wawasan Kebangsaan tentang sejarah nasional Indonesia, mulai dari kebangkitan nasional, kemerdekaan, hingga reformasi.",
+    "category": "TWK",
+    "time_limit": 20
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "Organisasi pergerakan nasional modern pertama di Indonesia, Budi Utomo, didirikan pada tanggal...",
+      "position": 1,
+      "explanation": "Budi Utomo didirikan pada 20 Mei 1908 oleh dr. Wahidin Sudirohusodo dan para pelajar STOVIA (School Tot Opleiding van Inlandsche Artsen), termasuk Sutomo. Tanggal ini diperingati sebagai Hari Kebangkitan Nasional.",
+      "options": [
+        {
+          "label": "A",
+          "content": "20 Mei 1905",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "20 Mei 1908",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "20 Mei 1912",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "20 Mei 1920",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "20 Mei 1928",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Sumpah Pemuda dikumandangkan pada tanggal 28 Oktober 1928 dalam Kongres Pemuda II. Salah satu isi Sumpah Pemuda adalah...",
+      "position": 2,
+      "explanation": "Sumpah Pemuda berisi tiga butir: (1) Bertanah air satu, tanah air Indonesia; (2) Berbangsa yang satu, bangsa Indonesia; (3) Menjunjung bahasa persatuan, bahasa Indonesia. Ketiganya merupakan ikrar persatuan pemuda dari berbagai daerah.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kami putera dan puteri Indonesia mengaku beragama satu, agama Islam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kami putera dan puteri Indonesia mengaku berbangsa yang satu, bangsa Indonesia",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kami putera dan puteri Indonesia mengaku merdeka dari penjajahan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kami putera dan puteri Indonesia mengaku bersenjata satu, persenjataan nasional",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kami putera dan puteri Indonesia mengaku berpemerintahan satu, pemerintahan Indonesia",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Peristiwa Rengasdengklok pada 16 Agustus 1945 terjadi karena...",
+      "position": 3,
+      "explanation": "Peristiwa Rengasdengklok terjadi karena para pemuda (Sukarni, Wikana, Chairul Saleh) mendesak Soekarno-Hatta untuk segera memproklamasikan kemerdekaan tanpa menunggu persetujuan Jepang, sementara golongan tua masih ingin koordinasi dengan PPKI.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Jepang menyerang markas PPKI di Jakarta",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Para pemuda mendesak Soekarno-Hatta segera memproklamasikan kemerdekaan tanpa campur tangan Jepang",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Belanda menyerang kota-kota di Jawa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Soekarno-Hatta menghindari penangkapan pasukan Sekutu",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Para tokoh nasional menghindari bom Sekutu di Jakarta",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Agresi Militer Belanda I terjadi pada tahun...",
+      "position": 4,
+      "explanation": "Agresi Militer Belanda I (Operatie Product) terjadi pada 21 Juli - 5 Agustus 1947. Belanda melanggar Perjanjian Linggarjati dan menyerang wilayah Indonesia di Jawa dan Sumatera.",
+      "options": [
+        {
+          "label": "A",
+          "content": "1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "1946",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "1947",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "1948",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "1949",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Konferensi Meja Bundar (KMB) yang menghasilkan pengakuan kedaulatan Indonesia oleh Belanda diselenggarakan di...",
+      "position": 5,
+      "explanation": "KMB diselenggarakan di Den Haag, Belanda, pada 23 Agustus - 2 November 1949. Hasilnya, Belanda mengakui kedaulatan Republik Indonesia Serikat (RIS) pada 27 Desember 1949.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Amsterdam, Belanda",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Den Haag, Belanda",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Batavia (Jakarta)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Yogyakarta",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Geneva, Swiss",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pemberontakan PKI Madiun pada September 1948 dipimpin oleh...",
+      "position": 6,
+      "explanation": "Pemberontakan PKI Madiun (18 September 1948) dipimpin oleh Musso dan Amir Sjarifuddin. Musso baru kembali dari Uni Soviet dan berusaha merebut kekuasaan dari pemerintah Soekarno-Hatta.",
+      "options": [
+        {
+          "label": "A",
+          "content": "D.N. Aidit dan Njoto",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Musso dan Amir Sjarifuddin",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Tan Malaka dan Alimin",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "S.M. Kartosuwiryo dan Amir Fatah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Sjahrir dan Sudirman",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Konferensi Asia-Afrika (KAA) pertama diselenggarakan di Bandung pada tahun...",
+      "position": 7,
+      "explanation": "Konferensi Asia-Afrika pertama diselenggarakan di Bandung pada 18-24 April 1955, dihadiri 29 negara Asia dan Afrika. Hasilnya adalah Dasasila Bandung dan menjadi cikal bakal Gerakan Non-Blok.",
+      "options": [
+        {
+          "label": "A",
+          "content": "1950",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "1953",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "1955",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "1960",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "1965",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pertempuran Surabaya pada 10 November 1945 terjadi antara pejuang Indonesia dengan...",
+      "position": 8,
+      "explanation": "Pertempuran Surabaya 10 November 1945 adalah pertempuran antara pejuang Indonesia (arek-arek Suroboyo di bawah pimpinan Bung Tomo) melawan pasukan Inggris (AFNEI/Allied Forces Netherlands East Indies). Tanggal 10 November diperingati sebagai Hari Pahlawan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pasukan Belanda (NICA)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pasukan Inggris (AFNEI/Sekutu)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pasukan Jepang yang tersisa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Pasukan Amerika Serikat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pasukan Australia",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Peristiwa G30S/PKI pada 30 September - 1 Oktober 1965 mengakibatkan terbunuhnya...",
+      "position": 9,
+      "explanation": "Peristiwa G30S/PKI mengakibatkan terbunuhnya 7 perwira tinggi TNI AD (termasuk 6 Jenderal). Mereka dikenal sebagai Pahlawan Revolusi: Letjen Ahmad Yani, Mayjen Suprapto, Mayjen Haryono, Brigjen Soetojo, Brigjen Pandjaitan, Mayjen S. Parman, dan Lettu Pierre Tendean.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Presiden Soekarno dan Wakil Presiden Hatta",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tujuh perwira tinggi TNI AD yang kemudian dikenal sebagai Pahlawan Revolusi",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Lima pimpinan partai politik oposisi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Seluruh anggota kabinet Soekarno",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Para pemimpin PKI termasuk D.N. Aidit",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Surat Perintah Sebelas Maret (Supersemar) 1966 ditandatangani oleh Presiden Soekarno untuk memberikan mandat kepada...",
+      "position": 10,
+      "explanation": "Supersemar (11 Maret 1966) ditandatangani Soekarno memberikan mandat kepada Letjen Soeharto untuk mengambil segala tindakan yang diperlukan demi keamanan dan ketenangan serta kestabilan jalannya pemerintahan. Ini menjadi tonggak peralihan ke Orde Baru.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Letjen A.H. Nasution",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Letjen Soeharto",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Jenderal Abdul Haris Nasution",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Letjen Umar Wirahadikusumah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pangdam Siliwangi Amirmachmud",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Reformasi 1998 yang mengakhiri Orde Baru Soeharto dipicu terutama oleh...",
+      "position": 11,
+      "explanation": "Reformasi 1998 dipicu oleh krisis ekonomi Asia 1997-1998 yang menyebabkan kemiskinan masif, diperparah oleh korupsi, kolusi, dan nepotisme (KKN) yang merajalela selama Orde Baru, serta terbatasnya kebebasan berpendapat dan berorganisasi.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Invasi militer dari negara asing",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Krisis ekonomi Asia 1997-1998 yang memperburuk KKN dan terbatasnya kebebasan sipil",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kekalahan Indonesia dalam sengketa Timor Timur",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Gempa bumi besar yang melanda seluruh Jawa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tekanan dari negara-negara barat untuk demokratisasi",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Tokoh yang mengumumkan pengunduran dirinya sebagai Presiden RI pada 21 Mei 1998 adalah...",
+      "position": 12,
+      "explanation": "Soeharto mengumumkan pengunduran dirinya sebagai Presiden RI pada 21 Mei 1998 setelah 32 tahun berkuasa, menyusul gelombang demonstrasi mahasiswa yang menuntut reformasi dan pengunduran dirinya. B.J. Habibie kemudian mengambil alih.",
+      "options": [
+        {
+          "label": "A",
+          "content": "B.J. Habibie",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Try Sutrisno",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Soeharto",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Megawati Soekarnoputri",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Abdurrahman Wahid",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Perjanjian Renville (1948) antara Indonesia dan Belanda ditandatangani di atas kapal USS Renville. Hasil perjanjian ini merugikan Indonesia karena...",
+      "position": 13,
+      "explanation": "Perjanjian Renville merugikan Indonesia karena menetapkan Garis Van Mook yang mempersempit wilayah RI, pasukan TNI harus mengosongkan wilayah yang dikuasai Belanda, dan Belanda mendapatkan pengakuan atas daerah-daerah yang dikuasainya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Indonesia harus membayar utang perang kepada Belanda",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Wilayah RI dipersempit oleh Garis Van Mook dan TNI harus mundur dari wilayah pendudukan Belanda",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Indonesia harus menyerahkan Papua kepada Belanda",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Soekarno diasingkan ke Bangka",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "TNI harus dibubarkan dan diganti polisi",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pemilu pertama Indonesia pada tahun 1955 diselenggarakan untuk memilih...",
+      "position": 14,
+      "explanation": "Pemilu 1955 diselenggarakan dua kali: pada 29 September 1955 untuk memilih anggota DPR, dan pada 15 Desember 1955 untuk memilih anggota Konstituante (badan pembuat UUD baru).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Presiden dan Wakil Presiden",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Anggota DPR dan Konstituante",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Anggota MPR dan DPRD",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Presiden, DPR, dan MPR secara serentak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Hanya anggota Konstituante",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Gerakan Kebangkitan Nasional diperingati setiap tanggal 20 Mei karena pada tanggal tersebut di tahun 1908 didirikan...",
+      "position": 15,
+      "explanation": "Budi Utomo didirikan pada 20 Mei 1908, diperingati sebagai Hari Kebangkitan Nasional. Budi Utomo dianggap sebagai pelopor organisasi pergerakan nasional modern yang mengawali kesadaran nasionalisme Indonesia.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Sarekat Islam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Partai Nasional Indonesia (PNI)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Budi Utomo",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Muhammadiyah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Nahdlatul Ulama",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Serangan Umum 1 Maret 1949 yang berhasil menduduki Yogyakarta selama 6 jam dipimpin oleh...",
+      "position": 16,
+      "explanation": "Serangan Umum 1 Maret 1949 dipimpin oleh Letkol Soeharto (selaku komandan Brigade 10/Wehrkreise III). Serangan ini berhasil membuktikan kepada dunia bahwa TNI masih kuat dan Indonesia masih berdaulat, memperkuat posisi Indonesia dalam perundingan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Panglima Besar Jenderal Sudirman",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Letkol Soeharto",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kolonel A.H. Nasution",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kolonel Bambang Supeno",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Jenderal Gatot Subroto",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Nama 'Indonesia' pertama kali diperkenalkan secara ilmiah oleh...",
+      "position": 17,
+      "explanation": "Nama 'Indonesia' pertama kali digunakan oleh J.R. Logan (1850) dan dipopulerkan oleh etnolog Jerman Adolf Bastian dalam karyanya 'Indonesien oder die Inseln des Malayischen Archipels' (1884-1894). Tokoh Indonesia yang mempopulerkannya adalah Ki Hajar Dewantara.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Raffles (Inggris)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "J.R. Logan (Inggris), dipopulerkan Adolf Bastian (Jerman)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Herman Daendels (Belanda)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Jan Pieterszoon Coen (Belanda)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Alfred Russel Wallace (Inggris)",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Dekrit Presiden 5 Juli 1959 oleh Soekarno menyatakan...",
+      "position": 18,
+      "explanation": "Dekrit Presiden 5 Juli 1959 menyatakan: (1) membubarkan Konstituante, (2) kembali berlakunya UUD 1945, (3) tidak berlakunya UUDS 1950, dan (4) pembentukan MPRS dan DPAS. Ini menandai dimulainya era Demokrasi Terpimpin.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pembubaran DPR dan pengangkatan DPR-GR",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pembubaran Konstituante dan kembali berlakunya UUD 1945",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Penghentian perundingan dengan Belanda terkait Irian Barat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Pengumuman pelaksanaan Demokrasi Pancasila",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pembubaran PKI dan partai-partai berhaluan kiri",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hari Pendidikan Nasional diperingati setiap tanggal 2 Mei, bertepatan dengan hari lahir tokoh pendidikan...",
+      "position": 19,
+      "explanation": "Hari Pendidikan Nasional diperingati setiap 2 Mei bertepatan dengan hari lahir Ki Hajar Dewantara (Raden Mas Soewardi Soeryaningrat) pada 2 Mei 1889. Beliau adalah tokoh pendidikan pendiri Taman Siswa dan Menteri Pendidikan pertama Indonesia.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Mohammad Sjafei",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Sutan Sjahrir",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Ki Hajar Dewantara",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Cipto Mangunkusumo",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "R.A. Kartini",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    },
+    {
+      "type": "MCQ",
+      "content": "Hari lahir Tentara Nasional Indonesia (TNI) diperingati setiap tanggal 5 Oktober karena pada tanggal tersebut di tahun 1945 dibentuk...",
+      "position": 20,
+      "explanation": "Pada 5 Oktober 1945, Pemerintah RI membentuk Tentara Keamanan Rakyat (TKR) berdasarkan maklumat Pemerintah. TKR kemudian berkembang menjadi TNI. Tanggal 5 Oktober ditetapkan sebagai Hari TNI.",
+      "options": [
+        {
+          "label": "A",
+          "content": "PETA (Pembela Tanah Air)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tentara Keamanan Rakyat (TKR)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Badan Keamanan Rakyat (BKR)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Angkatan Bersenjata Republik Indonesia (ABRI)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Laskar Rakyat",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SEJARAH_NASIONAL"
+    }
+  ]
+}

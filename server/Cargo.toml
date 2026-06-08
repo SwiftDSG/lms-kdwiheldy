@@ -18,6 +18,12 @@ serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 bson = { version = "2", features = ["uuid-1"] }
 
+# ML service client (UDS + HTTP/1.1)
+hyper = { version = "1", features = ["client", "http1"] }
+hyper-util = { version = "0.1", features = ["client", "client-legacy", "tokio"] }
+http-body-util = "0.1"
+bytes = "1"
+
 # Utilities
 uuid = { version = "1", features = ["v4", "serde"] }
 chrono = { version = "0.4", features = ["serde"] }

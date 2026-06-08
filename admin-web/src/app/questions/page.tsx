@@ -1,16 +1,17 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
-import { getQuestions, getQuizSets } from "@/lib/api";
+import { getQuestions, getQuizzes } from "@/lib/api";
 import Link from "next/link";
 import { useState } from "react";
+import MathText from "@/components/MathText";
 
 export default function QuestionBankPage() {
   const [selectedSetId, setSelectedSetId] = useState<string>("");
 
   const { data: quizSets = [] } = useQuery({
-    queryKey: ["quiz-sets"],
-    queryFn: getQuizSets,
+    queryKey: ["quizzes"],
+    queryFn: getQuizzes,
   });
 
   const { data: questions = [], isLoading } = useQuery({
@@ -26,7 +27,7 @@ export default function QuestionBankPage() {
         <select
           value={selectedSetId}
           onChange={(e) => setSelectedSetId(e.target.value)}
-          className="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+          className="border-3 border-brand-600 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400"
         >
           <option value="">All Quiz Sets</option>
           {quizSets.map((qs) => (
@@ -41,27 +42,28 @@ export default function QuestionBankPage() {
       {isLoading ? (
         <p className="text-gray-400">Loading...</p>
       ) : (
-        <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+        <div className="bg-white rounded-xl border-3 border-brand-600 overflow-hidden">
           <table className="w-full text-sm">
             <thead className="bg-gray-50 text-gray-500 text-left">
               <tr>
                 <th className="px-4 py-3 font-medium">#</th>
                 <th className="px-4 py-3 font-medium">Question</th>
                 <th className="px-4 py-3 font-medium">Type</th>
+                <th className="px-4 py-3 font-medium">Subtype</th>
                 <th className="px-4 py-3 font-medium">Options</th>
                 <th className="px-4 py-3 font-medium">Actions</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100">
               {questions.map((q, i) => {
-                const quizSet = quizSets.find((qs) => qs.id === q.quiz_set_id);
+                const quizSet = quizSets.find((qs) => qs.id === q.quiz_id);
                 return (
-                  <tr key={q.id} className="hover:bg-gray-50">
+                  <tr key={q.id} className="hover:bg-brand-50">
                     <td className="px-4 py-3 text-gray-400 font-mono text-xs">
                       {i + 1}
                     </td>
                     <td className="px-4 py-3 max-w-xs">
-                      <p className="line-clamp-2 font-medium">{q.content}</p>
+                      <p className="line-clamp-2 font-medium"><MathText text={q.content} /></p>
                       {quizSet && (
                         <p className="text-xs text-gray-400 mt-0.5">
                           {quizSet.title}
@@ -69,8 +71,13 @@ export default function QuestionBankPage() {
                       )}
                     </td>
                     <td className="px-4 py-3">
-                      <span className="px-2 py-0.5 bg-gray-100 rounded text-xs">
+                      <span className="px-2 py-0.5 bg-brand-50 rounded text-xs text-brand-600 font-medium">
                         {q.type}
+                      </span>
+                    </td>
+                    <td className="px-4 py-3">
+                      <span className="px-2 py-0.5 bg-gray-100 rounded text-xs text-gray-600 font-medium">
+                        {q.subtype}
                       </span>
                     </td>
                     <td className="px-4 py-3 text-gray-500">
@@ -78,7 +85,7 @@ export default function QuestionBankPage() {
                     </td>
                     <td className="px-4 py-3">
                       <Link
-                        href={`/quiz-sets/${q.quiz_set_id}/questions/${q.id}`}
+                        href={`/quiz-sets/${q.quiz_id}/questions/${q.id}`}
                         className="text-brand-600 hover:text-brand-700 text-sm"
                       >
                         Edit

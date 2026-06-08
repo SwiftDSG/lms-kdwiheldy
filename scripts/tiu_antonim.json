@@ -1,0 +1,790 @@
+{
+  "quiz": {
+    "title": "TIU – Antonim",
+    "description": "Pilih kata yang memiliki makna paling berlawanan (antonim) dengan kata yang dicetak kapital.",
+    "category": "TIU",
+    "time_limit": 25
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "SOMBONG",
+      "position": 1,
+      "explanation": "Sombong berarti merasa diri lebih tinggi dari orang lain. Antonimnya adalah 'rendah hati'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Angkuh",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Congkak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Rendah hati",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Pongah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tinggi hati",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "EKSPANSIF",
+      "position": 2,
+      "explanation": "Ekspansif berarti meluas atau berkembang ke luar. Antonimnya adalah 'kontraktif' atau 'menyempit'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Luas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Melebar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kontraktif",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Berkembang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Meningkat",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "IMPLISIT",
+      "position": 3,
+      "explanation": "Implisit berarti tersirat atau tidak diungkapkan secara langsung. Antonimnya adalah 'eksplisit' yang berarti tegas dan terang-terangan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Tersembunyi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Eksplisit",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Samar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Tersirat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Abstrak",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "SPORADIS",
+      "position": 4,
+      "explanation": "Sporadis berarti jarang-jarang atau tidak teratur kemunculannya. Antonimnya adalah 'kontinu' atau 'rutin'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Acak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Langka",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kontinu",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Jarang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Terpencar",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "STAGNAN",
+      "position": 5,
+      "explanation": "Stagnan berarti tidak mengalami perubahan atau kemajuan. Antonimnya adalah 'dinamis' yang berarti terus bergerak dan berkembang.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Diam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tetap",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Dinamis",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Beku",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Mandeg",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "KONKRET",
+      "position": 6,
+      "explanation": "Konkret berarti nyata, dapat diraba atau dilihat. Antonimnya adalah 'abstrak' yang berarti tidak berwujud nyata.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Nyata",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Abstrak",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Wujud",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Jelas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Terlihat",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "PRIMITIF",
+      "position": 7,
+      "explanation": "Primitif berarti bersifat awal, sederhana, atau belum berkembang. Antonimnya adalah 'modern' atau 'maju'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kuno",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Terbelakang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Modern",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Lama",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Sederhana",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "PROAKTIF",
+      "position": 8,
+      "explanation": "Proaktif berarti bertindak lebih dulu sebelum masalah terjadi. Antonimnya adalah 'reaktif' yang berarti baru bertindak setelah sesuatu terjadi.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Aktif",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Reaktif",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Responsif",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Agresif",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kreatif",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "TOLERAN",
+      "position": 9,
+      "explanation": "Toleran berarti bersikap terbuka dan menghargai perbedaan. Antonimnya adalah 'intoleran' yang berarti tidak mau menerima perbedaan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Sabar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Intoleran",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Menghargai",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Menerima",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Terbuka",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "EFISIEN",
+      "position": 10,
+      "explanation": "Efisien berarti menghasilkan sesuatu tanpa pemborosan waktu atau sumber daya. Antonimnya adalah 'boros' atau 'inefisien'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Hemat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Cepat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Boros",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Produktif",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tepat",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "EKSTROVER",
+      "position": 11,
+      "explanation": "Ekstrover adalah seseorang yang terbuka, senang bersosialisasi, dan aktif. Antonimnya adalah 'introver' yang cenderung tertutup dan lebih suka menyendiri.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Aktif",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Introver",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Ramah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Sosial",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Terbuka",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "RELEVAN",
+      "position": 12,
+      "explanation": "Relevan berarti berhubungan erat atau sesuai dengan pokok permasalahan. Antonimnya adalah 'tidak relevan' atau 'nirkaitan'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Penting",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Sesuai",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Nirkaitan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Berkaitan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tepat",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "SUBYEKTIF",
+      "position": 13,
+      "explanation": "Subyektif berarti berdasarkan perasaan atau pendapat pribadi. Antonimnya adalah 'obyektif' yang berarti berdasarkan fakta dan tidak memihak.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pribadi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Obyektif",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Emosional",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Opini",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Sepihak",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "OPTIMIS",
+      "position": 14,
+      "explanation": "Optimis berarti selalu berpandangan atau berpengharapan baik. Antonimnya adalah 'pesimis' yang selalu berpandangan buruk.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Bahagia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pesimis",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Semangat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Percaya diri",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Gembira",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "HOMOGEN",
+      "position": 15,
+      "explanation": "Homogen berarti seragam atau terdiri atas unsur yang sama jenisnya. Antonimnya adalah 'heterogen' yang berarti beraneka ragam.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Seragam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tunggal",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Heterogen",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Sama",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Murni",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "DOMINAN",
+      "position": 16,
+      "explanation": "Dominan berarti paling berkuasa atau paling menonjol. Antonimnya adalah 'inferior' atau 'rendahan'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kuat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Inferior",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Utama",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Unggul",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Superior",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "OTORITER",
+      "position": 17,
+      "explanation": "Otoriter berarti berkuasa sendiri dan tidak mengizinkan orang lain berpendapat. Antonimnya adalah 'demokratis'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kejam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Demokratis",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Berkuasa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Absolut",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Diktator",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "VERBAL",
+      "position": 18,
+      "explanation": "Verbal berarti menggunakan kata-kata atau lisan. Antonimnya adalah 'nonverbal' yang berarti tidak menggunakan kata-kata.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Lisan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tertulis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Nonverbal",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Ucapan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kata-kata",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "DEDUKTIF",
+      "position": 19,
+      "explanation": "Deduktif adalah penalaran dari umum ke khusus. Antonimnya adalah 'induktif' yang berarti penalaran dari khusus ke umum.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Analitis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Induktif",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Logis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Sistematis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kritis",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "KONVERGEN",
+      "position": 20,
+      "explanation": "Konvergen berarti menuju ke satu titik atau menyatu. Antonimnya adalah 'divergen' yang berarti menyebar atau berpencar ke berbagai arah.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Menyatu",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Terpusat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Divergen",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Seragam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Selaras",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "ANTONIM"
+    }
+  ]
+}

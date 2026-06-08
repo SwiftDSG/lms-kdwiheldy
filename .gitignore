@@ -1,100 +1,59 @@
-
-/target
-
-server/target
-server/*.json
-server/.env
-
-# Node dependencies
-admin-web/node_modules
-
-# Logs
-admin-web/logs
-admin-web/*.log
-
-# Misc
+# ── Global ────────────────────────────────────────────────────────────────────
 .DS_Store
-admin-web/.DS_Store
-admin-web/.fleet
-admin-web/.idea
-admin-web/.next
+*.log
+*.swp
+*.swo
+*.swm
+*~
 
-# Local env files
+# ── Rust (server/) ────────────────────────────────────────────────────────────
+server/target/
+server/.env
+server/uploads/
+
+# ── Node / Next.js (admin-web/) ───────────────────────────────────────────────
+admin-web/node_modules/
+admin-web/.next/
+admin-web/tsconfig.tsbuildinfo
 admin-web/.env
 admin-web/.env.*
-admin-web/!.env.example
+!admin-web/.env.example
 
-# Xcode
+# ── Python (scripts/, apps/ml-service/) ───────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+apps/ml-service/data/
+apps/ml-service/.venv/
+
+# ── Xcode (client-ios/) ───────────────────────────────────────────────────────
+# User-specific workspace state — not shareable
+**/xcuserdata/
+**/*.xcuserstate
+
+# Derived + build output
 client-ios/DerivedData/
-client-ios/*.xcworkspace
-client-ios/*.xcuserstate
-client-ios/!default.xcworkspace/contents.xcworkspacedata
-client-ios/*.xccheckout
-client-ios/*.moved-aside
-client-ios/*.xcuserdatad/
-client-ios/*.xcscmblueprint
-
-# Build
 client-ios/build/
 client-ios/Build/
-client-ios/*.build/
 
-# Swift Package Manager
-client-ios/Packages/
-client-ios/.swiftpm/
-client-ios/Package.resolved
-
-# CocoaPods
-client-ios/Pods/
-client-ios/Podfile.lock
-client-ios/*.xcconfig
-
-# Carthage
-client-ios/Carthage/Build/
-
-# Fastlane
-client-ios/fastlane/report.xml
-client-ios/fastlane/Preview.html
-client-ios/fastlane/screenshots/
-client-ios/fastlane/test_output/
-
-# Archives
+# Archives & signing
 client-ios/*.xcarchive
-
-# Unit test and profiling
-client-ios/*.gcda
-client-ios/*.gcno
-client-ios/*.plist
-client-ios/*.profraw
-
-# Core Data
-client-ios/*.xccoverage
-
-# Playgrounds
-client-ios/timeline.xctimeline
-client-ios/playground.xcworkspace
-
-# Code Signing
 client-ios/*.mobileprovision
 client-ios/*.codesign
 
-# Logs
-client-ios/*.log
-client-ios/*.history
+# Package managers (not used, but guard against accidental addition)
+client-ios/Pods/
+client-ios/Podfile.lock
+client-ios/Carthage/Build/
+client-ios/.swiftpm/
+client-ios/Package.resolved
 
-# Temporary
-client-ios/*.swp
-client-ios/*.swm
-client-ios/*.swo
-client-ios/*~
+# Coverage & profiling
+client-ios/*.gcda
+client-ios/*.gcno
+client-ios/*.profraw
+client-ios/*.xccoverage
 
-# User-specific files
-client-ios/*.DS_Store
-client-ios/*.swifttemplate
-client-ios/*.orig
-client-ios/*.backup
-client-ios/*.mode1
-client-ios/*.mode1v3
-client-ios/*.mode2v3
-client-ios/*.perspectivev3
-client-ios/*.perspective
+# IDE / editor
+.fleet/
+.idea/

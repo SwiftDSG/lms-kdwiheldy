@@ -50,7 +50,7 @@ export default function QuizSetForm({
         <label className="block text-sm font-medium mb-1">Title *</label>
         <input
           {...register("title")}
-          className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+          className="w-full border-3 border-brand-600 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400"
           placeholder="e.g. TWK Latihan Soal #1"
         />
         {errors.title && (
@@ -63,7 +63,7 @@ export default function QuizSetForm({
         <textarea
           {...register("description")}
           rows={3}
-          className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+          className="w-full border-3 border-brand-600 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400"
           placeholder="Optional description..."
         />
       </div>
@@ -72,7 +72,7 @@ export default function QuizSetForm({
         <label className="block text-sm font-medium mb-1">Category *</label>
         <select
           {...register("category")}
-          className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+          className="w-full border-3 border-brand-600 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400"
         >
           <option value="TWK">TWK — Tes Wawasan Kebangsaan</option>
           <option value="TIU">TIU — Tes Intelejensi Umum</option>
@@ -89,7 +89,7 @@ export default function QuizSetForm({
           {...register("time_limit")}
           type="number"
           min={1}
-          className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"
+          className="w-full border-3 border-brand-600 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-400"
           placeholder="Leave blank for no limit"
         />
       </div>
@@ -97,7 +97,7 @@ export default function QuizSetForm({
       <button
         type="submit"
         disabled={isLoading}
-        className="bg-brand-600 text-white px-5 py-2 rounded-lg text-sm font-medium hover:bg-brand-700 disabled:opacity-50 transition-colors"
+        className="bg-brand-600 text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-brand-700 disabled:opacity-50 transition-colors"
       >
         {isLoading ? "Saving..." : submitLabel}
       </button>

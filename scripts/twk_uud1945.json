@@ -1,0 +1,790 @@
+{
+  "quiz": {
+    "title": "TWK - UUD 1945",
+    "description": "Latihan soal Tes Wawasan Kebangsaan tentang Undang-Undang Dasar Negara Republik Indonesia Tahun 1945 beserta amandemennya.",
+    "category": "TWK",
+    "time_limit": 20
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "UUD 1945 ditetapkan oleh PPKI pada tanggal...",
+      "position": 1,
+      "explanation": "UUD 1945 disahkan oleh PPKI (Panitia Persiapan Kemerdekaan Indonesia) pada tanggal 18 Agustus 1945, sehari setelah Proklamasi Kemerdekaan Indonesia.",
+      "options": [
+        {
+          "label": "A",
+          "content": "17 Agustus 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "18 Agustus 1945",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "19 Agustus 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "22 Agustus 1945",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "29 Agustus 1945",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "UUD 1945 telah mengalami amandemen sebanyak berapa kali?",
+      "position": 2,
+      "explanation": "UUD 1945 telah diamandemen sebanyak 4 kali: Amandemen I (1999), Amandemen II (2000), Amandemen III (2001), dan Amandemen IV (2002), dilakukan dalam Sidang Tahunan/Umum MPR.",
+      "options": [
+        {
+          "label": "A",
+          "content": "2 kali",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "3 kali",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "4 kali",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "5 kali",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "6 kali",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pasal 1 ayat (3) UUD 1945 menyatakan bahwa 'Negara Indonesia adalah negara...'",
+      "position": 3,
+      "explanation": "Pasal 1 ayat (3) UUD 1945 yang ditambahkan pada Amandemen III (2001) menyatakan bahwa 'Negara Indonesia adalah negara hukum.' Ini menegaskan prinsip rechtstaat (negara berdasar atas hukum).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Demokrasi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Federasi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kesatuan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Hukum",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Republik",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pembukaan UUD 1945 terdiri dari berapa alinea?",
+      "position": 4,
+      "explanation": "Pembukaan UUD 1945 terdiri dari 4 (empat) alinea. Alinea keempat memuat tujuan negara dan dasar negara Pancasila.",
+      "options": [
+        {
+          "label": "A",
+          "content": "2 alinea",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "3 alinea",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "4 alinea",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "5 alinea",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "6 alinea",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Tujuan negara Indonesia yang tercantum dalam Pembukaan UUD 1945 alinea keempat antara lain adalah...",
+      "position": 5,
+      "explanation": "Tujuan negara Indonesia dalam Pembukaan UUD 1945 alinea IV: (1) melindungi segenap bangsa Indonesia dan seluruh tumpah darah Indonesia, (2) memajukan kesejahteraan umum, (3) mencerdaskan kehidupan bangsa, (4) ikut melaksanakan ketertiban dunia.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Menjadi negara adidaya di Asia Tenggara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Melindungi segenap bangsa Indonesia dan memajukan kesejahteraan umum",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Memenangkan persaingan ekonomi dengan negara lain",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mempertahankan kemurnian ras dan budaya Indonesia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Mewujudkan masyarakat tanpa kelas sosial",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pasal 27 ayat (1) UUD 1945 mengatur tentang...",
+      "position": 6,
+      "explanation": "Pasal 27 ayat (1) UUD 1945 menyatakan: 'Segala warga negara bersamaan kedudukannya di dalam hukum dan pemerintahan dan wajib menjunjung hukum dan pemerintahan itu dengan tidak ada kecualinya.'",
+      "options": [
+        {
+          "label": "A",
+          "content": "Hak mendapatkan pekerjaan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Persamaan kedudukan di dalam hukum dan pemerintahan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Hak atas pendidikan dasar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kewajiban bela negara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Hak atas kebebasan berpendapat",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pasal 31 ayat (1) UUD 1945 menyatakan bahwa 'Setiap warga negara berhak mendapat...'",
+      "position": 7,
+      "explanation": "Pasal 31 ayat (1) UUD 1945 menyatakan: 'Setiap warga negara berhak mendapat pendidikan.' Ini merupakan hak konstitusional warga negara di bidang pendidikan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pekerjaan yang layak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pendidikan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pelayanan kesehatan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Perumahan yang layak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Perlindungan hukum",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pasal 33 UUD 1945 mengatur tentang...",
+      "position": 8,
+      "explanation": "Pasal 33 UUD 1945 mengatur tentang perekonomian nasional dan kesejahteraan sosial. Ayat (3)-nya menyatakan: 'Bumi dan air dan kekayaan alam yang terkandung di dalamnya dikuasai oleh negara dan dipergunakan untuk sebesar-besar kemakmuran rakyat.'",
+      "options": [
+        {
+          "label": "A",
+          "content": "Sistem pendidikan nasional",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Perekonomian nasional dan kesejahteraan sosial",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pertahanan dan keamanan negara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Hak-hak dasar warga negara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Sistem pemerintahan daerah",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berdasarkan Pasal 4 ayat (1) UUD 1945, Presiden Republik Indonesia memegang kekuasaan...",
+      "position": 9,
+      "explanation": "Pasal 4 ayat (1) UUD 1945 menyatakan: 'Presiden Republik Indonesia memegang kekuasaan pemerintahan menurut Undang-Undang Dasar.' Indonesia menganut sistem presidensial.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kekuasaan legislatif",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kekuasaan yudikatif",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kekuasaan pemerintahan (eksekutif)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Kekuasaan tertinggi negara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kekuasaan legislatif dan eksekutif",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berdasarkan Pasal 7 UUD 1945 (setelah amandemen), masa jabatan Presiden dan Wakil Presiden adalah...",
+      "position": 10,
+      "explanation": "Pasal 7 UUD 1945 (setelah Amandemen I, 1999) menyatakan: 'Presiden dan Wakil Presiden memegang jabatan selama lima tahun, dan sesudahnya dapat dipilih kembali dalam jabatan yang sama, hanya untuk satu kali masa jabatan.'",
+      "options": [
+        {
+          "label": "A",
+          "content": "4 tahun dan dapat dipilih kembali tanpa batas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "5 tahun dan dapat dipilih kembali sekali",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "5 tahun dan tidak dapat dipilih kembali",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "6 tahun dan dapat dipilih kembali sekali",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "5 tahun dan dapat dipilih kembali dua kali",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pasal 29 ayat (2) UUD 1945 menyatakan bahwa negara menjamin kemerdekaan tiap-tiap penduduk untuk...",
+      "position": 11,
+      "explanation": "Pasal 29 ayat (2) UUD 1945 menyatakan: 'Negara menjamin kemerdekaan tiap-tiap penduduk untuk memeluk agamanya masing-masing dan untuk beribadat menurut agamanya dan kepercayaannya itu.'",
+      "options": [
+        {
+          "label": "A",
+          "content": "Memilih ideologi yang diinginkan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Memeluk agamanya masing-masing dan beribadat menurut agamanya",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Tidak memeluk agama apapun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mendirikan organisasi keagamaan tanpa izin",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Menyebarkan ajaran agama ke seluruh wilayah",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Mahkamah Konstitusi (MK) dibentuk berdasarkan amandemen UUD 1945 yang keberapa?",
+      "position": 12,
+      "explanation": "Mahkamah Konstitusi dibentuk berdasarkan Amandemen III UUD 1945 (tahun 2001), diatur dalam Pasal 24C. MK resmi berdiri pada 13 Agustus 2003.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Amandemen I (1999)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Amandemen II (2000)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Amandemen III (2001)",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Amandemen IV (2002)",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tidak ada dalam amandemen UUD 1945",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berdasarkan UUD 1945, lembaga negara yang berwenang membuat undang-undang adalah...",
+      "position": 13,
+      "explanation": "Berdasarkan Pasal 20 ayat (1) UUD 1945, DPR memegang kekuasaan membentuk undang-undang. Presiden juga memiliki hak mengajukan RUU namun DPR yang memiliki kekuasaan legislasi.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Presiden",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "MPR",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "DPR",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "DPD",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Mahkamah Agung",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pasal 34 ayat (1) UUD 1945 menyatakan bahwa fakir miskin dan anak-anak yang terlantar dipelihara oleh...",
+      "position": 14,
+      "explanation": "Pasal 34 ayat (1) UUD 1945 menyatakan: 'Fakir miskin dan anak-anak yang terlantar dipelihara oleh negara.' Ini merupakan tanggung jawab konstitusional negara dalam bidang kesejahteraan sosial.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Keluarga masing-masing",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Lembaga swadaya masyarakat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Negara",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Pemerintah daerah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Organisasi keagamaan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Makna alinea pertama Pembukaan UUD 1945 yang menyatakan 'kemerdekaan itu ialah hak segala bangsa' adalah...",
+      "position": 15,
+      "explanation": "Alinea pertama Pembukaan UUD 1945 menyatakan: 'Bahwa sesungguhnya kemerdekaan itu ialah hak segala bangsa dan oleh sebab itu, maka penjajahan di atas dunia harus dihapuskan...' Maknanya adalah pengakuan hak asasi manusia dan penolakan terhadap penjajahan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Hanya bangsa Indonesia yang berhak merdeka",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kemerdekaan adalah hak setiap bangsa dan penjajahan bertentangan dengan perikemanusiaan",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Indonesia akan membantu kemerdekaan bangsa lain dengan kekuatan militer",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kemerdekaan harus diperjuangkan dengan kekerasan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Bangsa yang sudah merdeka boleh menjajah bangsa lain",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Kewenangan DPD (Dewan Perwakilan Daerah) berdasarkan UUD 1945 adalah...",
+      "position": 16,
+      "explanation": "DPD berdasarkan Pasal 22D UUD 1945 berwenang mengajukan dan membahas RUU terkait otonomi daerah, hubungan pusat-daerah, pembentukan/pemekaran daerah, dll. Namun DPD tidak memiliki hak memutuskan undang-undang.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Memutuskan undang-undang bersama DPR",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mengajukan dan membahas RUU terkait otonomi daerah dan hubungan pusat-daerah",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Mengangkat dan memberhentikan presiden",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mengawasi pelaksanaan APBD seluruh daerah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Menetapkan peraturan daerah provinsi",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berdasarkan UUD 1945, Badan Pemeriksa Keuangan (BPK) bertanggung jawab kepada...",
+      "position": 17,
+      "explanation": "Berdasarkan Pasal 23E UUD 1945, BPK memeriksa pengelolaan dan tanggung jawab keuangan negara. Hasil pemeriksaan BPK diserahkan kepada DPR, DPD, dan DPRD sesuai dengan kewenangannya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Presiden",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mahkamah Agung",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "DPR, DPD, dan DPRD",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "MPR",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Komisi Pemberantasan Korupsi",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "UUD 1945 sebagai hukum dasar tertulis berkedudukan sebagai...",
+      "position": 18,
+      "explanation": "UUD 1945 merupakan hukum dasar tertulis yang menjadi konstitusi negara Indonesia. Semua peraturan perundang-undangan yang lebih rendah tidak boleh bertentangan dengan UUD 1945.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Aturan pelaksana pemerintahan sehari-hari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Konstitusi negara yang menjadi hukum tertinggi setelah Pancasila",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pedoman moral bagi warga negara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Program kerja pemerintah jangka panjang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Peraturan yang setara dengan undang-undang biasa",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Berdasarkan Pasal 3 UUD 1945, kewenangan MPR antara lain adalah...",
+      "position": 19,
+      "explanation": "Pasal 3 UUD 1945 menyebutkan kewenangan MPR: (1) mengubah dan menetapkan UUD, (2) melantik Presiden dan/atau Wakil Presiden, (3) memberhentikan Presiden dan/atau Wakil Presiden dalam masa jabatannya menurut UUD.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Membuat undang-undang bersama Presiden",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mengubah dan menetapkan UUD serta melantik Presiden dan Wakil Presiden",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Mengawasi jalannya pemerintahan sehari-hari",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Menetapkan APBN setiap tahun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Memilih anggota Mahkamah Konstitusi",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    },
+    {
+      "type": "MCQ",
+      "content": "Pasal 28A UUD 1945 menyatakan bahwa setiap orang berhak untuk...",
+      "position": 20,
+      "explanation": "Pasal 28A UUD 1945 menyatakan: 'Setiap orang berhak untuk hidup serta berhak mempertahankan hidup dan kehidupannya.' Pasal ini merupakan bagian dari hak asasi manusia yang diatur dalam Bab XA UUD 1945.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Memperoleh pekerjaan dengan gaji layak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Hidup serta mempertahankan hidup dan kehidupannya",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Mendapatkan pendidikan gratis dari negara",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Mendirikan partai politik tanpa syarat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Menolak kewajiban membayar pajak",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "UUD_1945"
+    }
+  ]
+}

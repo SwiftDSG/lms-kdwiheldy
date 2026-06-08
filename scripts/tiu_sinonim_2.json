@@ -1,0 +1,1180 @@
+{
+  "quiz": {
+    "title": "TIU – Sinonim (Set 2)",
+    "description": "Pilih kata yang memiliki makna paling mendekati (sinonim) dengan kata yang dicetak kapital.",
+    "category": "TIU",
+    "time_limit": 25
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "PANDAI",
+      "position": 1,
+      "explanation": "Pandai berarti memiliki kemampuan berpikir yang baik dan mudah memahami sesuatu. Sinonimnya adalah 'cerdas', yang berarti tajam akal dan cepat dalam belajar.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rajin",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Cerdas",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Tekun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Teliti",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Gigih",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "INDAH",
+      "position": 2,
+      "explanation": "Indah berarti sedap dipandang, menyenangkan hati. Sinonimnya adalah 'cantik', yang berarti elok dan menarik dipandang.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Bagus",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Menarik",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Cantik",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Molek",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Mulus",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "GEMBIRA",
+      "position": 3,
+      "explanation": "Gembira berarti merasa senang dan bahagia. Sinonimnya adalah 'riang', yang berarti bersemangat dan penuh kegembiraan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Suka",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Riang",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Puas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Tenang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Nyaman",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "MISKIN",
+      "position": 4,
+      "explanation": "Miskin berarti tidak memiliki harta yang cukup untuk memenuhi kebutuhan hidup. Sinonimnya adalah 'melarat', yang berarti sangat miskin dan menderita kekurangan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Susah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Melarat",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Sederhana",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kekurangan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Sengsara",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "KAYA",
+      "position": 5,
+      "explanation": "Kaya berarti memiliki harta benda yang berlimpah. Sinonimnya adalah 'makmur', yang berarti berkecukupan dan hidup sejahtera.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Sejahtera",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Makmur",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Berkecukupan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Berlimpah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Beruntung",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "MARAH",
+      "position": 6,
+      "explanation": "Marah berarti perasaan tidak senang yang kuat terhadap sesuatu. Sinonimnya adalah 'murka', yang berarti sangat marah dan sulit dikendalikan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kesal",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Jengkel",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Murka",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Emosi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Gusar",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "CEPAT",
+      "position": 7,
+      "explanation": "Cepat berarti tidak memerlukan waktu lama. Sinonimnya adalah 'gesit', yang berarti lincah dan cepat dalam bergerak.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Lincah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tangkas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Gesit",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Kencang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Lancar",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "JUJUR",
+      "position": 8,
+      "explanation": "Jujur berarti berkata dan berbuat sesuai kebenaran. Sinonimnya adalah 'tulus', yang berarti ikhlas dan tidak ada maksud tersembunyi.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Baik",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tulus",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Bijak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Setia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Polos",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "SENANG",
+      "position": 9,
+      "explanation": "Senang berarti merasa bahagia dan tidak ada rasa susah. Sinonimnya adalah 'bahagia', yang berarti perasaan puas dan penuh kegembiraan dalam hidup.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Riang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Gembira",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Bahagia",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Suka",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Girang",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "GELAP",
+      "position": 10,
+      "explanation": "Gelap berarti tidak ada cahaya atau suasana yang suram. Sinonimnya adalah 'kelam', yang berarti sangat gelap dan tidak bercahaya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Suram",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Redup",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Muram",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kelam",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Pekat",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "TERANG",
+      "position": 11,
+      "explanation": "Terang berarti bercahaya dan mudah dilihat. Sinonimnya adalah 'cerah', yang berarti bersih dan bercahaya terutama untuk kondisi cuaca.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Cerah",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content": "Bersih",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Jernih",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Jelas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Nyata",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "TINGGI",
+      "position": 12,
+      "explanation": "Tinggi berarti jarak yang jauh dari bawah ke atas. Sinonimnya adalah 'jangkung', yang berarti bertubuh tinggi (biasanya untuk orang).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Besar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Jangkung",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Tegap",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Menjulang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Gagah",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "KUAT",
+      "position": 13,
+      "explanation": "Kuat berarti memiliki tenaga besar dan tidak mudah goyah. Sinonimnya adalah 'kokoh', yang berarti teguh, kuat, dan tidak mudah roboh.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Perkasa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Gagah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kokoh",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Tangguh",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tegar",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "TAKUT",
+      "position": 14,
+      "explanation": "Takut berarti merasa gelisah atau khawatir karena akan menghadapi sesuatu yang berbahaya. Sinonimnya adalah 'gentar', yang berarti merasa takut dan tidak berani.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Cemas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Khawatir",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Gelisah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Gentar",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Ragu",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "LELAH",
+      "position": 15,
+      "explanation": "Lelah berarti merasa kurang tenaga setelah melakukan pekerjaan. Sinonimnya adalah 'capek', yang berarti kelelahan setelah bekerja keras.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Capek",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content": "Ngantuk",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Lesu",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Loyo",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Lemas",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "BIJAK",
+      "position": 16,
+      "explanation": "Bijak berarti pandai menggunakan akal dan pengalaman dalam mengambil keputusan. Sinonimnya adalah 'arif', yang berarti memiliki kebijaksanaan dan pengetahuan mendalam.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Cerdas",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Arif",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pintar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Matang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Dewasa",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "TERKENAL",
+      "position": 17,
+      "explanation": "Terkenal berarti diketahui atau dikenal oleh banyak orang. Sinonimnya adalah 'masyhur', yang berarti sangat terkenal dan tersebar reputasinya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Populer",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tersohor",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Masyhur",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Terkemuka",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kenamaan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "SUNYI",
+      "position": 18,
+      "explanation": "Sunyi berarti tidak ada suara atau sangat sepi. Sinonimnya adalah 'sepi', yang berarti tidak ramai dan tidak ada kegiatan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Hening",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Sepi",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Lengang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Diam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kosong",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "CANTIK",
+      "position": 19,
+      "explanation": "Cantik berarti elok rupanya dan menarik dipandang. Sinonimnya adalah 'elok', yang berarti indah dan bagus penampilannya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Molek",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Indah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Menarik",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Elok",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Menawan",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "GAGAH",
+      "position": 20,
+      "explanation": "Gagah berarti tampan dan kuat, biasanya untuk laki-laki. Sinonimnya adalah 'perkasa', yang berarti sangat kuat dan tidak mudah dikalahkan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Perkasa",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content": "Tampan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Berani",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Kekar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tegap",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "MUDA",
+      "position": 21,
+      "explanation": "Muda berarti belum lanjut usia atau masih dalam masa pertumbuhan. Sinonimnya adalah 'belia', yang berarti masih sangat muda dalam usia.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Remaja",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Belia",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kecil",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Anak-anak",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Junior",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "TUA",
+      "position": 22,
+      "explanation": "Tua berarti sudah lanjut usia. Sinonimnya adalah 'uzur', yang berarti sudah sangat tua dan lemah karena usia.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Lanjut",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Renta",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Uzur",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Lansia",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Sepuh",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "JAHAT",
+      "position": 23,
+      "explanation": "Jahat berarti berbuat sesuatu yang tidak baik dan merugikan orang lain. Sinonimnya adalah 'keji', yang berarti sangat jahat dan hina perbuatannya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Buruk",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Nakal",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Keji",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Biadab",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Bengis",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "SUSAH",
+      "position": 24,
+      "explanation": "Susah berarti sulit dilakukan atau mengalami kesulitan. Sinonimnya adalah 'sukar', yang berarti tidak mudah dan memerlukan banyak usaha.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Berat",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Rumit",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Kompleks",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Sukar",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Pelik",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "MUDAH",
+      "position": 25,
+      "explanation": "Mudah berarti tidak memerlukan banyak usaha untuk melakukannya. Sinonimnya adalah 'gampang', yang berarti ringan dan tidak sulit dikerjakan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Ringan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Gampang",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Biasa",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Sederhana",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Lancar",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "PELAN",
+      "position": 26,
+      "explanation": "Pelan berarti bergerak atau bekerja dengan kecepatan rendah. Sinonimnya adalah 'lambat', yang berarti tidak cepat dalam bergerak atau bekerja.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Lambat",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "content": "Santai",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Diam",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Berhati-hati",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tenang",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "DIAM",
+      "position": 27,
+      "explanation": "Diam berarti tidak bersuara atau tidak bergerak. Sinonimnya adalah 'hening', yang berarti sunyi dan tidak terdengar suara apapun.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Sepi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Sunyi",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Hening",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Tenang",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Bisu",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "BAHAYA",
+      "position": 28,
+      "explanation": "Bahaya berarti sesuatu yang dapat menyebabkan kecelakaan atau kerugian. Sinonimnya adalah 'mara', yang berarti bahaya atau sesuatu yang mengancam keselamatan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Ancaman",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Mara",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Risiko",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Celaka",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Musibah",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "BAIK",
+      "position": 29,
+      "explanation": "Baik berarti bermoral tinggi dan suka menolong orang lain. Sinonimnya adalah 'bajik', yang berarti berbudi pekerti luhur dan selalu berbuat kebaikan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Sopan",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Ramah",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Bajik",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Santun",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Mulia",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    },
+    {
+      "type": "MCQ",
+      "content": "GANAS",
+      "position": 30,
+      "explanation": "Ganas berarti suka menyerang atau sangat berbahaya. Sinonimnya adalah 'buas', yang berarti liar dan suka menyerang tanpa sebab.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Liar",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Berbahaya",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Bengis",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Buas",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "Garang",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SINONIM"
+    }
+  ]
+}

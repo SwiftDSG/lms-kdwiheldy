@@ -103,12 +103,12 @@ pub async fn get_quiz_with_questions(
             "label": o.label,
             "content": o.content,
             "score": o.score,
-            "is_correct": o.is_correct,
         })).collect();
         serde_json::json!({
             "id": q.id,
             "quiz_id": quiz_id,
             "type": q.r#type,
+            "subtype": q.subtype,
             "content": q.content,
             "image_url": q.image_url,
             "explanation": q.explanation,

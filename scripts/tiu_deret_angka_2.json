@@ -1,0 +1,1210 @@
+{
+  "quiz": {
+    "title": "TIU – Deret Angka (Set 2)",
+    "description": "Tentukan angka berikutnya yang paling tepat dalam setiap deret angka.",
+    "category": "TIU",
+    "time_limit": 25
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "2, 5, 8, 11, 14, ...",
+      "position": 1,
+      "explanation": "Pola deret ini adalah penambahan tetap +3 setiap suku. 14 + 3 = 17.",
+      "tip": "Langkah 1: Hitung selisih berurutan: 5−2=3, 8−5=3, 11−8=3, 14−11=3. Selisih konstan → deret aritmatika. Langkah 2: Suku berikutnya = 14+3 = 17. Tanda deret aritmatika: SEMUA selisih harus sama persis.",
+      "options": [
+        {
+          "label": "A",
+          "content": "15",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "16",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "17",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "18",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "19",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "3, 6, 12, 24, 48, ...",
+      "position": 2,
+      "explanation": "Pola deret ini adalah perkalian tetap ×2 setiap suku. 48 × 2 = 96.",
+      "tip": "Langkah 1: Selisih tidak konstan (3,6,12,24 terus berlipat). Langkah 2: Cek rasio: 6÷3=2, 12÷6=2, 24÷12=2, 48÷24=2 → rasio konstan = 2 → deret geometri. Langkah 3: 48×2 = 96. Ciri utama geometri: setiap suku = suku sebelumnya × angka yang sama.",
+      "options": [
+        {
+          "label": "A",
+          "content": "72",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "84",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "96",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "108",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "120",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "1, 4, 9, 16, 25, ...",
+      "position": 3,
+      "explanation": "Pola deret ini adalah kuadrat bilangan bulat: 1², 2², 3², 4², 5². Suku berikutnya adalah 6² = 36.",
+      "tip": "Langkah 1: Selisih: +3,+5,+7,+9 — tidak konstan, tapi bertambah 2 setiap kali. Langkah 2: Selisih tingkat-2 konstan (+2) → ciri khas pola n². Langkah 3: Kenali 1,4,9,16,25 = 1²,2²,3²,4²,5² → suku ke-6 = 6²=36. Hafalan: 1,4,9,16,25,36,49,64,81,100.",
+      "options": [
+        {
+          "label": "A",
+          "content": "30",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "32",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "36",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "49",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "64",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "100, 90, 81, 73, 66, ...",
+      "position": 4,
+      "explanation": "Selisih antar suku: -10, -9, -8, -7, -6. Pola pengurangan berkurang 1 setiap kali. 66 - 6 = 60.",
+      "tip": "Langkah 1: Selisih: 90−100=−10, 81−90=−9, 73−81=−8, 66−73=−7 → selisih sendiri berubah, tapi polanya: berkurang 1 setiap langkah. Langkah 2: Selisih berikutnya = −6. Langkah 3: 66+(−6) = 60. Teknik selisih tingkat-2: hitung selisih dari selisih → di sini (+1) konstan → pola kuadratik menurun.",
+      "options": [
+        {
+          "label": "A",
+          "content": "58",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "59",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "60",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "61",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "62",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "2, 3, 5, 8, 13, ...",
+      "position": 5,
+      "explanation": "Pola Fibonacci: setiap suku adalah jumlah dua suku sebelumnya. 5+8=13, maka 8+13=21.",
+      "tip": "Langkah 1: Selisih: +1,+2,+3,+5 — tidak konstan, tidak geometri. Langkah 2: Cek penjumlahan suku sebelumnya: 2+3=5✓, 3+5=8✓, 5+8=13✓ → pola Fibonacci. Langkah 3: 8+13=21. Ingat: Fibonacci dimulai dari berapapun, yang penting setiap suku = jumlah dua suku sebelumnya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "18",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "19",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "20",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "21",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "23",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "1, 2, 4, 7, 11, 16, ...",
+      "position": 6,
+      "explanation": "Selisih antar suku meningkat: +1, +2, +3, +4, +5, +6. Suku berikutnya: 16 + 6 = 22.",
+      "tip": "Langkah 1: Selisih: +1,+2,+3,+4,+5 — setiap selisih bertambah 1. Langkah 2: Selisih tingkat-2 = +1 (konstan) → konfirmasi pola benar. Langkah 3: Selisih berikutnya = +6, jadi 16+6 = 22. Pola ini terkait bilangan segitiga: 0,1,3,6,10,15,21,... (selalu +1,+2,+3,...).",
+      "options": [
+        {
+          "label": "A",
+          "content": "20",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "21",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "22",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "23",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "24",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "81, 27, 9, 3, ...",
+      "position": 7,
+      "explanation": "Pola deret ini adalah pembagian tetap ÷3 setiap suku. 3 ÷ 3 = 1.",
+      "tip": "Langkah 1: Selisih: −54,−18,−6 — tidak konstan tapi mengecil drastis (÷3 juga!). Langkah 2: Cek rasio: 27÷81=1/3, 9÷27=1/3, 3÷9=1/3 → deret geometri r=1/3. Langkah 3: 3÷3=1. Alternatif: kenali 81,27,9,3 sebagai pangkat 3: 3⁴,3³,3²,3¹ → suku berikutnya 3⁰=1.",
+      "options": [
+        {
+          "label": "A",
+          "content": "0",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "1",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "2",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "3",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "6",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "5, 10, 20, 35, 55, ...",
+      "position": 8,
+      "explanation": "Selisih antar suku meningkat: +5, +10, +15, +20, +25. Suku berikutnya: 55 + 25 = 80.",
+      "tip": "Langkah 1: Selisih: +5,+10,+15,+20 — bertambah 5 setiap kali. Langkah 2: Selisih tingkat-2 = +5 (konstan) → pola kuadratik. Langkah 3: Selisih berikutnya = +25, jadi 55+25 = 80. Jangan salah pilih +20 → itu bukan selisih berikutnya, itu selisih sebelumnya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "70",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "75",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "80",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "85",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "90",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "3, 7, 15, 31, 63, ...",
+      "position": 9,
+      "explanation": "Pola: setiap suku dikali 2 kemudian ditambah 1. 3×2+1=7, 7×2+1=15, ..., 63×2+1=127.",
+      "tip": "Langkah 1: Selisih: +4,+8,+16,+32 — berlipat 2 setiap kali → bukan aritmatika murni. Langkah 2: Rasio: 7÷3≈2.3 — tidak konstan → bukan geometri murni. Langkah 3: Coba aturan ×k+c: 3×2+1=7✓, 7×2+1=15✓, 15×2+1=31✓, 31×2+1=63✓ → aturan ×2+1. Langkah 4: 63×2+1=127.",
+      "options": [
+        {
+          "label": "A",
+          "content": "95",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "111",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "120",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "125",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "127",
+          "score": 5,
+          "is_correct": true
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "1, 1, 2, 3, 5, 8, ...",
+      "position": 10,
+      "explanation": "Ini adalah deret Fibonacci: setiap suku adalah jumlah dua suku sebelumnya. 5+8=13.",
+      "tip": "Langkah 1: Jika muncul dua angka 1 di awal → langsung curiga Fibonacci. Langkah 2: Verifikasi: 1+1=2✓, 1+2=3✓, 2+3=5✓, 3+5=8✓. Langkah 3: 5+8=13. Hafal 10 suku pertama Fibonacci: 1,1,2,3,5,8,13,21,34,55. Soal ini bisa diselesaikan kurang dari 5 detik dengan hafalan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "11",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "12",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "13",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "14",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "16",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "10, 14, 19, 25, 32, ...",
+      "position": 11,
+      "explanation": "Selisih antar suku meningkat: +4, +5, +6, +7, +8. Suku berikutnya: 32 + 8 = 40.",
+      "tip": "Langkah 1: Selisih: +4,+5,+6,+7 — bertambah 1 setiap kali. Langkah 2: Selisih tingkat-2 = +1 (konstan). Langkah 3: Selisih berikutnya = +8, jadi 32+8 = 40. Pola ini mirip Q6 (1,2,4,7,...) namun mulai dari selisih +4, bukan +1.",
+      "options": [
+        {
+          "label": "A",
+          "content": "38",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "39",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "40",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "41",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "42",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "2, 6, 18, 54, ...",
+      "position": 12,
+      "explanation": "Pola deret ini adalah perkalian tetap ×3 setiap suku. 54 × 3 = 162.",
+      "tip": "Langkah 1: Selisih: +4,+12,+36 — tidak konstan. Langkah 2: Rasio selisih: 12÷4=3, 36÷12=3 → selisih sendiri ×3. Langkah 3: Lebih cepat cek rasio suku: 6÷2=3, 18÷6=3, 54÷18=3 → deret geometri r=3. Langkah 4: 54×3=162.",
+      "options": [
+        {
+          "label": "A",
+          "content": "108",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "144",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "162",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "180",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "216",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "50, 45, 41, 38, 36, ...",
+      "position": 13,
+      "explanation": "Selisih antar suku berkurang: -5, -4, -3, -2, -1. Suku berikutnya: 36 - 1 = 35.",
+      "tip": "Langkah 1: Selisih: −5,−4,−3,−2 — nilai absolut pengurangan semakin kecil. Langkah 2: Pola: pengurangan berkurang 1 per langkah → selisih tingkat-2 = +1. Langkah 3: Selisih berikutnya = −1, jadi 36+(−1) = 35. Deret ini akhirnya akan 'berhenti turun' — suku-suku terakhir berdekatan nilainya.",
+      "options": [
+        {
+          "label": "A",
+          "content": "33",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "34",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "35",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "36",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "37",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "1, 8, 27, 64, 125, ...",
+      "position": 14,
+      "explanation": "Pola deret ini adalah pangkat tiga bilangan bulat: 1³, 2³, 3³, 4³, 5³. Suku berikutnya adalah 6³ = 216.",
+      "tip": "Langkah 1: Kenali angka-angka: 1,8,27,64,125 = 1³,2³,3³,4³,5³ → deret pangkat tiga. Langkah 2: Suku ke-6 = 6³ = 216. Hafal kubus: 1³=1, 2³=8, 3³=27, 4³=64, 5³=125, 6³=216, 7³=343. Ciri pembuktian: selisih tingkat-3 akan konstan (= 6) untuk deret n³.",
+      "options": [
+        {
+          "label": "A",
+          "content": "156",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "196",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "210",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "216",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "256",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "4, 7, 11, 16, 22, ...",
+      "position": 15,
+      "explanation": "Selisih antar suku meningkat: +3, +4, +5, +6, +7. Suku berikutnya: 22 + 7 = 29.",
+      "tip": "Langkah 1: Selisih: +3,+4,+5,+6 — bertambah 1 setiap kali. Langkah 2: Selisih tingkat-2 = +1 (konstan) → pola kuadratik dengan offset. Langkah 3: Selisih berikutnya = +7, jadi 22+7 = 29. Pola ini mirip Q6 dan Q11 — semuanya punya selisih tingkat-2 = +1.",
+      "options": [
+        {
+          "label": "A",
+          "content": "27",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "28",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "29",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "30",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "31",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "2, 4, 3, 6, 5, 10, 9, ...",
+      "position": 16,
+      "explanation": "Pola bergantian: ×2, -1, ×2, -1, ×2, -1, ×2. Setelah 9: 9 × 2 = 18.",
+      "tip": "Langkah 1: Selisih kacau (+2,−1,+3,−1,+5,−1) → bukan pola tunggal. Langkah 2: Kenali pola bergantian: operasi ganjil = ×2, operasi genap = −1. Verifikasi: 2×2=4✓, 4−1=3✓, 3×2=6✓, 6−1=5✓, 5×2=10✓, 10−1=9✓. Langkah 3: Operasi ke-7 = ×2 → 9×2=18. Teknik: jika selisih berulang setiap 2 langkah, pisahkan operasi ganjil dan genap.",
+      "options": [
+        {
+          "label": "A",
+          "content": "12",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "15",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "16",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "18",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "20",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "1, 3, 7, 15, 31, ...",
+      "position": 17,
+      "explanation": "Pola: masing-masing suku dikali 2 kemudian ditambah 1. Atau: 2¹-1=1, 2²-1=3, 2³-1=7, 2⁴-1=15, 2⁵-1=31, 2⁶-1=63.",
+      "tip": "Dua cara membaca pola ini — pilih yang paling mudah diingat: Cara 1 (aturan rekursi): ×2+1: 1×2+1=3✓, 3×2+1=7✓, ..., 31×2+1=63. Cara 2 (rumus eksplisit): suku ke-n = 2ⁿ−1: 2¹−1=1, 2²−1=3, ..., 2⁶−1=63. Keduanya memberi jawaban yang sama. Hafal cara 1 lebih cepat saat ujian.",
+      "options": [
+        {
+          "label": "A",
+          "content": "55",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "60",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "63",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "64",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "67",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "5, 5, 10, 30, 120, ...",
+      "position": 18,
+      "explanation": "Pola perkalian meningkat: ×1, ×2, ×3, ×4, ×5. Suku berikutnya: 120 × 5 = 600.",
+      "tip": "Langkah 1: Selisih: 0,+5,+20,+90 — tidak konstan. Langkah 2: Cek rasio: 5÷5=1, 10÷5=2, 30÷10=3, 120÷30=4 → rasio meningkat berurutan (1,2,3,4,...). Langkah 3: Rasio berikutnya = 5, jadi 120×5=600. Cara alternatif: kenali ini sebagai faktorial — 5×1!=5, 5×2!=10, 5×3!=30, 5×4!=120, 5×5!=600.",
+      "options": [
+        {
+          "label": "A",
+          "content": "480",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "500",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "540",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "600",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "720",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "25, 20, 16, 13, 11, ...",
+      "position": 19,
+      "explanation": "Selisih antar suku berkurang: -5, -4, -3, -2, -1. Suku berikutnya: 11 - 1 = 10.",
+      "tip": "Langkah 1: Selisih: −5,−4,−3,−2 — nilai absolut berkurang 1 setiap langkah. Langkah 2: Selisih berikutnya = −1. Langkah 3: 11+(−1) = 10. Pola ini identik dengan Q13 (50,45,41,...) — pengurangan yang semakin mengecil. Deret jenis ini selalu 'melandai' mendekati konstan.",
+      "options": [
+        {
+          "label": "A",
+          "content": "8",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "9",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "10",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "11",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "12",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "3, 4, 7, 11, 18, 29, ...",
+      "position": 20,
+      "explanation": "Pola: setiap suku adalah jumlah dua suku sebelumnya (seperti Fibonacci). 11+18=29, maka 18+29=47.",
+      "tip": "Langkah 1: Selisih: +1,+3,+4,+7,+11 — angka selisihnya sama dengan suku-suku deret itu sendiri! Langkah 2: Verifikasi Fibonacci-like: 3+4=7✓, 4+7=11✓, 7+11=18✓, 11+18=29✓. Langkah 3: 18+29=47. Ingat: Fibonacci tidak harus mulai 1,1 — dua suku awal bisa apa saja.",
+      "options": [
+        {
+          "label": "A",
+          "content": "40",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "43",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "45",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "47",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "50",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "2, 5, 11, 23, 47, ...",
+      "position": 21,
+      "explanation": "Pola: setiap suku dikali 2 kemudian ditambah 1. 2×2+1=5, 5×2+1=11, 11×2+1=23, 23×2+1=47, 47×2+1=95.",
+      "tip": "Langkah 1: Selisih: +3,+6,+12,+24 — berlipat 2 setiap kali → bukan aritmatika. Langkah 2: Rasio: 5÷2=2.5 — tidak bulat → bukan geometri murni. Langkah 3: Coba ×2+1: 2×2+1=5✓, 5×2+1=11✓, 11×2+1=23✓, 23×2+1=47✓. Langkah 4: 47×2+1=95. Teknik: jika selisih berlipat k tetapi tidak cocok geometri, coba aturan ×k±c.",
+      "options": [
+        {
+          "label": "A",
+          "content": "85",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "90",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "95",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "100",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "105",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "64, 32, 16, 8, 4, ...",
+      "position": 22,
+      "explanation": "Pola deret ini adalah pembagian tetap ÷2 setiap suku. 4 ÷ 2 = 2.",
+      "tip": "Langkah 1: Rasio: 32÷64=1/2, 16÷32=1/2, 8÷16=1/2, 4÷8=1/2 → deret geometri r=1/2. Langkah 2: 4÷2=2. Alternatif: kenali 64,32,16,8,4 sebagai pangkat 2 menurun: 2⁶,2⁵,2⁴,2³,2² → suku berikutnya 2¹=2. Hafal pangkat 2: 1,2,4,8,16,32,64,128,256,512.",
+      "options": [
+        {
+          "label": "A",
+          "content": "1",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "2",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "3",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "4",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "6",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "1, 4, 13, 40, 121, ...",
+      "position": 23,
+      "explanation": "Pola: setiap suku dikali 3 kemudian ditambah 1. 1×3+1=4, 4×3+1=13, 13×3+1=40, 40×3+1=121, 121×3+1=364.",
+      "tip": "Langkah 1: Selisih: +3,+9,+27,+81 — berlipat 3 setiap kali. Langkah 2: Coba ×3+1: 1×3+1=4✓, 4×3+1=13✓, 13×3+1=40✓, 40×3+1=121✓. Langkah 3: 121×3+1=364. Teknik umum: jika selisih berlipat k, coba aturan ×k+c di mana c adalah konstanta kecil.",
+      "options": [
+        {
+          "label": "A",
+          "content": "280",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "320",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "340",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "364",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "400",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "10, 17, 26, 37, 50, ...",
+      "position": 24,
+      "explanation": "Selisih antar suku meningkat 2 setiap kali: +7, +9, +11, +13, +15. Suku berikutnya: 50 + 15 = 65.",
+      "tip": "Langkah 1: Selisih: +7,+9,+11,+13 — bertambah 2 setiap kali. Langkah 2: Selisih tingkat-2 = +2 (konstan). Langkah 3: Selisih berikutnya = +15, jadi 50+15=65. Bandingkan: Q6,Q11,Q15 punya selisih tingkat-2 = +1. Di sini = +2 → naik lebih cepat (n²+c pola dasar).",
+      "options": [
+        {
+          "label": "A",
+          "content": "60",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "63",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "65",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "67",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "70",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "1, 2, 6, 24, 120, ...",
+      "position": 25,
+      "explanation": "Pola faktorial: 1!=1, 2!=2, 3!=6, 4!=24, 5!=120. Suku berikutnya adalah 6! = 720.",
+      "tip": "Langkah 1: Rasio: 2÷1=2, 6÷2=3, 24÷6=4, 120÷24=5 → rasio meningkat berurutan (2,3,4,5,...). Langkah 2: Rasio berikutnya = 6, jadi 120×6=720. Langkah 3 (konfirmasi): kenali sebagai faktorial — 1!=1, 2!=2, 3!=6, 4!=24, 5!=120, 6!=720. Hafal: 1,2,6,24,120,720 adalah n! untuk n=1 s.d. 6.",
+      "options": [
+        {
+          "label": "A",
+          "content": "480",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "600",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "720",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "840",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "960",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "7, 14, 12, 24, 22, 44, ...",
+      "position": 26,
+      "explanation": "Pola bergantian: ×2, -2, ×2, -2, ×2, -2. Setelah 44: 44 - 2 = 42.",
+      "tip": "Langkah 1: Selisih: +7,−2,+12,−2,+22,... — ada selisih −2 yang berulang setiap 2 langkah! Langkah 2: Pola bergantian ×2, −2: 7×2=14✓, 14−2=12✓, 12×2=24✓, 24−2=22✓, 22×2=44✓. Langkah 3: Operasi berikutnya = −2 → 44−2=42. Teknik: selisih −2 yang konsisten selang-seling adalah petunjuk kuat pola ×k, −c.",
+      "options": [
+        {
+          "label": "A",
+          "content": "38",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "40",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "42",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "46",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "48",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "15, 14, 12, 9, 5, ...",
+      "position": 27,
+      "explanation": "Selisih antar suku berkurang 1 setiap kali: -1, -2, -3, -4, -5. Suku berikutnya: 5 - 5 = 0.",
+      "tip": "Langkah 1: Selisih: −1,−2,−3,−4 — nilai absolut bertambah 1 setiap langkah. Langkah 2: Selisih berikutnya = −5. Langkah 3: 5+(−5) = 0. Jangan ragu jika jawaban = 0 atau negatif! Ini pola yang valid. Deret ini kebalikan Q6/Q11: bukan bertambah, tapi berkurang semakin besar.",
+      "options": [
+        {
+          "label": "A",
+          "content": "-1",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "0",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "1",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "2",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "3",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "2, 8, 4, 16, 8, 32, ...",
+      "position": 28,
+      "explanation": "Pola bergantian: ×4, ÷2, ×4, ÷2, ×4, ÷2. Setelah 32: 32 ÷ 2 = 16.",
+      "tip": "Langkah 1: Selisih sangat tidak beraturan → bukan pola tunggal. Langkah 2: Pisahkan posisi ganjil dan genap: Ganjil (2,4,8): ×2 setiap dua langkah. Genap (8,16,32): ×2 setiap dua langkah. ATAU gunakan pola bergantian: ×4, ÷2: 2×4=8✓, 8÷2=4✓, 4×4=16✓, 16÷2=8✓, 8×4=32✓. Langkah 3: 32÷2=16.",
+      "options": [
+        {
+          "label": "A",
+          "content": "12",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "14",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "16",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "18",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "64",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "6, 11, 17, 24, 32, ...",
+      "position": 29,
+      "explanation": "Selisih antar suku meningkat 1 setiap kali: +5, +6, +7, +8, +9. Suku berikutnya: 32 + 9 = 41.",
+      "tip": "Langkah 1: Selisih: +5,+6,+7,+8 — bertambah 1 setiap kali. Langkah 2: Selisih tingkat-2 = +1 (konstan). Langkah 3: Selisih berikutnya = +9, jadi 32+9=41. Pola selisih naik +1 ini sangat sering muncul di CPNS — kenali secepat mungkin dari 3 selisih pertama.",
+      "options": [
+        {
+          "label": "A",
+          "content": "38",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "39",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "40",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "41",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "43",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    },
+    {
+      "type": "MCQ",
+      "content": "3, 9, 6, 18, 15, 45, ...",
+      "position": 30,
+      "explanation": "Pola bergantian: ×3, -3, ×3, -3, ×3, -3. Setelah 45: 45 - 3 = 42.",
+      "tip": "Langkah 1: Selisih: +6,−3,+12,−3,+30,−3 — ada selisih −3 yang konsisten di posisi genap! Langkah 2: Pola bergantian ×3, −3: 3×3=9✓, 9−3=6✓, 6×3=18✓, 18−3=15✓, 15×3=45✓. Langkah 3: Operasi berikutnya = −3 → 45−3=42. Tanda pola ×k, −c: selisih negatif konstan muncul selang-seling.",
+      "options": [
+        {
+          "label": "A",
+          "content": "36",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "38",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "40",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "42",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "E",
+          "content": "135",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "DERET_ANGKA"
+    }
+  ]
+}

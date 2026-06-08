@@ -1,0 +1,810 @@
+{
+  "quiz": {
+    "title": "TIU – Silogisme",
+    "description": "Baca dua premis yang diberikan, lalu tentukan kesimpulan yang paling logis dan tepat.",
+    "category": "TIU",
+    "time_limit": 25
+  },
+  "questions": [
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Semua pegawai negeri wajib menaati peraturan.\nPremis 2: Budi adalah pegawai negeri.\n\nKesimpulan yang tepat adalah:",
+      "position": 1,
+      "explanation": "Ini adalah silogisme kategoris. Karena semua pegawai negeri wajib menaati peraturan, dan Budi adalah pegawai negeri, maka Budi wajib menaati peraturan.",
+      "tip": "Silogisme kategoris: [Semua X → Y] + [Ini adalah X] = [Ini adalah Y]. X=pegawai negeri, Y=wajib taat, Budi=X → Budi=Y. Jebakan C ('Semua yang taat=PNS') adalah konversi tidak sah — arah premis tidak boleh dibalik.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Budi tidak perlu menaati peraturan.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Budi wajib menaati peraturan.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Semua yang menaati peraturan adalah pegawai negeri.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Budi mungkin menaati peraturan.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pegawai negeri tidak harus menaati peraturan.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Jika hari hujan, maka jalanan basah.\nPremis 2: Hari ini hujan.\n\nKesimpulan yang tepat adalah:",
+      "position": 2,
+      "explanation": "Ini adalah modus ponens: jika P maka Q; P terjadi; maka Q. Karena hari ini hujan, maka jalanan pasti basah.",
+      "tip": "Modus Ponens: [Jika P → Q] + [P terjadi] = [Q PASTI terjadi]. P=hujan, Q=jalanan basah. Hari ini P terjadi → Q pasti. Jangan pilih 'mungkin basah' (B) — jika P sudah pasti terjadi dan P→Q, maka Q pasti, bukan sekadar mungkin.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Jalanan tidak basah.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Jalanan mungkin basah.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Jalanan pasti basah.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Besok hujan.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Jalanan basah karena banjir.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Semua mahasiswa rajin belajar.\nPremis 2: Tidak semua pelajar adalah mahasiswa.\n\nKesimpulan yang tepat adalah:",
+      "position": 3,
+      "explanation": "Hanya mahasiswa yang dipastikan rajin belajar. Pelajar yang bukan mahasiswa tidak tercakup oleh Premis 1, sehingga tidak bisa disimpulkan mereka rajin belajar.",
+      "tip": "Diagram Venn: Mahasiswa ⊂ Pelajar (ada pelajar yang bukan mahasiswa). Semua mahasiswa → rajin. Pelajar non-mahasiswa? Tidak diketahui. Karena ada pelajar di luar himpunan mahasiswa, pelajar non-mahasiswa itu MUNGKIN tidak rajin. Jangan pilih A ('semua pelajar') — premis hanya mencakup mahasiswa.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Semua pelajar rajin belajar.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tidak ada pelajar yang rajin belajar.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Sebagian pelajar mungkin tidak rajin belajar.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Mahasiswa tidak perlu belajar.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Semua mahasiswa adalah pelajar.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Jika seseorang bekerja keras, ia akan sukses.\nPremis 2: Andi tidak sukses.\n\nKesimpulan yang tepat adalah:",
+      "position": 4,
+      "explanation": "Ini adalah modus tollens: jika P maka Q; Q tidak terjadi; maka P tidak terjadi. Andi tidak sukses berarti Andi tidak bekerja keras.",
+      "tip": "Modus Tollens: [P → Q] + [¬Q] = [¬P]. P=kerja keras, Q=sukses. Andi ¬Q (tidak sukses) → Andi ¬P (tidak kerja keras). Jebakan C: 'Andi malas' — modus tollens hanya menyimpulkan 'tidak P', bukan sebab atau sifat lainnya. Malas ≠ tidak kerja keras secara logika.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Andi bekerja keras.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Andi tidak bekerja keras.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Andi malas.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Sukses tidak butuh kerja keras.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Andi mungkin bekerja keras.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Semua hewan mamalia bernapas dengan paru-paru.\nPremis 2: Paus adalah hewan mamalia.\n\nKesimpulan yang tepat adalah:",
+      "position": 5,
+      "explanation": "Karena semua mamalia bernapas dengan paru-paru dan paus adalah mamalia, maka paus bernapas dengan paru-paru.",
+      "tip": "Kategoris: [Semua X → Y] + [Paus = X] → [Paus = Y]. X=mamalia, Y=paru-paru. Jebakan A: 'paus berinsang' — paus hidup di laut, tapi ia mamalia (bukan ikan). Dalam soal silogisme, ikuti premis, bukan asumsi. Premis menyatakan SEMUA mamalia → paru-paru, dan paus adalah mamalia.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Paus bernapas dengan insang.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Paus bernapas dengan paru-paru.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Paus adalah ikan.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Tidak semua mamalia bernapas dengan paru-paru.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Paus mungkin bernapas dengan paru-paru.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Semua karyawan yang berprestasi mendapat bonus.\nPremis 2: Sinta mendapat bonus.\n\nKesimpulan yang tepat adalah:",
+      "position": 6,
+      "explanation": "Mendapat bonus bukan hanya karena berprestasi — bisa ada alasan lain. Premis hanya menyatakan karyawan berprestasi MENDAPAT bonus, bukan bahwa HANYA yang berprestasi yang mendapat bonus. Jadi Sinta belum tentu berprestasi.",
+      "tip": "JEBAKAN KLASIK — Affirming the Consequent: [P → Q] + [Q terjadi] ≠ [P pasti]. P=berprestasi, Q=bonus. Sinta dapat bonus(Q) → P hanya 'mungkin'. Bisa ada sebab lain (senioritas, hadiah). Bedakan: Modus Ponens (P → Q, lalu P → jawab Q pasti) vs. ini (P → Q, lalu Q → jawab P hanya mungkin).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Sinta pasti berprestasi.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Sinta tidak berprestasi.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Sinta mungkin berprestasi.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Semua karyawan mendapat bonus.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Bonus hanya untuk Sinta.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Jika cuaca cerah, Rina pergi ke pantai.\nPremis 2: Jika Rina pergi ke pantai, ia akan berenang.\n\nKesimpulan yang tepat adalah:",
+      "position": 7,
+      "explanation": "Ini adalah rantai silogisme (hypothetical syllogism): jika A maka B; jika B maka C; maka jika A maka C. Jika cuaca cerah, Rina akan berenang.",
+      "tip": "Rantai Silogisme: A→B; B→C → A→C. Cerah(A)→Pantai(B); Pantai(B)→Berenang(C) → Cerah(A)→Berenang(C). Jebakan D: 'jika tidak cerah, tidak berenang' — ini adalah inversi (¬A→¬C), yang tidak sah. Rina bisa saja berenang di kolam saat mendung.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Rina selalu berenang.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Jika cuaca cerah, Rina akan berenang.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Rina tidak suka pantai.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Jika tidak cerah, Rina tidak berenang.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Cuaca cerah menyebabkan Rina sakit.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Tidak ada siswa yang tidak mengerjakan PR.\nPremis 2: Doni adalah siswa.\n\nKesimpulan yang tepat adalah:",
+      "position": 8,
+      "explanation": "'Tidak ada siswa yang tidak mengerjakan PR' berarti semua siswa mengerjakan PR. Karena Doni adalah siswa, maka Doni mengerjakan PR.",
+      "tip": "Langkah 1 — uraikan negasi ganda: 'Tidak ada siswa yang TIDAK mengerjakan PR' = 'Semua siswa mengerjakan PR'. Langkah 2 — sekarang mudah: [Semua siswa → PR] + [Doni = siswa] → [Doni = PR]. Kunci: 'tidak ada yang tidak X' selalu = 'semua X'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Doni tidak mengerjakan PR.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Doni mengerjakan PR.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Doni mungkin tidak mengerjakan PR.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Semua yang mengerjakan PR adalah siswa.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Doni bukan siswa.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Semua polisi memakai seragam saat bertugas.\nPremis 2: Pak Hendra tidak memakai seragam.\n\nKesimpulan yang tepat adalah:",
+      "position": 9,
+      "explanation": "Modus tollens: jika P maka Q; tidak Q; maka tidak P. Karena Pak Hendra tidak memakai seragam, maka Pak Hendra sedang tidak bertugas sebagai polisi.",
+      "tip": "Modus Tollens: [Bertugas(P) → Seragam(Q)] + [¬Seragam(¬Q)] = [¬Bertugas(¬P)]. Jebakan kritis A: 'Pak Hendra bukan polisi' — ini berlebihan! Ia bisa saja polisi yang sedang libur atau cuti. Premis berbicara tentang SAAT BERTUGAS, bukan identitas. Jawab B (tidak sedang bertugas), bukan A.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Pak Hendra bukan polisi.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Pak Hendra sedang tidak bertugas.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Pak Hendra mencuri seragam.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Semua yang berseragam adalah polisi.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Pak Hendra malas.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Beberapa guru adalah penulis.\nPremis 2: Semua penulis menyukai membaca.\n\nKesimpulan yang tepat adalah:",
+      "position": 10,
+      "explanation": "Sebagian guru adalah penulis. Semua penulis suka membaca. Maka sebagian guru (yang juga penulis) pasti suka membaca.",
+      "tip": "Pola 'beberapa+semua': [Beberapa X = Y] + [Semua Y = Z] → [Sebagian X = Z]. Guru(X) ∩ Penulis(Y) ≠ ∅; Semua Penulis(Y) → suka baca(Z) → Sebagian Guru(X) suka baca(Z). Jebakan A: 'semua guru suka baca' — tidak bisa, karena ada guru yang bukan penulis dan tidak diketahui apakah mereka suka baca.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Semua guru menyukai membaca.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tidak ada guru yang menyukai membaca.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Sebagian guru menyukai membaca.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Semua yang suka membaca adalah guru.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Penulis tidak suka membaca.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Jika harga naik, daya beli masyarakat turun.\nPremis 2: Daya beli masyarakat tidak turun.\n\nKesimpulan yang tepat adalah:",
+      "position": 11,
+      "explanation": "Modus tollens: jika P maka Q; tidak Q; maka tidak P. Karena daya beli tidak turun, maka harga tidak naik.",
+      "tip": "Modus Tollens: P=harga naik, Q=daya beli turun. [P→Q] + [¬Q] = [¬P]. Daya beli tidak turun(¬Q) → Harga tidak naik(¬P). Jebakan C: 'daya beli pasti naik' — modus tollens hanya menyimpulkan tentang P (harga), bukan tentang kondisi lain. Tidak naik ≠ pasti naik.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Harga naik.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Harga tidak naik.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Daya beli pasti naik.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Masyarakat kaya.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Harga stabil.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Semua tanaman membutuhkan air untuk hidup.\nPremis 2: Kaktus adalah tanaman.\n\nKesimpulan yang tepat adalah:",
+      "position": 12,
+      "explanation": "Karena semua tanaman membutuhkan air dan kaktus adalah tanaman, maka kaktus membutuhkan air (meski sedikit).",
+      "tip": "Kategoris: [Semua tanaman → butuh air] + [Kaktus = tanaman] → [Kaktus butuh air]. Jebakan A: 'kaktus tidak butuh air' adalah mitos populer. Dalam silogisme, abaikan pengetahuan umum dan ikuti premis. Premis menyatakan SEMUA tanaman butuh air, dan kaktus adalah tanaman — kesimpulan pasti.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Kaktus tidak butuh air.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Kaktus membutuhkan air untuk hidup.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Kaktus bisa hidup di lautan.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Semua tanaman adalah kaktus.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Kaktus mungkin tidak membutuhkan air.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Jika nilai ujian Ani di atas 90, ia lulus dengan predikat cumlaude.\nPremis 2: Ani lulus dengan predikat cumlaude.\n\nKesimpulan yang tepat adalah:",
+      "position": 13,
+      "explanation": "Lulus cumlaude bisa terjadi karena alasan lain selain nilai di atas 90. Premis hanya mengatakan nilai >90 CUKUP untuk cumlaude, bukan merupakan SATU-SATUNYA cara. Maka nilai Ani di atas 90 hanya mungkin, bukan pasti.",
+      "tip": "Sama dengan Q6 — Affirming the Consequent: [P → Q] + [Q terjadi] ≠ P pasti. P=nilai>90, Q=cumlaude. Ani cumlaude(Q) → nilai>90(P) hanya 'mungkin'. Premis mengatakan nilai>90 CUKUP untuk cumlaude, bukan SYARAT SATU-SATUNYA. Jebakan A: 'pasti di atas 90' adalah kesalahan logika klasik.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Nilai ujian Ani pasti di atas 90.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Nilai ujian Ani mungkin di atas 90.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Ani tidak lulus ujian.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Semua yang cumlaude nilainya di atas 90.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Ani paling pintar di kelas.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Semua pengendara wajib memakai helm.\nPremis 2: Riko tidak memakai helm.\n\nKesimpulan yang tepat adalah:",
+      "position": 14,
+      "explanation": "Modus tollens: jika P maka Q; tidak Q; maka tidak P. Karena Riko tidak memakai helm, maka Riko bukan pengendara (atau melanggar aturan sebagai pengendara). Kesimpulan logis: Riko bukan pengendara.",
+      "tip": "Modus Tollens: [Pengendara(P) → Helm(Q)] + [¬Helm(¬Q)] = [¬Pengendara(¬P)]. Jawab B: Riko bukan pengendara. Jangan tergoda C (kehilangan helm) atau D (aturan tidak berlaku) — itu spekulasi di luar premis. Dalam logika, kesimpulan hanya boleh mengikuti premis yang ada.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Riko adalah pengendara yang baik.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Riko bukan pengendara.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Riko kehilangan helmnya.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Aturan helm tidak berlaku untuk Riko.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Riko sedang istirahat.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Beberapa atlet adalah vegetarian.\nPremis 2: Semua vegetarian menghindari daging.\n\nKesimpulan yang tepat adalah:",
+      "position": 15,
+      "explanation": "Beberapa atlet adalah vegetarian, dan semua vegetarian menghindari daging. Maka sebagian atlet (yang vegetarian) menghindari daging.",
+      "tip": "Pola 'beberapa+semua' (sama dengan Q10): [Beberapa X = Y] + [Semua Y = Z] → [Sebagian X = Z]. Atlet(X) ∩ Vegetarian(Y) ≠ ∅; Semua Vegetarian → hindari daging(Z) → Sebagian Atlet(X) hindari daging. Jebakan A: 'semua atlet hindari daging' — hanya yang vegetarian, bukan semua.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Semua atlet menghindari daging.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tidak ada atlet yang makan daging.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "content": "Sebagian atlet menghindari daging.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "content": "Vegetarian pasti atlet.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Atlet tidak perlu makan.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Jika produksi meningkat, keuntungan perusahaan naik.\nPremis 2: Jika keuntungan naik, gaji karyawan naik.\n\nKesimpulan yang tepat adalah:",
+      "position": 16,
+      "explanation": "Rantai silogisme: jika A maka B; jika B maka C; maka jika A maka C. Jika produksi meningkat, gaji karyawan naik.",
+      "tip": "Rantai: Produksi naik(A)→Keuntungan naik(B); Keuntungan naik(B)→Gaji naik(C) → A→C. Jawab B. Jebakan D: 'Gaji naik → produksi meningkat' adalah konversi terbalik (C→A), tidak sah. Jebakan A: 'gaji selalu naik' — hanya jika produksi meningkat (kondisional, bukan mutlak).",
+      "options": [
+        {
+          "label": "A",
+          "content": "Gaji karyawan selalu naik.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Jika produksi meningkat, gaji karyawan naik.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Keuntungan tidak mempengaruhi gaji.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Gaji naik maka produksi meningkat.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Produksi selalu meningkat.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Semua benda yang dilempar ke atas akan jatuh.\nPremis 2: Bola dilempar ke atas.\n\nKesimpulan yang tepat adalah:",
+      "position": 17,
+      "explanation": "Modus ponens sederhana: semua X akan Y; ini adalah X; maka ini akan Y. Bola dilempar ke atas, maka bola akan jatuh.",
+      "tip": "Modus Ponens: [Semua X → Y] + [Ini = X] → [Ini = Y pasti]. X=dilempar ke atas, Y=jatuh, Bola=X → Bola=Y. Jebakan C: 'mungkin jatuh' — salah, karena P sudah pasti (bola DILEMPAR ke atas). Kalau P pasti terjadi dan P→Q, maka Q pasti, bukan 'mungkin'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Bola akan tetap di udara.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Bola akan jatuh.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Bola mungkin jatuh.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Semua bola adalah benda.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Bola tidak bisa dilempar.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Tidak semua ASN adalah PNS.\nPremis 2: Semua PNS adalah ASN.\n\nKesimpulan yang tepat adalah:",
+      "position": 18,
+      "explanation": "ASN adalah kategori yang lebih luas, mencakup PNS dan PPPK. Semua PNS adalah ASN, tetapi tidak semua ASN adalah PNS — sebagian ASN adalah PPPK.",
+      "tip": "Diagram Venn: PNS ⊂ ASN (subset sejati). 'Tidak semua ASN = PNS' → ada ASN di luar PNS. 'Semua PNS = ASN' → PNS sepenuhnya dalam lingkaran ASN. Kesimpulan: ada ASN yang bukan PNS (yaitu PPPK). Jebakan A: 'semua ASN = PNS' membalik arah — premis menyatakan PNS ⊂ ASN, bukan ASN ⊂ PNS.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Semua ASN adalah PNS.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Sebagian ASN bukan PNS.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "PNS bukan ASN.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "ASN dan PNS adalah hal yang sama.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Tidak ada hubungan antara PNS dan ASN.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Semua kota besar memiliki bandara.\nPremis 2: Surabaya memiliki bandara.\n\nKesimpulan yang tepat adalah:",
+      "position": 19,
+      "explanation": "Memiliki bandara tidak berarti kota tersebut adalah kota besar — bisa saja kota kecil pun memiliki bandara. Premis tidak menyatakan HANYA kota besar yang punya bandara. Maka hanya bisa disimpulkan bahwa Surabaya mungkin merupakan kota besar.",
+      "tip": "Lagi-lagi Affirming the Consequent (sama pola Q6, Q13): [Kota besar(P) → Bandara(Q)] + [Surabaya punya bandara(Q)] ≠ Surabaya pasti kota besar(P). Mungkin ada kota kecil yang punya bandara. Jawab: 'mungkin kota besar'. Jebakan A: 'pasti kota besar' adalah kesalahan affirming the consequent.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Surabaya pasti merupakan kota besar.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Surabaya mungkin merupakan kota besar.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Surabaya adalah kota kecil.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Semua kota yang punya bandara adalah kota besar.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Bandara Surabaya adalah yang terbesar.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    },
+    {
+      "type": "MCQ",
+      "content": "Premis 1: Jika Tono rajin belajar, ia akan lulus ujian.\nPremis 2: Tono tidak lulus ujian.\n\nKesimpulan yang tepat adalah:",
+      "position": 20,
+      "explanation": "Modus tollens: jika P maka Q; tidak Q; maka tidak P. Karena Tono tidak lulus ujian, maka Tono tidak rajin belajar.",
+      "tip": "Modus Tollens: P=rajin belajar, Q=lulus. [P→Q] + [¬Q] = [¬P PASTI]. Tono tidak lulus(¬Q) → Tono tidak rajin(¬P). Jebakan D: 'mungkin rajin' — salah, modus tollens menghasilkan kesimpulan PASTI, bukan 'mungkin'. ¬Q terjadi pasti → ¬P pasti. Bandingkan: kalau Q tidak pasti terjadi, barulah kesimpulan hanya 'mungkin'.",
+      "options": [
+        {
+          "label": "A",
+          "content": "Tono rajin belajar.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "content": "Tono tidak rajin belajar.",
+          "score": 5,
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "content": "Ujian terlalu sulit.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "content": "Tono mungkin rajin belajar.",
+          "score": 0,
+          "is_correct": false
+        },
+        {
+          "label": "E",
+          "content": "Lulus ujian tidak butuh belajar.",
+          "score": 0,
+          "is_correct": false
+        }
+      ],
+      "subtype": "SILOGISME"
+    }
+  ]
+}
