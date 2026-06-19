@@ -56,42 +56,6 @@ actor SyncManager {
         try? context.save()
     }
 
-    // ── Upload sessions ───────────────────────────────────────────────────────
-
-    /// Uploads all unsynced local sessions to the backend.
-    @MainActor
-    func uploadPendingSessions(context: ModelContext) async {
-        let descriptor = FetchDescriptor<LocalQuizSession>(
-            predicate: #Predicate { !$0.isSynced }
-        )
-        guard let sessions = try? context.fetch(descriptor) else { return }
-
-        for session in sessions {
-            let payload = SubmitSessionPayload(
-                id: session.id,
-                quizId: session.quizId,
-                deviceId: session.deviceId,
-                startedAt: session.startedAt,
-                completedAt: session.completedAt,
-                answers: session.answers.map {
-                    SubmitAnswerPayload(
-                        questionId: $0.questionId,
-                        selectedOptionId: $0.selectedOptionId,
-                        essayText: $0.essayText,
-                        answeredAt: $0.answeredAt
-                    )
-                }
-            )
-            do {
-                _ = try await api.submitSession(payload)
-                session.isSynced = true
-            } catch {
-                print("[SyncManager] uploadSession \(session.id) failed: \(error)")
-            }
-        }
-        try? context.save()
-    }
-
     // ── Private helpers ───────────────────────────────────────────────────────
 
     /// Persists quiz metadata. Called only when the user explicitly downloads a quiz.

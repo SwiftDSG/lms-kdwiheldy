@@ -252,42 +252,50 @@ pub async fn explain(
         .find(|q| q.id == question_id)
         .ok_or_else(|| AppError::NotFound("Question not found".into()))?;
 
-    // Short-circuit for subtypes where the LLM cannot add value (e.g. image questions
-    // where the LLM cannot see the image). Return the pre-written explanation directly.
-    if !q.subtype.config().needs_ml_explain {
-        return Ok(Json(serde_json::json!({
-            "ai_explanation": q.explanation.as_deref().unwrap_or(""),
-            "ai_tip": "",
-        })));
-    }
-
-    let correct_label = q.options
-        .iter()
-        .max_by_key(|o| o.score)
-        .map(|o| o.label.clone())
-        .unwrap_or_default();
-
     let subtype_str = serde_json::to_value(&q.subtype)
         .ok()
         .and_then(|v| v.as_str().map(|s| s.to_string()))
         .unwrap_or_default();
 
+    let needs_ml = q.subtype.config().needs_ml_explain;
+    tracing::info!(
+        question_id = %question_id,
+        subtype     = %subtype_str,
+        needs_ml    = needs_ml,
+        has_stored_explanation = q.explanation.is_some(),
+        "── [explain] request received ─────────────────────────────────────────"
+    );
+
+    if !needs_ml {
+        let stored = q.explanation.as_deref().unwrap_or("");
+        tracing::info!(
+            subtype  = %subtype_str,
+            returned = %stored,
+            "── [explain] short-circuit: returning stored explanation ───────────────"
+        );
+        return Ok(Json(serde_json::json!({
+            "ai_explanation": stored,
+            "ai_tip": "",
+        })));
+    }
+
     let req = crate::ml_client::ExplainRequest {
         question: q.content.clone(),
         options: q.options.iter().map(|o| crate::ml_client::QuestionOption {
-            label: o.label.clone(),
+            label:   o.label.clone(),
             content: o.content.clone(),
+            score:   o.score,
         }).collect(),
-        correct_label,
         subtype: subtype_str,
     };
 
+    let uds_body = serde_json::to_string(&req).unwrap_or_default();
     tracing::info!(
         question = %req.question,
         subtype  = %req.subtype,
-        options  = ?req.options.iter().map(|o| format!("{}. {}", o.label, o.content)).collect::<Vec<_>>(),
-        correct  = %req.correct_label,
-        "── [explain] input from iPad ──────────────────────────────────────────"
+        options  = ?req.options.iter().map(|o| format!("{}. {} (score={})", o.label, o.content, o.score)).collect::<Vec<_>>(),
+        uds_json = %uds_body,
+        "── [explain] sending to ML service via UDS ────────────────────────────"
     );
 
     let resp = state.ml.explain(&req, 3).await?;
@@ -295,7 +303,7 @@ pub async fn explain(
     tracing::info!(
         explanation = %resp.explanation,
         tip         = %resp.tip,
-        "── [explain] LLM response ─────────────────────────────────────────────"
+        "── [explain] ML service response ──────────────────────────────────────"
     );
 
     Ok(Json(serde_json::json!({
@@ -317,28 +325,20 @@ pub async fn admin_generate(
         .find(|q| q.id == body.source_question_id)
         .ok_or_else(|| AppError::NotFound("Source question not found".into()))?;
 
-    let correct_label = source
-        .options
-        .iter()
-        .max_by_key(|o| o.score)
-        .map(|o| o.label.clone())
-        .unwrap_or_default();
-
     let subtype_str = serde_json::to_value(&source.subtype)
         .ok()
         .and_then(|v| v.as_str().map(|s| s.to_string()))
         .unwrap_or_default();
 
     let req = crate::ml_client::GenerateRequest {
-        source_question:      source.content.clone(),
-        source_options:       source.options.iter().map(|o| crate::ml_client::GenerateOption {
-            label:  o.label.clone(),
+        source_question: source.content.clone(),
+        source_options:  source.options.iter().map(|o| crate::ml_client::GenerateOption {
+            label:   o.label.clone(),
             content: o.content.clone(),
-            score:  o.score,
+            score:   o.score,
         }).collect(),
-        source_correct_label: correct_label,
-        category:             quiz.category.clone(),
-        subtype:              subtype_str,
+        category: quiz.category.clone(),
+        subtype:  subtype_str,
     };
 
     let generated = state.ml.generate(&req).await?;

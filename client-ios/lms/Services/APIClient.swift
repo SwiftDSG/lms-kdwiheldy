@@ -53,16 +53,6 @@ struct APIQuizDetail: Decodable {
     let questions: [APIQuestion]
 }
 
-struct APISessionResult: Decodable {
-    let sessionId: UUID
-    let score: Int
-
-    enum CodingKeys: String, CodingKey {
-        case sessionId = "session_id"
-        case score
-    }
-}
-
 struct AIExplanationResponse: Decodable {
     let aiExplanation: String
     let aiTip: String
@@ -85,7 +75,7 @@ actor APIClient {
     private init() {
         // Read from Info.plist or use defaults for development
         let base = Bundle.main.object(forInfoDictionaryKey: "API_BASE_URL") as? String
-            ?? "http://10.67.49.195:3000"
+            ?? "http://10.67.52.10:3000"
         let key = Bundle.main.object(forInfoDictionaryKey: "DEVICE_API_KEY") as? String
             ?? "dev_api_key_for_ipad"
         self.baseURL = URL(string: base)!
@@ -129,17 +119,6 @@ actor APIClient {
         return try decoder.decode(T.self, from: data)
     }
 
-    private func post<T: Decodable, B: Encodable>(_ path: String, body: B) async throws -> T {
-        var req = URLRequest(url: baseURL.appendingPathComponent(path))
-        req.httpMethod = "POST"
-        req.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        req.setValue(deviceKey, forHTTPHeaderField: "X-Device-Key")
-        req.httpBody = try JSONEncoder().encode(body)
-        let (data, resp) = try await session.data(for: req)
-        try validate(resp)
-        return try decoder.decode(T.self, from: data)
-    }
-
     private func validate(_ response: URLResponse) throws {
         guard let http = response as? HTTPURLResponse, (200..<300).contains(http.statusCode) else {
             throw URLError(.badServerResponse)
@@ -161,10 +140,6 @@ actor APIClient {
         return try await get("/api/v1/quizzes/\(id.uuidString.lowercased())?since=\(iso)")
     }
 
-    func submitSession(_ payload: SubmitSessionPayload) async throws -> APISessionResult {
-        try await post("/api/v1/sessions", body: payload)
-    }
-
     func fetchAIExplanation(questionId: UUID) async throws -> AIExplanationResponse {
         try await get(
             "/api/v1/questions/\(questionId.uuidString.lowercased())/explain"
@@ -172,52 +147,3 @@ actor APIClient {
     }
 }
 
-// MARK: - Submit payload
-
-struct SubmitSessionPayload: Encodable {
-    let id: String           // lowercase UUID string
-    let quizId: String       // lowercase UUID string
-    let deviceId: String
-    let startedAt: Date
-    let completedAt: Date?
-    let answers: [SubmitAnswerPayload]
-
-    init(id: UUID, quizId: UUID, deviceId: String, startedAt: Date, completedAt: Date?, answers: [SubmitAnswerPayload]) {
-        self.id = id.uuidString.lowercased()
-        self.quizId = quizId.uuidString.lowercased()
-        self.deviceId = deviceId
-        self.startedAt = startedAt
-        self.completedAt = completedAt
-        self.answers = answers
-    }
-
-    enum CodingKeys: String, CodingKey {
-        case id
-        case quizId = "quiz_id"
-        case deviceId = "device_id"
-        case startedAt = "started_at"
-        case completedAt = "completed_at"
-        case answers
-    }
-}
-
-struct SubmitAnswerPayload: Encodable {
-    let questionId: String        // lowercase UUID string
-    let selectedOptionId: String? // lowercase UUID string
-    let essayText: String?
-    let answeredAt: Date
-
-    init(questionId: UUID, selectedOptionId: UUID?, essayText: String?, answeredAt: Date) {
-        self.questionId = questionId.uuidString.lowercased()
-        self.selectedOptionId = selectedOptionId?.uuidString.lowercased()
-        self.essayText = essayText
-        self.answeredAt = answeredAt
-    }
-
-    enum CodingKeys: String, CodingKey {
-        case questionId = "question_id"
-        case selectedOptionId = "selected_option_id"
-        case essayText = "essay_text"
-        case answeredAt = "answered_at"
-    }
-}

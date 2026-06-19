@@ -19,12 +19,12 @@ admin-web/.env
 admin-web/.env.*
 !admin-web/.env.example
 
-# ── Python (scripts/, apps/ml-service/) ───────────────────────────────────────
+# ── Python (scripts/, ml-service/) ────────────────────────────────────────────
 __pycache__/
 *.pyc
 *.pyo
-apps/ml-service/data/
-apps/ml-service/.venv/
+ml-service/data/
+ml-service/.venv/
 
 # ── Xcode (client-ios/) ───────────────────────────────────────────────────────
 # User-specific workspace state — not shareable

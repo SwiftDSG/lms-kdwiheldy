@@ -1,10 +1,7 @@
 use std::time::Duration;
 
-use bytes::Bytes;
-use http_body_util::{BodyExt, Full};
-use hyper::Request;
-use hyper_util::rt::TokioIo;
 use serde::{Deserialize, Serialize};
+use tokio::io::{AsyncBufReadExt, AsyncReadExt, AsyncWriteExt, BufReader};
 use tokio::net::UnixStream;
 use tracing::{info, warn};
 
@@ -12,16 +9,16 @@ use tracing::{info, warn};
 
 #[derive(Debug, Serialize)]
 pub struct ExplainRequest {
-    pub question:      String,
-    pub options:       Vec<QuestionOption>,
-    pub correct_label: String,
-    pub subtype:       String,
+    pub question: String,
+    pub options:  Vec<QuestionOption>,
+    pub subtype:  String,
 }
 
 #[derive(Debug, Serialize, Clone)]
 pub struct QuestionOption {
     pub label:   String,
     pub content: String,
+    pub score:   i32,
 }
 
 #[derive(Debug, Deserialize)]
@@ -32,11 +29,10 @@ pub struct ExplainResponse {
 
 #[derive(Debug, Serialize)]
 pub struct GenerateRequest {
-    pub source_question:      String,
-    pub source_options:       Vec<GenerateOption>,
-    pub source_correct_label: String,
-    pub category:             String,
-    pub subtype:              String,
+    pub source_question: String,
+    pub source_options:  Vec<GenerateOption>,
+    pub category:        String,
+    pub subtype:         String,
 }
 
 #[derive(Debug, Serialize)]
@@ -71,11 +67,6 @@ pub struct AnalogiQuestion {
 
 // ── Client ────────────────────────────────────────────────────────────────────
 
-/// HTTP/1.1 client that talks to the Python ML service via a Unix Domain Socket.
-///
-/// Each request opens a fresh connection — no pooling needed since requests
-/// are infrequent and dominated by LLM latency (seconds), not connection
-/// overhead (microseconds).
 pub struct MlClient {
     socket_path: String,
 }
@@ -85,13 +76,48 @@ impl MlClient {
         Self { socket_path: socket_path.into() }
     }
 
-    /// Call `/explain` with exponential-backoff retry.
+    /// Send a request and read the response over the UDS.
     ///
-    /// Retry schedule (base = 200 ms):
-    ///   attempt 0 → fail → wait 200 ms
-    ///   attempt 1 → fail → wait 400 ms
-    ///   attempt 2 → fail → wait 800 ms
-    ///   attempt 3 → return Err (caller returns HTTP 503)
+    /// Protocol:
+    ///   Request:  "<verb> <byte_len>\n<json_bytes>"
+    ///   Response: "ok <byte_len>\n<json_bytes>"
+    ///          or "error <byte_len>\n<message>"
+    async fn send_recv(&self, verb: &str, body: &str) -> anyhow::Result<Vec<u8>> {
+        let stream = UnixStream::connect(&self.socket_path).await.map_err(|e| {
+            anyhow::anyhow!("Cannot connect to ML socket {}: {}", self.socket_path, e)
+        })?;
+
+        let (read_half, mut write_half) = stream.into_split();
+
+        let payload = body.as_bytes();
+        write_half.write_all(format!("{} {}\n", verb, payload.len()).as_bytes()).await?;
+        write_half.write_all(payload).await?;
+        // Keep write_half alive — dropping it sends EOF to the Python reader, which
+        // the disconnect monitor would mistake for a client disconnect.
+
+        let mut reader = BufReader::new(read_half);
+        let mut header = String::new();
+        reader.read_line(&mut header).await?;
+
+        let header = header.trim();
+        let (status, len_str) = header
+            .split_once(' ')
+            .ok_or_else(|| anyhow::anyhow!("Invalid ML response header: {:?}", header))?;
+        let len: usize = len_str
+            .parse()
+            .map_err(|_| anyhow::anyhow!("Invalid ML response length: {:?}", len_str))?;
+
+        let mut buf = vec![0u8; len];
+        reader.read_exact(&mut buf).await?;
+
+        if status == "error" {
+            anyhow::bail!("ML service error: {}", String::from_utf8_lossy(&buf));
+        }
+
+        Ok(buf)
+    }
+
+    /// Call `explain` with exponential-backoff retry (200 / 400 / 800 ms).
     pub async fn explain(
         &self,
         req: &ExplainRequest,
@@ -101,8 +127,8 @@ impl MlClient {
         let base = Duration::from_millis(200);
 
         for attempt in 0..=max_retries {
-            match self.try_once(&body).await {
-                Ok(resp) => return Ok(resp),
+            match self.send_recv("explain", &body).await {
+                Ok(bytes) => return Ok(serde_json::from_slice(&bytes)?),
                 Err(e) => {
                     if attempt == max_retries {
                         return Err(e.context("ML service unavailable after retries"));
@@ -122,52 +148,16 @@ impl MlClient {
         unreachable!()
     }
 
-    /// Single HTTP POST over the UDS. Returns raw response bytes.
-    async fn post_once(&self, path: &str, body: &str) -> anyhow::Result<Bytes> {
-        let stream = UnixStream::connect(&self.socket_path).await.map_err(|e| {
-            anyhow::anyhow!("Cannot connect to ML socket {}: {}", self.socket_path, e)
-        })?;
-
-        let (mut sender, conn) =
-            hyper::client::conn::http1::handshake(TokioIo::new(stream)).await?;
-
-        tokio::spawn(async move {
-            if let Err(e) = conn.await {
-                warn!("ML connection closed: {}", e);
-            }
-        });
-
-        let req = Request::post(path)
-            .header("content-type", "application/json")
-            .header("host", "localhost")
-            .body(Full::new(Bytes::from(body.to_owned())))?;
-
-        let resp = sender.send_request(req).await?;
-
-        if !resp.status().is_success() {
-            let status = resp.status();
-            let bytes = resp.collect().await?.to_bytes();
-            anyhow::bail!("ML service {}: {}", status, String::from_utf8_lossy(&bytes));
-        }
-
-        Ok(resp.collect().await?.to_bytes())
-    }
-
-    async fn try_once(&self, body: &str) -> anyhow::Result<ExplainResponse> {
-        let bytes = self.post_once("/explain", body).await?;
-        Ok(serde_json::from_slice(&bytes)?)
-    }
-
-    /// Call `/generate` — no retry, single attempt (admin tool, failures surface as HTTP 500).
+    /// Call `generate` — single attempt (admin tool; failures surface as HTTP 500).
     pub async fn generate(&self, req: &GenerateRequest) -> anyhow::Result<GeneratedQuestion> {
-        let body = serde_json::to_string(req)?;
-        let bytes = self.post_once("/generate", &body).await?;
+        let body  = serde_json::to_string(req)?;
+        let bytes = self.send_recv("generate", &body).await?;
         Ok(serde_json::from_slice(&bytes)?)
     }
 
-    /// Call `/analogi/generate` — LLM spec → render → upload → return question data (no DB save).
+    /// Call `analogi` — LLM spec → render → upload → return question data.
     pub async fn generate_analogi(&self) -> anyhow::Result<AnalogiQuestion> {
-        let bytes = self.post_once("/analogi/generate", "{}").await?;
+        let bytes = self.send_recv("analogi", "{}").await?;
         Ok(serde_json::from_slice(&bytes)?)
     }
 }
@@ -176,10 +166,10 @@ impl MlClient {
 
 pub async fn probe_ml_service(socket_path: &str) {
     match UnixStream::connect(socket_path).await {
-        Ok(_) => info!(socket = socket_path, "ML service reachable"),
+        Ok(_)  => info!(socket = socket_path, "ML service reachable"),
         Err(e) => warn!(
             socket = socket_path,
-            error = %e,
+            error  = %e,
             "ML service not reachable — /explain will retry per-request"
         ),
     }

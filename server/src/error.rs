@@ -11,12 +11,6 @@ pub enum AppError {
     #[error("Not found: {0}")]
     NotFound(String),
 
-    #[error("Unauthorized")]
-    Unauthorized,
-
-    #[error("Forbidden")]
-    Forbidden,
-
     #[error("Bad request: {0}")]
     BadRequest(String),
 
@@ -31,8 +25,6 @@ impl IntoResponse for AppError {
     fn into_response(self) -> Response {
         let (status, message) = match &self {
             AppError::NotFound(msg) => (StatusCode::NOT_FOUND, msg.clone()),
-            AppError::Unauthorized => (StatusCode::UNAUTHORIZED, "Unauthorized".into()),
-            AppError::Forbidden => (StatusCode::FORBIDDEN, "Forbidden".into()),
             AppError::BadRequest(msg) => (StatusCode::BAD_REQUEST, msg.clone()),
             AppError::Database(e) => {
                 tracing::error!("Database error: {e}");

@@ -171,40 +171,51 @@ struct QuizListView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
 
         } else {
-            ScrollView {
-                LazyVStack(spacing: 16) {
-                    ForEach(items) { item in
-                        let session = item.local.flatMap { latestCompletedSession(for: $0.id) }
-                        let isDownloading = downloadingIds.contains(item.id)
+            List {
+                ForEach(items) { item in
+                    let session = item.local.flatMap { latestCompletedSession(for: $0.id) }
+                    let isDownloading = downloadingIds.contains(item.id)
 
-                        QuizRowView(
-                            item: item,
-                            completedSession: session,
-                            isDownloading: isDownloading,
-                            isOffline: isOffline
-                        ) {
-                            Task { await downloadQuiz(id: item.id) }
-                        }
-                        .contentShape(Rectangle())
-                        .onTapGesture {
-                            guard let local = item.local else { return }
-                            selectedQuiz = local
-                            showQuiz = true
-                        }
-                        .swipeActions(edge: .trailing, allowsFullSwipe: false) {
-                            if session != nil, let local = item.local {
-                                Button(role: .destructive) {
-                                    resetQuiz(quizId: local.id)
-                                } label: {
-                                    Label("Reset", systemImage: "arrow.counterclockwise")
-                                }
-                                .tint(.warningColor)
+                    QuizRowView(
+                        item: item,
+                        completedSession: session,
+                        isDownloading: isDownloading,
+                        isOffline: isOffline
+                    ) {
+                        Task { await downloadQuiz(id: item.id) }
+                    }
+                    .contentShape(Rectangle())
+                    .onTapGesture {
+                        guard let local = item.local else { return }
+                        selectedQuiz = local
+                        showQuiz = true
+                    }
+                    .listRowBackground(Color.backgroundTwo)
+                    .listRowSeparator(.hidden)
+                    .listRowInsets(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
+                    .swipeActions(edge: .leading, allowsFullSwipe: true) {
+                        if let local = item.local {
+                            Button(role: .destructive) {
+                                deleteQuiz(local)
+                            } label: {
+                                Label("Hapus", systemImage: "trash")
                             }
                         }
                     }
+                    .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+                        if session != nil, let local = item.local {
+                            Button {
+                                resetQuiz(quizId: local.id)
+                            } label: {
+                                Label("Reset", systemImage: "arrow.counterclockwise")
+                            }
+                            .tint(.warningColor)
+                        }
+                    }
                 }
-                .padding(16)
             }
+            .listStyle(.plain)
+            .background(Color.backgroundTwo)
         }
     }
 
@@ -214,6 +225,11 @@ struct QuizListView: View {
         allSessions
             .filter { $0.quizId == quizId && $0.completedAt != nil }
             .max { ($0.completedAt ?? .distantPast) < ($1.completedAt ?? .distantPast) }
+    }
+
+    private func deleteQuiz(_ quiz: LocalQuiz) {
+        context.delete(quiz)   // cascades to questions, options, notes, sessions
+        try? context.save()
     }
 
     private func resetQuiz(quizId: UUID) {
@@ -327,6 +343,7 @@ struct QuizRowView: View {
                 } else {
                     Label("Unduh", systemImage: "arrow.down.circle.fill")
                         .font(.knp(.caption))
+                        .foregroundStyle(KnPButtonType.primary.foreground)
                         .frame(height: 28)
                         .padding(.horizontal, 10)
                 }

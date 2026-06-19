@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>LMS-CPNS — Applied AI Architecture</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+      :root {
+        --bg: #e0e0e0; /* background-two — page            */
+        --card: #ffffff; /* background-one — cards            */
+        --ink: #311d15; /* font-primary + border (dk brown)  */
+        --ink-mt: rgba(49, 29, 21, 0.58); /* muted text             */
+        --green: #03c583; /* success                           */
+        --pink: #ff9093; /* error                             */
+        --orange: #ffd890; /* warning                           */
+        --blue: #aed1f6; /* calm                              */
+        --green-lt: #d6f5ea;
+        --blue-lt: #eaf3fc;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        overflow: hidden;
+        background: var(--bg);
+        color: var(--ink);
+        font-family:
+          "Montserrat",
+          -apple-system,
+          system-ui,
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .page {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: auto auto 1fr;
+        padding: 14px;
+        gap: 11px;
+      }
+
+      /* ── Header ── */
+      header {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+      }
+      header h1 {
+        font-size: 20px;
+        font-weight: 900;
+        letter-spacing: -0.4px;
+        line-height: 1;
+      }
+      header h1 .hl {
+        color: var(--green);
+      }
+      .sub {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--ink-mt);
+        max-width: 430px;
+        line-height: 1.3;
+        white-space: nowrap;
+      }
+      .badges {
+        display: flex;
+        gap: 6px;
+        margin-left: auto;
+      }
+      .badge {
+        background: var(--blue);
+        border: 2.5px solid var(--ink);
+        border-radius: 7px;
+        padding: 3px 11px;
+        font-size: 10.5px;
+        font-weight: 700;
+        color: var(--ink);
+      }
+
+      /* ── Stats strip ── */
+      .stats {
+        display: flex;
+        gap: 10px;
+        flex-shrink: 0;
+      }
+      .stat {
+        flex: 1 1 0;
+        min-width: 0;
+        background: var(--card);
+        border: 3px solid var(--ink);
+        border-radius: 11px;
+        padding: 9px 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .stat .n {
+        font-size: 21px;
+        font-weight: 900;
+        line-height: 1;
+        color: var(--ink);
+      }
+      .stat .bar {
+        width: 26px;
+        height: 4px;
+        border-radius: 2px;
+      }
+      .stat .l {
+        font-size: 9px;
+        font-weight: 600;
+        color: var(--ink-mt);
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        line-height: 1.2;
+      }
+      .b-blue {
+        background: var(--blue);
+      }
+      .b-green {
+        background: var(--green);
+      }
+      .b-orange {
+        background: var(--orange);
+      }
+      .b-pink {
+        background: var(--pink);
+      }
+
+      /* ── 3 columns ── */
+      .body {
+        display: grid;
+        grid-template-columns: 1fr 1.22fr 1fr;
+        gap: 11px;
+        min-height: 0;
+      }
+      .col {
+        background: var(--card);
+        border: 3px solid var(--ink);
+        border-radius: 14px;
+        padding: 14px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        min-height: 0;
+      }
+
+      .sec {
+        padding: 9px 0;
+        flex-shrink: 0;
+      }
+      .sec + .sec {
+        border-top: 2px solid var(--bg);
+      }
+      .sec:first-child {
+        padding-top: 0;
+      }
+      .sec:last-child {
+        padding-bottom: 0;
+      }
+
+      .stitle {
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: -0.2px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--ink);
+      }
+      .stitle .cap {
+        font-size: 9.5px;
+        font-weight: 600;
+        color: var(--ink-mt);
+      }
+      .num {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 900;
+        border: 2.5px solid var(--ink);
+        color: var(--ink);
+        flex-shrink: 0;
+      }
+      .num.blue {
+        background: var(--blue);
+      }
+      .num.orange {
+        background: var(--orange);
+      }
+      .num.green {
+        background: var(--green);
+      }
+      .num.ink {
+        background: var(--ink);
+        color: #fff;
+      }
+
+      /* centerpiece */
+      .sec.star {
+        background: var(--green-lt);
+        border: 3px solid var(--ink);
+        border-radius: 11px;
+        padding: 11px 12px;
+        margin: 9px 0;
+      }
+      .sec.star + .sec {
+        border-top: none;
+      }
+
+      ul {
+        padding-left: 15px;
+        list-style: disc;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      li {
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--ink-mt);
+        line-height: 1.45;
+      }
+      li strong {
+        color: var(--ink);
+        font-weight: 700;
+      }
+      li em {
+        font-style: italic;
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      /* model boxes */
+      .models {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin-bottom: 8px;
+      }
+      .mbox {
+        border: 2.5px solid var(--ink);
+        border-radius: 9px;
+        padding: 8px 11px;
+      }
+      .mbox.enc {
+        background: var(--blue-lt);
+      }
+      .mbox.dec {
+        background: #fff6e3;
+      }
+      .mbox .mh {
+        font-size: 11.5px;
+        font-weight: 800;
+        color: var(--ink);
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 6px;
+      }
+      .mbox .mh .tag {
+        font-size: 9.5px;
+        font-weight: 700;
+        color: var(--ink);
+        background: var(--card);
+        border: 2px solid var(--ink);
+        border-radius: 5px;
+        padding: 1px 6px;
+        white-space: nowrap;
+      }
+      .mbox .md {
+        font-size: 10px;
+        font-weight: 500;
+        color: var(--ink-mt);
+        margin-top: 3px;
+        line-height: 1.4;
+      }
+
+      /* pipeline */
+      .pipe {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin: 6px 0;
+      }
+      .step {
+        border: 2.5px solid var(--ink);
+        border-radius: 7px;
+        padding: 4px 9px;
+        font-size: 10px;
+        text-align: center;
+        line-height: 1.25;
+      }
+      .step .m {
+        font-weight: 800;
+        color: var(--ink);
+      }
+      .step .s {
+        font-weight: 600;
+        color: var(--ink);
+        opacity: 0.65;
+        font-size: 8.5px;
+      }
+      .step.blue {
+        background: var(--blue);
+      }
+      .step.orange {
+        background: var(--orange);
+      }
+      .step.green {
+        background: var(--green);
+      }
+      .step.pink {
+        background: var(--pink);
+      }
+      .step.gray {
+        background: var(--bg);
+      }
+      .arr {
+        font-size: 13px;
+        font-weight: 900;
+        color: var(--ink);
+      }
+
+      /* outcome rows */
+      .out {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 10.5px;
+        font-weight: 500;
+        color: var(--ink-mt);
+        line-height: 1.35;
+        margin-top: 6px;
+      }
+      .out .k {
+        font-size: 9px;
+        font-weight: 800;
+        letter-spacing: 0.3px;
+        padding: 2px 7px;
+        border-radius: 5px;
+        border: 2px solid var(--ink);
+        color: var(--ink);
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+      .out.c1 .k {
+        background: var(--green);
+      }
+      .out.c2 .k {
+        background: var(--pink);
+      }
+      .out.c3 .k {
+        background: var(--blue);
+      }
+      .out strong {
+        color: var(--ink);
+        font-weight: 700;
+      }
+
+      .ss {
+        margin-top: 8px;
+        padding-top: 7px;
+        border-top: 2px dashed rgba(49, 29, 21, 0.18);
+      }
+      .ss-title {
+        font-size: 9.5px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        color: var(--ink);
+        margin-bottom: 5px;
+      }
+
+      /* table */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th {
+        font-size: 9px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        color: var(--ink-mt);
+        text-align: left;
+        padding: 4px 7px;
+        border-bottom: 2.5px solid var(--ink);
+      }
+      td {
+        font-size: 10px;
+        font-weight: 500;
+        padding: 4px 7px;
+        color: var(--ink-mt);
+        border-bottom: 2px solid var(--bg);
+        vertical-align: top;
+        line-height: 1.4;
+      }
+      td:first-child {
+        color: var(--ink);
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      tr:last-child td {
+        border: none;
+      }
+
+      code {
+        font-family: "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+        font-size: 9px;
+        font-weight: 600;
+        color: var(--ink);
+        background: var(--bg);
+        padding: 1px 5px;
+        border-radius: 4px;
+        border: 1.5px solid rgba(49, 29, 21, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- Header -->
+      <header>
+        <h1>Applied <span class="hl">AI</span> &mdash; CPNLES</h1>
+        <span class="sub"
+          >Grounded exam-question generation &amp; explanation for Indonesian
+          civil-service (CPNS) prep</span
+        >
+        <div class="badges">
+          <span class="badge">RAG</span>
+          <span class="badge">neuro-symbolic</span>
+        </div>
+      </header>
+
+      <!-- Stats strip -->
+      <div class="stats">
+        <div class="stat">
+          <div class="n">700</div>
+          <div class="bar b-green"></div>
+          <div class="l">questions across all CPNS subtypes</div>
+        </div>
+        <div class="stat">
+          <div class="n">2</div>
+          <div class="bar b-orange"></div>
+          <div class="l">models: encoder + decoder</div>
+        </div>
+        <div class="stat">
+          <div class="n">8K</div>
+          <div class="bar b-blue"></div>
+          <div class="l">token context window</div>
+        </div>
+        <div class="stat">
+          <div class="n">4-bit</div>
+          <div class="bar b-pink"></div>
+          <div class="l">GGUF quantization</div>
+        </div>
+      </div>
+
+      <div class="body">
+        <!-- ══ COLUMN 1 — Models & Retrieval ══ -->
+        <div class="col">
+          <div class="sec">
+            <div class="stitle">
+              <span class="num blue">1</span>Two-Model Design
+            </div>
+            <div class="models">
+              <div class="mbox enc">
+                <div class="mh">
+                  Encoder <span class="tag">multilingual-e5-small</span>
+                </div>
+                <div class="md">
+                  BERT-family, encoder-only. Maps text →
+                  <strong>384-dim</strong> dense vector for semantic search.
+                  Cannot generate.
+                </div>
+              </div>
+              <div class="mbox dec">
+                <div class="mh">
+                  Decoder <span class="tag">gemma4:e4b</span>
+                </div>
+                <div class="md">
+                  Gemma-family causal LLM (e4b), 4-bit GGUF. Autoregressive
+                  generation &amp; explanation. Cannot produce fixed-size
+                  embeddings.
+                </div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                Right tool per task — retrieval needs an
+                <strong>embedding model</strong>, generation needs a
+                <strong>causal LM</strong>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sec">
+            <div class="stitle">
+              <span class="num blue">2</span>RAG &mdash; Semantic Retrieval
+            </div>
+            <div class="pipe">
+              <div class="step blue">
+                <div class="m">Embed corpus</div>
+                <div class="s">offline, once</div>
+              </div>
+              <div class="arr">→</div>
+              <div class="step gray">
+                <div class="m">.npy index</div>
+                <div class="s">float32 matrix</div>
+              </div>
+              <div class="arr">→</div>
+              <div class="step blue">
+                <div class="m">Cosine top-k</div>
+                <div class="s">in-memory</div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                Retrieved questions become <strong>few-shot examples</strong> in
+                the prompt — grounds style, difficulty &amp; scoring
+              </li>
+              <li>
+                <strong>No vector DB:</strong> &lt;50k items fit in RAM, exact
+                cosine is fast — FAISS/Qdrant would be over-engineering
+              </li>
+              <li>
+                <strong>No chunking:</strong> each question is already an atomic
+                50–100 token unit — <em>the questions are the chunks</em>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sec">
+            <div class="stitle">
+              <span class="num blue">3</span>Prompt Engineering
+            </div>
+            <ul>
+              <li>
+                <strong>Domain-routed system prompts</strong> — 4 variants by
+                question subtype: math · language · civics (TWK) · situational
+                (TKP)
+              </li>
+              <li>
+                <strong>Few-shot context</strong> injected from RAG retrieval at
+                inference time
+              </li>
+              <li>
+                <strong>"Leave the math open"</strong> — LLM writes the
+                expression ending in <code>=</code> and the symbolic engine
+                fills the result, so the model never does arithmetic
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ══ COLUMN 2 — Generation & Guardrails (centerpiece) ══ -->
+        <div class="col">
+          <div class="sec">
+            <div class="stitle">
+              <span class="num orange">4</span>Generation Pipeline
+            </div>
+            <div class="pipe">
+              <div class="step blue">
+                <div class="m">RAG</div>
+                <div class="s">top-5</div>
+              </div>
+              <div class="arr">→</div>
+              <div class="step orange">
+                <div class="m">LLM</div>
+                <div class="s">draft JSON</div>
+              </div>
+              <div class="arr">→</div>
+              <div class="step green">
+                <div class="m">Verify</div>
+                <div class="s">symbolic</div>
+              </div>
+              <div class="arr">→</div>
+              <div class="step pink">
+                <div class="m">Patch / Correct</div>
+                <div class="s">ground truth</div>
+              </div>
+              <div class="arr">→</div>
+              <div class="step gray">
+                <div class="m">LaTeX</div>
+                <div class="s">render</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- The star -->
+          <div class="sec star">
+            <div class="stitle">
+              <span class="num green">5</span>Neuro-Symbolic Verification
+              <span class="cap">— anti-hallucination layer</span>
+            </div>
+            <ul style="margin-bottom: 2px">
+              <li>
+                <strong
+                  >The LLM proposes; deterministic Python disposes.</strong
+                >
+                Generated answers are never trusted on arithmetic — a symbolic
+                parser re-computes from the question text and reconciles.
+              </li>
+            </ul>
+            <div class="out c1">
+              <span class="k">CONFIRM</span
+              ><span
+                >computed answer matches an option → lock
+                <strong>correct_label</strong> to the verified one</span
+              >
+            </div>
+            <div class="out c2">
+              <span class="k">PATCH</span
+              ><span
+                >answer computed but absent from options → LLM hallucinated →
+                overwrite that option with ground truth</span
+              >
+            </div>
+            <div class="out c3">
+              <span class="k">CORRECT</span
+              ><span
+                >no math detectable → 2nd LLM "validator" pass + Python re-reads
+                the explanation as final arbiter</span
+              >
+            </div>
+          </div>
+
+          <div class="sec">
+            <div class="stitle">
+              <span class="num orange">6</span>Zero-Shot Structured Generation
+            </div>
+            <div class="ss-title">
+              Picture-analogy questions — text LLM, no image model
+            </div>
+            <div class="pipe">
+              <div class="step orange">
+                <div class="m">LLM spec</div>
+                <div class="s">4 cells JSON</div>
+              </div>
+              <div class="arr">→</div>
+              <div class="step green">
+                <div class="m">Validate</div>
+                <div class="s">rule check</div>
+              </div>
+              <div class="arr">→</div>
+              <div class="step gray">
+                <div class="m">Render</div>
+                <div class="s">shapes→PNG</div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                LLM emits a <strong>symbolic scene graph</strong> (shapes,
+                positions, fills, rotations) — not pixels — applies transform
+                <code>A:B :: C:?</code>, then we render deterministically
+              </li>
+              <li>
+                Self-validating: <strong>3 retry attempts</strong> if the spec
+                breaks positional / shape-count constraints
+              </li>
+            </ul>
+            <div class="ss">
+              <div class="ss-title">Constrained decoding</div>
+              <ul>
+                <li>
+                  All LLM calls use
+                  <strong>JSON-grammar-constrained decoding</strong>
+                  (<code>response_format=json_object</code>) — output is
+                  guaranteed parseable, no regex scraping
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- ══ COLUMN 3 — Inference Stack & Decisions ══ -->
+        <div class="col">
+          <div class="sec">
+            <div class="stitle">
+              <span class="num ink">7</span>Local LLM Inference
+            </div>
+            <ul>
+              <li>
+                <strong>gemma4:e4b via llama.cpp bindings</strong> — model runs
+                <em>in-process</em>; no inference server, no HTTP, no port
+              </li>
+              <li>
+                <strong>4-bit quantization (GGUF)</strong> — shrinks weights ~4×
+                so the model fits in unified memory
+              </li>
+              <li>
+                <strong>Metal GPU offload</strong> —
+                <code>n_gpu_layers=-1</code> runs all layers on Apple Silicon
+              </li>
+            </ul>
+          </div>
+
+          <div class="sec">
+            <div class="stitle">
+              <span class="num ink">8</span>Streaming &amp; Cancellation
+            </div>
+            <ul>
+              <li>
+                <strong>Token-level streaming</strong> — the generation loop
+                checks a cancel flag between tokens
+              </li>
+              <li>
+                <strong>Cooperative abort</strong> — if the user navigates away,
+                inference stops mid-generation in &lt;100 ms instead of burning
+                GPU on a discarded result
+              </li>
+            </ul>
+          </div>
+
+          <div class="sec">
+            <div class="stitle">
+              <span class="num ink">9</span>Key ML Decisions
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Choice</th>
+                  <th>Why</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Local quantized LLM</td>
+                  <td>
+                    Data privacy, no API cost, full cancellation control vs.
+                    hosted APIs
+                  </td>
+                </tr>
+                <tr>
+                  <td>Encoder for RAG</td>
+                  <td>
+                    E5 gives fixed-size vectors; a decoder can't — different
+                    model classes per job
+                  </td>
+                </tr>
+                <tr>
+                  <td>Flat cosine, no FAISS</td>
+                  <td>
+                    Small corpus fits in RAM; exact search beats approximate-NN
+                    infra here
+                  </td>
+                </tr>
+                <tr>
+                  <td>Symbolic verifier</td>
+                  <td>
+                    LLMs hallucinate arithmetic — re-compute &amp; patch, never
+                    trust the model on numbers
+                  </td>
+                </tr>
+                <tr>
+                  <td>Constrained JSON decode</td>
+                  <td>
+                    Guarantees parseable structured output; removes a class of
+                    failures
+                  </td>
+                </tr>
+                <tr>
+                  <td>Scene-graph, not pixels</td>
+                  <td>
+                    Text LLM generates visual specs, deterministically rendered
+                    — no diffusion model
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!-- .body -->
+    </div>
+    <!-- .page -->
+  </body>
+</html>

@@ -61,7 +61,7 @@ async fn main() -> anyhow::Result<()> {
         // Public
         .route("/api/v1/quizzes", get(routes::quizzes::list_published))
         .route("/api/v1/quizzes/{id}", get(routes::quizzes::get_quiz_with_questions))
-        .route("/api/v1/sessions", post(routes::sessions::submit))
+
         // Admin — quizzes
         .route("/api/v1/admin/quizzes", get(routes::quizzes::admin_list))
         .route("/api/v1/admin/quizzes", post(routes::quizzes::admin_create))
@@ -78,10 +78,8 @@ async fn main() -> anyhow::Result<()> {
         .route("/api/v1/admin/questions/{id}", get(routes::questions::admin_get).put(routes::questions::admin_update).delete(routes::questions::admin_delete))
         // Public — AI explanation
         .route("/api/v1/questions/{id}/explain", get(routes::questions::explain))
-        // Admin — upload & sessions
+        // Admin — upload
         .route("/api/v1/admin/upload/image", post(routes::upload::upload_image))
-        .route("/api/v1/admin/sessions", get(routes::sessions::admin_list))
-        .route("/api/v1/admin/sessions/{id}", get(routes::sessions::admin_get))
         // Static uploads
         .nest_service("/uploads", ServeDir::new(&config.upload_dir))
         .layer(CorsLayer::permissive())

@@ -2,7 +2,7 @@
 
 import { useParams } from "next/navigation";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   createQuestion,
   generateQuestion,
@@ -64,6 +64,11 @@ export default function GeneratePage() {
   const [isGenerating, setIsGenerating] = useState(false);
   const [genError, setGenError] = useState<string | null>(null);
   const [addedCount, setAddedCount] = useState(0);
+  const abortRef = useRef<AbortController | null>(null);
+
+  useEffect(() => {
+    return () => { abortRef.current?.abort(); };
+  }, []);
 
   const { data: quizzes = [] } = useQuery({
     queryKey: ["quizzes"],
@@ -105,15 +110,18 @@ export default function GeneratePage() {
   });
 
   const fetchNext = async (subtype: QuestionSubtype) => {
+    abortRef.current?.abort();
+    const controller = new AbortController();
+    abortRef.current = controller;
+
     setIsGenerating(true);
     setGenError(null);
     setCurrent(null);
     try {
       if (subtype === "ANALOGI_GAMBAR") {
-        const result = await generateAnalogiQuestion();
+        const result = await generateAnalogiQuestion(controller.signal);
         setCurrent(result.question);
       } else {
-        // Pick a random seed question of this subtype from any quiz in the DB
         const pool = allQuestions.filter((q) => q.subtype === subtype);
         if (pool.length === 0) {
           setGenError(`No existing ${subtypeLabel(subtype)} questions to use as reference. Add at least one first.`);
@@ -121,10 +129,11 @@ export default function GeneratePage() {
           return;
         }
         const seed = pool[Math.floor(Math.random() * pool.length)];
-        const result = await generateQuestion(seed.id);
+        const result = await generateQuestion(seed.id, controller.signal);
         setCurrent(result.question);
       }
     } catch (e: unknown) {
+      if ((e as { code?: string })?.code === "ERR_CANCELED") return;
       const msg =
         (e as { response?: { data?: { detail?: string } } })?.response?.data
           ?.detail ?? "Generation failed";

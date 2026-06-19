@@ -9,9 +9,6 @@ pub struct SubtypeConfig {
     /// False for ANALOGI_GAMBAR — the LLM cannot see images, so we return
     /// the pre-written explanation stored on the question instead.
     pub needs_ml_explain: bool,
-    /// Whether the ML service should apply math post-processing (LaTeX conversion,
-    /// arithmetic verification). True only for numerically-evaluated subtypes.
-    pub needs_math: bool,
 }
 
 // ── Enums ─────────────────────────────────────────────────────────────────────
@@ -56,33 +53,16 @@ impl QuestionSubtype {
         use QuestionSubtype::*;
         match self {
             // Image analogy — LLM cannot see images; return stored explanation
-            AnalogiGambar => SubtypeConfig {
-                needs_ml_explain: false,
-                needs_math: false,
-            },
+            AnalogiGambar => SubtypeConfig { needs_ml_explain: false },
             // Simple word-relationship lookups — stored explanation is sufficient
-            Antonim | Sinonim | AnalogiVerbal => SubtypeConfig {
-                needs_ml_explain: false,
-                needs_math: false,
-            },
+            Antonim | Sinonim | AnalogiVerbal => SubtypeConfig { needs_ml_explain: false },
             // TKP — behavioral/situational; options have weighted scores (1-5), not
             // a single correct answer, so an LLM explanation adds no value
             PelayananPublik | Profesionalisme | JejaringKerja | SosialBudaya
             | TeknologiInformasi | OrientasiBelajar | MengendalikanDiri
-            | Beradaptasi | KreativitasInovasi => SubtypeConfig {
-                needs_ml_explain: false,
-                needs_math: false,
-            },
-            // Numeric subtypes — enable math post-processing
-            Aritmatika | DeretAngka | PerbandinganKuantitatif | SoalCerita => SubtypeConfig {
-                needs_ml_explain: true,
-                needs_math: true,
-            },
-            // Everything else (TWK factual, Silogisme) — LLM explain
-            _ => SubtypeConfig {
-                needs_ml_explain: true,
-                needs_math: false,
-            },
+            | Beradaptasi | KreativitasInovasi => SubtypeConfig { needs_ml_explain: false },
+            // Everything else (numeric + TWK + Silogisme) — call ML service
+            _ => SubtypeConfig { needs_ml_explain: true },
         }
     }
 }

@@ -2,7 +2,7 @@
 
 import { useParams } from "next/navigation";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { createQuestion, generateQuestion, getQuestion } from "@/lib/api";
 import type { GeneratedQuestion } from "@/types";
 import { ArrowLeft, Check, X, Wand2 } from "lucide-react";
@@ -18,6 +18,12 @@ export default function GeneratePage() {
   const [isGenerating, setIsGenerating] = useState(false);
   const [genError, setGenError] = useState<string | null>(null);
   const [addedCount, setAddedCount] = useState(0);
+  const abortRef = useRef<AbortController | null>(null);
+
+  // Abort any in-flight generation when the user navigates away
+  useEffect(() => {
+    return () => { abortRef.current?.abort(); };
+  }, []);
 
   const { data: sourceQuestion } = useQuery({
     queryKey: ["question", sourceId],
@@ -49,13 +55,18 @@ export default function GeneratePage() {
   });
 
   const fetchNext = async () => {
+    abortRef.current?.abort();
+    const controller = new AbortController();
+    abortRef.current = controller;
+
     setIsGenerating(true);
     setGenError(null);
     setCurrent(null);
     try {
-      const result = await generateQuestion(sourceId);
+      const result = await generateQuestion(sourceId, controller.signal);
       setCurrent(result.question);
     } catch (e: unknown) {
+      if ((e as { code?: string })?.code === "ERR_CANCELED") return;
       const msg =
         (e as { response?: { data?: { detail?: string } } })?.response?.data
           ?.detail ?? "Generation failed";

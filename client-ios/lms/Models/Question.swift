@@ -33,6 +33,23 @@ enum QuestionSubtype: String, Codable, CaseIterable {
     case mengendalikanDiri  = "MENGENDALIKAN_DIRI"
     case beradaptasi        = "BERADAPTASI"
     case kreativitasInovasi = "KREATIVITAS_INOVASI"
+
+    /// Mirrors SubtypeConfig.needs_ml_explain on the server.
+    /// False → the /explain endpoint short-circuits to stored explanation; no point showing the AI button.
+    var needsMlExplain: Bool {
+        switch self {
+        case .analogiGambar:
+            return false
+        case .antonim, .sinonim, .analogiVerbal:
+            return false
+        case .pelayananPublik, .profesionalisme, .jejaringKerja, .sosialBudaya,
+             .teknologiInformasi, .orientasiBelajar, .mengendalikanDiri,
+             .beradaptasi, .kreativitasInovasi:
+            return false
+        default:
+            return true
+        }
+    }
 }
 
 // MARK: - SwiftData Models (local storage, offline-first)
@@ -161,20 +178,16 @@ final class LocalUserNote {
 final class LocalQuizSession {
     @Attribute(.unique) var id: UUID
     var quizId: UUID
-    var deviceId: String
     var startedAt: Date
     var completedAt: Date?
-    var isSynced: Bool
 
     @Relationship(deleteRule: .cascade, inverse: \LocalAnswer.session)
     var answers: [LocalAnswer] = []
 
-    init(id: UUID = UUID(), quizId: UUID, deviceId: String) {
+    init(id: UUID = UUID(), quizId: UUID) {
         self.id = id
         self.quizId = quizId
-        self.deviceId = deviceId
         self.startedAt = Date()
-        self.isSynced = false
     }
 }
 

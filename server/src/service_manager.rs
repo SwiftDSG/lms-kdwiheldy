@@ -1,5 +1,5 @@
-//! Background supervisor that auto-starts Ollama and the Python ML service,
-//! and restarts them if they crash.
+//! Background supervisor that auto-starts the Python ML service and restarts
+//! it if it crashes.
 //!
 //! Wire-up in main.rs:
 //!   if config.manage_services {
@@ -15,11 +15,9 @@ use tokio::time::{sleep, Duration};
 use crate::config::Config;
 
 pub struct ServiceManager {
-    ollama_bin:  String,
-    uvicorn_bin: PathBuf,
+    python_bin:  PathBuf,
     serve_dir:   PathBuf,
     socket_path: String,
-    ollama_proc: Arc<Mutex<Option<Child>>>,
     ml_proc:     Arc<Mutex<Option<Child>>>,
 }
 
@@ -28,53 +26,10 @@ impl ServiceManager {
         let ml_dir = std::fs::canonicalize(&config.ml_service_dir)
             .unwrap_or_else(|_| PathBuf::from(&config.ml_service_dir));
         ServiceManager {
-            ollama_bin:  config.ollama_bin.clone(),
-            uvicorn_bin: ml_dir.join(".venv/bin/uvicorn"),
+            python_bin:  ml_dir.join(".venv/bin/python"),
             serve_dir:   ml_dir,
             socket_path: config.ml_socket_path.clone(),
-            ollama_proc: Arc::new(Mutex::new(None)),
             ml_proc:     Arc::new(Mutex::new(None)),
-        }
-    }
-
-    /// Check if Ollama is reachable, start it if not.
-    async fn ensure_ollama(&self) {
-        let mut guard = self.ollama_proc.lock().await;
-
-        // If we own a child handle, see whether it has exited.
-        if let Some(child) = guard.as_mut() {
-            match child.try_wait() {
-                Ok(Some(status)) => {
-                    tracing::warn!("Ollama exited ({}); will restart", status);
-                    *guard = None;
-                }
-                Ok(None) => {
-                    // Still running — nothing to do.
-                    return;
-                }
-                Err(e) => {
-                    tracing::warn!("try_wait on Ollama child failed: {e}; assuming dead");
-                    *guard = None;
-                }
-            }
-        }
-
-        // No managed child. Is an external Ollama already listening?
-        if tokio::net::TcpStream::connect("127.0.0.1:11434").await.is_ok() {
-            return; // External instance — leave it alone.
-        }
-
-        tracing::info!("Starting Ollama  bin={}", self.ollama_bin);
-        match Command::new(&self.ollama_bin)
-            .arg("serve")
-            .spawn()
-        {
-            Ok(child) => {
-                *guard = Some(child);
-            }
-            Err(e) => {
-                tracing::error!("Failed to start Ollama: {e}");
-            }
         }
     }
 
@@ -116,9 +71,11 @@ impl ServiceManager {
             self.serve_dir.display(),
             self.socket_path
         );
-        match Command::new(&self.uvicorn_bin)
-            .args(["serve:app", "--uds", &self.socket_path])
+        match Command::new(&self.python_bin)
+            .arg("serve.py")
             .current_dir(&self.serve_dir)
+            .stdout(std::process::Stdio::inherit())
+            .stderr(std::process::Stdio::inherit())
             .spawn()
         {
             Ok(child) => {
@@ -130,18 +87,14 @@ impl ServiceManager {
         }
     }
 
-    /// Start both services immediately (non-blocking — Axum starts while they init),
+    /// Start the ML service immediately (non-blocking — Axum starts while it inits),
     /// then spawn a background loop that re-checks every 15 s.
     pub async fn start_and_watch(self: Arc<Self>) {
-        // Initial start attempt (runs concurrently with Axum startup).
-        self.ensure_ollama().await;
         self.ensure_ml_service().await;
 
-        // Background watchdog.
         tokio::spawn(async move {
             loop {
                 sleep(Duration::from_secs(15)).await;
-                self.ensure_ollama().await;
                 self.ensure_ml_service().await;
             }
         });

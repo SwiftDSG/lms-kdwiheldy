@@ -11,14 +11,10 @@ pub struct Config {
     /// macOS dev default : /tmp/lms-ml.sock
     /// Linux production  : /run/lms/ml.sock
     pub ml_socket_path: String,
-    /// Path to the Ollama binary.
-    /// macOS default : /Applications/Ollama.app/Contents/Resources/ollama
-    /// Linux default : ollama  (assumed on PATH)
-    pub ollama_bin: String,
     /// Directory containing the Python ML service (serve.py + .venv/).
     /// Relative to the server's CWD, or absolute.
     pub ml_service_dir: String,
-    /// When true the Rust server auto-starts and supervises Ollama + the ML service.
+    /// When true the Rust server auto-starts and supervises the ML service.
     /// Set MANAGE_SERVICES=false on VPS where systemd owns the processes.
     pub manage_services: bool,
 }
@@ -29,12 +25,6 @@ impl Config {
             "/tmp/lms-ml.sock".into()
         } else {
             "/run/lms/ml.sock".into()
-        };
-
-        let default_ollama_bin = if cfg!(target_os = "macos") {
-            "/Applications/Ollama.app/Contents/Resources/ollama".into()
-        } else {
-            "ollama".into()
         };
 
         let manage_services = env::var("MANAGE_SERVICES")
@@ -50,9 +40,8 @@ impl Config {
                 .unwrap_or_else(|_| "http://localhost:3000".into()),
             port: env::var("PORT").unwrap_or_else(|_| "3000".into()).parse()?,
             ml_socket_path: env::var("ML_SOCKET_PATH").unwrap_or(default_socket),
-            ollama_bin: env::var("OLLAMA_BIN").unwrap_or(default_ollama_bin),
             ml_service_dir: env::var("ML_SERVICE_DIR")
-                .unwrap_or_else(|_| "../apps/ml-service".into()),
+                .unwrap_or_else(|_| "../ml-service".into()),
             manage_services,
         })
     }

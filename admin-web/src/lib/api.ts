@@ -103,16 +103,21 @@ export async function bulkImport(payload: unknown): Promise<{
 }
 
 export async function generateQuestion(
-  sourceQuestionId: string
+  sourceQuestionId: string,
+  signal?: AbortSignal
 ): Promise<{ question: GeneratedQuestion }> {
-  const { data } = await client.post("/admin/questions/generate", {
-    source_question_id: sourceQuestionId,
-  });
+  const { data } = await client.post(
+    "/admin/questions/generate",
+    { source_question_id: sourceQuestionId },
+    { signal }
+  );
   return data;
 }
 
-export async function generateAnalogiQuestion(): Promise<{ question: GeneratedQuestion }> {
-  const { data } = await client.post("/admin/questions/generate/analogi");
+export async function generateAnalogiQuestion(
+  signal?: AbortSignal
+): Promise<{ question: GeneratedQuestion }> {
+  const { data } = await client.post("/admin/questions/generate/analogi", undefined, { signal });
   return data;
 }
 

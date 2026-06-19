@@ -15,35 +15,30 @@
         {
           "label": "A",
           "content": "24",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "28",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "32",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "D",
           "content": "36",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "E",
           "content": "64",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "DERET_ANGKA"
     },
     {
       "type": "MCQ",
@@ -54,35 +49,30 @@
         {
           "label": "A",
           "content": "3",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "4",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "5",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "D",
           "content": "6",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "E",
           "content": "7",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "ARITMATIKA"
     },
     {
       "type": "MCQ",
@@ -93,35 +83,30 @@
         {
           "label": "A",
           "content": "$\\frac{\\text{1}}{\\text{2}}$",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "$\\frac{\\text{3}}{\\text{4}}$",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "$\\text{1}\\frac{\\text{1}}{\\text{4}}$",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "D",
           "content": "$\\text{1}\\frac{\\text{1}}{\\text{2}}$",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "E",
           "content": "$\\frac{\\text{7}}{\\text{4}}$",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "ARITMATIKA"
     },
     {
       "type": "MCQ",
@@ -132,35 +117,30 @@
         {
           "label": "A",
           "content": "Fajar",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "Gelap",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "Sore",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "D",
           "content": "Malam",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "E",
           "content": "Subuh",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "ANALOGI_VERBAL"
     },
     {
       "type": "MCQ",
@@ -171,35 +151,30 @@
         {
           "label": "A",
           "content": "25",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "40",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "50",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "D",
           "content": "75",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "E",
           "content": "100",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "ARITMATIKA"
     },
     {
       "type": "MCQ",
@@ -210,35 +185,30 @@
         {
           "label": "A",
           "content": "18",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "20",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "21",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "D",
           "content": "22",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "E",
           "content": "25",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "DERET_ANGKA"
     },
     {
       "type": "MCQ",
@@ -249,35 +219,30 @@
         {
           "label": "A",
           "content": "2",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "3",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "4",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "D",
           "content": "5",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "E",
           "content": "6",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "ARITMATIKA"
     },
     {
       "type": "MCQ",
@@ -288,35 +253,30 @@
         {
           "label": "A",
           "content": "Kantor",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "Perpustakaan",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "Sekolah",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "D",
           "content": "Universitas",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "E",
           "content": "Laboratorium",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "ANALOGI_VERBAL"
     },
     {
       "type": "MCQ",
@@ -327,35 +287,30 @@
         {
           "label": "A",
           "content": "30",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "45",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "60",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "D",
           "content": "75",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "E",
           "content": "80",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "ARITMATIKA"
     },
     {
       "type": "MCQ",
@@ -366,35 +321,30 @@
         {
           "label": "A",
           "content": "30",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "40",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "45",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "D",
           "content": "50",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "E",
           "content": "60",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "ARITMATIKA"
     },
     {
       "type": "MCQ",
@@ -405,35 +355,30 @@
         {
           "label": "A",
           "content": "33",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "35",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "37",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "D",
           "content": "39",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "E",
           "content": "41",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "DERET_ANGKA"
     },
     {
       "type": "MCQ",
@@ -444,35 +389,30 @@
         {
           "label": "A",
           "content": "Budi tidak rajin belajar",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "Budi mungkin rajin belajar",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "Budi rajin belajar",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "D",
           "content": "Semua orang rajin belajar adalah siswa",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "E",
           "content": "Tidak dapat disimpulkan",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "SILOGISME"
     },
     {
       "type": "MCQ",
@@ -483,35 +423,30 @@
         {
           "label": "A",
           "content": "11",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "14",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "15",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "D",
           "content": "17",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "E",
           "content": "24",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "ARITMATIKA"
     },
     {
       "type": "MCQ",
@@ -522,35 +457,30 @@
         {
           "label": "A",
           "content": "Gelap",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "Bintang",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "Bulan",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "D",
           "content": "Langit",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "E",
           "content": "Senja",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "ANALOGI_VERBAL"
     },
     {
       "type": "MCQ",
@@ -561,35 +491,30 @@
         {
           "label": "A",
           "content": "40 km/jam",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "50 km/jam",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "60 km/jam",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "D",
           "content": "80 km/jam",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "E",
           "content": "100 km/jam",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "SOAL_CERITA"
     },
     {
       "type": "MCQ",
@@ -600,35 +525,30 @@
         {
           "label": "A",
           "content": "24",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "30",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "40",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "D",
           "content": "50",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "E",
           "content": "60",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "SOAL_CERITA"
     },
     {
       "type": "MCQ",
@@ -639,35 +559,30 @@
         {
           "label": "A",
           "content": "30 cm²",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "45 cm²",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "54 cm²",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "D",
           "content": "60 cm²",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "E",
           "content": "72 cm²",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "SOAL_CERITA"
     },
     {
       "type": "MCQ",
@@ -678,35 +593,30 @@
         {
           "label": "A",
           "content": "Cerdas",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "Tekun",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "C",
           "content": "Berani",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "D",
           "content": "Sabar",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "E",
           "content": "Tangkas",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "SINONIM"
     },
     {
       "type": "MCQ",
@@ -717,35 +627,30 @@
         {
           "label": "A",
           "content": "10",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "11",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "12",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "D",
           "content": "13",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "E",
           "content": "16",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "DERET_ANGKA"
     },
     {
       "type": "MCQ",
@@ -756,35 +661,30 @@
         {
           "label": "A",
           "content": "15 cm²",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "B",
           "content": "20 cm²",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "C",
           "content": "25 cm²",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         },
         {
           "label": "D",
           "content": "30 cm²",
-          "score": 5,
-          "is_correct": true
+          "score": 5
         },
         {
           "label": "E",
           "content": "60 cm²",
-          "score": 0,
-          "is_correct": false
+          "score": 0
         }
       ],
-      "subtype": "ANALOGI_GAMBAR"
+      "subtype": "SOAL_CERITA"
     }
   ]
 }

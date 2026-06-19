@@ -29,11 +29,11 @@ A holistic reference covering architecture, every technical component, and all d
 
 An **iPad-first Learning Management System** for people preparing for the Indonesian civil servant (CPNS) national exam. The exam has three scored categories:
 
-| Category | Focus | Scoring |
-|----------|-------|---------|
-| **TWK** (Tes Wawasan Kebangsaan) | Civic knowledge — Pancasila, UUD 1945, history, government | Binary: 5 pts correct, 0 wrong |
-| **TIU** (Tes Intelegensi Umum) | Intelligence — verbal analogies, logic, arithmetic, sequences | Binary: 5 pts correct, 0 wrong |
-| **TKP** (Tes Karakteristik Pribadi) | Behavioral/situational judgment | Weighted: 1–5 pts per option, no wrong answer |
+| Category                            | Focus                                                         | Scoring                                       |
+| ----------------------------------- | ------------------------------------------------------------- | --------------------------------------------- |
+| **TWK** (Tes Wawasan Kebangsaan)    | Civic knowledge — Pancasila, UUD 1945, history, government    | Binary: 5 pts correct, 0 wrong                |
+| **TIU** (Tes Intelegensi Umum)      | Intelligence — verbal analogies, logic, arithmetic, sequences | Binary: 5 pts correct, 0 wrong                |
+| **TKP** (Tes Karakteristik Pribadi) | Behavioral/situational judgment                               | Weighted: 1–5 pts per option, no wrong answer |
 
 The LMS lets an **admin** create and manage quiz sets via a web dashboard, and **students** practice on an iPad app — offline-first, with handwritten notes using Apple Pencil. An AI layer generates explanations and new questions on demand.
 
@@ -48,9 +48,9 @@ The LMS lets an **admin** create and manage quiz sets via a web dashboard, and *
 └──────────────────────────────────────────────────────────────────────┘
          │                   │                    │                   │
   [iPad App]           [Rust Server]        [Admin Web]        [ML Service]
- client-ios/             server/            admin-web/          apps/ml-service/
-  SwiftUI               Axum + MongoDB       Next.js 15         FastAPI + Ollama
-  PencilKit             REST API             TypeScript         RAG + qwen3:8b
+ client-ios/             server/            admin-web/          ml-service/
+  SwiftUI               Axum + MongoDB       Next.js 15         asyncio + Ollama
+  PencilKit             REST API             TypeScript         RAG + gemma4:e4b
   SwiftData             Port 3000            Port 3001          Unix Domain Socket
   Offline-first         Single process       Browser app        Started by Rust
          │                   │                    │
@@ -67,7 +67,7 @@ The LMS lets an **admin** create and manage quiz sets via a web dashboard, and *
                               [ML Service (Python)]
                                        │
                               localhost:11434
-                              [Ollama — qwen3:8b]
+                              [Ollama — gemma4:e4b]
 ```
 
 The Rust server and ML service communicate via **Unix Domain Socket (UDS)** — no TCP overhead, no port conflicts, and the Rust server manages the ML service lifecycle (auto-starts, watchdog restarts).
@@ -83,30 +83,28 @@ lms-kdwiheldy/
 │   │   ├── main.rs            # Router, AppState, service startup
 │   │   ├── config.rs          # All env-var config with defaults
 │   │   ├── error.rs           # Unified AppError type
-│   │   ├── ml_client.rs       # HTTP/1.1-over-UDS client for ML service
+│   │   ├── ml_client.rs       # Length-prefix UDS client for ML service
 │   │   ├── service_manager.rs # Auto-start + watchdog for Ollama & ML service
 │   │   ├── middleware/
 │   │   │   └── auth.rs        # JWT (admin) + device key (iPad) middleware
 │   │   ├── models/
-│   │   │   ├── quiz.rs        # Quiz, Question, QuestionOption, SubtypeConfig
-│   │   │   └── session.rs     # QuizSession, SessionAnswer
+│   │   │   └── quiz.rs        # Quiz, Question, QuestionOption, SubtypeConfig
 │   │   └── routes/
 │   │       ├── quizzes.rs     # Quiz CRUD + publish toggle
 │   │       ├── questions.rs   # Question CRUD + AI generate + explain
-│   │       ├── sessions.rs    # Session submit + admin list
 │   │       └── upload.rs      # Image upload → /uploads/
 │   ├── uploads/               # Uploaded images served statically
 │   └── .env                   # Local config (not committed)
 │
-├── apps/ml-service/           # Python FastAPI ML service
-│   ├── serve.py               # Main app: /explain, /generate, /analogi/generate
+├── ml-service/                # Python ML service (asyncio socket server)
+│   ├── serve.py               # Socket server: explain, generate, analogi verbs
 │   ├── embedder.py            # Sentence embedding + cosine search (RAG)
 │   ├── math_parser.py         # Plain-text math → LaTeX + arithmetic verifier
-│   ├── analogi_engine.py      # Symlink → ../../scripts/analogi_engine.py
+│   ├── analogi_engine.py      # Symlink → ../scripts/analogi_engine.py
 │   ├── data/
 │   │   ├── embeddings.npy     # Pre-computed 384-dim vectors (400 questions)
 │   │   └── questions.json     # Question metadata for RAG lookup
-│   └── .venv/                 # Python virtualenv (sentence-transformers, fastapi, etc.)
+│   └── .venv/                 # Python virtualenv (sentence-transformers, requests, Pillow, etc.)
 │
 ├── admin-web/                 # Next.js 15 admin dashboard
 │   └── src/
@@ -142,19 +140,19 @@ lms-kdwiheldy/
 
 All config comes from environment variables with sensible defaults:
 
-| Env Var | Default (macOS) | Purpose |
-|---------|----------------|---------|
-| `MONGODB_URI` | `mongodb://localhost:27017` | MongoDB connection string |
-| `MONGODB_DB` | `lms` | Database name |
-| `UPLOAD_DIR` | `./uploads` | Where uploaded images are stored |
-| `PUBLIC_BASE_URL` | `http://localhost:3000` | Used in generated image URLs |
-| `PORT` | `3000` | HTTP server port |
-| `ML_SOCKET_PATH` | `/tmp/lms-ml.sock` | UDS path for ML service |
-| `OLLAMA_BIN` | `/Applications/Ollama.app/…/ollama` | Path to Ollama binary |
-| `ML_SERVICE_DIR` | `../apps/ml-service` | Directory of Python ML service |
-| `MANAGE_SERVICES` | `true` | Auto-start Ollama + ML service |
-| `JWT_SECRET` | *(required)* | Secret for signing admin JWTs |
-| `DEVICE_API_KEY` | *(required)* | Key the iPad sends in `X-Device-Key` header |
+| Env Var           | Default (macOS)                     | Purpose                          |
+| ----------------- | ----------------------------------- | -------------------------------- |
+| `MONGODB_URI`     | `mongodb://localhost:27017`         | MongoDB connection string        |
+| `MONGODB_DB`      | `lms`                               | Database name                    |
+| `UPLOAD_DIR`      | `./uploads`                         | Where uploaded images are stored |
+| `PUBLIC_BASE_URL` | `http://localhost:3000`             | Used in generated image URLs     |
+| `PORT`            | `3000`                              | HTTP server port                 |
+| `ML_SOCKET_PATH`  | `/tmp/lms-ml.sock`                  | UDS path for ML service          |
+| `OLLAMA_BIN`      | `/Applications/Ollama.app/…/ollama` | Path to Ollama binary            |
+| `ML_SERVICE_DIR`  | `../ml-service`                     | Directory of Python ML service   |
+| `MANAGE_SERVICES` | `true`                              | Auto-start Ollama + ML service   |
+
+_(No authentication is implemented — all routes are currently open. See §16 for the planned auth approach.)_
 
 ### AppState
 
@@ -172,34 +170,32 @@ pub struct AppState {
 
 All routes are registered in `main.rs`. Authentication is applied per-route via Axum middleware layers.
 
-**Public routes (iPad app — `X-Device-Key` header required)**
+**All routes are currently unauthenticated.**
 
-| Method | Path | Handler | Description |
-|--------|------|---------|-------------|
-| GET | `/api/v1/quizzes` | `quizzes::list_published` | Quiz list (metadata only, published only) |
-| GET | `/api/v1/quizzes/{id}` | `quizzes::get_quiz_with_questions` | Full quiz + questions; `?since=<ISO>` for delta sync |
-| POST | `/api/v1/sessions` | `sessions::submit` | Submit completed session from iPad |
-| GET | `/api/v1/questions/{id}/explain` | `questions::explain` | AI explanation for one question |
+**Public routes (iPad app)**
 
-**Admin routes (JWT Bearer required)**
+| Method | Path                             | Handler                            | Description                                          |
+| ------ | -------------------------------- | ---------------------------------- | ---------------------------------------------------- |
+| GET    | `/api/v1/quizzes`                | `quizzes::list_published`          | Quiz list (metadata only, published only)            |
+| GET    | `/api/v1/quizzes/{id}`           | `quizzes::get_quiz_with_questions` | Full quiz + questions; `?since=<ISO>` for delta sync |
+| GET    | `/api/v1/questions/{id}/explain` | `questions::explain`               | AI explanation for one question                      |
 
-| Method | Path | Handler | Description |
-|--------|------|---------|-------------|
-| POST | `/api/v1/auth/login` | `auth::login` | Login → JWT |
-| GET | `/api/v1/admin/quizzes` | `quizzes::admin_list` | All quizzes (incl. drafts) |
-| POST | `/api/v1/admin/quizzes` | `quizzes::admin_create` | Create quiz |
-| GET/PUT/DELETE | `/api/v1/admin/quizzes/{id}` | `quizzes::admin_*` | CRUD on one quiz |
-| POST | `/api/v1/admin/quizzes/{id}/publish` | `quizzes::admin_toggle_publish` | Toggle published flag |
-| GET | `/api/v1/admin/questions` | `questions::admin_list` | All questions; `?quiz_id=X` filter |
-| POST | `/api/v1/admin/questions` | `questions::admin_create` | Add one question to a quiz |
-| GET/PUT/DELETE | `/api/v1/admin/questions/{id}` | `questions::admin_*` | CRUD on one question |
-| POST | `/api/v1/admin/questions/bulk` | `questions::admin_bulk_import` | Create quiz + all questions at once |
-| POST | `/api/v1/admin/questions/generate` | `questions::admin_generate` | LLM: generate similar to source |
-| POST | `/api/v1/admin/questions/generate/analogi` | `questions::admin_generate_analogi` | LLM: generate analogi gambar |
-| POST | `/api/v1/admin/upload/image` | `upload::upload_image` | Upload image → `/uploads/` |
-| GET | `/api/v1/admin/sessions` | `sessions::admin_list` | Session list (most recent 200) |
-| GET | `/api/v1/admin/sessions/{id}` | `sessions::admin_get` | Session + embedded answers |
-| GET | `/uploads/*` | `ServeDir` | Static image serving |
+**Admin routes**
+
+| Method         | Path                                       | Handler                             | Description                         |
+| -------------- | ------------------------------------------ | ----------------------------------- | ----------------------------------- |
+| GET            | `/api/v1/admin/quizzes`                    | `quizzes::admin_list`               | All quizzes (incl. drafts)          |
+| POST           | `/api/v1/admin/quizzes`                    | `quizzes::admin_create`             | Create quiz                         |
+| GET/PUT/DELETE | `/api/v1/admin/quizzes/{id}`               | `quizzes::admin_*`                  | CRUD on one quiz                    |
+| POST           | `/api/v1/admin/quizzes/{id}/publish`       | `quizzes::admin_toggle_publish`     | Toggle published flag               |
+| GET            | `/api/v1/admin/questions`                  | `questions::admin_list`             | All questions; `?quiz_id=X` filter  |
+| POST           | `/api/v1/admin/questions`                  | `questions::admin_create`           | Add one question to a quiz          |
+| GET/PUT/DELETE | `/api/v1/admin/questions/{id}`             | `questions::admin_*`                | CRUD on one question                |
+| POST           | `/api/v1/admin/questions/bulk`             | `questions::admin_bulk_import`      | Create quiz + all questions at once |
+| POST           | `/api/v1/admin/questions/generate`         | `questions::admin_generate`         | LLM: generate similar to source     |
+| POST           | `/api/v1/admin/questions/generate/analogi` | `questions::admin_generate_analogi` | LLM: generate analogi gambar        |
+| POST           | `/api/v1/admin/upload/image`               | `upload::upload_image`              | Upload image → `/uploads/`          |
+| GET            | `/uploads/*`                               | `ServeDir`                          | Static image serving                |
 
 ### Data storage: Embedded documents
 
@@ -223,16 +219,16 @@ The `/api/v1/admin/questions` endpoint queries across all quizzes by iterating q
 
 ### Overview
 
-A FastAPI service that provides AI capabilities via a local Ollama LLM. Communicates with the Rust server exclusively over a Unix Domain Socket. Uses **Retrieval-Augmented Generation (RAG)**: before calling the LLM, it retrieves the 3 most similar questions from a pre-built embedding store and injects them as few-shot examples.
+A lightweight asyncio socket server that provides AI capabilities via a local Ollama LLM. Communicates with the Rust server exclusively over a Unix Domain Socket using a simple length-prefix protocol — no HTTP, no FastAPI. Uses **Retrieval-Augmented Generation (RAG)**: before calling the LLM, it retrieves the 3 most similar questions from a pre-built embedding store and injects them as few-shot examples.
 
 ### Startup & lifecycle
 
-The Rust server starts this service automatically via `ServiceManager`. The ML service is a plain uvicorn process — no Docker, no special setup required beyond having the `.venv` with dependencies installed.
+The Rust server starts this service automatically via `ServiceManager`. The ML service is a plain Python process — no Docker, no ASGI stack, no special setup required beyond having the `.venv` with dependencies installed.
 
 ```
 cargo run (from server/)
   → ServiceManager::ensure_ml_service()
-  → spawns: .venv/bin/uvicorn serve:app --uds /tmp/lms-ml.sock
+  → spawns: .venv/bin/python serve.py
   → watchdog loop every 15s: restarts if dead
 ```
 
@@ -256,29 +252,43 @@ A deterministic plain-text math → LaTeX converter with an arithmetic verifier.
 
 **Key decision:** The LLM is instructed to write expressions ending with `=` and leave the result blank (e.g. `"Sehingga 3/4 + 5/6 ="`). The math parser then appends the computed LaTeX result. This separates concerns — the LLM handles explanation logic, Python handles arithmetic correctness.
 
-### Endpoints
+### Wire protocol
 
-#### `POST /explain`
+The Rust client and Python server speak a length-prefix protocol over the UDS:
 
-Input: question content, options, correct label, subtype  
+```
+Request:  "<verb> <byte_length>\n<json_bytes>"
+Response: "ok <byte_length>\n<json_bytes>"
+       or "error <byte_length>\n<message>"
+```
+
+Verbs: `explain`, `generate`, `analogi`. Because the only caller is the Rust server (compile-time typed), there is no schema validation on the Python side — the JSON is trusted to be structurally correct.
+
+### Verbs
+
+#### `explain`
+
+Input: `{ question, options[{label, content, score}], subtype }`  
 Output: `{ explanation, tip }`
 
 Flow:
+
 1. Pick system prompt based on subtype (math / language / civic / situational)
 2. Retrieve 3 similar questions from embedding store (RAG)
 3. Build few-shot prompt: 3 examples + the question
-4. Call Ollama (`qwen3:8b`)
+4. Call Ollama (`gemma4:e4b`)
 5. Apply `plain_to_latex()` if subtype is numeric
 6. Return explanation + tip
 
 **Short-circuit:** For subtypes where the LLM can't add value (ANALOGI_GAMBAR — can't see images; ANTONIM/SINONIM/ANALOGI_VERBAL — simple lookups; TKP — stored explanations are sufficient), the Rust server returns the pre-written `explanation` field directly without calling the ML service at all. This decision is encoded in `SubtypeConfig.needs_ml_explain`.
 
-#### `POST /generate`
+#### `generate`
 
-Input: source question, source options (with scores), correct label, category, subtype  
+Input: `{ source_question, source_options[{label, content, score}], category, subtype }`  
 Output: `{ content, options[{label, content, score}], explanation, tip }`
 
 Flow for non-TKP subtypes:
+
 1. Retrieve up to 5 similar questions (RAG); exclude the source question itself
 2. Build generation prompt with source question as reference
 3. Call Ollama → get `{ content, options, correct_label, explanation, tip }`
@@ -289,18 +299,20 @@ Flow for non-TKP subtypes:
 8. Build `GeneratedOption` objects with `score=5` for correct option, `score=0` for others.
 
 Flow for TKP subtypes:
+
 1. Same RAG retrieval and prompt
 2. LLM is instructed to output `score` per option (1–5), not a `correct_label`
 3. Validate: 5 options, each with a score; must have ≥3 distinct scores (so options aren't all the same weight)
 4. Clamp scores to 1–5 range
 5. Return options with their LLM-assigned scores directly
 
-#### `POST /analogi/generate`
+#### `analogi`
 
 No input required (self-contained generation).  
 Output: `{ content, image_url, explanation, options[{label, content(=image_url), score}] }`
 
 Flow (up to 3 attempts):
+
 1. Call Ollama with `ANALOGI_SPEC_SYSTEM_PROMPT` → JSON spec describing 4 cells of shapes
 2. Extract and normalize spec (coerce int fills to bool, set rotation defaults, etc.)
 3. Validate spec (check positions are valid, no duplicate positions within a cell, etc.)
@@ -323,6 +335,7 @@ _SITUATIONAL_SUBTYPES = {all 9 TKP subtypes}
 ```
 
 Each set gets its own system prompt tuned for that domain:
+
 - **Math**: instructs explicit step-by-step calculation, leave `=` open
 - **Language**: instructs semantic/logical pattern explanation
 - **Civic**: instructs citation of specific laws, articles, historical dates
@@ -330,7 +343,7 @@ Each set gets its own system prompt tuned for that domain:
 
 ### Ollama model
 
-`qwen3:8b` — A multilingual LLM with strong Indonesian language support and good reasoning ability. Runs locally on CPU (slow, ~30s per call) or GPU. Timeout set to 180s.
+`gemma4:e4b` — A multilingual LLM with strong Indonesian language support and good reasoning ability. Runs locally on CPU (slow, ~30s per call) or GPU. Timeout set to 180s.
 
 ---
 
@@ -342,23 +355,24 @@ Next.js 15 (App Router), TypeScript, Tailwind CSS, React Query (TanStack Query),
 
 ### Pages
 
-| URL | Purpose |
-|-----|---------|
-| `/` | Dashboard home |
-| `/quiz-sets` | List all quiz sets |
-| `/quiz-sets/new` | Create a quiz set |
-| `/quiz-sets/[id]` | Edit quiz set metadata + view/manage its questions |
-| `/quiz-sets/[id]/questions/new` | Add a new question manually |
-| `/quiz-sets/[id]/questions/[qid]` | Edit an existing question |
-| `/quiz-sets/[id]/generate` | **Subtype-first AI generation page** |
-| `/quiz-sets/[id]/generate/[sourceId]` | Generate similar to a specific source question |
-| `/questions` | Global question bank (all questions across all quiz sets) |
+| URL                                   | Purpose                                                   |
+| ------------------------------------- | --------------------------------------------------------- |
+| `/`                                   | Dashboard home                                            |
+| `/quiz-sets`                          | List all quiz sets                                        |
+| `/quiz-sets/new`                      | Create a quiz set                                         |
+| `/quiz-sets/[id]`                     | Edit quiz set metadata + view/manage its questions        |
+| `/quiz-sets/[id]/questions/new`       | Add a new question manually                               |
+| `/quiz-sets/[id]/questions/[qid]`     | Edit an existing question                                 |
+| `/quiz-sets/[id]/generate`            | **Subtype-first AI generation page**                      |
+| `/quiz-sets/[id]/generate/[sourceId]` | Generate similar to a specific source question            |
+| `/questions`                          | Global question bank (all questions across all quiz sets) |
 
 ### Question generation UX (`/quiz-sets/[id]/generate`)
 
 The generation page has two flows:
 
 **Non-analogi subtypes:**
+
 1. Admin picks a subtype from the category's subtype list (e.g. SILOGISME for a TIU quiz)
 2. The page fetches all questions across all quiz sets to find one of that subtype as a seed
 3. Calls `POST /admin/questions/generate` with the seed question
@@ -367,6 +381,7 @@ The generation page has two flows:
 6. On save: the question is added to the current quiz, and a new generation starts immediately
 
 **ANALOGI_GAMBAR:**
+
 1. Admin picks ANALOGI_GAMBAR
 2. Calls `POST /admin/questions/generate/analogi` (no seed needed — LLM generates from scratch)
 3. Shows preview: question composite image (A:B=C:?), then 5 option images in a 3-column grid, correct option has a green border
@@ -377,16 +392,17 @@ For non-ANALOGI_GAMBAR, non-TKP questions, a Wand2 icon button links to `/genera
 
 ### Components
 
-| Component | Key responsibility |
-|-----------|-------------------|
+| Component            | Key responsibility                                                                                                                                                                                                                                       |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `QuestionEditor.tsx` | Full question form with Zod validation. Handles MCQ (radio for correct option), TRUE_FALSE, ESSAY, IMAGE types. Subtype dropdown filtered by quiz category. Score-based correctness: clicking a radio sets that option's score to 5 and all others to 0. |
-| `QuizSetForm.tsx` | Title, description, category, time_limit form |
-| `MathText.tsx` | Renders text with LaTeX math expressions using a math rendering library |
-| `Sidebar.tsx` | Navigation: Dashboard, Quiz Sets, Questions |
+| `QuizSetForm.tsx`    | Title, description, category, time_limit form                                                                                                                                                                                                            |
+| `MathText.tsx`       | Renders text with LaTeX math expressions using a math rendering library                                                                                                                                                                                  |
+| `Sidebar.tsx`        | Navigation: Dashboard, Quiz Sets, Questions                                                                                                                                                                                                              |
 
 ### Scoring in the editor
 
 A key decision: options don't have a separate `is_correct` field. Correctness is implied by score:
+
 - MCQ/TF/TWK/TIU: correct option gets `score = 5`, wrong options get `score = 0`
 - TKP: each option gets a distinct score 1–5 chosen by the admin
 - The UI shows a radio button group for MCQ/TF that marks one option correct; TKP shows numeric score inputs
@@ -402,6 +418,7 @@ Swift 6, SwiftUI, SwiftData, PencilKit. Target: iPad (landscape). Requires iOS 1
 ### Offline-first design
 
 The app works without internet. Data is stored locally in SwiftData. The sync with the backend happens explicitly:
+
 - **Quiz download**: triggered by the user tapping a quiz to open it
 - **Session upload**: triggered automatically after completing a quiz; retried on next launch if it fails
 
@@ -412,7 +429,7 @@ LocalQuiz        — mirrors backend quiz (+ isDownloaded, serverUpdatedAt, last
 LocalQuestion    — mirrors backend question
 LocalOption      — mirrors option (score only, no is_correct; isCorrect computed as score == 5)
 LocalUserNote    — stores PKDrawing data per question (local only, never synced)
-LocalQuizSession — completed session (isSynced tracks upload status)
+LocalQuizSession — completed session (score computed locally; not synced to server)
 LocalAnswer      — individual answer within a session
 ```
 
@@ -426,7 +443,7 @@ The single ViewModel driving the entire quiz experience:
 - **Timer**: optional countdown based on `quiz.timeLimit`; auto-submits when it hits zero
 - **Scoring**: `calculateScore()` — sums `option.score` for all answered questions. Works uniformly for MCQ (0 or 5) and TKP (1–5) without branching.
 - **AI explanations**: `fetchAIExplanation(for:)` — lazy-fetches via `GET /api/v1/questions/{id}/explain`; cached in memory for the session
-- **Submit**: packages answers into `LocalQuizSession`, saves to SwiftData, then calls `SyncManager.uploadPendingSessions()`
+- **Submit**: packages answers into `LocalQuizSession`, saves to SwiftData for the result screen. Sessions are not uploaded to the server.
 - **Reset (retry)**: deletes the saved session from SwiftData so the quiz appears fresh
 
 ### `SyncManager`
@@ -435,7 +452,6 @@ An `actor` (Swift concurrency-safe):
 
 - `fetchAvailableQuizzes(context:)` — fetches server quiz list; updates `serverUpdatedAt` on locally-downloaded quizzes so the UI can show "update available" badges
 - `downloadQuiz(id:context:)` — fetches full quiz + questions + options; upserts into SwiftData
-- `uploadPendingSessions(context:)` — finds `LocalQuizSession` where `isSynced == false`, POSTs to backend, marks synced
 
 ### PencilKit canvas
 
@@ -482,27 +498,6 @@ Quiz {
 }
 ```
 
-```
-quiz_sessions collection {
-  id: UUID string                 // device-generated; idempotent submit
-  quiz_id: UUID string
-  device_id: string               // UUID stored in iOS UserDefaults
-  started_at: datetime
-  completed_at: datetime | null
-  score: int | null
-  answers: [
-    SessionAnswer {
-      question_id: UUID string
-      selected_option_id: UUID string | null
-      essay_text: string | null
-      points_earned: int
-      answered_at: datetime
-    }
-  ]
-  synced_at: datetime
-}
-```
-
 ### Bulk import JSON format (for `POST /admin/questions/bulk`)
 
 ```json
@@ -540,54 +535,54 @@ All 26 question subtypes, organized by category:
 
 ### TWK — Tes Wawasan Kebangsaan (8 subtypes)
 
-| Subtype | Topic |
-|---------|-------|
-| `PANCASILA` | The five principles of Pancasila |
-| `UUD_1945` | Indonesian constitution articles |
-| `BHINNEKA` | Bhinneka Tunggal Ika, pluralism |
-| `NKRI` | Unitary state, regional autonomy, territory |
-| `SEJARAH_NASIONAL` | Indonesian national history |
-| `SISTEM_PEMERINTAHAN` | Presidential system, parliament, elections |
-| `BELA_NEGARA` | National defense, integrity, anti-corruption |
-| `BAHASA_INDONESIA` | Language grammar, vocabulary |
+| Subtype               | Topic                                        |
+| --------------------- | -------------------------------------------- |
+| `PANCASILA`           | The five principles of Pancasila             |
+| `UUD_1945`            | Indonesian constitution articles             |
+| `BHINNEKA`            | Bhinneka Tunggal Ika, pluralism              |
+| `NKRI`                | Unitary state, regional autonomy, territory  |
+| `SEJARAH_NASIONAL`    | Indonesian national history                  |
+| `SISTEM_PEMERINTAHAN` | Presidential system, parliament, elections   |
+| `BELA_NEGARA`         | National defense, integrity, anti-corruption |
+| `BAHASA_INDONESIA`    | Language grammar, vocabulary                 |
 
 ### TIU — Tes Intelegensi Umum (9 subtypes)
 
-| Subtype | Topic |
-|---------|-------|
-| `ANALOGI_VERBAL` | Word pair relationships (A:B = C:?) |
-| `ANALOGI_GAMBAR` | Visual pattern analogies (image-based) |
-| `SILOGISME` | Logical syllogisms (two premises → conclusion) |
-| `ANTONIM` | Antonyms |
-| `SINONIM` | Synonyms |
-| `ARITMATIKA` | Arithmetic: fractions, percentages, powers |
-| `DERET_ANGKA` | Number sequences and patterns |
-| `SOAL_CERITA` | Word problems / story math |
-| `PERBANDINGAN_KUANTITATIF` | Column A vs Column B comparisons |
+| Subtype                    | Topic                                          |
+| -------------------------- | ---------------------------------------------- |
+| `ANALOGI_VERBAL`           | Word pair relationships (A:B = C:?)            |
+| `ANALOGI_GAMBAR`           | Visual pattern analogies (image-based)         |
+| `SILOGISME`                | Logical syllogisms (two premises → conclusion) |
+| `ANTONIM`                  | Antonyms                                       |
+| `SINONIM`                  | Synonyms                                       |
+| `ARITMATIKA`               | Arithmetic: fractions, percentages, powers     |
+| `DERET_ANGKA`              | Number sequences and patterns                  |
+| `SOAL_CERITA`              | Word problems / story math                     |
+| `PERBANDINGAN_KUANTITATIF` | Column A vs Column B comparisons               |
 
 ### TKP — Tes Karakteristik Pribadi (9 subtypes)
 
-| Subtype | ASN Value Domain |
-|---------|-----------------|
-| `PELAYANAN_PUBLIK` | Public service orientation |
-| `PROFESIONALISME` | Professionalism |
-| `JEJARING_KERJA` | Work networking & collaboration |
-| `SOSIAL_BUDAYA` | Social-cultural awareness |
-| `TEKNOLOGI_INFORMASI` | Technology literacy |
-| `ORIENTASI_BELAJAR` | Learning orientation |
-| `MENGENDALIKAN_DIRI` | Self-control |
-| `BERADAPTASI` | Adaptability |
-| `KREATIVITAS_INOVASI` | Creativity & innovation |
+| Subtype               | ASN Value Domain                |
+| --------------------- | ------------------------------- |
+| `PELAYANAN_PUBLIK`    | Public service orientation      |
+| `PROFESIONALISME`     | Professionalism                 |
+| `JEJARING_KERJA`      | Work networking & collaboration |
+| `SOSIAL_BUDAYA`       | Social-cultural awareness       |
+| `TEKNOLOGI_INFORMASI` | Technology literacy             |
+| `ORIENTASI_BELAJAR`   | Learning orientation            |
+| `MENGENDALIKAN_DIRI`  | Self-control                    |
+| `BERADAPTASI`         | Adaptability                    |
+| `KREATIVITAS_INOVASI` | Creativity & innovation         |
 
 ### ML explain behavior by subtype
 
-| Subtype group | `needs_ml_explain` | Reason |
-|---------------|-------------------|--------|
-| ANALOGI_GAMBAR | `false` | LLM cannot see images; return stored explanation |
-| ANTONIM, SINONIM, ANALOGI_VERBAL | `false` | Stored explanation sufficient (direct lookup) |
-| All TKP (9 subtypes) | `false` | Behavioral questions; stored explanations work |
-| ARITMATIKA, DERET_ANGKA, SOAL_CERITA, PERBANDINGAN_KUANTITATIF | `true` | LLM explains math method + LaTeX post-processing |
-| All TWK (8 subtypes), SILOGISME | `true` | LLM explains civic knowledge / logical reasoning |
+| Subtype group                                                  | `needs_ml_explain` | Reason                                           |
+| -------------------------------------------------------------- | ------------------ | ------------------------------------------------ |
+| ANALOGI_GAMBAR                                                 | `false`            | LLM cannot see images; return stored explanation |
+| ANTONIM, SINONIM, ANALOGI_VERBAL                               | `false`            | Stored explanation sufficient (direct lookup)    |
+| All TKP (9 subtypes)                                           | `false`            | Behavioral questions; stored explanations work   |
+| ARITMATIKA, DERET_ANGKA, SOAL_CERITA, PERBANDINGAN_KUANTITATIF | `true`             | LLM explains math method + LaTeX post-processing |
+| All TWK (8 subtypes), SILOGISME                                | `true`             | LLM explains civic knowledge / logical reasoning |
 
 ---
 
@@ -614,7 +609,7 @@ Options do not have a boolean `is_correct` field. Correctness is entirely encode
 The session score is simply the sum of `option.score` for all selected options. No branching logic needed:
 
 ```swift
-// iOS (Swift)
+// iOS (Swift) — scoring is computed locally, not on the server
 questions.reduce(0) { total, question in
     guard let answer = answers[question.id],
           let optionId = answer.selectedOptionId,
@@ -622,14 +617,6 @@ questions.reduce(0) { total, question in
     else { return total }
     return total + option.score
 }
-```
-
-```rust
-// Rust (session submit)
-let points = question.options.iter()
-    .find(|o| o.id == answer.selected_option_id)
-    .map(|o| o.score)
-    .unwrap_or(0);
 ```
 
 ### Maximum possible score
@@ -649,11 +636,11 @@ iPad taps "AI Explain"
      ├── false → return stored explanation immediately (no ML call)
      └── true  →
           → Build ExplainRequest (question text, options, best option label, subtype)
-          → POST /explain to ML service (over UDS), with 3 retries (200/400/800ms backoff)
+          → send "explain" verb to ML service (over UDS), with 3 retries (200/400/800ms backoff)
           → ML service:
                1. Embed question → cosine search → top-3 similar examples (RAG)
                2. Build few-shot prompt (3 examples + question)
-               3. Call Ollama (qwen3:8b) → {explanation, tip}
+               3. Call Ollama (gemma4:e4b) → {explanation, tip}
                4. Apply plain_to_latex() if subtype is numeric
                5. Return {explanation, tip}
           → Rust server returns {ai_explanation, ai_tip}
@@ -667,7 +654,7 @@ Admin picks subtype on /generate page
   → Frontend: pick random question of that subtype from all quizzes
   → POST /admin/questions/generate {source_question_id}
   → Rust: build GenerateRequest from source question
-  → POST /generate to ML service (over UDS)
+  → send "generate" verb to ML service (over UDS)
   → ML service:
        1. Embed source question → cosine search → up to 5 examples (exclude source)
        2. Build generation prompt with examples + source
@@ -691,7 +678,7 @@ Admin picks subtype on /generate page
 ```
 Admin picks ANALOGI_GAMBAR on /generate page
   → POST /admin/questions/generate/analogi (no body)
-  → Rust: call ML service POST /analogi/generate
+  → Rust: send "analogi" verb to ML service (over UDS)
   → ML service (up to 3 attempts):
        1. Call Ollama with ANALOGI_SPEC_SYSTEM_PROMPT
           → JSON spec with cell_a, cell_b, cell_c, cell_d (each = list of shape objects)
@@ -720,6 +707,7 @@ The LLM generates analogi questions using a strict shape DSL:
 - **Rotation**: 0, 30, 45, 60, 90, 120, 135, 150, 180 degrees
 
 The LLM is instructed to:
+
 1. Choose a transformation rule (mirror, invert, rotate, swap sizes)
 2. Define `cell_a` (initial state)
 3. Apply rule mentally → `cell_b`
@@ -749,25 +737,17 @@ QuizListView appears
 
 Delta sync: `GET /api/v1/quizzes/{id}?since=<ISO_datetime>` returns only questions added/modified after that timestamp. Used for incremental updates.
 
-### Upload (Session → Backend)
+### Sessions (local only)
 
-```
-User completes quiz (submitSession called)
-  → Save LocalQuizSession to SwiftData with isSynced = false
-  → Call SyncManager.uploadPendingSessions()
-  → Find all sessions where isSynced == false
-  → POST /api/v1/sessions with full session payload
-  → On success: set isSynced = true, save
-  → On failure: leave isSynced = false; retry next app launch
-```
+Quiz sessions (answers, score, timestamps) are stored in SwiftData on the device and **never uploaded to the server**. The result screen reads from local storage. Sessions exist only for the duration the user keeps them on device.
 
-Sessions are idempotent: the backend uses the device-generated UUID as the session ID. Submitting the same session twice just overwrites the first record.
+**Why no server sync:** The purpose of the app is learning — the score is feedback for the student, not a record for the admin. Keeping sessions off the server removes any temptation to expose or manipulate results server-side.
 
 ### Conflict resolution
 
 - Backend is source of truth for **questions** (admin edits override)
 - iPad is source of truth for **drawings** (never synced)
-- Backend is source of truth for **sessions** (iPad uploads; no server-side edits)
+- iPad is source of truth for **sessions** (local only, never sent to server)
 
 ---
 
@@ -788,15 +768,17 @@ if config.manage_services {
 ```
 
 `start_and_watch()`:
+
 1. Runs `ensure_ollama()` and `ensure_ml_service()` immediately (non-blocking — Axum starts while services initialize)
 2. Spawns a background `tokio::spawn` loop that re-checks every 15 seconds
 
 `ensure_ml_service()` logic:
+
 1. If we hold a child handle and `try_wait()` shows it exited → clear handle → fall through to restart
 2. If we hold a running child handle → return (healthy)
 3. If no child and `UnixStream::connect(socket_path).ok()` → external instance → return (don't conflict)
-4. Remove stale socket file if present (uvicorn refuses to bind to an existing socket)
-5. Spawn uvicorn: `{ml_dir}/.venv/bin/uvicorn serve:app --uds {socket_path}` with `current_dir = ml_dir`
+4. Remove stale socket file if present (Python's `asyncio.start_unix_server` refuses to bind if it exists)
+5. Spawn: `{ml_dir}/.venv/bin/python serve.py` with `current_dir = ml_dir` (serve.py reads `ML_SOCKET_PATH` from env)
 
 **Production note:** On VPS with systemd managing processes, set `MANAGE_SERVICES=false` in `.env`. Systemd handles restarts and logging; the Rust server should stay out of the way.
 
@@ -806,23 +788,21 @@ if config.manage_services {
 
 ### Authentication
 
-| Route group | Auth method | Header |
-|-------------|-------------|--------|
-| Public iPad routes | Device API key | `X-Device-Key: <DEVICE_API_KEY>` |
-| Admin routes | JWT Bearer | `Authorization: Bearer <token>` |
-| `/api/v1/questions/{id}/explain` | Device API key | `X-Device-Key: <DEVICE_API_KEY>` |
+**Not implemented.** All routes are currently open — no token or API key is checked. The `server/src/middleware/auth.rs` file contains JWT and device-key middleware stubs, but they are not wired to any route and reference config fields (`jwt_secret`, `device_api_key`) that don't exist in `Config`. The `login()` function in `admin-web/src/lib/api.ts` and the `Authorization` header interceptor are similarly inoperative.
 
-Get a JWT: `POST /api/v1/auth/login` with `{ "email": "...", "password": "..." }` → `{ "token": "..." }`.
+This is intentional for local/development use. Before exposing the server on a public VPS, authentication should be added (see §16).
 
 ### Key request/response shapes
 
 **Quiz list (public)**
+
 ```
 GET /api/v1/quizzes
 → Array of { id, title, description, category, time_limit, is_published, question_count, created_at, updated_at }
 ```
 
 **Full quiz (public)**
+
 ```
 GET /api/v1/quizzes/{id}
 → { quiz: Quiz, questions: Question[] }
@@ -830,27 +810,15 @@ Question: { id, quiz_id, type, subtype, content, image_url, explanation, positio
 Option: { id, question_id, label, content, score }
 ```
 
-**Submit session (public)**
-```
-POST /api/v1/sessions
-Body: {
-  id: UUID,              // device-generated
-  quiz_id: UUID,
-  device_id: string,
-  started_at: ISO8601,
-  completed_at: ISO8601,
-  answers: [{ question_id, selected_option_id, essay_text, answered_at }]
-}
-→ { session_id, score }
-```
-
 **AI explanation (public)**
+
 ```
 GET /api/v1/questions/{id}/explain
 → { ai_explanation: string, ai_tip: string }
 ```
 
 **Bulk import (admin)**
+
 ```
 POST /api/v1/admin/questions/bulk
 Body: { quiz: { title, category, time_limit }, questions: [...] }
@@ -858,6 +826,7 @@ Body: { quiz: { title, category, time_limit }, questions: [...] }
 ```
 
 **Generate similar question (admin)**
+
 ```
 POST /api/v1/admin/questions/generate
 Body: { source_question_id: UUID }
@@ -865,6 +834,7 @@ Body: { source_question_id: UUID }
 ```
 
 **Generate analogi gambar (admin)**
+
 ```
 POST /api/v1/admin/questions/generate/analogi
 (no body)
@@ -880,7 +850,7 @@ POST /api/v1/admin/questions/generate/analogi
 - Rust (stable) + `cargo`
 - MongoDB (local, port 27017)
 - Python 3.11+ with pip
-- Ollama (`ollama pull qwen3:8b`)
+- Ollama (`ollama pull gemma4:e4b`)
 - Node.js 20+ (for admin web)
 - Xcode 15+ (for iOS app)
 
@@ -889,14 +859,10 @@ POST /api/v1/admin/questions/generate/analogi
 ```bash
 # From server/ directory
 cd server
-# First time: create .env with JWT_SECRET and DEVICE_API_KEY
-echo "JWT_SECRET=your_secret_here
-DEVICE_API_KEY=your_key_here
-ML_SERVICE_DIR=$(realpath ../apps/ml-service)" > .env
-
+# First time: set absolute ML_SERVICE_DIR (already done in server/.env)
 cargo run
 # Rust server starts on :3000
-# → auto-starts ML service (.venv/bin/uvicorn serve:app --uds /tmp/lms-ml.sock)
+# → auto-starts ML service (.venv/bin/python serve.py)
 # → auto-starts Ollama (if installed at default path)
 ```
 
@@ -905,7 +871,7 @@ cargo run
 ### Setting up the ML service (first time)
 
 ```bash
-cd apps/ml-service
+cd ml-service
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -955,6 +921,7 @@ EOF
 **Decision:** `QuestionOption` has only `score: int`, not `is_correct: bool`.
 
 **Why:** TKP questions have weighted scores (1–5) with no single "correct" answer. A boolean `is_correct` doesn't model this. By using `score` everywhere, MCQ and TKP use the exact same code paths:
+
 - Session scoring: `total += option.score` (no branching)
 - UI highlighting: `score == 5` means "best" for both types
 - Generation output: LLM outputs scores directly; no post-processing to set `is_correct`
@@ -981,7 +948,7 @@ EOF
 
 **Decision:** Arithmetic answers are verified by a Python evaluator, not trusted from the LLM.
 
-**Why:** LLMs hallucinate numbers reliably. An LLM might write "3/4 + 5/6 = 2/3" with full confidence. The math parser evaluates using `fractions.Fraction` for exact results and overwrites any wrong values. The LLM's job is to explain the *method*; Python handles the *answer*.
+**Why:** LLMs hallucinate numbers reliably. An LLM might write "3/4 + 5/6 = 2/3" with full confidence. The math parser evaluates using `fractions.Fraction` for exact results and overwrites any wrong values. The LLM's job is to explain the _method_; Python handles the _answer_.
 
 ---
 
@@ -992,6 +959,7 @@ EOF
 **Why:** A single LLM call for question generation produces about 60–70% valid questions for math subtypes. Multiple validation and correction passes increase this to ~95% without requiring a larger/smarter model.
 
 The passes in order:
+
 1. LLM generates question + 5 options + correct_label
 2. Direct computation: evaluate the question's math expression, match to option
 3. LLM correction: if computation is inconclusive, send the question back for self-correction (minimal edit: fix label or one option content)
@@ -1031,4 +999,26 @@ The passes in order:
 
 ---
 
-*This guide reflects the system as built through the development sessions ending 2026-06-08. Quiz data: 25 JSON files (620 questions), covering TWK (8 subtypes) and TIU (11 subtypes). TKP questions are generated on-demand via AI.*
+---
+
+### 11. Raw socket protocol instead of HTTP/FastAPI for ML service
+
+**Decision:** The ML service speaks a custom length-prefix protocol over UDS, not HTTP. No FastAPI, no uvicorn, no Pydantic.
+
+**Why:** The only caller is the Rust server, which has compile-time type safety — Pydantic input validation protects against untrusted external callers that don't exist here. Dropping the ASGI stack removes `fastapi`, `uvicorn`, `starlette`, `pydantic`, `anyio`, and `httpx` from the dependency tree, and removes `hyper`, `hyper-util`, `http-body-util`, and `bytes` from Rust's Cargo.toml. The replacement is ~15 lines of `asyncio.start_unix_server`. The only validation that remains is on LLM output (untrusted by nature) — that logic is unchanged inside the handler functions.
+
+**Protocol:** `"<verb> <byte_len>\n<json>"` → `"ok <byte_len>\n<json>"` or `"error <byte_len>\n<message>"`. Handlers run in `asyncio.to_thread()` so the event loop stays responsive during Ollama's ~30s calls.
+
+---
+
+### 12. Authentication is not implemented (intentional for v1)
+
+**Decision:** All API routes are currently open — no JWT, no device key check.
+
+**Why:** The system runs on a local machine during development and is not yet exposed publicly. Adding auth would require: (a) `jwt_secret` + `device_api_key` fields in `Config`, (b) wiring `middleware::auth::require_admin` to admin routes and `require_device_key` to public routes in `main.rs`, (c) a `POST /api/v1/auth/login` route + admin user collection in MongoDB. The stubs exist in `server/src/middleware/auth.rs` and `admin-web/src/lib/api.ts` but are not active.
+
+**Before going public:** enable auth. The middleware code is written — it just needs config fields and route wiring.
+
+---
+
+_This guide reflects the system as built through the development sessions ending 2026-06-09. Quiz data: 25 JSON files (620 questions), covering TWK (8 subtypes) and TIU (11 subtypes). TKP questions are generated on-demand via AI. Sessions are local-only — not uploaded to the server._

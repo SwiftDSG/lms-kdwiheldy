@@ -18,7 +18,6 @@ final class QuizSessionViewModel {
     var aiExplanationVisible: Set<UUID> = []
 
     private let context: ModelContext
-    private let deviceId: String
 
     // ── Timer ─────────────────────────────────────────────────────────────────
     var secondsRemaining: Int = 0
@@ -30,7 +29,6 @@ final class QuizSessionViewModel {
     init(quiz: LocalQuiz, context: ModelContext) {
         self.quiz = quiz
         self.context = context
-        self.deviceId = Self.deviceIdentifier()
         self.questions = quiz.questions.sorted { $0.position < $1.position }
 
         if let limit = quiz.timeLimit {
@@ -45,7 +43,6 @@ final class QuizSessionViewModel {
     init(quiz: LocalQuiz, context: ModelContext, completedSession: LocalQuizSession) {
         self.quiz = quiz
         self.context = context
-        self.deviceId = Self.deviceIdentifier()
         self.questions = quiz.questions.sorted { $0.position < $1.position }
 
         // Pre-populate answers from the stored session
@@ -130,10 +127,7 @@ final class QuizSessionViewModel {
         isSubmitting = true
         timerTask?.cancel()
 
-        let session = LocalQuizSession(
-            quizId: quiz.id,
-            deviceId: deviceId
-        )
+        let session = LocalQuizSession(quizId: quiz.id)
         session.completedAt = Date()
 
         for answer in answers.values {
@@ -150,9 +144,6 @@ final class QuizSessionViewModel {
         try? context.save()
 
         result = QuizResult(score: calculateScore(), maxScore: questions.count * 5)
-
-        // Attempt immediate sync; failure is OK (retry on next launch)
-        await SyncManager.shared.uploadPendingSessions(context: context)
         isSubmitting = false
     }
 
@@ -209,6 +200,9 @@ final class QuizSessionViewModel {
         currentIndex = 0
         answers = [:]
         result = nil
+        aiExplanations = [:]
+        aiExplanationLoading = []
+        aiExplanationVisible = []
         timerTask?.cancel()
         timerTask = nil
         timerActive = false
@@ -244,15 +238,6 @@ final class QuizSessionViewModel {
         }
     }
 
-    private static func deviceIdentifier() -> String {
-        let key = "device_uuid"
-        if let existing = UserDefaults.standard.string(forKey: key) {
-            return existing
-        }
-        let new = UUID().uuidString
-        UserDefaults.standard.set(new, forKey: key)
-        return new
-    }
 }
 
 // ── Quiz result ───────────────────────────────────────────────────────────────

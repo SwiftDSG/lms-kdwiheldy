@@ -406,7 +406,9 @@ private struct ReviewQuestionDetailView: View {
 
     @ViewBuilder
     private var aiExplanationTrigger: some View {
-        if vm.aiExplanationLoading.contains(question.id) {
+        if !question.subtype.needsMlExplain {
+            EmptyView()
+        } else if vm.aiExplanationLoading.contains(question.id) {
             HStack(spacing: 8) {
                 ProgressView().tint(Color.fontPrimary)
                 Text("Generating...")
