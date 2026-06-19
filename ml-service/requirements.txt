@@ -1,0 +1,7 @@
+# ── Runtime (serve.py) ────────────────────────────────────────────────────────
+sentence-transformers>=3.0.0
+numpy>=1.24.0
+llama-cpp-python>=0.3.0
+
+# ── Dev tooling (embed_questions.py — one-time setup) ─────────────────────────
+# pymongo  # install separately if regenerating embeddings: pip install pymongo
